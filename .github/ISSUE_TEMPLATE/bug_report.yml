@@ -1,0 +1,6 @@
+name: Bug report
+description: Report a reproducible engineering defect
+body:
+  - type: textarea
+    attributes: {label: Reproduction, description: Include minimal steps without secrets or private data}
+    validations: {required: true}

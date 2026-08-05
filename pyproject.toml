@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lcm"
+version = "0.2.1"
+description = "Living Context Memory - Deterministic multi-agent memory coherence middleware"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.109.0",
+    "pydantic>=2.5.3",
+    "httpx>=0.26.0",
+    "uvicorn>=0.27.0",
+    "cryptography>=42.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.3",
+    "pytest-asyncio>=0.23.3",
+    "numpy>=1.24",
+    "matplotlib>=3.7",
+    "langchain>=0.1.0",
+    "langchain-ollama>=0.1.0",
+]
+agents = [
+    "crewai>=0.1.0",
+    "langchain>=0.1.0",
+    "langchain-ollama>=0.1.0",
+]
+
+[tool.setuptools.packages.find]
+include = [
+    "lcm_core*",
+    "lcm_service*",
+    "lcm_client*",
+    "agents*",
+    "benchmarks*",
+    "experiments*",
+    "research_evaluation*",
+    "results*",
+    "tools*",
+    "visualization*",
+]
+
+[tool.pytest.ini_options]
+addopts = "-m 'not real_ollama'"
+markers = [
+    "real_ollama: opt-in test using the real local Ollama model and HTTP LCM service",
+]
+testpaths = [
+    "tests",
+    "tests/unit",
+    "tests/integration",
+    "tests/scenarios",
+]
+asyncio_mode = "auto"

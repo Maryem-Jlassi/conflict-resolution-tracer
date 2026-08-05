@@ -1,0 +1,29 @@
+fastapi==0.109.0
+# Starlette must stay in the 0.35.x line — FastAPI 0.109 is incompatible with
+# Starlette 1.x (1.x removed APIRouter's on_startup/on_shutdown arguments).
+starlette==0.35.1
+pytest==7.4.3
+pytest-asyncio==0.23.3  # Let FastAPI ecosystem resolve httpx
+httpx==0.27.2
+uvicorn==0.27.0
+
+pydantic>=2.7,<3.0
+
+# Ed25519 evidence-signature verification (lcm_core/crypto.py)
+cryptography>=42.0
+
+# LangChain + Ollama
+langchain==0.2.16
+langchain-core==0.2.43
+langchain-community==0.2.16
+langchain-ollama==0.1.3
+
+# CrewAI
+crewai==0.41.1
+
+# Streamlit 1.28 is the last line compatible with starlette 0.35.x
+# (1.60+ requires starlette >=0.40, which clashes with FastAPI 0.109).
+streamlit==1.28.0
+
+python-dotenv==1.0.0
+pytest-cov==4.1.0

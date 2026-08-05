@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: Living Context Memory
+type: software
+version: 0.2.1-evaluation-infrastructure
+authors:
+  - family-names: Jlassi
+    given-names: Maryem
+message: Please cite this software and the associated research manuscript when available.
+repository-code: https://github.com/Maryem-Jlassi/lcm
+license: LicenseRef-Pending-Institutional-Confirmation

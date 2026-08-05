@@ -1,0 +1,3 @@
+Test split hash: fc1e46b7d872ab034b958cf6db486e959d7658e4f5c01ade303ad0bbdfe01af5
+Generated: 2026-07-31T15:39:30.012345
+Note: Ground truth is rule-based (recency/trust/confidence/tiebreaker), not circularly labeled from Ψ

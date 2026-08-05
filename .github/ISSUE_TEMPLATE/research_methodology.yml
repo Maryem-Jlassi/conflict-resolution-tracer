@@ -1,0 +1,6 @@
+name: Research methodology
+description: Discuss protocol, evidence, metrics, or validity
+body:
+  - type: textarea
+    attributes: {label: Methodological concern, description: Identify the claim, evidence class, and proposed correction}
+    validations: {required: true}
