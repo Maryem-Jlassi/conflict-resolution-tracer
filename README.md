@@ -239,9 +239,6 @@ If you use this repository or its results in academic work, please cite the rele
 - **MSM:** `results/empirical_evaluation/msm/_sweep_results/SWEEP_PLAN_RESULTS.md`
 - **PHEME:** `results/empirical_evaluation/pheme_test/PHEME_FINAL_EVALUATION_REPORT.md`
 - **QACC:** `results/empirical_evaluation/component_evaluation/qacc/_frozen_assertions_500_multiprovider/QACC_500_MULTIPROVIDER_RESULTS.md`
-
-A full citable-claims master list with artifact pointers is maintained at `docs/_CITABLE_CLAIMS_MASTER_LIST.md`.
-
 ---
 
 
