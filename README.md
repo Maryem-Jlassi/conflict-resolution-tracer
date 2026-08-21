@@ -33,27 +33,27 @@ This repository contains the core engine, service layer, client SDK, and three i
 
 ```mermaid
 flowchart LR
-    A[Agent Claim<br/>raw dict] --> B[Stage 1<br/>validate_and_stamp<br/>Provenance + Confidence]
-    B --> C[Stage 2<br/>LoopDetector<br/>Oscillation check]
-    C --> D[Stage 3<br/>AsyncLockManager<br/>Path-level write lock]
-    D --> E[Stage 4<br/>ConflictResolutionEngine<br/>Ψ = (R + C + T) / 3]
-    E --> F[Storage<br/>Commit winner, archive loser]
-    F --> G[Optional<br/>AutoVerifier]
-    G --> H[TrustManager<br/>record_outcome]
+    A["Agent Claim<br>raw dict"] --> B["Stage 1<br>validate_and_stamp<br>Provenance + Confidence"]
+    B --> C["Stage 2<br>LoopDetector<br>Oscillation check"]
+    C --> D["Stage 3<br>AsyncLockManager<br>Path-level write lock"]
+    D --> E["Stage 4<br>ConflictResolutionEngine<br>Ψ = (R + C + T) / 3"]
+    E --> F["Storage<br>Commit winner, archive loser"]
+    F --> G["Optional<br>AutoVerifier"]
+    G --> H["TrustManager<br>record_outcome"]
 ```
 
 ### Ψ calculation flow
 
 ```mermaid
 flowchart LR
-    U[UMF Packet] --> P[ProvenanceInfo<br/>extraction]
-    P --> R[R = e^(-λΔt)<br/>Recency decay]
-    P --> C[C = verified_confidence<br/>from ProvenanceInfo]
-    P --> T[T = trust_score<br/>from TrustManager]
-    R --> W[weighted_total<br/>w_r·R + w_c·C + w_t·T]
+    U["UMF Packet"] --> P["ProvenanceInfo<br>extraction"]
+    P --> R["R = e^(-λΔt)<br>Recency decay"]
+    P --> C["C = verified_confidence<br>from ProvenanceInfo"]
+    P --> T["T = trust_score<br>from TrustManager"]
+    R --> W["weighted_total<br>w_r·R + w_c·C + w_t·T"]
     C --> W
     T --> W
-    W --> CR[ConflictResult<br/>winner / loser / margin]
+    W --> CR["ConflictResult<br>winner / loser / margin"]
 ```
 
 ### Concurrency / locking sequence
