@@ -244,12 +244,4 @@ A full citable-claims master list with artifact pointers is maintained at `docs/
 
 ---
 
-## License
 
-[Specify license here — do not default silently.]
-
----
-
-## Contact
-
-[Specify contact/point person for reproducibility questions.]
