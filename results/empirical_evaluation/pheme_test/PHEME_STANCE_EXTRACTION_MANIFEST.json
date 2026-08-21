@@ -1,0 +1,12 @@
+{
+  "schema_version": "PHEME_STANCE_EXTRACTION_MANIFEST/1.0",
+  "frozen_at": "2026-08-18T19:24:25.053045Z",
+  "model_version": "pheme_stance_v1.0_deterministic",
+  "is_deterministic": true,
+  "execution_count": 1,
+  "total_tweets": 105354,
+  "sha256_of_results": "1a93cba91acf87cd4407def12e8fcaacfa01f71399cc49c66a3e04e191bed187",
+  "lexicon_sha256": "320baf573a2e504c",
+  "output_schema": "jsonl with fields: thread_id, event_base, kind, tweet_id, role, user_id, text, stance, stance_confidence, created_at, n_urls, n_media, retweet_count, favorite_count, followers_count, lexicon_score, evidence_score, combined_score, stance_model_version",
+  "gold_exclusion_contract": "annotation.json (all fields) excluded from inputs"
+}

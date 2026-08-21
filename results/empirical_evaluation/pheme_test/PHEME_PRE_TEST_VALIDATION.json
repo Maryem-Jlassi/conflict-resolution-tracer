@@ -1,0 +1,76 @@
+{
+  "schema_version": "PHEME_PRE_TEST_VALIDATION/1.0",
+  "audit_date": "2026-08-18T19:24:25.287505Z",
+  "OVERALL": "PASS",
+  "findings": [
+    {
+      "check": "A1_archive_hash_matches_manifest",
+      "result": "PASS",
+      "detail": "Archive SHA-256: 079f6ffdbc0b3673... vs manifest: 079f6ffdbc0b3673..."
+    },
+    {
+      "check": "A2_thread_count_matches_structural_audit",
+      "result": "PASS",
+      "detail": "Loaded threads: 6425, expected from Phase 1: 6425"
+    },
+    {
+      "check": "A3_event_count_matches_structural_audit",
+      "result": "PASS",
+      "detail": "Loaded events: 9"
+    },
+    {
+      "check": "B1_test_train_event_disjoint",
+      "result": "PASS",
+      "detail": "Test events: ['charliehebdo', 'germanwings-crash', 'putinmissing'], Train events: ['ebola-essien', 'ferguson', 'gurlitt', 'ottawashooting', 'prince-toronto', 'sydneysiege'], Overlap: []"
+    },
+    {
+      "check": "B2_stance_cache_gold_blind",
+      "result": "PASS",
+      "detail": "Stance extraction uses only tweet text and metadata; no annotation fields. Results cached once."
+    },
+    {
+      "check": "C1_R_varies_in_TEST",
+      "result": "PASS",
+      "detail": "R varies in 648/648 TEST eligible episodes (100.0%)"
+    },
+    {
+      "check": "C2_C_varies_in_TEST",
+      "result": "PASS",
+      "detail": "C varies in 648/648 TEST eligible episodes (100.0%)"
+    },
+    {
+      "check": "C3_T_varies_in_TEST",
+      "result": "PASS",
+      "detail": "T varies in 486/648 TEST eligible episodes (75.0%); tweets with train prior: 1300/9790"
+    },
+    {
+      "check": "D1_trust_snapshot_before_current_gold",
+      "result": "PASS",
+      "detail": "For each TEST thread, trust snapshot is built from TRAIN threads only (chronologically prior). TEST gold is never in the snapshot."
+    },
+    {
+      "check": "D2_no_future_info_in_trust",
+      "result": "PASS",
+      "detail": "T uses only outcomes from threads with earliest_tweet < current_test_thread.earliest_tweet."
+    },
+    {
+      "check": "E1_identical_inputs_all_policies",
+      "result": "PASS",
+      "detail": "All policies consume the same (R, C, T, stance, timestamp, user_id, evidence) tuples per episode. Only resolver logic differs."
+    }
+  ],
+  "test_eligible_episodes": 648,
+  "train_events": [
+    "ferguson",
+    "ebola-essien",
+    "ottawashooting",
+    "prince-toronto",
+    "gurlitt",
+    "sydneysiege"
+  ],
+  "test_events": [
+    "charliehebdo",
+    "putinmissing",
+    "germanwings-crash"
+  ]
+}

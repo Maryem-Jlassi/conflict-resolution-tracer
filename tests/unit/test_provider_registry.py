@@ -17,16 +17,17 @@ from cryptography.hazmat.primitives.asymmetric.ed25519 import (
     Ed25519PublicKey,
 )
 
-from lcm_core.confidence_engine import EvidenceRecord, EvidenceType
-from lcm_core.crypto import (
+from crt_core.confidence_engine import EvidenceRecord, EvidenceType
+from crt_core.crypto import (
+    canonical_assertion_hash,
     EvidenceProviderRegistry,
     get_provider_registry,
     set_provider_registry,
     sign_evidence_message_with_key,
     verify_evidence_signature_crypto,
 )
-from lcm_core.provenance import validate_and_stamp
-from lcm_service.storage import SQLiteProviderRegistry, SQLiteStorage
+from crt_core.provenance import validate_and_stamp
+from crt_service.storage import SQLiteProviderRegistry, SQLiteStorage
 
 REF = datetime(2026, 7, 14, 10, 0, 0)
 
@@ -34,7 +35,7 @@ REF = datetime(2026, 7, 14, 10, 0, 0)
 @pytest.fixture(autouse=True)
 def _dev_key_and_fresh_registry(monkeypatch):
     """Opt into the dev key AND isolate the registry per test."""
-    monkeypatch.setenv("LCM_ALLOW_DEV_EVIDENCE_KEY", "1")
+    monkeypatch.setenv("CRT_ALLOW_DEV_EVIDENCE_KEY", "1")
     set_provider_registry(EvidenceProviderRegistry())
     yield
     set_provider_registry(EvidenceProviderRegistry())
@@ -208,17 +209,22 @@ class TestProviderRegistryEndToEnd:
             priv, EvidenceType.DATABASE, None,
             provider_id="labs", key_id="key-1",
             issued_at=ev.issued_at, expires_at=ev.expires_at,
+            assertion_hash=canonical_assertion_hash(
+                agent_id="a", timestamp=REF,
+                assertion_payload={"k": "v"},
+            ),
         )
-        result = validate_and_stamp(
-            {
-                "agent_id": "a",
-                "session_id": "s",
-                "timestamp": REF,
-                "confidence_score": 0.9,
-                "assertion_payload": {"k": "v"},
-            },
-            evidence_records=[ev],
-            evidence_signature=sig,
-            reference_time=REF,
-        )
-        assert result.provenance_info.verified_confidence <= 0.1
+        from crt_core.provenance import RejectionError
+        with pytest.raises(RejectionError):
+            validate_and_stamp(
+                {
+                    "agent_id": "a",
+                    "session_id": "s",
+                    "timestamp": REF,
+                    "confidence_score": 0.9,
+                    "assertion_payload": {"k": "v"},
+                },
+                evidence_records=[ev],
+                evidence_signature=sig,
+                reference_time=REF,
+            )

@@ -16,7 +16,7 @@ Covered here:
 """
 
 import pytest
-from lcm_core.trust_manager import TrustManager, _DEFAULT_PRIOR
+from crt_core.trust_manager import TrustManager, _DEFAULT_PRIOR
 
 
 class TestUncertaintyAwareTrust:

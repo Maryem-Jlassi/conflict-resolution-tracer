@@ -1,0 +1,26 @@
+{
+  "clean_subset": {
+    "n_cases": 395,
+    "n_resolved_full_lcm": 102,
+    "winners_by_provider": {
+      "openai": 53,
+      "ollama": 49
+    },
+    "openai_win_rate": 0.5196078431372549,
+    "ollama_win_rate": 0.4803921568627451,
+    "openai_abstain_rate": 0.5486058779201206,
+    "ollama_abstain_rate": 0.1811263318112633,
+    "openai_supported": 599,
+    "ollama_supported": 799,
+    "openai_total_calls": 1327,
+    "ollama_total_calls": 1314,
+    "openai_95ci_lower": 0.42370956161784173,
+    "openai_95ci_upper": 0.6140827620053841
+  },
+  "contaminated_subset": {
+    "n_cases": 45,
+    "n_resolved_full_lcm": 0,
+    "winners_by_provider": {}
+  },
+  "methodology": "Recomputed from frozen assertions using replay.py resolve_case with full_lcm policy"
+}

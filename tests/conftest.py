@@ -1,5 +1,5 @@
 """
-Shared test factories and fixtures for the entire LCM test suite.
+Shared test factories and fixtures for the entire CRT test suite.
 
 Import these from any test file:
     from tests.conftest import make_memory, make_provenance, engine
@@ -17,17 +17,17 @@ from typing import Any, Dict, Optional
 import pytest
 
 # The crypto layer signs with the development Ed25519 provider key and
-# verifies against the SAME key (see lcm_core.crypto). That dev fallback
+# verifies against the SAME key (see crt_core.crypto). That dev fallback
 # requires an explicit opt-in (fail-closed by default). Tests and benchmarks
 # are exactly the self-consistent consumers the dev key exists for, so enable
 # it for the whole suite unless a real provider key is configured.
-if not os.environ.get("LCM_EVIDENCE_PUBLIC_KEY"):
-    os.environ.setdefault("LCM_ALLOW_DEV_EVIDENCE_KEY", "1")
+if not os.environ.get("CRT_EVIDENCE_PUBLIC_KEY"):
+    os.environ.setdefault("CRT_ALLOW_DEV_EVIDENCE_KEY", "1")
 
-from lcm_core.confidence_engine import ConfidenceEngine, EvidenceRecord, EvidenceType
-from lcm_core.conflict import ConflictResolutionEngine
-from lcm_core.schema import ProvenanceInfo, StampedUMF
-from lcm_core.trust_manager import TrustManager
+from crt_core.confidence_engine import ConfidenceEngine, EvidenceRecord, EvidenceType
+from crt_core.conflict import ConflictResolutionEngine
+from crt_core.schema import ProvenanceInfo, StampedUMF
+from crt_core.trust_manager import TrustManager
 
 # ---------------------------------------------------------------------------
 # Fixed reference point — all tests use this so timestamps are deterministic

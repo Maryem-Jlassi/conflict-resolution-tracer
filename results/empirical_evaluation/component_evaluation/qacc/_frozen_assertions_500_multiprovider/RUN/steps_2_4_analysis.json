@@ -1,0 +1,24 @@
+{
+  "step2_agreement_7_cases": {
+    "n_total": 7,
+    "n_agreement": 3,
+    "n_disagreement": 4,
+    "point_estimate": 0.42857142857142855,
+    "wilson_95ci": [
+      0.1582,
+      0.7495
+    ],
+    "matching_rule": "exact_string_match",
+    "cases_file": "agreement_7_cases.json"
+  },
+  "step3_confidence_vs_length": {
+    "has_self_reported_confidence": false,
+    "note": "Confidence scores not captured per extraction; 'more decisive' claim is supported only by token-length evidence."
+  },
+  "step4_clean_subset_verification": {
+    "n_clean_cases": 395,
+    "n_contaminated_cases": 100,
+    "clean_cases_with_groq": 0,
+    "filter_logic": "Exclude any case where groq-sourced assertion exists among competing claims, even if groq did not win."
+  }
+}

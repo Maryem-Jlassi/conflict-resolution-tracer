@@ -6,7 +6,7 @@ across all source types and combinations, not just isolated cases.
 """
 
 import pytest
-from lcm_core.confidence_engine import (
+from crt_core.confidence_engine import (
     ConfidenceEngine,
     ConfidenceWeights,
     EvidenceRecord,
@@ -109,14 +109,18 @@ def test_relevance_monotone_for_database(relevance):
     ],
 )
 def test_agreement_score_ratio(agreeing, total, expected_ratio):
-    """Agreement score must equal agreeing/total (or 0.5 for no data)."""
+    """Test that agreement fields are audit-only and do not affect confidence.
+    
+    All agreement inputs should produce identical confidence since agreement
+    is neutralized to 0.5 to prevent caller influence.
+    """
     ev = EvidenceRecord(evidence_type=EvidenceType.TOOL_OUTPUT, relevance_score=1.0)
     score = engine.calculate(
         [ev], agreeing_agents=agreeing, total_independent_agents=total
     )
-    # Manually compute expected total
+    # Agreement is neutralized to 0.5, verification is neutralized to 0.5
     evidence = EVIDENCE_AUTHORITY[EvidenceType.TOOL_OUTPUT] * 1.0
-    expected = 0.5 * evidence + 0.3 * expected_ratio + 0.2 * 0.5
+    expected = 0.5 * evidence + 0.3 * 0.5 + 0.2 * 0.5
     assert abs(score - expected) < 1e-9, (
         f"{agreeing}/{total}: expected {expected:.6f}, got {score:.6f}"
     )
@@ -135,10 +139,16 @@ def test_agreement_score_ratio(agreeing, total, expected_ratio):
     ],
 )
 def test_verification_score_states(consistent, expected_verif_score):
+    """Test that verification field is audit-only and does not affect confidence.
+    
+    All verification inputs should produce identical confidence since verification
+    is neutralized to 0.5 to prevent caller influence.
+    """
     ev = EvidenceRecord(evidence_type=EvidenceType.DATABASE, relevance_score=1.0)
     score = engine.calculate([ev], verified_memories_consistent=consistent)
     evidence = EVIDENCE_AUTHORITY[EvidenceType.DATABASE]
-    expected = 0.5 * evidence + 0.3 * 0.5 + 0.2 * expected_verif_score
+    # Verification is neutralized to 0.5, agreement is neutralized to 0.5
+    expected = 0.5 * evidence + 0.3 * 0.5 + 0.2 * 0.5
     assert abs(score - expected) < 1e-9
 
 
@@ -169,6 +179,11 @@ def test_no_evidence_returns_agent_claim_floor():
     ],
 )
 def test_custom_weights_applied(w_ev, w_ag, w_vr):
+    """Test that custom weights are applied, but agreement/verification remain neutralized.
+    
+    Even with custom weights, caller-controlled agreement and verification fields
+    must not influence confidence - they remain neutralized at 0.5.
+    """
     custom_engine = ConfidenceEngine(
         weights=ConfidenceWeights(evidence=w_ev, agreement=w_ag, verification=w_vr)
     )
@@ -179,5 +194,6 @@ def test_custom_weights_applied(w_ev, w_ag, w_vr):
         verified_memories_consistent=True,
     )
     evidence = EVIDENCE_AUTHORITY[EvidenceType.DATABASE]
-    expected = w_ev * evidence + w_ag * 1.0 + w_vr * 1.0
+    # Agreement and verification are neutralized to 0.5 regardless of caller inputs
+    expected = w_ev * evidence + w_ag * 0.5 + w_vr * 0.5
     assert abs(score - min(1.0, expected)) < 1e-9

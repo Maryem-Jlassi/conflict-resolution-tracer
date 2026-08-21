@@ -1,0 +1,57 @@
+{
+  "generated_at_utc": "2026-08-20T02:37:25.212501+00:00",
+  "seeds": {
+    "global_seed": 20260821,
+    "epoch_start": "2026-08-20T16:00:00"
+  },
+  "ollama_endpoint": "http://127.0.0.1:11434",
+  "ollama_models": [
+    "llama3.2:1b",
+    "llama3.2:latest",
+    "llama3.1:8b"
+  ],
+  "generation_temp": 0.4,
+  "top_p": 0.9,
+  "reps": {
+    "S1_per_model_scenario": 10,
+    "S2_replay": 10
+  },
+  "artifacts": {
+    "raw_results": "6dc2ea1c84b5778c398c512aa8d5aa0d3a428ffa4bb33fde6af75fab45d545d1"
+  },
+  "corpora_hashes": {
+    "s1a_corpus.jsonl": "a4f0864f19b5348dc59a49f214dca23223b98fe7f2878031d259ed7a319bbd58",
+    "s1b_corpus.jsonl": "2f1f46f2bf42870de6db30a01f978792c719b1b337deaafcc99b76f33b7a9a95",
+    "s1c_corpus.jsonl": "2359e3d6949caad27cb2f9ce78e25b424c2a6a441a4c344a0dedd97065ffe623",
+    "s1d_corpus.jsonl": "08c8905a82fc192fa4dffbda8a8eeb05d7158d53b21b14ec509b11b43e26af58",
+    "s1e_corpus.jsonl": "93f7cf481cbda7950949074a7411f47438b232b9bdd546c1a67e752a4cc1b59f",
+    "s1f_corpus.jsonl": "ba78f60d7558f6a11f077766e3b274d6e9b32d88ee1dfa162e5a9636ce1e3dfd"
+  },
+  "frozen_module_hashes": {
+    "lcm_core/schema.py": "57791c36c47356c7b4657f43b76e618f786f897c47b8eeab4d287f3cc76d3848",
+    "lcm_core/provenance.py": "16f5ae2f04c31512b7493c5e09c648f9e35edd6c9445726084702316d9d831b6",
+    "lcm_core/pipeline.py": "e2bf42ae6b29dc98b64541b33322364537621baf1f4236c6f05ecee97337992f",
+    "lcm_core/locking.py": "04a86456d59360dde06e0dca04624b959bd052fc7d15291984b05b2bd145cd2b",
+    "lcm_core/loop_detection.py": "ce7e69f6931d6bb17ee544a1f99394dfb156884cbe340dd3a668b9a1eda65481",
+    "lcm_core/status.py": "fd0582be7636c1c0a497800e8f34be26f58b253b1aa628cc54ca50aa72811169",
+    "lcm_core/trust_manager.py": "a3f7117e19e0c87acb1718a0630e31948906f4c82ae1f648d71dc436f6d940d2",
+    "lcm_core/confidence_engine.py": "7f091123f8e33aa78c20247482799e4f8455520c2e25c6418f7ba7f04ce56db2",
+    "lcm_core/crypto.py": "9dacd29eb615946d2a7d6c7d9f5c452899dc10e5c0fb8f8e138f462bfeec9f3e",
+    "lcm_core/user_input_policy.py": "44f716d5d87881747a06f4b1681fe8353c1293e39561048945569eb9beeea477",
+    "lcm_core/metrics.py": "d80d9a7378b08f9c74ac6c244efe152fa8d1833b944a9a58c379761bf4f3b416",
+    "lcm_core/replay.py": "e9192404a1fa4761887ef033bd99175b106234c8f7955f6a8c2274801fea63e9",
+    "lcm_core/canonical.py": "f9b6b5d6fa9e7773073c03bd56fa77180c78faf59a0158fbe2744da88394c150",
+    "lcm_core/config.py": "0d4aefdd43ad920d4ea64e701997e84b0803af64f4ba7a19f0b42776a90a61ec",
+    "lcm_core/failure_reporting.py": "764a638e961414712b44396bb262a0ebd866bc98def1b9dad96983288722966e",
+    "lcm_core/lineage.py": "6958708408c4d88f9f8918bdf9dcd6438d007b13515d7c06da5eb3b78f213362",
+    "lcm_core/event_bus.py": "c55ed4220c90a06c479f60d5935ec06c5ba4351b4b5a975a19deb40b1d7ec06f",
+    "lcm_core/events.py": "a3ed829ac1640fdf9943603fcfa331e04e0da6508abca9dcc7b410bfa84fb0ff",
+    "lcm_core/verifier.py": "4f4b8c666c533c16be5ffb665a642c7f1bfca899bc7b9996690821e8d133c10f",
+    "lcm_service/app.py": "0f457a65afb313683085c822c55ed1a0bb66eed3434a80bed8e1126a38263977",
+    "lcm_service/storage.py": "f866d43bdc9b857d98fbb2ea967e08acfa2e4cdcafd018784fc84e2cc07345cc",
+    "lcm_service/trust_ledger.py": "7daf220863f33ac5827cc7b7e3efdfea52bb78c10dc446f49b007614b6d4f30e"
+  },
+  "python_version": "3.10.0",
+  "heterogeneity_note": "All models are llama-family (1.2B/3.2B/8.0B + Q8_0/Q4_K_M). Cross-family generality NOT claimed.",
+  "protocol": "generate-once-freeze, then replay serial vs concurrent against fresh DBs."
+}

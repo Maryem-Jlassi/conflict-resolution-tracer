@@ -1,0 +1,49 @@
+{
+  "timestamp": "2026-08-20T04:37:12.847548",
+  "lcm_summary": {
+    "total_operations": 20,
+    "successful_submissions": 20,
+    "avg_latency_ms": 45.5,
+    "lock_failures": 0,
+    "conflicts_detected": 3
+  },
+  "baselines": [
+    {
+      "type": "naive_lww_dict",
+      "total_operations": 20,
+      "successful_writes": 20,
+      "failed_writes": 0,
+      "avg_latency_ms": 0.0027499998395796865,
+      "execution_time_ms": 0.05499999679159373,
+      "final_state_size": 20
+    },
+    {
+      "type": "threadsafe_dict",
+      "total_operations": 20,
+      "successful_writes": 20,
+      "failed_writes": 0,
+      "avg_latency_ms": 0.0017800000932766125,
+      "execution_time_ms": 0.03560000186553225,
+      "final_state_size": 20
+    },
+    {
+      "type": "threadsafe_dict",
+      "total_operations": 20,
+      "successful_writes": 20,
+      "failed_writes": 0,
+      "avg_latency_ms": 0.32100999997055624,
+      "execution_time_ms": 6.420199999411125,
+      "final_state_size": 20
+    }
+  ],
+  "lcm_vs_lww": {
+    "success_rate_advantage": 0.0,
+    "conflict_detection_advantage": "CRT detects conflicts, LWW does not",
+    "provenance_tracking": "CRT tracks provenance, LWW does not"
+  },
+  "lcm_vs_threadsafe": {
+    "success_rate_advantage": 0.0,
+    "conflict_resolution": "CRT has conflict resolution, thread-safe dict does not",
+    "provenance_tracking": "CRT tracks provenance, thread-safe dict does not"
+  }
+}

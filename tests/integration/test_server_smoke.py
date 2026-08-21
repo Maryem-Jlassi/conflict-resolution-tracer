@@ -1,5 +1,5 @@
 """
-Server smoke test — starts LCM service as a subprocess and exercises
+Server smoke test — starts CRT service as a subprocess and exercises
 the real-key HTTP flow end-to-end.
 
 This test verifies:
@@ -12,6 +12,7 @@ This test verifies:
 import asyncio
 import hashlib
 import os
+import secrets
 import subprocess
 import tempfile
 import time
@@ -20,13 +21,13 @@ from pathlib import Path
 import httpx
 import pytest
 
-from lcm_core.confidence_engine import EvidenceRecord, EvidenceType
-from lcm_core.crypto import sign_evidence_message, _compute_assertion_hash
-from lcm_core.canonical import canonical_json
+from crt_core.confidence_engine import EvidenceRecord, EvidenceType
+from crt_core.crypto import sign_evidence_message, _compute_assertion_hash
+from crt_core.canonical import canonical_json
 
 
 class ServerProcess:
-    """Manages a uvicorn subprocess for the LCM service."""
+    """Manages a uvicorn subprocess for the CRT service."""
 
     def __init__(self, host: str = "127.0.0.1", port: int = 8123, db_path: str = None):
         self.host = host
@@ -35,13 +36,18 @@ class ServerProcess:
         self.db_path = db_path or ":memory:"
         self.process = None
         self._temp_db = None
+        # Randomly generated per-run verifier secret (corrected Phase A boundary
+        # authenticates POST /verify with HMAC-SHA256). Never hardcoded.
+        self.verifier_secret = secrets.token_hex(32)
 
     def start(self):
         """Start the server subprocess."""
         env = os.environ.copy()
-        env["LCM_SQLITE_PATH"] = self.db_path
+        env["CRT_SQLITE_PATH"] = self.db_path
         # Enable dev evidence key for testing
-        env["LCM_ALLOW_DEV_EVIDENCE_KEY"] = "1"
+        env["CRT_ALLOW_DEV_EVIDENCE_KEY"] = "1"
+        # Corrected Phase A /verify boundary requires a configured secret.
+        env["CRT_VERIFIER_SECRET"] = self.verifier_secret
 
         # Use the project root as working directory
         project_root = Path(__file__).resolve().parent.parent.parent
@@ -49,7 +55,7 @@ class ServerProcess:
         self.process = subprocess.Popen(
             [
                 "python", "-m", "uvicorn",
-                "lcm_service.app:app",
+                "crt_service.app:app",
                 "--host", self.host,
                 "--port", str(self.port),
                 "--log-level", "warning",
@@ -158,12 +164,11 @@ def _make_signed_evidence(agent_id: str, path: str, value: str,
     )
 
     # Sign WITHOUT assertion_hash and content_hash (server verification uses empty strings)
-    signature = sign_evidence_message(
-        evidence_type,
-        source_id,
-        content_hash="",  # Server receives None -> empty string
-        assertion_hash="",  # Server verification uses empty string
-        nonce=nonce or "",
+    from crt_core.crypto import sign_assertion_evidence
+    signature = sign_assertion_evidence(
+        evidence_type, source_id, content_hash=None,
+        agent_id=agent_id, timestamp=timestamp,
+        assertion_payload={path: value}, nonce=nonce or "",
     )
 
     return evidence, signature
@@ -175,7 +180,7 @@ def test_server_health(server):
         resp = client.get(f"{server.base_url}/")
         assert resp.status_code == 200
         data = resp.json()
-        assert data["service"] == "Living Context Memory"
+        assert data["service"] == "Conflict Resolution Tracer"
         assert data["status"] == "operational"
 
 
@@ -341,7 +346,16 @@ def test_context_retrieval(server):
 
 
 def test_verification_flow(server):
-    """Verification endpoint should update trust and memory status."""
+    """Corrected Phase A verification boundary: HMAC-authenticated outcome.
+
+    The /verify boundary authenticates an immutable outcome payload with an
+    HMAC-SHA256 token keyed by the server-held secret (CRT_VERIFIER_SECRET).
+    On success the verifier identity is assigned internally as
+    ``experiment_oracle`` and the durable outcome ledger records a NEW outcome
+    that resyncs persistent trust. An exact replay returns IDEMPOTENT.
+    """
+    from crt_core.verifier import canonical_verifier_message, compute_verifier_token
+
     with httpx.Client(timeout=5.0) as client:
         # First write
         payload = _make_write_payload("agent_verify", "verify.path", "verify_value")
@@ -349,26 +363,79 @@ def test_verification_flow(server):
         assert resp.status_code == 201
         prov_id = resp.json()["provenance_id"]
 
-        # Verify the memory
+        # Unauthenticated verification is rejected (fail-closed)
+        bad = client.post(
+            f"{server.base_url}/verify",
+            json={
+                "outcome_id": "verify-flow-1",
+                "target_agent_id": "agent_verify",
+                "correct": True,
+                "domain": "project",
+                "target_provenance_id": prov_id,
+                "verifier_token": "not-a-real-token",
+            },
+        )
+        assert bad.status_code == 401
+
+        # Authenticated verification of the immutable outcome payload
+        outcome_id = "verify-flow-1"
+        message = canonical_verifier_message(
+            outcome_id=outcome_id,
+            target_agent_id="agent_verify",
+            domain="project",
+            correct=True,
+            target_provenance_id=prov_id,
+            observed_at=None,
+        )
+        token = compute_verifier_token(server.verifier_secret, message)
         verify_resp = client.post(
             f"{server.base_url}/verify",
             json={
-                "provenance_id": prov_id,
-                "agent_id": "agent_verify",
+                "outcome_id": outcome_id,
+                "target_agent_id": "agent_verify",
                 "correct": True,
-                "domain": "_global",
+                "domain": "project",
+                "target_provenance_id": prov_id,
+                "verifier_token": token,
             },
         )
         assert verify_resp.status_code == 200
-        assert verify_resp.json()["status"] == "ok"
+        body = verify_resp.json()
+        assert body["status"] == "new"
+        assert body["verifier_identity"] == "experiment_oracle"
+        assert body["trust_score"] > 0.99
 
-        # Trust should be updated
-        trust_resp = client.get(f"{server.base_url}/trust/agent_verify")
+        # Exact replay is idempotent — same outcome_id + same payload
+        replay = client.post(
+            f"{server.base_url}/verify",
+            json={
+                "outcome_id": outcome_id,
+                "target_agent_id": "agent_verify",
+                "correct": True,
+                "domain": "project",
+                "target_provenance_id": prov_id,
+                "verifier_token": token,
+            },
+        )
+        assert replay.status_code == 200
+        assert replay.json()["status"] == "idempotent"
+
+        # Trust should be updated from the durable ledger — the domain row is
+        # the single source of truth for domain-specific trust.
+        trust_resp = client.get(f"{server.base_url}/trust/agent_verify", params={"domain": "project"})
         assert trust_resp.status_code == 200
         trust_data = trust_resp.json()
         assert trust_data["correct_count"] == 1
         # Trust score should be ~1.0 (floating point precision)
         assert trust_data["trust_score"] > 0.99
+
+        # Corrected-protocol invariant: domain-specific trust is isolated — the
+        # ledger does NOT materialize a "_global" aggregate (Section 1), so the
+        # default-domain query has no counts and a neutral trust score.
+        global_resp = client.get(f"{server.base_url}/trust/agent_verify")
+        assert global_resp.status_code == 200
+        assert global_resp.json()["correct_count"] == 0
+        assert global_resp.json()["trust_score"] == 0.5
 
 
 if __name__ == "__main__":

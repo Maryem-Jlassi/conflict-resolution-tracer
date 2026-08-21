@@ -1,0 +1,775 @@
+{
+  "4_4_agreement_reexported": {
+    "total_triples": 30,
+    "genuine_agreement": 3,
+    "genuine_disagreement": 4,
+    "partial_data": 0,
+    "no_data": 23,
+    "measurable_rate_b": 0.42857142857142855,
+    "original_rate_a": 0.0,
+    "groq_related_partial": 0,
+    "groq_related_no_data": 23,
+    "recommendation": "Replace 0/30 with (b) or caveat as unreliable"
+  },
+  "4_2_openai_analysis": {
+    "cases_with_groq": 86,
+    "provider_success": {
+      "openai": 1612,
+      "ollama": 1246,
+      "groq": 171
+    },
+    "note": "Clean openai-vs-ollama subset requires resolution trace; see gap_analysis.json"
+  },
+  "3_groq_fate": {
+    "transport_fail_rate": 0.8439054726368159,
+    "parse_fail_rate": 0.04975124378109453,
+    "supported_rate": 0.049129353233830844,
+    "recommendation": "exclude_from_primary_tables",
+    "justification": "84.4% transport failure makes extraction-behavior stats unrepresentative"
+  },
+  "classifications": [
+    {
+      "case_id": 3290,
+      "source_id": 6,
+      "source": "www.mlb.com",
+      "category": "NO_DATA",
+      "failures": [
+        [
+          "ollama",
+          "unsupported",
+          ""
+        ],
+        [
+          "openai",
+          "unsupported",
+          ""
+        ],
+        [
+          "groq",
+          "rate_limit_429",
+          ""
+        ]
+      ],
+      "detail": {
+        "ollama": false,
+        "openai": false,
+        "groq": false
+      }
+    },
+    {
+      "case_id": 208,
+      "source_id": 5,
+      "source": "spotalike.com",
+      "category": "NO_DATA",
+      "failures": [
+        [
+          "ollama",
+          "unsupported",
+          ""
+        ],
+        [
+          "openai",
+          "unsupported",
+          ""
+        ],
+        [
+          "groq",
+          "rate_limit_429",
+          ""
+        ]
+      ],
+      "detail": {
+        "ollama": false,
+        "openai": false,
+        "groq": false
+      }
+    },
+    {
+      "case_id": 246,
+      "source_id": 3,
+      "source": "pulse.seattlechildrens.org",
+      "category": "NO_DATA",
+      "failures": [
+        [
+          "openai",
+          "unsupported",
+          ""
+        ],
+        [
+          "groq",
+          "rate_limit_429",
+          ""
+        ]
+      ],
+      "detail": {
+        "ollama": true,
+        "openai": false,
+        "groq": false
+      }
+    },
+    {
+      "case_id": 3523,
+      "source_id": 3,
+      "source": "www.quora.com",
+      "category": "NO_DATA",
+      "failures": [
+        [
+          "ollama",
+          "transport/error",
+          "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+        ],
+        [
+          "groq",
+          "rate_limit_429",
+          ""
+        ]
+      ],
+      "detail": {
+        "ollama": false,
+        "openai": true,
+        "groq": false
+      }
+    },
+    {
+      "case_id": 279,
+      "source_id": 4,
+      "source": "www.metroleague.org",
+      "category": "NO_DATA",
+      "failures": [
+        [
+          "openai",
+          "unsupported",
+          ""
+        ],
+        [
+          "groq",
+          "rate_limit_429",
+          ""
+        ]
+      ],
+      "detail": {
+        "ollama": true,
+        "openai": false,
+        "groq": false
+      }
+    },
+    {
+      "case_id": 276,
+      "source_id": 6,
+      "source": "en.wikipedia.org",
+      "category": "GENUINE_AGREEMENT",
+      "failures": [
+        [
+          "groq",
+          "transport/error",
+          ""
+        ]
+      ],
+      "detail": {
+        "ollama": true,
+        "openai": true,
+        "groq": false,
+        "answers": {
+          "ollama": "many",
+          "openai": "many"
+        }
+      }
+    },
+    {
+      "case_id": 8,
+      "source_id": 6,
+      "source": "www.toppr.com",
+      "category": "NO_DATA",
+      "failures": [
+        [
+          "ollama",
+          "transport/error",
+          "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+        ],
+        [
+          "groq",
+          "rate_limit_429",
+          ""
+        ]
+      ],
+      "detail": {
+        "ollama": false,
+        "openai": true,
+        "groq": false
+      }
+    },
+    {
+      "case_id": 1884,
+      "source_id": 1,
+      "source": "www.imdb.com",
+      "category": "NO_DATA",
+      "failures": [
+        [
+          "ollama",
+          "unsupported",
+          ""
+        ],
+        [
+          "openai",
+          "unsupported",
+          ""
+        ],
+        [
+          "groq",
+          "rate_limit_429",
+          ""
+        ]
+      ],
+      "detail": {
+        "ollama": false,
+        "openai": false,
+        "groq": false
+      }
+    },
+    {
+      "case_id": 2287,
+      "source_id": 4,
+      "source": "www.express.co.uk",
+      "category": "GENUINE_DISAGREEMENT",
+      "failures": [
+        [
+          "groq",
+          "rate_limit_429",
+          ""
+        ]
+      ],
+      "detail": {
+        "ollama": true,
+        "openai": true,
+        "groq": false,
+        "answers": {
+          "ollama": "1988-01-20",
+          "openai": "January 20, 1988"
+        }
+      }
+    },
+    {
+      "case_id": 1681,
+      "source_id": 5,
+      "source": "www.bcsd.org",
+      "category": "NO_DATA",
+      "failures": [
+        [
+          "ollama",
+          "transport/error",
+          "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+        ],
+        [
+          "groq",
+          "rate_limit_429",
+          ""
+        ]
+      ],
+      "detail": {
+        "ollama": false,
+        "openai": true,
+        "groq": false
+      }
+    },
+    {
+      "case_id": 135,
+      "source_id": 6,
+      "source": "www.ushistory.org",
+      "category": "NO_DATA",
+      "failures": [
+        [
+          "openai",
+          "unsupported",
+          ""
+        ],
+        [
+          "groq",
+          "rate_limit_429",
+          ""
+        ]
+      ],
+      "detail": {
+        "ollama": true,
+        "openai": false,
+        "groq": false
+      }
+    },
+    {
+      "case_id": 3140,
+      "source_id": 2,
+      "source": "en.wikipedia.org",
+      "category": "NO_DATA",
+      "failures": [
+        [
+          "ollama",
+          "transport/error",
+          "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+        ],
+        [
+          "groq",
+          "rate_limit_429",
+          ""
+        ]
+      ],
+      "detail": {
+        "ollama": false,
+        "openai": true,
+        "groq": false
+      }
+    },
+    {
+      "case_id": 3173,
+      "source_id": 7,
+      "source": "recipes.howstuffworks.com",
+      "category": "GENUINE_DISAGREEMENT",
+      "failures": [
+        [
+          "groq",
+          "rate_limit_429",
+          ""
+        ]
+      ],
+      "detail": {
+        "ollama": true,
+        "openai": true,
+        "groq": false,
+        "answers": {
+          "ollama": "The center of the palm crown.",
+          "openai": "The heart of palm is located at the palm crown at the top of the palm tree."
+        }
+      }
+    },
+    {
+      "case_id": 39,
+      "source_id": 4,
+      "source": "americansongwriter.com",
+      "category": "NO_DATA",
+      "failures": [
+        [
+          "ollama",
+          "unsupported",
+          ""
+        ],
+        [
+          "openai",
+          "unsupported",
+          ""
+        ],
+        [
+          "groq",
+          "rate_limit_429",
+          ""
+        ]
+      ],
+      "detail": {
+        "ollama": false,
+        "openai": false,
+        "groq": false
+      }
+    },
+    {
+      "case_id": 2379,
+      "source_id": 0,
+      "source": "www.britannica.com",
+      "category": "NO_DATA",
+      "failures": [
+        [
+          "ollama",
+          "unsupported",
+          ""
+        ],
+        [
+          "openai",
+          "unsupported",
+          ""
+        ],
+        [
+          "groq",
+          "rate_limit_429",
+          ""
+        ]
+      ],
+      "detail": {
+        "ollama": false,
+        "openai": false,
+        "groq": false
+      }
+    },
+    {
+      "case_id": 2478,
+      "source_id": 1,
+      "source": "www.coolhandmovers.com",
+      "category": "NO_DATA",
+      "failures": [
+        [
+          "ollama",
+          "transport/error",
+          "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+        ],
+        [
+          "groq",
+          "rate_limit_429",
+          ""
+        ]
+      ],
+      "detail": {
+        "ollama": false,
+        "openai": true,
+        "groq": false
+      }
+    },
+    {
+      "case_id": 90,
+      "source_id": 1,
+      "source": "screenrant.com",
+      "category": "NO_DATA",
+      "failures": [
+        [
+          "ollama",
+          "unsupported",
+          ""
+        ],
+        [
+          "openai",
+          "unsupported",
+          ""
+        ],
+        [
+          "groq",
+          "rate_limit_429",
+          ""
+        ]
+      ],
+      "detail": {
+        "ollama": false,
+        "openai": false,
+        "groq": false
+      }
+    },
+    {
+      "case_id": 3523,
+      "source_id": 5,
+      "source": "www.quora.com",
+      "category": "NO_DATA",
+      "failures": [
+        [
+          "ollama",
+          "transport/error",
+          "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+        ],
+        [
+          "groq",
+          "rate_limit_429",
+          ""
+        ]
+      ],
+      "detail": {
+        "ollama": false,
+        "openai": true,
+        "groq": false
+      }
+    },
+    {
+      "case_id": 243,
+      "source_id": 0,
+      "source": "en.wikipedia.org",
+      "category": "GENUINE_AGREEMENT",
+      "failures": [
+        [
+          "groq",
+          "rate_limit_429",
+          ""
+        ]
+      ],
+      "detail": {
+        "ollama": true,
+        "openai": true,
+        "groq": false,
+        "answers": {
+          "ollama": "1989",
+          "openai": "1989"
+        }
+      }
+    },
+    {
+      "case_id": 2306,
+      "source_id": 0,
+      "source": "www.pewresearch.org",
+      "category": "NO_DATA",
+      "failures": [
+        [
+          "openai",
+          "unsupported",
+          ""
+        ],
+        [
+          "groq",
+          "rate_limit_429",
+          ""
+        ]
+      ],
+      "detail": {
+        "ollama": true,
+        "openai": false,
+        "groq": false
+      }
+    },
+    {
+      "case_id": 197,
+      "source_id": 9,
+      "source": "www.senate.gov",
+      "category": "NO_DATA",
+      "failures": [
+        [
+          "ollama",
+          "unsupported",
+          ""
+        ],
+        [
+          "openai",
+          "unsupported",
+          ""
+        ],
+        [
+          "groq",
+          "rate_limit_429",
+          ""
+        ]
+      ],
+      "detail": {
+        "ollama": false,
+        "openai": false,
+        "groq": false
+      }
+    },
+    {
+      "case_id": 1801,
+      "source_id": 8,
+      "source": "www.primevideo.com",
+      "category": "NO_DATA",
+      "failures": [
+        [
+          "ollama",
+          "unsupported",
+          ""
+        ],
+        [
+          "openai",
+          "unsupported",
+          ""
+        ],
+        [
+          "groq",
+          "rate_limit_429",
+          ""
+        ]
+      ],
+      "detail": {
+        "ollama": false,
+        "openai": false,
+        "groq": false
+      }
+    },
+    {
+      "case_id": 3207,
+      "source_id": 7,
+      "source": "mapsplatform.google.com",
+      "category": "GENUINE_DISAGREEMENT",
+      "failures": [
+        [
+          "groq",
+          "rate_limit_429",
+          ""
+        ]
+      ],
+      "detail": {
+        "ollama": true,
+        "openai": true,
+        "groq": false,
+        "answers": {
+          "ollama": "the length and direction of a straight line between two locations or positions",
+          "openai": "0.60 miles"
+        }
+      }
+    },
+    {
+      "case_id": 37,
+      "source_id": 5,
+      "source": "www.nps.gov",
+      "category": "NO_DATA",
+      "failures": [
+        [
+          "ollama",
+          "unsupported",
+          ""
+        ],
+        [
+          "openai",
+          "unsupported",
+          ""
+        ],
+        [
+          "groq",
+          "rate_limit_429",
+          ""
+        ]
+      ],
+      "detail": {
+        "ollama": false,
+        "openai": false,
+        "groq": false
+      }
+    },
+    {
+      "case_id": 2513,
+      "source_id": 0,
+      "source": "quizlet.com",
+      "category": "NO_DATA",
+      "failures": [
+        [
+          "ollama",
+          "transport/error",
+          "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+        ],
+        [
+          "groq",
+          "rate_limit_429",
+          ""
+        ]
+      ],
+      "detail": {
+        "ollama": false,
+        "openai": true,
+        "groq": false
+      }
+    },
+    {
+      "case_id": 59,
+      "source_id": 0,
+      "source": "apnews.com",
+      "category": "GENUINE_AGREEMENT",
+      "failures": [
+        [
+          "groq",
+          "rate_limit_429",
+          ""
+        ]
+      ],
+      "detail": {
+        "ollama": true,
+        "openai": true,
+        "groq": false,
+        "answers": {
+          "ollama": "Sept. 14, 1972",
+          "openai": "Sept. 14, 1972"
+        }
+      }
+    },
+    {
+      "case_id": 2212,
+      "source_id": 3,
+      "source": "www.census.gov",
+      "category": "NO_DATA",
+      "failures": [
+        [
+          "ollama",
+          "transport/error",
+          "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+        ],
+        [
+          "openai",
+          "unsupported",
+          ""
+        ],
+        [
+          "groq",
+          "rate_limit_429",
+          ""
+        ]
+      ],
+      "detail": {
+        "ollama": false,
+        "openai": false,
+        "groq": false
+      }
+    },
+    {
+      "case_id": 95,
+      "source_id": 1,
+      "source": "byjus.com",
+      "category": "GENUINE_DISAGREEMENT",
+      "failures": [
+        [
+          "groq",
+          "rate_limit_429",
+          ""
+        ]
+      ],
+      "detail": {
+        "ollama": true,
+        "openai": true,
+        "groq": false,
+        "answers": {
+          "ollama": "Interphase",
+          "openai": "interphase"
+        }
+      }
+    },
+    {
+      "case_id": 325,
+      "source_id": 2,
+      "source": "en.wikipedia.org",
+      "category": "NO_DATA",
+      "failures": [
+        [
+          "ollama",
+          "unsupported",
+          ""
+        ],
+        [
+          "openai",
+          "unsupported",
+          ""
+        ],
+        [
+          "groq",
+          "rate_limit_429",
+          ""
+        ]
+      ],
+      "detail": {
+        "ollama": false,
+        "openai": false,
+        "groq": false
+      }
+    },
+    {
+      "case_id": 752,
+      "source_id": 5,
+      "source": "www.fsis.usda.gov",
+      "category": "NO_DATA",
+      "failures": [
+        [
+          "ollama",
+          "unsupported",
+          ""
+        ],
+        [
+          "openai",
+          "unsupported",
+          ""
+        ],
+        [
+          "groq",
+          "rate_limit_429",
+          ""
+        ]
+      ],
+      "detail": {
+        "ollama": false,
+        "openai": false,
+        "groq": false
+      }
+    }
+  ]
+}

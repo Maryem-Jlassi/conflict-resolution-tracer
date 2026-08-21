@@ -1,0 +1,9 @@
+accelerate==0.21.0
+arrow==1.2.3
+multiprocess==0.70.14
+numpy==1.24.4
+pandas==2.0.3
+peft==0.4.0
+text-generation==0.6.0
+tqdm==4.65.0
+transformers @ git+https://github.com/huggingface/transformers.git@1982dd3b15867c46e1c20645901b0de469fd935f

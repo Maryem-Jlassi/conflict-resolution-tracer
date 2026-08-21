@@ -1,25 +1,49 @@
-.venv/
-venv/
+# Python
 __pycache__/
 *.py[cod]
-.pytest_cache/
-build/
-*.egg-info/
-.env
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+research_data/
+# IDEs
+.vscode/
+/demo
+.idea/
+*.swp
+*.swo
+# Large/binary - use HF Hub, not git
+*.sqlite
 *.db
-*.sqlite*
-*.log
-events.jsonl
-results/release/
-results/research_checkpoint/
-results/research_protocol/
-experiments/results/
-research_data/**/raw/*
-research_data/**/annotations/*
-research_data/**/adjudicated/*
-research_data/pilot/annotation_packages/*
-research_data/pilot/source_artifacts/*
-research_data/pilot/manifests/*
-!**/.gitkeep
+*.bak
+*.bak.*
+*.zip
+*.jsonl
+!qacc/raw/**/source.zip
+
+# OS
 .DS_Store
 Thumbs.db
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environment
+.env
+.env.local
+/demo
+results/empirical_evaluation/**/*.sqlite
+results/empirical_evaluation/**/*.jsonl
+results/empirical_evaluation/**/ _extract_cache.jsonl
+!results/empirical_evaluation/**/QACC_500_MULTIPROVIDER_RESULTS.md
+!results/empirical_evaluation/**/MSM_FINAL_REPORT.md
+!results/empirical_evaluation/**/PHEME_FINAL_EVALUATION_REPORT.md
+
+# Temporary files
+*.tmp
+*.log
+*.pid

@@ -1,0 +1,14 @@
+{
+  "agent_claim_authority": 0.3,
+  "grounded_authorities": {
+    "profile_ltm": 0.9,
+    "device_log": 0.8,
+    "objective_log": 0.85,
+    "daily_self_report": 0.6,
+    "planner": 0.5
+  },
+  "simulated_wins": 0,
+  "total_episodes": 3337,
+  "max_agent_claim_margin": 0,
+  "min_grounded_margin": 0.1849537037037039
+}

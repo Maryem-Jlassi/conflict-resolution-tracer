@@ -14,10 +14,10 @@ from datetime import datetime
 import pytest
 
 from tests.conftest import make_memory, make_evidence, REFERENCE_TIME
-from lcm_core.confidence_engine import EvidenceRecord, EvidenceType
-from lcm_core.crypto import sign_evidence_message
-from lcm_core.provenance import RejectionError, validate_and_stamp, verify_evidence_signature
-from lcm_core.user_input_policy import (
+from crt_core.confidence_engine import EvidenceRecord, EvidenceType
+from crt_core.crypto import sign_assertion_evidence, sign_evidence_message
+from crt_core.provenance import RejectionError, validate_and_stamp, verify_evidence_signature
+from crt_core.user_input_policy import (
     DEFAULT_USER_INPUT_POLICY,
     UserInputDecision,
     UserInputPolicy,
@@ -95,6 +95,11 @@ class TestPolicyObject:
 
 
 class TestValidateAndStampIntegration:
+    @staticmethod
+    def _sig(packet, source="user://x"):
+        return sign_assertion_evidence(EvidenceType.USER_INPUT,source,
+            agent_id=packet["agent_id"],timestamp=packet["timestamp"],
+            assertion_payload=packet["assertion_payload"])
     def test_unsigned_user_input_degrades(self):
         ev = EvidenceRecord(evidence_type=EvidenceType.USER_INPUT, source_id="user://x", relevance_score=1.0)
         result = validate_and_stamp(_raw(), evidence_records=[ev], evidence_signature=None)
@@ -106,30 +111,30 @@ class TestValidateAndStampIntegration:
 
     def test_signed_user_input_keeps_full_authority(self):
         ev = EvidenceRecord(evidence_type=EvidenceType.USER_INPUT, source_id="user://x", relevance_score=1.0)
-        sig = sign_evidence_message(EvidenceType.USER_INPUT, "user://x")
-        result = validate_and_stamp(_raw(), evidence_records=[ev], evidence_signature=sig)
+        packet=_raw(); sig = self._sig(packet)
+        result = validate_and_stamp(packet, evidence_records=[ev], evidence_signature=sig)
         assert result.provenance_info.source_type == "user_input"
         assert result.provenance_info.authority_score == 1.0
         assert result.provenance_info.verified_confidence == 0.75
 
     def test_wrong_signature_degrades(self):
         ev = EvidenceRecord(evidence_type=EvidenceType.USER_INPUT, source_id="user://x", relevance_score=1.0)
-        sig = sign_evidence_message(EvidenceType.USER_INPUT, "user://other")
-        result = validate_and_stamp(_raw(), evidence_records=[ev], evidence_signature=sig)
-        assert result.provenance_info.authority_score == 0.1
+        packet=_raw(); sig = self._sig(packet,"user://other")
+        with pytest.raises(RejectionError):
+            validate_and_stamp(packet, evidence_records=[ev], evidence_signature=sig)
 
     def test_allowlist_rejects_unknown_relayer(self):
         set_user_input_policy(UserInputPolicy(allowed_relayers=("delegated-agent",)))
         ev = EvidenceRecord(evidence_type=EvidenceType.USER_INPUT, source_id="user://x", relevance_score=1.0)
-        sig = sign_evidence_message(EvidenceType.USER_INPUT, "user://x")
+        packet=_raw(agent="mallory"); sig = self._sig(packet)
         with pytest.raises(RejectionError):
-            validate_and_stamp(_raw(agent="mallory"), evidence_records=[ev], evidence_signature=sig)
+            validate_and_stamp(packet, evidence_records=[ev], evidence_signature=sig)
 
     def test_allowlist_accepts_delegated_relayer(self):
         set_user_input_policy(UserInputPolicy(allowed_relayers=("delegated-agent",)))
         ev = EvidenceRecord(evidence_type=EvidenceType.USER_INPUT, source_id="user://x", relevance_score=1.0)
-        sig = sign_evidence_message(EvidenceType.USER_INPUT, "user://x")
-        result = validate_and_stamp(_raw(agent="delegated-agent"), evidence_records=[ev], evidence_signature=sig)
+        packet=_raw(agent="delegated-agent"); sig = self._sig(packet)
+        result = validate_and_stamp(packet, evidence_records=[ev], evidence_signature=sig)
         assert result.provenance_info.source_type == "user_input"
         assert result.provenance_info.authority_score == 1.0
 
@@ -139,8 +144,8 @@ class TestValidateAndStampIntegration:
             unauthorized_relay_action="degrade",
         ))
         ev = EvidenceRecord(evidence_type=EvidenceType.USER_INPUT, source_id="user://x", relevance_score=1.0)
-        sig = sign_evidence_message(EvidenceType.USER_INPUT, "user://x")
-        result = validate_and_stamp(_raw(agent="mallory"), evidence_records=[ev], evidence_signature=sig)
+        packet=_raw(agent="mallory"); sig = self._sig(packet)
+        result = validate_and_stamp(packet, evidence_records=[ev], evidence_signature=sig)
         assert result.provenance_info.source_type == "agent_claim_default"
         assert result.provenance_info.authority_score == 0.1
 

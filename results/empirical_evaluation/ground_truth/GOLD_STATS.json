@@ -1,0 +1,10 @@
+{
+  "total_episodes": 144,
+  "gold_a_correct": 37,
+  "gold_b_correct": 0,
+  "gold_both_true": 25,
+  "gold_both_false": 69,
+  "gold_insufficient": 13,
+  "excluded_no_gold": 0,
+  "disputed": 0
+}

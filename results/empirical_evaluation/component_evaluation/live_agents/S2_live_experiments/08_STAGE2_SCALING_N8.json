@@ -1,0 +1,584 @@
+{
+  "scenario": "concurrent_burst",
+  "mode": "concurrent",
+  "num_agents": 4,
+  "num_operations": 8,
+  "successful_submissions": 0,
+  "failed_submissions": 8,
+  "lock_failures": 0,
+  "conflicts_detected": 0,
+  "total_latency_ms": 0,
+  "avg_latency_ms": 0,
+  "p50_latency_ms": 0,
+  "p95_latency_ms": 0,
+  "max_latency_ms": 0,
+  "min_latency_ms": 0,
+  "final_state_hash": "e77afb0d34fd2afabc0321bd79844b3e04761af63ba4c2d0f7abb849cb4320a2",
+  "serial_equivalent": false,
+  "operations": [
+    {
+      "experiment_id": "live_eval_20260820_035150",
+      "run_id": "live_eval_20260820_035150_rep1",
+      "provider": "ollama",
+      "model": "llama3.1:8b",
+      "agent_id": "agent_b",
+      "role": "summarization_interpretation",
+      "prompt_hash": "381ebb07c7483f655aa18213a6b49cb9b4b91590ff68a88a2274d59156719cdc",
+      "prompt_text": "You are a summarization and interpretation specialist. Your role is to:\n\n1. Synthesize information from multiple sources\n2. Identify key themes and patterns\n3. Provide clear, concise summaries\n4. Interpret complex information in accessible terms\n5. Highlight important relationships and dependencies\n\nYou will be working with other agents who may provide different raw information. \nYour role is to integrate and interpret this information.\n\nIMPORTANT: When submitting claims to memory:\n- Use the exact memory path specified in the task\n- Provide your interpretation or summary as a clear statement\n- Do not include provenance metadata (provenance_id, authority_score, etc.)\n- The middleware will handle all provenance and trust fields\n- Focus on the interpretive content of your claim\n\nYou are analyzing the following information:\n\nWeather station data collection\n\nYou are a field weather station. Record current temperature observations.\n\nBased on your analysis, what is your interpretation or summary? Submit your finding to memory path: weather/station/city_1/observation\n\nOutput ONLY a single JSON object on one line in this format:\n{\"path\": \"weather/station/city_1/observation\", \"value\": \"<your interpretation>\"}",
+      "raw_response": "",
+      "parsed_response": null,
+      "target_path": "unknown/path",
+      "claimed_value": "",
+      "timestamp": "2026-08-20T04:00:25.645515",
+      "generation_latency_ms": 27855.626999999997,
+      "input_tokens": null,
+      "output_tokens": null,
+      "provider_metadata": null,
+      "success": false,
+      "error": "Ollama generation failed: Server error '500 Internal Server Error' for url 'http://localhost:11434/api/generate'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+    },
+    {
+      "experiment_id": "live_eval_20260820_035150",
+      "run_id": "live_eval_20260820_035150_rep0",
+      "provider": "ollama",
+      "model": "llama3.2:1b",
+      "agent_id": "agent_c",
+      "role": "retrieval_evidence",
+      "prompt_hash": "709332c2802996979107cf8ba981df4f8ff7b4253bc378234b19e03a5be26269",
+      "prompt_text": "You are a retrieval and evidence-oriented reasoning specialist. Your role is to:\n\n1. Systematically search for relevant evidence\n2. Evaluate the quality and reliability of sources\n3. Build evidence-based arguments\n4. Identify gaps in available information\n5. Reason carefully about what can be concluded from available evidence\n\nYou will be working with other agents who may provide different interpretations. \nYour role is to focus on evidence quality and logical reasoning.\n\nIMPORTANT: When submitting claims to memory:\n- Use the exact memory path specified in the task\n- Provide your evidence-based conclusion as a clear statement\n- Do not include provenance metadata (provenance_id, authority_score, etc.)\n- The middleware will handle all provenance and trust fields\n- Focus on the evidence-based content of your claim\n\nYou are evaluating the evidence for the following claim:\n\nWeather station data collection\n\nYou are a field weather station. Record current temperature observations.\n\nBased on your evidence analysis, what is your conclusion? Submit your finding to memory path: weather/station/city_0/observation\n\nOutput ONLY a single JSON object on one line in this format:\n{\"path\": \"weather/station/city_0/observation\", \"value\": \"<your evidence-based conclusion>\"}",
+      "raw_response": "{\"path\": \"weather/station/city_0/observation\", \"value\": \"Temperature readings from the weather station are generally reliable and consistent, with an average deviation of 1.2\u00b0C from the national average.\"}",
+      "parsed_response": {
+        "path": "weather/station/city_0/observation",
+        "value": "Temperature readings from the weather station are generally reliable and consistent, with an average deviation of 1.2\u00b0C from the national average."
+      },
+      "target_path": "weather/station/city_0/observation",
+      "claimed_value": "Temperature readings from the weather station are generally reliable and consistent, with an average deviation of 1.2\u00b0C from the national average.",
+      "timestamp": "2026-08-20T03:55:09.930235",
+      "generation_latency_ms": 27137.879999999997,
+      "input_tokens": 276,
+      "output_tokens": 47,
+      "provider_metadata": {
+        "total_duration_ms": 6844625900,
+        "load_duration_ms": 5787908300,
+        "eval_count": 47
+      },
+      "success": true,
+      "error": null
+    },
+    {
+      "experiment_id": "live_eval_20260820_035150",
+      "run_id": "live_eval_20260820_035150_rep0",
+      "provider": "ollama",
+      "model": "llama3.2:latest",
+      "agent_id": "agent_b",
+      "role": "summarization_interpretation",
+      "prompt_hash": "10d7f645bf58da4470e4d1606f25c9961148b30505aab1b3216da7dcf26327d5",
+      "prompt_text": "You are a summarization and interpretation specialist. Your role is to:\n\n1. Synthesize information from multiple sources\n2. Identify key themes and patterns\n3. Provide clear, concise summaries\n4. Interpret complex information in accessible terms\n5. Highlight important relationships and dependencies\n\nYou will be working with other agents who may provide different raw information. \nYour role is to integrate and interpret this information.\n\nIMPORTANT: When submitting claims to memory:\n- Use the exact memory path specified in the task\n- Provide your interpretation or summary as a clear statement\n- Do not include provenance metadata (provenance_id, authority_score, etc.)\n- The middleware will handle all provenance and trust fields\n- Focus on the interpretive content of your claim\n\nYou are analyzing the following information:\n\nWeather station data collection\n\nYou are a field weather station. Record current temperature observations.\n\nBased on your analysis, what is your interpretation or summary? Submit your finding to memory path: weather/station/city_0/observation\n\nOutput ONLY a single JSON object on one line in this format:\n{\"path\": \"weather/station/city_0/observation\", \"value\": \"<your interpretation>\"}",
+      "raw_response": "{\"path\": \"weather/station/city_0/observation\", \"value\": \"Current temperature is 22 degrees Celsius.\"}",
+      "parsed_response": {
+        "path": "weather/station/city_0/observation",
+        "value": "Current temperature is 22 degrees Celsius."
+      },
+      "target_path": "weather/station/city_0/observation",
+      "claimed_value": "Current temperature is 22 degrees Celsius.",
+      "timestamp": "2026-08-20T03:54:05.239786",
+      "generation_latency_ms": 36682.178,
+      "input_tokens": 265,
+      "output_tokens": 28,
+      "provider_metadata": {
+        "total_duration_ms": 16355022400,
+        "load_duration_ms": 13980989500,
+        "eval_count": 28
+      },
+      "success": true,
+      "error": null
+    },
+    {
+      "experiment_id": "live_eval_20260820_035150",
+      "run_id": "live_eval_20260820_035150_rep1",
+      "provider": "ollama",
+      "model": "llama3.2:latest",
+      "agent_id": "agent_b",
+      "role": "summarization_interpretation",
+      "prompt_hash": "381ebb07c7483f655aa18213a6b49cb9b4b91590ff68a88a2274d59156719cdc",
+      "prompt_text": "You are a summarization and interpretation specialist. Your role is to:\n\n1. Synthesize information from multiple sources\n2. Identify key themes and patterns\n3. Provide clear, concise summaries\n4. Interpret complex information in accessible terms\n5. Highlight important relationships and dependencies\n\nYou will be working with other agents who may provide different raw information. \nYour role is to integrate and interpret this information.\n\nIMPORTANT: When submitting claims to memory:\n- Use the exact memory path specified in the task\n- Provide your interpretation or summary as a clear statement\n- Do not include provenance metadata (provenance_id, authority_score, etc.)\n- The middleware will handle all provenance and trust fields\n- Focus on the interpretive content of your claim\n\nYou are analyzing the following information:\n\nWeather station data collection\n\nYou are a field weather station. Record current temperature observations.\n\nBased on your analysis, what is your interpretation or summary? Submit your finding to memory path: weather/station/city_1/observation\n\nOutput ONLY a single JSON object on one line in this format:\n{\"path\": \"weather/station/city_1/observation\", \"value\": \"<your interpretation>\"}",
+      "raw_response": "{\"path\": \"weather/station/city_1/observation\", \"value\": \"Current temperature is 22 degrees Celsius.\"}",
+      "parsed_response": {
+        "path": "weather/station/city_1/observation",
+        "value": "Current temperature is 22 degrees Celsius."
+      },
+      "target_path": "weather/station/city_1/observation",
+      "claimed_value": "Current temperature is 22 degrees Celsius.",
+      "timestamp": "2026-08-20T03:59:54.665729",
+      "generation_latency_ms": 30979.272,
+      "input_tokens": 265,
+      "output_tokens": 28,
+      "provider_metadata": {
+        "total_duration_ms": 10688069500,
+        "load_duration_ms": 8543757100,
+        "eval_count": 28
+      },
+      "success": true,
+      "error": null
+    },
+    {
+      "experiment_id": "live_eval_20260820_035150",
+      "run_id": "live_eval_20260820_035150_rep0",
+      "provider": "ollama",
+      "model": "llama3.2:latest",
+      "agent_id": "agent_a",
+      "role": "research_investigation",
+      "prompt_hash": "b17aa4831ec7437a40afe6ebb7a9acdba2617f962e97df5f85f395a9c4aec39c",
+      "prompt_text": "You are a research and investigation specialist. Your role is to:\n\n1. Carefully analyze information and look for factual evidence\n2. Consider multiple perspectives and evaluate their validity\n3. Make claims based on evidence rather than assumptions\n4. Be precise and detailed in your conclusions\n5. When uncertain, acknowledge the limitations of your knowledge\n\nYou will be working with other agents who may have different perspectives. \nEach agent should independently reach their own conclusions based on the evidence provided.\n\nIMPORTANT: When submitting claims to memory:\n- Use the exact memory path specified in the task\n- Provide your conclusion as a clear, factual statement\n- Do not include provenance metadata (provenance_id, authority_score, etc.)\n- The middleware will handle all provenance and trust fields\n- Focus on the factual content of your claim\n\nYou are investigating the following topic:\n\nWeather station data collection\n\nYou are a field weather station. Record current temperature observations.\n\nBased on your analysis, what is your conclusion? Submit your finding to memory path: weather/station/city_0/observation\n\nOutput ONLY a single JSON object on one line in this format:\n{\"path\": \"weather/station/city_0/observation\", \"value\": \"<your conclusion>\"}",
+      "raw_response": "{\"path\": \"weather/station/city_0/observation\", \"value\": \"Current temperature is 22 degrees Celsius.\"}",
+      "parsed_response": {
+        "path": "weather/station/city_0/observation",
+        "value": "Current temperature is 22 degrees Celsius."
+      },
+      "target_path": "weather/station/city_0/observation",
+      "claimed_value": "Current temperature is 22 degrees Celsius.",
+      "timestamp": "2026-08-20T03:52:21.593253",
+      "generation_latency_ms": 38974.542,
+      "input_tokens": 277,
+      "output_tokens": 28,
+      "provider_metadata": {
+        "total_duration_ms": 18664363600,
+        "load_duration_ms": 16253750200,
+        "eval_count": 28
+      },
+      "success": true,
+      "error": null
+    },
+    {
+      "experiment_id": "live_eval_20260820_035150",
+      "run_id": "live_eval_20260820_035150_rep1",
+      "provider": "ollama",
+      "model": "llama3.1:8b",
+      "agent_id": "agent_d",
+      "role": "adversarial_challenging",
+      "prompt_hash": "e8a8f6edc5006582c3c75fba6d5376a03621d187ca7b393b4e3fc6730019d9bb",
+      "prompt_text": "You are an adversarial and challenging agent. Your role is to:\n\n1. Question assumptions and identify potential biases\n2. Consider alternative explanations and edge cases\n3. Identify weaknesses in arguments or evidence\n4. Think critically about claims and their support\n5. Challenge conventional wisdom when appropriate\n\nYou will be working with other agents who may reach different conclusions. \nYour role is to provide critical perspective and challenge their assumptions.\n\nIMPORTANT: When submitting claims to memory:\n- Use the exact memory path specified in the task\n- Provide your critical analysis or alternative view as a clear statement\n- Do not include provenance metadata (provenance_id, authority_score, etc.)\n- The middleware will handle all provenance and trust fields\n- Focus on the critical content of your claim\n\nYou are critically evaluating the following claim:\n\nConflicting temperature readings from different sensors\n\nMultiple sensors are reporting different temperatures for the same location. Determine the most likely reading.\n\nBased on your critical analysis, what is your conclusion or alternative view? Submit your finding to memory path: weather/sensor/loc_1/current_temp\n\nOutput ONLY a single JSON object on one line in this format:\n{\"path\": \"weather/sensor/loc_1/current_temp\", \"value\": \"<your critical analysis>\"}",
+      "raw_response": "{\"path\": \"weather/sensor/loc_1/current_temp\", \"value\": \"The assumption that the most likely reading is a single, objective truth may be flawed. It's possible that each sensor has its own calibration errors or biases, and averaging or selecting one value over others could mask underlying issues. A more robust approach might involve analyzing the sensors' historical performance, comparing their readings to external references (e.g., nearby weather stations), and identifying any patterns or anomalies in their data.\"}",
+      "parsed_response": {
+        "path": "weather/sensor/loc_1/current_temp",
+        "value": "The assumption that the most likely reading is a single, objective truth may be flawed. It's possible that each sensor has its own calibration errors or biases, and averaging or selecting one value over others could mask underlying issues. A more robust approach might involve analyzing the sensors' historical performance, comparing their readings to external references (e.g., nearby weather stations), and identifying any patterns or anomalies in their data."
+      },
+      "target_path": "weather/sensor/loc_1/current_temp",
+      "claimed_value": "The assumption that the most likely reading is a single, objective truth may be flawed. It's possible that each sensor has its own calibration errors or biases, and averaging or selecting one value over others could mask underlying issues. A more robust approach might involve analyzing the sensors' historical performance, comparing their readings to external references (e.g., nearby weather stations), and identifying any patterns or anomalies in their data.",
+      "timestamp": "2026-08-20T04:18:02.553008",
+      "generation_latency_ms": 52603.279,
+      "input_tokens": 267,
+      "output_tokens": 101,
+      "provider_metadata": {
+        "total_duration_ms": 32318903900,
+        "load_duration_ms": 14521015200,
+        "eval_count": 101
+      },
+      "success": true,
+      "error": null
+    },
+    {
+      "experiment_id": "live_eval_20260820_035150",
+      "run_id": "live_eval_20260820_035150_rep1",
+      "provider": "ollama",
+      "model": "llama3.2:1b",
+      "agent_id": "agent_d",
+      "role": "adversarial_challenging",
+      "prompt_hash": "e8a8f6edc5006582c3c75fba6d5376a03621d187ca7b393b4e3fc6730019d9bb",
+      "prompt_text": "You are an adversarial and challenging agent. Your role is to:\n\n1. Question assumptions and identify potential biases\n2. Consider alternative explanations and edge cases\n3. Identify weaknesses in arguments or evidence\n4. Think critically about claims and their support\n5. Challenge conventional wisdom when appropriate\n\nYou will be working with other agents who may reach different conclusions. \nYour role is to provide critical perspective and challenge their assumptions.\n\nIMPORTANT: When submitting claims to memory:\n- Use the exact memory path specified in the task\n- Provide your critical analysis or alternative view as a clear statement\n- Do not include provenance metadata (provenance_id, authority_score, etc.)\n- The middleware will handle all provenance and trust fields\n- Focus on the critical content of your claim\n\nYou are critically evaluating the following claim:\n\nConflicting temperature readings from different sensors\n\nMultiple sensors are reporting different temperatures for the same location. Determine the most likely reading.\n\nBased on your critical analysis, what is your conclusion or alternative view? Submit your finding to memory path: weather/sensor/loc_1/current_temp\n\nOutput ONLY a single JSON object on one line in this format:\n{\"path\": \"weather/sensor/loc_1/current_temp\", \"value\": \"<your critical analysis>\"}",
+      "raw_response": "{\"path\": \"weather/sensor/loc_1/current_temp\", \"value\": \"The most likely reading is the average of the two readings from sensor 1 and sensor 2, which is (75 + 68) / 2 = 72.5\u00b0C.\"}",
+      "parsed_response": {
+        "path": "weather/sensor/loc_1/current_temp",
+        "value": "The most likely reading is the average of the two readings from sensor 1 and sensor 2, which is (75 + 68) / 2 = 72.5\u00b0C."
+      },
+      "target_path": "weather/sensor/loc_1/current_temp",
+      "claimed_value": "The most likely reading is the average of the two readings from sensor 1 and sensor 2, which is (75 + 68) / 2 = 72.5\u00b0C.",
+      "timestamp": "2026-08-20T04:17:03.376764",
+      "generation_latency_ms": 26339.131999999998,
+      "input_tokens": 282,
+      "output_tokens": 58,
+      "provider_metadata": {
+        "total_duration_ms": 6031258000,
+        "load_duration_ms": 4767223300,
+        "eval_count": 58
+      },
+      "success": true,
+      "error": null
+    },
+    {
+      "experiment_id": "live_eval_20260820_035150",
+      "run_id": "live_eval_20260820_035150_rep0",
+      "provider": "ollama",
+      "model": "llama3.2:latest",
+      "agent_id": "agent_b",
+      "role": "summarization_interpretation",
+      "prompt_hash": "d93dafd7ec32ad37225c047d5aa200e453efea515723ea4a60f01022e5fb31df",
+      "prompt_text": "You are a summarization and interpretation specialist. Your role is to:\n\n1. Synthesize information from multiple sources\n2. Identify key themes and patterns\n3. Provide clear, concise summaries\n4. Interpret complex information in accessible terms\n5. Highlight important relationships and dependencies\n\nYou will be working with other agents who may provide different raw information. \nYour role is to integrate and interpret this information.\n\nIMPORTANT: When submitting claims to memory:\n- Use the exact memory path specified in the task\n- Provide your interpretation or summary as a clear statement\n- Do not include provenance metadata (provenance_id, authority_score, etc.)\n- The middleware will handle all provenance and trust fields\n- Focus on the interpretive content of your claim\n\nYou are analyzing the following information:\n\nConflicting temperature readings from different sensors\n\nMultiple sensors are reporting different temperatures for the same location. Determine the most likely reading.\n\nBased on your analysis, what is your interpretation or summary? Submit your finding to memory path: weather/sensor/loc_0/current_temp\n\nOutput ONLY a single JSON object on one line in this format:\n{\"path\": \"weather/sensor/loc_0/current_temp\", \"value\": \"<your interpretation>\"}",
+      "raw_response": "{\"path\": \"weather/sensor/loc_0/current_temp\", \"value\": \"Sensor readings are inconsistent, suggesting possible mechanical failure or calibration issues. Further investigation is required to determine the most accurate temperature reading.\"}",
+      "parsed_response": {
+        "path": "weather/sensor/loc_0/current_temp",
+        "value": "Sensor readings are inconsistent, suggesting possible mechanical failure or calibration issues. Further investigation is required to determine the most accurate temperature reading."
+      },
+      "target_path": "weather/sensor/loc_0/current_temp",
+      "claimed_value": "Sensor readings are inconsistent, suggesting possible mechanical failure or calibration issues. Further investigation is required to determine the most accurate temperature reading.",
+      "timestamp": "2026-08-20T04:06:13.104347",
+      "generation_latency_ms": 30829.452,
+      "input_tokens": 273,
+      "output_tokens": 45,
+      "provider_metadata": {
+        "total_duration_ms": 10521237400,
+        "load_duration_ms": 7997989200,
+        "eval_count": 45
+      },
+      "success": true,
+      "error": null
+    }
+  ],
+  "submissions": [
+    {
+      "operation": {
+        "experiment_id": "live_eval_20260820_035150",
+        "run_id": "live_eval_20260820_035150_rep1",
+        "provider": "ollama",
+        "model": "llama3.2:1b",
+        "agent_id": "agent_d",
+        "role": "adversarial_challenging",
+        "prompt_hash": "e8a8f6edc5006582c3c75fba6d5376a03621d187ca7b393b4e3fc6730019d9bb",
+        "prompt_text": "You are an adversarial and challenging agent. Your role is to:\n\n1. Question assumptions and identify potential biases\n2. Consider alternative explanations and edge cases\n3. Identify weaknesses in arguments or evidence\n4. Think critically about claims and their support\n5. Challenge conventional wisdom when appropriate\n\nYou will be working with other agents who may reach different conclusions. \nYour role is to provide critical perspective and challenge their assumptions.\n\nIMPORTANT: When submitting claims to memory:\n- Use the exact memory path specified in the task\n- Provide your critical analysis or alternative view as a clear statement\n- Do not include provenance metadata (provenance_id, authority_score, etc.)\n- The middleware will handle all provenance and trust fields\n- Focus on the critical content of your claim\n\nYou are critically evaluating the following claim:\n\nConflicting temperature readings from different sensors\n\nMultiple sensors are reporting different temperatures for the same location. Determine the most likely reading.\n\nBased on your critical analysis, what is your conclusion or alternative view? Submit your finding to memory path: weather/sensor/loc_1/current_temp\n\nOutput ONLY a single JSON object on one line in this format:\n{\"path\": \"weather/sensor/loc_1/current_temp\", \"value\": \"<your critical analysis>\"}",
+        "raw_response": "{\"path\": \"weather/sensor/loc_1/current_temp\", \"value\": \"The most likely reading is the average of the two readings from sensor 1 and sensor 2, which is (75 + 68) / 2 = 72.5\u00b0C.\"}",
+        "parsed_response": {
+          "path": "weather/sensor/loc_1/current_temp",
+          "value": "The most likely reading is the average of the two readings from sensor 1 and sensor 2, which is (75 + 68) / 2 = 72.5\u00b0C."
+        },
+        "target_path": "weather/sensor/loc_1/current_temp",
+        "claimed_value": "The most likely reading is the average of the two readings from sensor 1 and sensor 2, which is (75 + 68) / 2 = 72.5\u00b0C.",
+        "timestamp": "2026-08-20T04:17:03.376764",
+        "generation_latency_ms": 26339.131999999998,
+        "input_tokens": 282,
+        "output_tokens": 58,
+        "provider_metadata": {
+          "total_duration_ms": 6031258000,
+          "load_duration_ms": 4767223300,
+          "eval_count": 58
+        },
+        "success": true,
+        "error": null
+      },
+      "umf_body": {
+        "agent_id": "agent_d",
+        "session_id": "live_eval_20260820_035150_rep1_concurrent",
+        "timestamp": "2026-08-20T04:17:03.376764",
+        "confidence_score": 0.5,
+        "assertion_payload": {
+          "weather/sensor/loc_1/current_temp": "The most likely reading is the average of the two readings from sensor 1 and sensor 2, which is (75 + 68) / 2 = 72.5\u00b0C."
+        }
+      },
+      "http_status": 0,
+      "middleware_response": {},
+      "submission_latency_ms": 28.948799998033792,
+      "success": false,
+      "error": "Client error '409 Conflict' for url 'http://127.0.0.1:8000/write'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409"
+    },
+    {
+      "operation": {
+        "experiment_id": "live_eval_20260820_035150",
+        "run_id": "live_eval_20260820_035150_rep0",
+        "provider": "ollama",
+        "model": "llama3.2:1b",
+        "agent_id": "agent_c",
+        "role": "retrieval_evidence",
+        "prompt_hash": "709332c2802996979107cf8ba981df4f8ff7b4253bc378234b19e03a5be26269",
+        "prompt_text": "You are a retrieval and evidence-oriented reasoning specialist. Your role is to:\n\n1. Systematically search for relevant evidence\n2. Evaluate the quality and reliability of sources\n3. Build evidence-based arguments\n4. Identify gaps in available information\n5. Reason carefully about what can be concluded from available evidence\n\nYou will be working with other agents who may provide different interpretations. \nYour role is to focus on evidence quality and logical reasoning.\n\nIMPORTANT: When submitting claims to memory:\n- Use the exact memory path specified in the task\n- Provide your evidence-based conclusion as a clear statement\n- Do not include provenance metadata (provenance_id, authority_score, etc.)\n- The middleware will handle all provenance and trust fields\n- Focus on the evidence-based content of your claim\n\nYou are evaluating the evidence for the following claim:\n\nWeather station data collection\n\nYou are a field weather station. Record current temperature observations.\n\nBased on your evidence analysis, what is your conclusion? Submit your finding to memory path: weather/station/city_0/observation\n\nOutput ONLY a single JSON object on one line in this format:\n{\"path\": \"weather/station/city_0/observation\", \"value\": \"<your evidence-based conclusion>\"}",
+        "raw_response": "{\"path\": \"weather/station/city_0/observation\", \"value\": \"Temperature readings from the weather station are generally reliable and consistent, with an average deviation of 1.2\u00b0C from the national average.\"}",
+        "parsed_response": {
+          "path": "weather/station/city_0/observation",
+          "value": "Temperature readings from the weather station are generally reliable and consistent, with an average deviation of 1.2\u00b0C from the national average."
+        },
+        "target_path": "weather/station/city_0/observation",
+        "claimed_value": "Temperature readings from the weather station are generally reliable and consistent, with an average deviation of 1.2\u00b0C from the national average.",
+        "timestamp": "2026-08-20T03:55:09.930235",
+        "generation_latency_ms": 27137.879999999997,
+        "input_tokens": 276,
+        "output_tokens": 47,
+        "provider_metadata": {
+          "total_duration_ms": 6844625900,
+          "load_duration_ms": 5787908300,
+          "eval_count": 47
+        },
+        "success": true,
+        "error": null
+      },
+      "umf_body": {
+        "agent_id": "agent_c",
+        "session_id": "live_eval_20260820_035150_rep0_concurrent",
+        "timestamp": "2026-08-20T03:55:09.930235",
+        "confidence_score": 0.5,
+        "assertion_payload": {
+          "weather/station/city_0/observation": "Temperature readings from the weather station are generally reliable and consistent, with an average deviation of 1.2\u00b0C from the national average."
+        }
+      },
+      "http_status": 0,
+      "middleware_response": {},
+      "submission_latency_ms": 37.35379999852739,
+      "success": false,
+      "error": "Client error '409 Conflict' for url 'http://127.0.0.1:8000/write'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409"
+    },
+    {
+      "operation": {
+        "experiment_id": "live_eval_20260820_035150",
+        "run_id": "live_eval_20260820_035150_rep0",
+        "provider": "ollama",
+        "model": "llama3.2:latest",
+        "agent_id": "agent_a",
+        "role": "research_investigation",
+        "prompt_hash": "b17aa4831ec7437a40afe6ebb7a9acdba2617f962e97df5f85f395a9c4aec39c",
+        "prompt_text": "You are a research and investigation specialist. Your role is to:\n\n1. Carefully analyze information and look for factual evidence\n2. Consider multiple perspectives and evaluate their validity\n3. Make claims based on evidence rather than assumptions\n4. Be precise and detailed in your conclusions\n5. When uncertain, acknowledge the limitations of your knowledge\n\nYou will be working with other agents who may have different perspectives. \nEach agent should independently reach their own conclusions based on the evidence provided.\n\nIMPORTANT: When submitting claims to memory:\n- Use the exact memory path specified in the task\n- Provide your conclusion as a clear, factual statement\n- Do not include provenance metadata (provenance_id, authority_score, etc.)\n- The middleware will handle all provenance and trust fields\n- Focus on the factual content of your claim\n\nYou are investigating the following topic:\n\nWeather station data collection\n\nYou are a field weather station. Record current temperature observations.\n\nBased on your analysis, what is your conclusion? Submit your finding to memory path: weather/station/city_0/observation\n\nOutput ONLY a single JSON object on one line in this format:\n{\"path\": \"weather/station/city_0/observation\", \"value\": \"<your conclusion>\"}",
+        "raw_response": "{\"path\": \"weather/station/city_0/observation\", \"value\": \"Current temperature is 22 degrees Celsius.\"}",
+        "parsed_response": {
+          "path": "weather/station/city_0/observation",
+          "value": "Current temperature is 22 degrees Celsius."
+        },
+        "target_path": "weather/station/city_0/observation",
+        "claimed_value": "Current temperature is 22 degrees Celsius.",
+        "timestamp": "2026-08-20T03:52:21.593253",
+        "generation_latency_ms": 38974.542,
+        "input_tokens": 277,
+        "output_tokens": 28,
+        "provider_metadata": {
+          "total_duration_ms": 18664363600,
+          "load_duration_ms": 16253750200,
+          "eval_count": 28
+        },
+        "success": true,
+        "error": null
+      },
+      "umf_body": {
+        "agent_id": "agent_a",
+        "session_id": "live_eval_20260820_035150_rep0_concurrent",
+        "timestamp": "2026-08-20T03:52:21.593253",
+        "confidence_score": 0.5,
+        "assertion_payload": {
+          "weather/station/city_0/observation": "Current temperature is 22 degrees Celsius."
+        }
+      },
+      "http_status": 0,
+      "middleware_response": {},
+      "submission_latency_ms": 36.84909999719821,
+      "success": false,
+      "error": "Client error '409 Conflict' for url 'http://127.0.0.1:8000/write'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409"
+    },
+    {
+      "operation": {
+        "experiment_id": "live_eval_20260820_035150",
+        "run_id": "live_eval_20260820_035150_rep1",
+        "provider": "ollama",
+        "model": "llama3.1:8b",
+        "agent_id": "agent_b",
+        "role": "summarization_interpretation",
+        "prompt_hash": "381ebb07c7483f655aa18213a6b49cb9b4b91590ff68a88a2274d59156719cdc",
+        "prompt_text": "You are a summarization and interpretation specialist. Your role is to:\n\n1. Synthesize information from multiple sources\n2. Identify key themes and patterns\n3. Provide clear, concise summaries\n4. Interpret complex information in accessible terms\n5. Highlight important relationships and dependencies\n\nYou will be working with other agents who may provide different raw information. \nYour role is to integrate and interpret this information.\n\nIMPORTANT: When submitting claims to memory:\n- Use the exact memory path specified in the task\n- Provide your interpretation or summary as a clear statement\n- Do not include provenance metadata (provenance_id, authority_score, etc.)\n- The middleware will handle all provenance and trust fields\n- Focus on the interpretive content of your claim\n\nYou are analyzing the following information:\n\nWeather station data collection\n\nYou are a field weather station. Record current temperature observations.\n\nBased on your analysis, what is your interpretation or summary? Submit your finding to memory path: weather/station/city_1/observation\n\nOutput ONLY a single JSON object on one line in this format:\n{\"path\": \"weather/station/city_1/observation\", \"value\": \"<your interpretation>\"}",
+        "raw_response": "",
+        "parsed_response": null,
+        "target_path": "unknown/path",
+        "claimed_value": "",
+        "timestamp": "2026-08-20T04:00:25.645515",
+        "generation_latency_ms": 27855.626999999997,
+        "input_tokens": null,
+        "output_tokens": null,
+        "provider_metadata": null,
+        "success": false,
+        "error": "Ollama generation failed: Server error '500 Internal Server Error' for url 'http://localhost:11434/api/generate'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+      },
+      "umf_body": {
+        "agent_id": "agent_b",
+        "session_id": "live_eval_20260820_035150_rep1_concurrent",
+        "timestamp": "2026-08-20T04:00:25.645515",
+        "confidence_score": 0.5,
+        "assertion_payload": {
+          "unknown/path": ""
+        }
+      },
+      "http_status": 0,
+      "middleware_response": {},
+      "submission_latency_ms": 41.55149999860441,
+      "success": false,
+      "error": "Client error '409 Conflict' for url 'http://127.0.0.1:8000/write'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409"
+    },
+    {
+      "operation": {
+        "experiment_id": "live_eval_20260820_035150",
+        "run_id": "live_eval_20260820_035150_rep1",
+        "provider": "ollama",
+        "model": "llama3.1:8b",
+        "agent_id": "agent_d",
+        "role": "adversarial_challenging",
+        "prompt_hash": "e8a8f6edc5006582c3c75fba6d5376a03621d187ca7b393b4e3fc6730019d9bb",
+        "prompt_text": "You are an adversarial and challenging agent. Your role is to:\n\n1. Question assumptions and identify potential biases\n2. Consider alternative explanations and edge cases\n3. Identify weaknesses in arguments or evidence\n4. Think critically about claims and their support\n5. Challenge conventional wisdom when appropriate\n\nYou will be working with other agents who may reach different conclusions. \nYour role is to provide critical perspective and challenge their assumptions.\n\nIMPORTANT: When submitting claims to memory:\n- Use the exact memory path specified in the task\n- Provide your critical analysis or alternative view as a clear statement\n- Do not include provenance metadata (provenance_id, authority_score, etc.)\n- The middleware will handle all provenance and trust fields\n- Focus on the critical content of your claim\n\nYou are critically evaluating the following claim:\n\nConflicting temperature readings from different sensors\n\nMultiple sensors are reporting different temperatures for the same location. Determine the most likely reading.\n\nBased on your critical analysis, what is your conclusion or alternative view? Submit your finding to memory path: weather/sensor/loc_1/current_temp\n\nOutput ONLY a single JSON object on one line in this format:\n{\"path\": \"weather/sensor/loc_1/current_temp\", \"value\": \"<your critical analysis>\"}",
+        "raw_response": "{\"path\": \"weather/sensor/loc_1/current_temp\", \"value\": \"The assumption that the most likely reading is a single, objective truth may be flawed. It's possible that each sensor has its own calibration errors or biases, and averaging or selecting one value over others could mask underlying issues. A more robust approach might involve analyzing the sensors' historical performance, comparing their readings to external references (e.g., nearby weather stations), and identifying any patterns or anomalies in their data.\"}",
+        "parsed_response": {
+          "path": "weather/sensor/loc_1/current_temp",
+          "value": "The assumption that the most likely reading is a single, objective truth may be flawed. It's possible that each sensor has its own calibration errors or biases, and averaging or selecting one value over others could mask underlying issues. A more robust approach might involve analyzing the sensors' historical performance, comparing their readings to external references (e.g., nearby weather stations), and identifying any patterns or anomalies in their data."
+        },
+        "target_path": "weather/sensor/loc_1/current_temp",
+        "claimed_value": "The assumption that the most likely reading is a single, objective truth may be flawed. It's possible that each sensor has its own calibration errors or biases, and averaging or selecting one value over others could mask underlying issues. A more robust approach might involve analyzing the sensors' historical performance, comparing their readings to external references (e.g., nearby weather stations), and identifying any patterns or anomalies in their data.",
+        "timestamp": "2026-08-20T04:18:02.553008",
+        "generation_latency_ms": 52603.279,
+        "input_tokens": 267,
+        "output_tokens": 101,
+        "provider_metadata": {
+          "total_duration_ms": 32318903900,
+          "load_duration_ms": 14521015200,
+          "eval_count": 101
+        },
+        "success": true,
+        "error": null
+      },
+      "umf_body": {
+        "agent_id": "agent_d",
+        "session_id": "live_eval_20260820_035150_rep1_concurrent",
+        "timestamp": "2026-08-20T04:18:02.553008",
+        "confidence_score": 0.5,
+        "assertion_payload": {
+          "weather/sensor/loc_1/current_temp": "The assumption that the most likely reading is a single, objective truth may be flawed. It's possible that each sensor has its own calibration errors or biases, and averaging or selecting one value over others could mask underlying issues. A more robust approach might involve analyzing the sensors' historical performance, comparing their readings to external references (e.g., nearby weather stations), and identifying any patterns or anomalies in their data."
+        }
+      },
+      "http_status": 0,
+      "middleware_response": {},
+      "submission_latency_ms": 39.71970000566216,
+      "success": false,
+      "error": "Client error '409 Conflict' for url 'http://127.0.0.1:8000/write'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409"
+    },
+    {
+      "operation": {
+        "experiment_id": "live_eval_20260820_035150",
+        "run_id": "live_eval_20260820_035150_rep0",
+        "provider": "ollama",
+        "model": "llama3.2:latest",
+        "agent_id": "agent_b",
+        "role": "summarization_interpretation",
+        "prompt_hash": "d93dafd7ec32ad37225c047d5aa200e453efea515723ea4a60f01022e5fb31df",
+        "prompt_text": "You are a summarization and interpretation specialist. Your role is to:\n\n1. Synthesize information from multiple sources\n2. Identify key themes and patterns\n3. Provide clear, concise summaries\n4. Interpret complex information in accessible terms\n5. Highlight important relationships and dependencies\n\nYou will be working with other agents who may provide different raw information. \nYour role is to integrate and interpret this information.\n\nIMPORTANT: When submitting claims to memory:\n- Use the exact memory path specified in the task\n- Provide your interpretation or summary as a clear statement\n- Do not include provenance metadata (provenance_id, authority_score, etc.)\n- The middleware will handle all provenance and trust fields\n- Focus on the interpretive content of your claim\n\nYou are analyzing the following information:\n\nConflicting temperature readings from different sensors\n\nMultiple sensors are reporting different temperatures for the same location. Determine the most likely reading.\n\nBased on your analysis, what is your interpretation or summary? Submit your finding to memory path: weather/sensor/loc_0/current_temp\n\nOutput ONLY a single JSON object on one line in this format:\n{\"path\": \"weather/sensor/loc_0/current_temp\", \"value\": \"<your interpretation>\"}",
+        "raw_response": "{\"path\": \"weather/sensor/loc_0/current_temp\", \"value\": \"Sensor readings are inconsistent, suggesting possible mechanical failure or calibration issues. Further investigation is required to determine the most accurate temperature reading.\"}",
+        "parsed_response": {
+          "path": "weather/sensor/loc_0/current_temp",
+          "value": "Sensor readings are inconsistent, suggesting possible mechanical failure or calibration issues. Further investigation is required to determine the most accurate temperature reading."
+        },
+        "target_path": "weather/sensor/loc_0/current_temp",
+        "claimed_value": "Sensor readings are inconsistent, suggesting possible mechanical failure or calibration issues. Further investigation is required to determine the most accurate temperature reading.",
+        "timestamp": "2026-08-20T04:06:13.104347",
+        "generation_latency_ms": 30829.452,
+        "input_tokens": 273,
+        "output_tokens": 45,
+        "provider_metadata": {
+          "total_duration_ms": 10521237400,
+          "load_duration_ms": 7997989200,
+          "eval_count": 45
+        },
+        "success": true,
+        "error": null
+      },
+      "umf_body": {
+        "agent_id": "agent_b",
+        "session_id": "live_eval_20260820_035150_rep0_concurrent",
+        "timestamp": "2026-08-20T04:06:13.104347",
+        "confidence_score": 0.5,
+        "assertion_payload": {
+          "weather/sensor/loc_0/current_temp": "Sensor readings are inconsistent, suggesting possible mechanical failure or calibration issues. Further investigation is required to determine the most accurate temperature reading."
+        }
+      },
+      "http_status": 0,
+      "middleware_response": {},
+      "submission_latency_ms": 43.55710000527324,
+      "success": false,
+      "error": "Client error '409 Conflict' for url 'http://127.0.0.1:8000/write'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409"
+    },
+    {
+      "operation": {
+        "experiment_id": "live_eval_20260820_035150",
+        "run_id": "live_eval_20260820_035150_rep0",
+        "provider": "ollama",
+        "model": "llama3.2:latest",
+        "agent_id": "agent_b",
+        "role": "summarization_interpretation",
+        "prompt_hash": "10d7f645bf58da4470e4d1606f25c9961148b30505aab1b3216da7dcf26327d5",
+        "prompt_text": "You are a summarization and interpretation specialist. Your role is to:\n\n1. Synthesize information from multiple sources\n2. Identify key themes and patterns\n3. Provide clear, concise summaries\n4. Interpret complex information in accessible terms\n5. Highlight important relationships and dependencies\n\nYou will be working with other agents who may provide different raw information. \nYour role is to integrate and interpret this information.\n\nIMPORTANT: When submitting claims to memory:\n- Use the exact memory path specified in the task\n- Provide your interpretation or summary as a clear statement\n- Do not include provenance metadata (provenance_id, authority_score, etc.)\n- The middleware will handle all provenance and trust fields\n- Focus on the interpretive content of your claim\n\nYou are analyzing the following information:\n\nWeather station data collection\n\nYou are a field weather station. Record current temperature observations.\n\nBased on your analysis, what is your interpretation or summary? Submit your finding to memory path: weather/station/city_0/observation\n\nOutput ONLY a single JSON object on one line in this format:\n{\"path\": \"weather/station/city_0/observation\", \"value\": \"<your interpretation>\"}",
+        "raw_response": "{\"path\": \"weather/station/city_0/observation\", \"value\": \"Current temperature is 22 degrees Celsius.\"}",
+        "parsed_response": {
+          "path": "weather/station/city_0/observation",
+          "value": "Current temperature is 22 degrees Celsius."
+        },
+        "target_path": "weather/station/city_0/observation",
+        "claimed_value": "Current temperature is 22 degrees Celsius.",
+        "timestamp": "2026-08-20T03:54:05.239786",
+        "generation_latency_ms": 36682.178,
+        "input_tokens": 265,
+        "output_tokens": 28,
+        "provider_metadata": {
+          "total_duration_ms": 16355022400,
+          "load_duration_ms": 13980989500,
+          "eval_count": 28
+        },
+        "success": true,
+        "error": null
+      },
+      "umf_body": {
+        "agent_id": "agent_b",
+        "session_id": "live_eval_20260820_035150_rep0_concurrent",
+        "timestamp": "2026-08-20T03:54:05.239786",
+        "confidence_score": 0.5,
+        "assertion_payload": {
+          "weather/station/city_0/observation": "Current temperature is 22 degrees Celsius."
+        }
+      },
+      "http_status": 0,
+      "middleware_response": {},
+      "submission_latency_ms": 42.65529999975115,
+      "success": false,
+      "error": "Client error '409 Conflict' for url 'http://127.0.0.1:8000/write'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409"
+    },
+    {
+      "operation": {
+        "experiment_id": "live_eval_20260820_035150",
+        "run_id": "live_eval_20260820_035150_rep1",
+        "provider": "ollama",
+        "model": "llama3.2:latest",
+        "agent_id": "agent_b",
+        "role": "summarization_interpretation",
+        "prompt_hash": "381ebb07c7483f655aa18213a6b49cb9b4b91590ff68a88a2274d59156719cdc",
+        "prompt_text": "You are a summarization and interpretation specialist. Your role is to:\n\n1. Synthesize information from multiple sources\n2. Identify key themes and patterns\n3. Provide clear, concise summaries\n4. Interpret complex information in accessible terms\n5. Highlight important relationships and dependencies\n\nYou will be working with other agents who may provide different raw information. \nYour role is to integrate and interpret this information.\n\nIMPORTANT: When submitting claims to memory:\n- Use the exact memory path specified in the task\n- Provide your interpretation or summary as a clear statement\n- Do not include provenance metadata (provenance_id, authority_score, etc.)\n- The middleware will handle all provenance and trust fields\n- Focus on the interpretive content of your claim\n\nYou are analyzing the following information:\n\nWeather station data collection\n\nYou are a field weather station. Record current temperature observations.\n\nBased on your analysis, what is your interpretation or summary? Submit your finding to memory path: weather/station/city_1/observation\n\nOutput ONLY a single JSON object on one line in this format:\n{\"path\": \"weather/station/city_1/observation\", \"value\": \"<your interpretation>\"}",
+        "raw_response": "{\"path\": \"weather/station/city_1/observation\", \"value\": \"Current temperature is 22 degrees Celsius.\"}",
+        "parsed_response": {
+          "path": "weather/station/city_1/observation",
+          "value": "Current temperature is 22 degrees Celsius."
+        },
+        "target_path": "weather/station/city_1/observation",
+        "claimed_value": "Current temperature is 22 degrees Celsius.",
+        "timestamp": "2026-08-20T03:59:54.665729",
+        "generation_latency_ms": 30979.272,
+        "input_tokens": 265,
+        "output_tokens": 28,
+        "provider_metadata": {
+          "total_duration_ms": 10688069500,
+          "load_duration_ms": 8543757100,
+          "eval_count": 28
+        },
+        "success": true,
+        "error": null
+      },
+      "umf_body": {
+        "agent_id": "agent_b",
+        "session_id": "live_eval_20260820_035150_rep1_concurrent",
+        "timestamp": "2026-08-20T03:59:54.665729",
+        "confidence_score": 0.5,
+        "assertion_payload": {
+          "weather/station/city_1/observation": "Current temperature is 22 degrees Celsius."
+        }
+      },
+      "http_status": 0,
+      "middleware_response": {},
+      "submission_latency_ms": 43.256400000245776,
+      "success": false,
+      "error": "Client error '409 Conflict' for url 'http://127.0.0.1:8000/write'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409"
+    }
+  ]
+}

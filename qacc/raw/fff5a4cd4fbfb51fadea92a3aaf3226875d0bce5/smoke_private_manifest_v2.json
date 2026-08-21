@@ -1,0 +1,1189 @@
+{
+  "cases": [
+    {
+      "answer_aliases": [
+        [
+          "565"
+        ]
+      ],
+      "category": "non_conflict_control",
+      "context_count": 9,
+      "context_order": [
+        6,
+        1,
+        7,
+        4,
+        2,
+        8,
+        5,
+        3,
+        0
+      ],
+      "cross_split_exact_context": false,
+      "groups": [
+        "ig-00",
+        "ig-01",
+        "ig-02",
+        "ig-00",
+        "ig-03",
+        "ig-04",
+        "ig-03",
+        "ig-05",
+        "ig-06"
+      ],
+      "has_duplicate_or_near_duplicate": false,
+      "has_repeated_domain": true,
+      "independence_group_count": 7,
+      "noise_context_count": 8,
+      "private_id": "042131ddb229e2a8ff307d087bfd9375d3e0c5355394270c23bdc598b9ccbf2b",
+      "question": "What directv channel is hallmark movies and mysteries?",
+      "record_index": 18,
+      "same_or_similar_edges": 2,
+      "sequence": 0,
+      "source_inputs": [
+        {
+          "context": "Mar 3, 2019 ... They just send new orders to DirecTV, but are limited in their knowledge on the service. Hallmark Movies & Mysteries is unique. A couple years ...",
+          "independence_group": "ig-03",
+          "source": "forums.directv.com"
+        },
+        {
+          "context": "Get the latest schedule of shows and movies from Hallmark Movies & Mysteries.",
+          "independence_group": "ig-01",
+          "source": "www.hallmarkmoviesandmysteries.com"
+        },
+        {
+          "context": "Dec 21, 2022 ... DIRECTV STREAM is yet another way you can watch Hallmark Movies and Mysteries. The channel is a part of its “Entertainment” package and is ...",
+          "independence_group": "ig-05",
+          "source": "www.groundedreason.com"
+        },
+        {
+          "context": "Mar 30, 2023 ... Every channel that we would like to have is in the ultimate package however, hallmark movies and mysteries are not. How do I add that ...",
+          "independence_group": "ig-03",
+          "source": "forums.directv.com"
+        },
+        {
+          "context": "Apr 11, 2023 ... The right channel to watch the Hallmark Channel on DirecTV is Channel 312. For people who want to watch Hallmark Movies and Mysteries, ...",
+          "independence_group": "ig-02",
+          "source": "getbillsmart.com"
+        },
+        {
+          "context": "Get the Hallmark Channel schedule, enter sweepstakes, celebrate Countdown to Christmas, and find original romantic Hallmark movies & series like \"The Way ...",
+          "independence_group": "ig-06",
+          "source": "www.hallmarkchannel.com"
+        },
+        {
+          "context": "Jan 31, 2022 ... What is the channel number for Hallmark on DIRECTV? ; Hallmark Channel, 312 ; Hallmark Movie Channel, 560 ...",
+          "independence_group": "ig-04",
+          "source": "www.localcabledeals.com"
+        },
+        {
+          "context": "DIRECTV customers can access the following channels in their channel lineup: Hallmark Drama, Hallmark Movies & Mysteries, HDNet Movies, Sony Movies, Smithsonian ...",
+          "independence_group": "ig-00",
+          "source": "www.directv.com"
+        },
+        {
+          "context": "Feb 2, 2023 ... If you're at home, Hallmark Movies & Mysteries HD is on channel 565. You can also find out what shows are playing on your favorite Hallmark ...",
+          "independence_group": "ig-00",
+          "source": "www.directv.com"
+        }
+      ],
+      "split": "dev",
+      "support_groups_disjoint": false,
+      "supporting_source_agreement": true,
+      "syndicated_cross_domain_edges": 0
+    },
+    {
+      "answer_aliases": [
+        [
+          "september 1915"
+        ],
+        [
+          "25 september 1915"
+        ]
+      ],
+      "category": "primary_conflict",
+      "context_count": 9,
+      "context_order": [
+        1,
+        7,
+        8,
+        2,
+        0,
+        6,
+        3,
+        4,
+        5
+      ],
+      "cross_split_exact_context": false,
+      "groups": [
+        "ig-00",
+        "ig-01",
+        "ig-02",
+        "ig-03",
+        "ig-04",
+        "ig-05",
+        "ig-03",
+        "ig-06",
+        "ig-07"
+      ],
+      "has_duplicate_or_near_duplicate": false,
+      "has_repeated_domain": true,
+      "independence_group_count": 8,
+      "noise_context_count": 7,
+      "private_id": "044e18d63fd944542b92c4b1a9a4c394c2c7d1975350f5884d83c9a23ff20937",
+      "question": "When did the british first use gas in ww1?",
+      "record_index": 49,
+      "same_or_similar_edges": 1,
+      "sequence": 1,
+      "source_inputs": [
+        {
+          "context": "Jan 30, 2015 ... On the British side, Lt Gen Charles Ferguson noted that Britain had not been the first to use gas, but still dismissed it as \"a cowardly ...",
+          "independence_group": "ig-01",
+          "source": "www.bbc.com"
+        },
+        {
+          "context": "World War I was less than one year old when British writer H. G. Wells lamented ... A few weeks after the Germans first used poison gas in Ypres, Belgium, ...",
+          "independence_group": "ig-06",
+          "source": "www.loc.gov"
+        },
+        {
+          "context": "Feb 9, 2010 ... This was the first major gas attack by the Germans, and it devastated the Allied line. Toxic smoke has been used occasionally in warfare ...",
+          "independence_group": "ig-07",
+          "source": "www.history.com"
+        },
+        {
+          "context": "Several chemicals were weaponized in WWI and France actually was the first to use gas - they deployed tear gas in August 1914. The agent used was either xylyl ...",
+          "independence_group": "ig-02",
+          "source": "www.kumc.edu"
+        },
+        {
+          "context": "In the first British gas attack, at Loos in September 1915, much of the gas was blown back into the faces of the British troops. From 1916, gas was employed ...",
+          "independence_group": "ig-00",
+          "source": "www.iwm.org.uk"
+        },
+        {
+          "context": "Chemical weapons were widely used by the United Kingdom in World War I. The use of poison gas was suggested by Winston Churchill and others in Mesopotamia ...",
+          "independence_group": "ig-03",
+          "source": "en.wikipedia.org"
+        },
+        {
+          "context": "The first use of gas by the British was at the Battle of Loos, 25 September 1915, but the attempt was a disaster. Chlorine, codenamed Red Star, was the agent to ...",
+          "independence_group": "ig-03",
+          "source": "en.wikipedia.org"
+        },
+        {
+          "context": "The order to release the gas was entrusted to German military ... The Germans' first use of gas mirrored their initial emphasis on the offensive aspects of ...",
+          "independence_group": "ig-04",
+          "source": "www.ncbi.nlm.nih.gov"
+        },
+        {
+          "context": "May 12, 2015 ... The British military uses chemical weapons for the first time against the Germans at the Battle of Loos. They release chlorine gas from ...",
+          "independence_group": "ig-05",
+          "source": "sciencehistory.org"
+        }
+      ],
+      "split": "dev",
+      "support_groups_disjoint": true,
+      "supporting_source_agreement": true,
+      "syndicated_cross_domain_edges": 0
+    },
+    {
+      "answer_aliases": [
+        [
+          "justice department"
+        ]
+      ],
+      "category": "non_conflict_control",
+      "context_count": 10,
+      "context_order": [
+        7,
+        8,
+        1,
+        9,
+        2,
+        3,
+        4,
+        6,
+        5,
+        0
+      ],
+      "cross_split_exact_context": false,
+      "groups": [
+        "ig-00",
+        "ig-01",
+        "ig-02",
+        "ig-01",
+        "ig-03",
+        "ig-04",
+        "ig-05",
+        "ig-06",
+        "ig-07",
+        "ig-08"
+      ],
+      "has_duplicate_or_near_duplicate": false,
+      "has_repeated_domain": true,
+      "independence_group_count": 9,
+      "noise_context_count": 9,
+      "private_id": "382228035276b3b5b160039fac9a15b9a6cccacc9ca357e9498b024a5d22beef",
+      "question": "Which department in the presidents cabinet is led by the attorney general?",
+      "record_index": 212,
+      "same_or_similar_edges": 1,
+      "sequence": 2,
+      "source_inputs": [
+        {
+          "context": "When Johnson vetoed the Freedmen's Bureau bill in February of 1866, ... Leading the president's defense team was Attorney General Henry Stanbery, ...",
+          "independence_group": "ig-06",
+          "source": "www.senate.gov"
+        },
+        {
+          "context": "President Trump's Cabinet. Secretary of Agriculture Sonny Perdue. Acting Attorney General Jeffrey Rosen. Director of the Central Intelligence Agency Gina ...",
+          "independence_group": "ig-07",
+          "source": "trumpwhitehouse.archives.gov"
+        },
+        {
+          "context": "President Joe Biden's Cabinet includes Vice President Kamala Harris and the ... Transportation, Treasury, and Veterans Affairs, and the Attorney General.",
+          "independence_group": "ig-01",
+          "source": "www.whitehouse.gov"
+        },
+        {
+          "context": "Jan 15, 2016 ... Leading the national office team is NCAA President Charlie Baker. ... The President's Cabinet includes the Senior Management Team and other ...",
+          "independence_group": "ig-08",
+          "source": "www.ncaa.org"
+        },
+        {
+          "context": "As the nation's chief law enforcement officer, Attorney General Garland leads the Justice Department's 115,000 employees, who work across the United States ...",
+          "independence_group": "ig-02",
+          "source": "www.justice.gov"
+        },
+        {
+          "context": "Fifteen executive departments — each led by an appointed member of the President's Cabinet — carry out the day-to-day administration of the federal ...",
+          "independence_group": "ig-01",
+          "source": "www.whitehouse.gov"
+        },
+        {
+          "context": "Under President George W. Bush, Cabinet-level rank also has been accorded to the Administrator, ... Photo of Attorney General Michael Mukasey",
+          "independence_group": "ig-03",
+          "source": "georgewbush-whitehouse.archives.gov"
+        },
+        {
+          "context": "Ken Paxton is the 51st Attorney General of Texas. He was elected on November 4, 2014, and sworn into office on January 5, 2015. He was re-elected to a ...",
+          "independence_group": "ig-05",
+          "source": "www.texasattorneygeneral.gov"
+        },
+        {
+          "context": "While the current presidential cabinet includes sixteen members, George Washington?s cabinet ... the Attorney General did not head an executive department.",
+          "independence_group": "ig-04",
+          "source": "www.mountvernon.org"
+        },
+        {
+          "context": "President Obama leads a Cabinet meeting in the Cabinet room ... State, Transportation, Treasury, and Veterans Affairs, as well as the Attorney General.",
+          "independence_group": "ig-00",
+          "source": "obamawhitehouse.archives.gov"
+        }
+      ],
+      "split": "dev",
+      "support_groups_disjoint": false,
+      "supporting_source_agreement": false,
+      "syndicated_cross_domain_edges": 0
+    },
+    {
+      "answer_aliases": [
+        [
+          "june 13 2012"
+        ]
+      ],
+      "category": "non_conflict_control",
+      "context_count": 10,
+      "context_order": [
+        4,
+        9,
+        8,
+        1,
+        3,
+        7,
+        2,
+        0,
+        5,
+        6
+      ],
+      "cross_split_exact_context": false,
+      "groups": [
+        "ig-00",
+        "ig-01",
+        "ig-02",
+        "ig-03",
+        "ig-02",
+        "ig-04",
+        "ig-05",
+        "ig-06",
+        "ig-07",
+        "ig-08"
+      ],
+      "has_duplicate_or_near_duplicate": false,
+      "has_repeated_domain": true,
+      "independence_group_count": 9,
+      "noise_context_count": 9,
+      "private_id": "3babdf5a752a00663cdea3a4891cdb37a808cd1fe3a14701456c009a8bc3cf5d",
+      "question": "When did cars land open in california adventure?",
+      "record_index": 175,
+      "same_or_similar_edges": 1,
+      "sequence": 3,
+      "source_inputs": [
+        {
+          "context": "Radiator Springs Racers is an auto racing attraction inspired by the Disney and Pixar film 'Cars' at Disney California Adventure Park in Anaheim, ...",
+          "independence_group": "ig-02",
+          "source": "disneyland.disney.go.com"
+        },
+        {
+          "context": "Jun 15, 2012 ... Cars Land at Disney California Adventure opens today. ... The idea of the revamp was to make the park look like California when Walt was ...",
+          "independence_group": "ig-08",
+          "source": "www.cntraveler.com"
+        },
+        {
+          "context": "Jun 15, 2012 ... The new Cars Land at California Adventure on Friday. ... California Adventure was intended to complement its sister park and turn Anaheim ...",
+          "independence_group": "ig-07",
+          "source": "www.nytimes.com"
+        },
+        {
+          "context": "The 12-acre (4.9 ha) area, built as part of Disney California Adventure Park's $1.1 billion expansion project, opened on June 13, 2012, a year after the release ...",
+          "independence_group": "ig-01",
+          "source": "en.wikipedia.org"
+        },
+        {
+          "context": "Jun 14, 2022 ... The concept of Cars Land was revolutionary when it debuted in 2012 as part of a multi-year $1 billion overhaul of Disney's underperforming ...",
+          "independence_group": "ig-03",
+          "source": "www.ocregister.com"
+        },
+        {
+          "context": "Feb 26, 2016 ... Disney California Adventure set to open a new Cars Land ride March 7. Visitors ...",
+          "independence_group": "ig-06",
+          "source": "www.latimes.com"
+        },
+        {
+          "context": "Explore Cars Land at Disney California Adventure Park! Immerse yourself in the race-centric world of Lightning McQueen, Mater and their gear-lovin' ...",
+          "independence_group": "ig-02",
+          "source": "disneyland.disney.go.com"
+        },
+        {
+          "context": "Jun 14, 2013 ... June 15, 2012, was a big day for Disney California Adventure park as it celebrated not only its grand reopening, but the addition of this ...",
+          "independence_group": "ig-00",
+          "source": "disneyparks.disney.go.com"
+        },
+        {
+          "context": "Oct 11, 2021 ... In terms of “then and now” sometimes there was no “then.” When Disney California Adventure (DCA) opened in 2001, the entire southeastern ...",
+          "independence_group": "ig-04",
+          "source": "www.themerica.org"
+        },
+        {
+          "context": "The 12-acre (4.9 ha) area, built as part of Disney California Adventure Park's $1.1 billion expansion project, opened on June 15, 2012. It contains three rides ...",
+          "independence_group": "ig-05",
+          "source": "disney.fandom.com"
+        }
+      ],
+      "split": "dev",
+      "support_groups_disjoint": false,
+      "supporting_source_agreement": false,
+      "syndicated_cross_domain_edges": 0
+    },
+    {
+      "answer_aliases": [
+        [
+          "jason donovan"
+        ],
+        [
+          "judie mccourt danyl johnson"
+        ]
+      ],
+      "category": "primary_conflict",
+      "context_count": 7,
+      "context_order": [
+        0,
+        4,
+        5,
+        3,
+        2,
+        1,
+        6
+      ],
+      "cross_split_exact_context": false,
+      "groups": [
+        "ig-00",
+        "ig-01",
+        "ig-02",
+        "ig-03",
+        "ig-04",
+        "ig-05",
+        "ig-06"
+      ],
+      "has_duplicate_or_near_duplicate": false,
+      "has_repeated_domain": false,
+      "independence_group_count": 7,
+      "noise_context_count": 5,
+      "private_id": "3cca1633e6d80f084c6c71bfece70cf093aca7cc7537eadc50f3be3b70adc273",
+      "question": "Who presents the people's postcode lottery advert?",
+      "record_index": 116,
+      "same_or_similar_edges": 0,
+      "sequence": 4,
+      "source_inputs": [
+        {
+          "context": "Jul 29, 2022 ... Share the news with your Neighbours! Jason Donovan is joining the People's Postcode Lottery family as a new ambassador.",
+          "independence_group": "ig-00",
+          "source": "www.postcodelottery.co.uk"
+        },
+        {
+          "context": "Aug 16, 2019 ... Adverts - Someone's knockin' at the door - November Play - People's Postcode Lottery · 'Let 'Em In' - PaulMcCartney.com Track of the Week · Billy ...",
+          "independence_group": "ig-04",
+          "source": "www.smoothradio.com"
+        },
+        {
+          "context": "Judie McCourt, Danyl Johnson, Jeff Brazier and Matt Johnson visit People's Postcode Lottery winners to present them with their cheques, host Postcode ...",
+          "independence_group": "ig-05",
+          "source": "www.novamedia.com"
+        },
+        {
+          "context": "Dec 17, 2019 ... An adorable ginger kitten from Cats Protection's Warrington Adoption Centre is now the star of a recent television advert for People's ...",
+          "independence_group": "ig-03",
+          "source": "www.cats.org.uk"
+        },
+        {
+          "context": "Watch the latest People's Postcode Lottery TV adverts and commercials here. Sign up today at https://www.postcodelottery.co.uk/play ...More.",
+          "independence_group": "ig-02",
+          "source": "www.youtube.com"
+        },
+        {
+          "context": "Matt Johnson. \"I've been blown away by the work that players of People's Postcode Lottery are doing to help so many deserving causes, it's truly inspirational ...",
+          "independence_group": "ig-01",
+          "source": "www.postcodelottery.info"
+        },
+        {
+          "context": "Jeffrey Carl Brazier (born 27 May 1979) is an English television personality and presenter. ... Brazier is also an ambassador for People's Postcode Lottery ...",
+          "independence_group": "ig-06",
+          "source": "en.wikipedia.org"
+        }
+      ],
+      "split": "dev",
+      "support_groups_disjoint": true,
+      "supporting_source_agreement": false,
+      "syndicated_cross_domain_edges": 0
+    },
+    {
+      "answer_aliases": [
+        [
+          "jewish christians"
+        ]
+      ],
+      "category": "non_conflict_control",
+      "context_count": 10,
+      "context_order": [
+        3,
+        5,
+        4,
+        0,
+        8,
+        2,
+        1,
+        9,
+        6,
+        7
+      ],
+      "cross_split_exact_context": false,
+      "groups": [
+        "ig-00",
+        "ig-01",
+        "ig-02",
+        "ig-03",
+        "ig-04",
+        "ig-05",
+        "ig-06",
+        "ig-07",
+        "ig-08",
+        "ig-09"
+      ],
+      "has_duplicate_or_near_duplicate": false,
+      "has_repeated_domain": false,
+      "independence_group_count": 10,
+      "noise_context_count": 9,
+      "private_id": "41d63ff9fff72b6553b60b784343d60c14c3845f9b72cae797bb52ecd9ad0f9e",
+      "question": "Who was the book of mark written to?",
+      "record_index": 132,
+      "same_or_similar_edges": 0,
+      "sequence": 5,
+      "source_inputs": [
+        {
+          "context": "Jun 25, 2019 ... Mark's audience probably consisted of at least some Gentile converts to Christianity, but the bulk of them were more likely Jewish Christians ...",
+          "independence_group": "ig-03",
+          "source": "www.learnreligions.com"
+        },
+        {
+          "context": "Who wrote the book? The Bible records more information about Mark than any of the other gospel writers aside from the apostle John.",
+          "independence_group": "ig-05",
+          "source": "insight.org"
+        },
+        {
+          "context": "Authorship. Though the author does not directly identify himself, there is still strong evidence to attribute the Gospel to John Mark. In addition to Markan ...",
+          "independence_group": "ig-04",
+          "source": "www.blueletterbible.org"
+        },
+        {
+          "context": "Jul 28, 2023 ... Gospel According to Mark, second of the four New Testament Gospels and, with Matthew and Luke, one of the three Synoptic Gospels.",
+          "independence_group": "ig-00",
+          "source": "www.britannica.com"
+        },
+        {
+          "context": "Sep 22, 2021 ... Marcus, Mark 1 – 8, 24, concludes the author was likely named Mark, and perhaps the John Mark of Acts, but is unlikely to have had any ...",
+          "independence_group": "ig-08",
+          "source": "zondervanacademic.com"
+        },
+        {
+          "context": "Feb 12, 2023 ... Many Bible scholars theorize that Mark wrote his gospel while in Rome or Syria. John Mark is the accepted author due to his close relationship ...",
+          "independence_group": "ig-02",
+          "source": "study.com"
+        },
+        {
+          "context": "Jan 4, 2022 ... Purpose of Writing: Whereas Matthew is written primarily to his fellow Jews, Mark's gospel appears to be targeted to the Roman believers, ...",
+          "independence_group": "ig-01",
+          "source": "www.gotquestions.org"
+        },
+        {
+          "context": "While there is disagreement about where Mark wrote, there is a consensus about when he wrote: he probably composed his work in or about the year 70 CE, after ...",
+          "independence_group": "ig-09",
+          "source": "www.pbs.org"
+        },
+        {
+          "context": "Most critical scholars reject the early church tradition linking the gospel to John Mark, who was a companion of the Apostle Peter, and it is now generally ...",
+          "independence_group": "ig-06",
+          "source": "en.wikipedia.org"
+        },
+        {
+          "context": "Jun 18, 2017 ... Proposed Author by Tradition: John Mark, who transcribed the teachings of Simon Peter, is traditionally held to be the author of the Second ...",
+          "independence_group": "ig-07",
+          "source": "crossexamined.org"
+        }
+      ],
+      "split": "dev",
+      "support_groups_disjoint": false,
+      "supporting_source_agreement": false,
+      "syndicated_cross_domain_edges": 0
+    },
+    {
+      "answer_aliases": [
+        [
+          "the fabulous moolah"
+        ]
+      ],
+      "category": "non_conflict_control",
+      "context_count": 10,
+      "context_order": [
+        4,
+        0,
+        9,
+        5,
+        3,
+        7,
+        2,
+        6,
+        8,
+        1
+      ],
+      "cross_split_exact_context": false,
+      "groups": [
+        "ig-00",
+        "ig-01",
+        "ig-02",
+        "ig-00",
+        "ig-03",
+        "ig-04",
+        "ig-05",
+        "ig-06",
+        "ig-07",
+        "ig-08"
+      ],
+      "has_duplicate_or_near_duplicate": false,
+      "has_repeated_domain": true,
+      "independence_group_count": 9,
+      "noise_context_count": 9,
+      "private_id": "4c47a6b6edaaeb617f1a440d5257e7d90c6eda30735da087a8b229759964d0b1",
+      "question": "Who is the longest reigning wwe women's champion?",
+      "record_index": 144,
+      "same_or_similar_edges": 1,
+      "sequence": 6,
+      "source_inputs": [
+        {
+          "context": "May 9, 2023 ... Bianca Belair reacts to breaking the record for the longest reign as WWE Raw Women's Champion.",
+          "independence_group": "ig-03",
+          "source": "www.wrestlinginc.com"
+        },
+        {
+          "context": "Longest per championshipEdit. The following list shows the longest reigning champion for each singles and tag team women's championship. No. Champion, Title ...",
+          "independence_group": "ig-00",
+          "source": "en.wikipedia.org"
+        },
+        {
+          "context": "Aug 23, 2021 ... Who is the longest Singular Reigning WWE SmackDown Women's Champion? --Bayley's second reign is the longest singular reign at 380 days. Stay ...",
+          "independence_group": "ig-08",
+          "source": "wwe.sacnilk.com"
+        },
+        {
+          "context": "Apr 18, 2023 ... She is just 19 days away from breaking Becky Lynch's record of being the longest-reigning Women's Champion in modern-day WWE.",
+          "independence_group": "ig-04",
+          "source": "www.sportskeeda.com"
+        },
+        {
+          "context": "Charlotte Flair, then known simply as Charlotte, was the inaugural champion. She also has the most reigns at six. Bianca Belair's first reign is the longest at ...",
+          "independence_group": "ig-00",
+          "source": "en.wikipedia.org"
+        },
+        {
+          "context": "Sep 12, 2022 ... Longest Reigning NXT Women's Champion · Asuka – 522 Days · Shayna Baszler – 416 Days · Mandy Rose (current champion) – 319+ Days · Io Shirai – 304 ...",
+          "independence_group": "ig-06",
+          "source": "lastwordonsports.com"
+        },
+        {
+          "context": "Jan 14, 2014 ... AJ Lee — 295 days ... By the time AJ Lee had the date she won the Divas Title permanently inked across the nape of her neck, you knew her ...",
+          "independence_group": "ig-02",
+          "source": "www.wwe.com"
+        },
+        {
+          "context": "Raw women's champion Bianca Belair responded Monday to the news that she became the longest-reigning Black singles champion in WWE history this week.",
+          "independence_group": "ig-05",
+          "source": "bleacherreport.com"
+        },
+        {
+          "context": "Jul 5, 2023 ... Bianca Belair, the longest-reigning WWE Raw Women's champion became part of every talk in the professional wrestling world once again.",
+          "independence_group": "ig-07",
+          "source": "www.essentiallysports.com"
+        },
+        {
+          "context": "Jun 16, 2023 ... 1 The Fabulous Moolah - WWE Women's Championship (10,170 Days) ... The longest reigning champion in WWE history goes to The Fabulous Moolah.",
+          "independence_group": "ig-01",
+          "source": "www.thesportster.com"
+        }
+      ],
+      "split": "dev",
+      "support_groups_disjoint": false,
+      "supporting_source_agreement": false,
+      "syndicated_cross_domain_edges": 0
+    },
+    {
+      "answer_aliases": [
+        [
+          "23 billion"
+        ],
+        [
+          "86 8 billion"
+        ]
+      ],
+      "category": "primary_conflict",
+      "context_count": 9,
+      "context_order": [
+        0,
+        4,
+        5,
+        8,
+        7,
+        1,
+        6,
+        2,
+        3
+      ],
+      "cross_split_exact_context": false,
+      "groups": [
+        "ig-00",
+        "ig-01",
+        "ig-02",
+        "ig-00",
+        "ig-03",
+        "ig-04",
+        "ig-05",
+        "ig-06",
+        "ig-05"
+      ],
+      "has_duplicate_or_near_duplicate": false,
+      "has_repeated_domain": true,
+      "independence_group_count": 7,
+      "noise_context_count": 7,
+      "private_id": "5380b00fd666bb8d73ba2608bf0777bd82c0682b18c5d87430778b1f7b676f45",
+      "question": "What did germany have to pay after ww2?",
+      "record_index": 64,
+      "same_or_similar_edges": 2,
+      "sequence": 7,
+      "source_inputs": [
+        {
+          "context": "After World War II, according to the Potsdam conference held between July 17 and August 2, 1945, Germany was to pay the Allies US$23 billion mainly in ...",
+          "independence_group": "ig-00",
+          "source": "en.wikipedia.org"
+        },
+        {
+          "context": "Oct 3, 2022 ... Poland demands $1.3 trillion in World War II reparations from Germany ... WARSAW, Poland (AP) — Poland's foreign minister on Monday signed an ...",
+          "independence_group": "ig-03",
+          "source": "www.pbs.org"
+        },
+        {
+          "context": "Jun 27, 2019 ... How—and when—could Germany possibly pay its debt? Nobody could have ... How the Treaty of Versailles and German Guilt Led to World War II.",
+          "independence_group": "ig-04",
+          "source": "www.history.com"
+        },
+        {
+          "context": "When Germany defaulted on a payment in January 1923, France and Belgium occupied the Ruhr in an effort to force payment. Instead, they met a government-backed ...",
+          "independence_group": "ig-05",
+          "source": "history.state.gov"
+        },
+        {
+          "context": "Oct 13, 2020 ... The latest reparations were secured by the Claims Conference in 2013, when the German government agreed to pay about $1 billion for the home ...",
+          "independence_group": "ig-06",
+          "source": "qz.com"
+        },
+        {
+          "context": "Mar 18, 2015 ... Germany was required to pay the most for World War II, however, the original total still appears unclear – mainly because Allied countries ...",
+          "independence_group": "ig-01",
+          "source": "www.cnbc.com"
+        },
+        {
+          "context": "During World War II, the United States began to provide significant ... When payment eventually did take place, the emphasis would not be on payment in ...",
+          "independence_group": "ig-05",
+          "source": "history.state.gov"
+        },
+        {
+          "context": "From 1945 to 2018, the German government paid approximately $86.8 billion in restitution and compensation to Holocaust victims and their heirs.",
+          "independence_group": "ig-02",
+          "source": "www.state.gov"
+        },
+        {
+          "context": "After World War II both West Germany and East Germany were obliged to pay war reparations to the Allied governments, according to the Potsdam Conference.",
+          "independence_group": "ig-00",
+          "source": "en.wikipedia.org"
+        }
+      ],
+      "split": "dev",
+      "support_groups_disjoint": true,
+      "supporting_source_agreement": true,
+      "syndicated_cross_domain_edges": 0
+    },
+    {
+      "answer_aliases": [
+        [
+          "joe bob briggs"
+        ],
+        [
+          "robert redding"
+        ]
+      ],
+      "category": "primary_conflict",
+      "context_count": 9,
+      "context_order": [
+        4,
+        3,
+        5,
+        1,
+        2,
+        7,
+        0,
+        8,
+        6
+      ],
+      "cross_split_exact_context": false,
+      "groups": [
+        "ig-00",
+        "ig-01",
+        "ig-02",
+        "ig-03",
+        "ig-04",
+        "ig-05",
+        "ig-04",
+        "ig-06",
+        "ig-07"
+      ],
+      "has_duplicate_or_near_duplicate": false,
+      "has_repeated_domain": true,
+      "independence_group_count": 8,
+      "noise_context_count": 7,
+      "private_id": "6895e01e48f806799473f5691fc72721612339be3860471345f4bc3602767191",
+      "question": "Who played bob in elvira mistress of the dark?",
+      "record_index": 365,
+      "same_or_similar_edges": 1,
+      "sequence": 8,
+      "source_inputs": [
+        {
+          "context": "Sep 16, 2018 ... With the amazing Elvira, Mistress of the Dark (official) ... Joe Bob Briggs, profile picture. Join. or.",
+          "independence_group": "ig-04",
+          "source": "www.facebook.com"
+        },
+        {
+          "context": "Oct 12, 2022 ... Elvira, played by Cassandra Peterson, travels to the small conservative town of Fallwell, Mass., in order to claim her inheritance left by ...",
+          "independence_group": "ig-03",
+          "source": "dailyillini.com"
+        },
+        {
+          "context": "Apr 23, 2020 ... Elvira, our iconic main character, played by Cassandra Peterson, is forced out of her steady job when her creep of a boss sexually harasses her.",
+          "independence_group": "ig-05",
+          "source": "horrorobsessive.com"
+        },
+        {
+          "context": "Elvira: Mistress of the Dark is a 1988 American comedy horror film directed by James Signorelli. Cassandra Peterson plays the role of horror hostess Elvira ...",
+          "independence_group": "ig-01",
+          "source": "horror.fandom.com"
+        },
+        {
+          "context": "Elvira: Mistress of the Dark: Directed by James Signorelli. ... Play trailer1:49 ... But cinema owner Bob Redding and the local teenagers help Elvira.",
+          "independence_group": "ig-02",
+          "source": "www.imdb.com"
+        },
+        {
+          "context": "1M Followers, 293 Following, 1622 Posts - See Instagram photos and videos from Elvira, Mistress Of The Dark (@therealelvira)",
+          "independence_group": "ig-06",
+          "source": "www.instagram.com"
+        },
+        {
+          "context": "Peterson was dealt a crushing blow with the 1986 AIDS-related death of Robert Redding, to whom she dedicated the film and named the character of Bob after. She ...",
+          "independence_group": "ig-00",
+          "source": "en.wikipedia.org"
+        },
+        {
+          "context": "Elvira: Mistress of the Dark is a 1988 Horror Comedy film starring the ... MST: Elvira and Bob play Attack of the Killer Tomatoes! for the kids one night at ...",
+          "independence_group": "ig-07",
+          "source": "tvtropes.org"
+        },
+        {
+          "context": "tbt Doing a Bob Hope TV Special with Morgan Fairchild & Donna Mills. #throwback #1980s #elviramistressofthedark #morganfairchild #donnamills #bobhope...",
+          "independence_group": "ig-04",
+          "source": "www.facebook.com"
+        }
+      ],
+      "split": "dev",
+      "support_groups_disjoint": true,
+      "supporting_source_agreement": true,
+      "syndicated_cross_domain_edges": 0
+    },
+    {
+      "answer_aliases": [
+        [
+          "firearm"
+        ]
+      ],
+      "category": "non_conflict_control",
+      "context_count": 10,
+      "context_order": [
+        5,
+        3,
+        6,
+        4,
+        9,
+        1,
+        7,
+        2,
+        8,
+        0
+      ],
+      "cross_split_exact_context": false,
+      "groups": [
+        "ig-00",
+        "ig-01",
+        "ig-02",
+        "ig-03",
+        "ig-04",
+        "ig-05",
+        "ig-04",
+        "ig-06",
+        "ig-07",
+        "ig-06"
+      ],
+      "has_duplicate_or_near_duplicate": true,
+      "has_repeated_domain": true,
+      "independence_group_count": 8,
+      "noise_context_count": 8,
+      "private_id": "8d86f9e2a18716c54af77436aa61ffa0a816cea5b43ab431447e3f6e7b4637e2",
+      "question": "Powder actuated tools are similar in operation to which other device?",
+      "record_index": 199,
+      "same_or_similar_edges": 3,
+      "sequence": 9,
+      "source_inputs": [
+        {
+          "context": "This section applies to the use of powered tools or equipment to cut, grind, core, or drill, ... (1) Stucco, plastering material, or other similar products.",
+          "independence_group": "ig-05",
+          "source": "www.dir.ca.gov"
+        },
+        {
+          "context": "Explosive-actuated tools shall be tested, in accordance with the manufacturer's recommended procedure, each day before loading to see that safety devices are in.",
+          "independence_group": "ig-03",
+          "source": "www.usace.army.mil"
+        },
+        {
+          "context": "These devices use explosive charges similar to a firearm. Since the charge is similar to a firearm, powder actuated tools can “fire” nails and fastening ...",
+          "independence_group": "ig-04",
+          "source": "safetymattersweekly.com"
+        },
+        {
+          "context": "These devices use explosive charges similar to a firearm. Since the charge is similar to a firearm, powder actuated tools can “fire” nails and fastening ...",
+          "independence_group": "ig-04",
+          "source": "safetymattersweekly.com"
+        },
+        {
+          "context": "reciprocating saws, saber saws, and other similar operating powered tools shall be equipped ... shall be able to use the powder-actuated tool safely under.",
+          "independence_group": "ig-06",
+          "source": "www.michigan.gov"
+        },
+        {
+          "context": "... use a small, controlled explosion to drive a nail, stud, or other ... Always use a powder-actuated tool with ... similar to one that discharges a blank.",
+          "independence_group": "ig-01",
+          "source": "osha.oregon.gov"
+        },
+        {
+          "context": "(5) “Powder actuated tool” means a device for ... An employee shall not use a tool for other ... accomplished by a single motion of the same finger or.",
+          "independence_group": "ig-06",
+          "source": "www.michigan.gov"
+        },
+        {
+          "context": "Powder-actuated tools are often used because of their speed of operation, compared to other processes such as drilling and then installing a threaded ...",
+          "independence_group": "ig-02",
+          "source": "en.wikipedia.org"
+        },
+        {
+          "context": "Other General Workplace Safety & Health Rules ... (d) Read “POWDER ACTUATED TOOL IN USE” or similar wording. Note: Tool use could create a hazard in ...",
+          "independence_group": "ig-07",
+          "source": "www.lni.wa.gov"
+        },
+        {
+          "context": "All pneumatically driven nailers, staplers, and other similar equipment provided with ... tool in use shall be allowed to operate a powder-actuated tool.",
+          "independence_group": "ig-00",
+          "source": "www.osha.gov"
+        }
+      ],
+      "split": "dev",
+      "support_groups_disjoint": false,
+      "supporting_source_agreement": true,
+      "syndicated_cross_domain_edges": 0
+    },
+    {
+      "answer_aliases": [
+        [
+          "jasper cullen"
+        ],
+        [
+          "unnamed volturi member"
+        ]
+      ],
+      "category": "primary_conflict",
+      "context_count": 8,
+      "context_order": [
+        6,
+        0,
+        5,
+        3,
+        2,
+        4,
+        1,
+        7
+      ],
+      "cross_split_exact_context": false,
+      "groups": [
+        "ig-00",
+        "ig-01",
+        "ig-02",
+        "ig-01",
+        "ig-03",
+        "ig-04",
+        "ig-05",
+        "ig-06"
+      ],
+      "has_duplicate_or_near_duplicate": false,
+      "has_repeated_domain": true,
+      "independence_group_count": 7,
+      "noise_context_count": 6,
+      "private_id": "a823b840aec307321032336e7c0ceb52d9c61dedf4984b966593c7aee96e045c",
+      "question": "Who dies in breaking dawn part 2 movie?",
+      "record_index": 110,
+      "same_or_similar_edges": 1,
+      "sequence": 10,
+      "source_inputs": [
+        {
+          "context": "Jul 20, 2021 ... The hype was only intensified when the movies were made with Kristen Stewart, Robert Pattinson, and Taylor Lautner in the lead roles. Stephenie ...",
+          "independence_group": "ig-05",
+          "source": "www.looper.com"
+        },
+        {
+          "context": "Nov 16, 2012 ... Sadly, the vampire-doctor loses his head to the Italian ruler, sparking the battle between the two sides. Many end up dead, including Jasper ( ...",
+          "independence_group": "ig-00",
+          "source": "ew.com"
+        },
+        {
+          "context": "Nov 26, 2012 ... Two weeks ago, while doing press for Breaking Dawn 2, ... a specific question on my website once everyone had had a chance to see the movie.",
+          "independence_group": "ig-04",
+          "source": "stepheniemeyer.com"
+        },
+        {
+          "context": "Breaking Dawn - Part 2 · Cougar - Throat eaten by Bella Swan. · 12 Unnamed People - Killed by a Vampire Boy, seen in a flashback. · Denail's Unnamed Mother - Torn ...",
+          "independence_group": "ig-01",
+          "source": "listofdeaths.fandom.com"
+        },
+        {
+          "context": "Seth is killed by Felix. Leah saves Esme's life but loses hers in the process. Marcus welcomes his death as he is torn to pieces by Vladimir and Stefan. Aro ...",
+          "independence_group": "ig-02",
+          "source": "en.wikipedia.org"
+        },
+        {
+          "context": "Nov 21, 2021 ... Although almost half of Twilight's recurring cast are killed off by the brutal, bloody finale of Breaking Dawn Part 2, almost all of these ...",
+          "independence_group": "ig-03",
+          "source": "screenrant.com"
+        },
+        {
+          "context": "Six Unnamed Volturi Members - Killed by Edward Cullen, Bella Swan, Emmet Cullen, Jasper Hale, Esme Cullen, and Rosalie Hale, seen in the vision. Unnamed Volturi ...",
+          "independence_group": "ig-01",
+          "source": "listofdeaths.fandom.com"
+        },
+        {
+          "context": "Nov 12, 2021 ... The last time you saw Bella and Edward, she was being killed by her own ... A promo image from Twilight Breaking Dawn Part 2 shows Edward, ...",
+          "independence_group": "ig-06",
+          "source": "nerdist.com"
+        }
+      ],
+      "split": "dev",
+      "support_groups_disjoint": true,
+      "supporting_source_agreement": true,
+      "syndicated_cross_domain_edges": 0
+    },
+    {
+      "answer_aliases": [
+        [
+          "elisa gabbert"
+        ],
+        [
+          "phyllis rose"
+        ]
+      ],
+      "category": "primary_conflict",
+      "context_count": 6,
+      "context_order": [
+        3,
+        0,
+        2,
+        1,
+        4,
+        5
+      ],
+      "cross_split_exact_context": false,
+      "groups": [
+        "ig-00",
+        "ig-01",
+        "ig-02",
+        "ig-03",
+        "ig-04",
+        "ig-05"
+      ],
+      "has_duplicate_or_near_duplicate": false,
+      "has_repeated_domain": false,
+      "independence_group_count": 6,
+      "noise_context_count": 4,
+      "private_id": "be2a0306b3109c78f43c309ab298f84f859bf1ef07fab2bdfc11bfbc6c2b31cd",
+      "question": "Who wrote the introduction to the voyage out?",
+      "record_index": 300,
+      "same_or_similar_edges": 0,
+      "sequence": 11,
+      "source_inputs": [
+        {
+          "context": "May 4, 1998 ... Introduction. Rachel Vinrace is a heroine out of time and out of place in Virginia Woolf's novel. The Voyage Out.",
+          "independence_group": "ig-03",
+          "source": "www.uah.edu"
+        },
+        {
+          "context": "The Voyage Out is the first novel by Virginia Woolf, published in 1915 by Duckworth. ... Literary scholar Phyllis Rose writes in her introduction to the novel, ...",
+          "independence_group": "ig-00",
+          "source": "en.wikipedia.org"
+        },
+        {
+          "context": "Woolf began writing her first novel as early as 1907. The Voyage Out (1915) follows a twenty-four-year-old woman, Rachel, as she travels from England to an ...",
+          "independence_group": "ig-02",
+          "source": "www.nypl.org"
+        },
+        {
+          "context": "The Voyage Out by Virginia Woolf. Add The Voyage Out to bookshelf ... writers—with an introduction by Elisa Gabbert, author of The Unreality of Memory",
+          "independence_group": "ig-01",
+          "source": "www.penguinrandomhouse.com"
+        },
+        {
+          "context": "OVERVIEW. &&LDIV&&R&&LDIV&&R&&LI&&RThe Voyage Out&&L/I&&R, ... maturity when she finds her engagement to the writer Terence Hewet listing toward disaster.",
+          "independence_group": "ig-04",
+          "source": "www.unionsquareandco.com"
+        },
+        {
+          "context": "The Modern Library is proud to include Virginia Woolf's first novel, The Voyage Out--together with a new Introduction by Pulitzer Prize-winning novelist ...",
+          "independence_group": "ig-05",
+          "source": "www.amazon.com"
+        }
+      ],
+      "split": "dev",
+      "support_groups_disjoint": true,
+      "supporting_source_agreement": false,
+      "syndicated_cross_domain_edges": 0
+    }
+  ],
+  "dataset_revision": "fff5a4cd4fbfb51fadea92a3aaf3226875d0bce5",
+  "prompt_templates": {
+    "consumer": "You are a downstream consumer of a governed memory state.\nQuestion: {question}\nMemory status: {memory_status}\nActive claims: {active_claims}\nPending alternatives: {pending_alternatives}\nReturn JSON matching the schema. If memory is unresolved or insufficient, use answer_status unresolved or insufficient; do not invent an answer.",
+    "source": "You are a source-reading agent. Use only the supplied context.\nQuestion: {question}\nDisplayed source: {source}\nContext: {context}\nReturn JSON matching the schema. If the context does not support a concise answer, set support_status to unsupported and answer_candidate to null. Do not use outside knowledge."
+  },
+  "schema_version": "qacc-smoke-private-selection/1.0",
+  "schemas": {
+    "consumer": {
+      "additionalProperties": false,
+      "properties": {
+        "answer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "answer_status": {
+          "enum": [
+            "answered",
+            "unresolved",
+            "insufficient"
+          ],
+          "type": "string"
+        },
+        "memory_claim_ids": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array",
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "answer_status",
+        "answer",
+        "memory_claim_ids"
+      ],
+      "type": "object"
+    },
+    "source": {
+      "additionalProperties": false,
+      "properties": {
+        "answer_candidate": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "evidence_excerpt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "support_status": {
+          "enum": [
+            "supported",
+            "unsupported"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "support_status",
+        "answer_candidate",
+        "evidence_excerpt"
+      ],
+      "type": "object"
+    }
+  }
+}

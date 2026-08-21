@@ -1,5 +1,5 @@
 """
-Unit tests for the cryptographic evidence-binding layer (lcm_core.crypto).
+Unit tests for the cryptographic evidence-binding layer (crt_core.crypto).
 
 These tests confirm that evidence signatures are now genuine Ed25519
 signatures and that the legacy forgeable ``sig_*`` / >=16-char token
@@ -14,15 +14,15 @@ from cryptography.hazmat.primitives.asymmetric.ed25519 import (
     Ed25519PrivateKey,
 )
 
-from lcm_core.crypto import (
+from crt_core.crypto import (
     EvidenceKeyConfigurationError,
     build_evidence_message,
     sign_evidence_for_records,
     sign_evidence_message,
     verify_evidence_signature_crypto,
 )
-from lcm_core.confidence_engine import EvidenceRecord, EvidenceType
-from lcm_core.provenance import verify_evidence_signature
+from crt_core.confidence_engine import EvidenceRecord, EvidenceType
+from crt_core.provenance import verify_evidence_signature
 
 
 # ---------------------------------------------------------------------------
@@ -33,10 +33,10 @@ from lcm_core.provenance import verify_evidence_signature
 def _allow_dev_evidence_key(monkeypatch):
     """Opt into the development fallback key for all tests in this module.
 
-    The production code path now fails closed unless LCM_ALLOW_DEV_EVIDENCE_KEY=1
+    The production code path now fails closed unless CRT_ALLOW_DEV_EVIDENCE_KEY=1
     is explicitly set, so tests that sign/verify with the dev key must opt in.
     """
-    monkeypatch.setenv("LCM_ALLOW_DEV_EVIDENCE_KEY", "1")
+    monkeypatch.setenv("CRT_ALLOW_DEV_EVIDENCE_KEY", "1")
 
 
 # ---------------------------------------------------------------------------
@@ -172,15 +172,15 @@ def test_sign_for_records_picks_highest_authority():
 
 def test_message_is_deterministic_and_prefixed():
     msg = build_evidence_message(EvidenceType.DATABASE, "db://x", "ch", None, "")
-    assert msg == b"lcm-evidence-binding/2|||database|db://x|ch||||"
+    assert msg == b"crt-evidence-binding/2|||database|db://x|ch||||"
     assert build_evidence_message(EvidenceType.DATABASE, "db://x", "ch", None, "") == msg
 
 
 def test_message_normalises_none_and_empty():
     empty = build_evidence_message(EvidenceType.DATABASE, None, None, None, "")
-    assert empty == b"lcm-evidence-binding/2|||database||||||"
+    assert empty == b"crt-evidence-binding/2|||database||||||"
     empty2 = build_evidence_message(EvidenceType.DATABASE, "", "", None, "")
-    assert empty2 == b"lcm-evidence-binding/2|||database||||||"
+    assert empty2 == b"crt-evidence-binding/2|||database||||||"
     assert empty == empty2
 
 
@@ -190,12 +190,12 @@ def test_message_normalises_none_and_empty():
 
 def test_env_var_public_key_overrides_dev_key(monkeypatch):
     """A custom provider keypair validates its own signature and rejects the
-    dev key's signatures once LCM_EVIDENCE_PUBLIC_KEY is set."""
+    dev key's signatures once CRT_EVIDENCE_PUBLIC_KEY is set."""
     priv = Ed25519PrivateKey.generate()
     pub_hex = priv.public_key().public_bytes(
         serialization.Encoding.Raw, serialization.PublicFormat.Raw
     ).hex()
-    monkeypatch.setenv("LCM_EVIDENCE_PUBLIC_KEY", pub_hex)
+    monkeypatch.setenv("CRT_EVIDENCE_PUBLIC_KEY", pub_hex)
 
     msg = build_evidence_message(EvidenceType.DATABASE, "db://external", None, None, "")
     custom_sig = base64.b64encode(priv.sign(msg)).decode()
@@ -215,7 +215,7 @@ def test_invalid_public_key_fails_closed(monkeypatch):
     a misconfigured provider key should fail closed (authority degrades to
     unverified) rather than accept dev-key signatures in a deployment that
     explicitly configured a provider key."""
-    monkeypatch.setenv("LCM_EVIDENCE_PUBLIC_KEY", "not-a-real-key")
+    monkeypatch.setenv("CRT_EVIDENCE_PUBLIC_KEY", "not-a-real-key")
     sig = sign_evidence_message(EvidenceType.DATABASE, "db://verified")
     assert verify_evidence_signature_crypto(EvidenceType.DATABASE, "db://verified", sig) is False
 
@@ -232,7 +232,7 @@ def test_signature_is_base64_of_64_bytes():
 
 def test_evidence_type_is_exported():
     """Sanity: crypto module public API surface."""
-    import lcm_core.crypto as crypto
+    import crt_core.crypto as crypto
     for name in [
         "build_evidence_message",
         "verify_evidence_signature_crypto",

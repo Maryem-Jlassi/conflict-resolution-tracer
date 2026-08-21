@@ -1,0 +1,28 @@
+{
+  "generated_at_utc": "2026-08-20T02:37:25.195535+00:00",
+  "stage1": {
+    "ollama_calls": 0,
+    "resubmitted": true,
+    "stage1_only": true
+  },
+  "per_scenario": {
+    "s1a_corpus": {
+      "corpus_size": 30
+    },
+    "s1b_corpus": {
+      "corpus_size": 20
+    },
+    "s1c_corpus": {
+      "corpus_size": 30
+    },
+    "s1d_corpus": {
+      "corpus_size": 30
+    },
+    "s1e_corpus": {
+      "corpus_size": 30
+    },
+    "s1f_corpus": {
+      "corpus_size": 12
+    }
+  }
+}

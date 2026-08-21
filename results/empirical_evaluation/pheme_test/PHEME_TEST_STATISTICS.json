@@ -1,0 +1,16 @@
+{
+  "schema_version": "PHEME_TEST_STATISTICS/1.0",
+  "strict_accuracy": 0.1303,
+  "selective_accuracy": 0.1766,
+  "coverage": 0.7374,
+  "abstention_rate": 0.2626,
+  "bootstrap_ci_strict_accuracy": [
+    0.15786,
+    0.19611
+  ],
+  "bootstrap_ci_margin": [
+    0.10728,
+    0.11132
+  ],
+  "n_episodes": 1950
+}

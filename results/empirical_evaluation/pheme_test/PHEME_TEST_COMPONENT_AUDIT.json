@@ -1,0 +1,57 @@
+{
+  "schema_version": "PHEME_TEST_COMPONENT_AUDIT/1.0",
+  "audit_date": "2026-08-18T19:24:26.805054Z",
+  "n_episodes": 1950,
+  "component_removal_impact": {
+    "R": {
+      "episodes_where_removal_changes_decision": 145,
+      "pct": 7.44
+    },
+    "C": {
+      "episodes_where_removal_changes_decision": 593,
+      "pct": 30.41
+    },
+    "T": {
+      "episodes_where_removal_changes_decision": 202,
+      "pct": 10.36
+    }
+  },
+  "full_lcm_vs_baselines": {
+    "last_write_wins": {
+      "lcm_correct": 254,
+      "baseline_correct": 312,
+      "lcm_wins": 139,
+      "baseline_wins": 197,
+      "ties": 1161
+    },
+    "recency_only": {
+      "lcm_correct": 254,
+      "baseline_correct": 312,
+      "lcm_wins": 139,
+      "baseline_wins": 197,
+      "ties": 1161
+    },
+    "highest_confidence": {
+      "lcm_correct": 254,
+      "baseline_correct": 265,
+      "lcm_wins": 56,
+      "baseline_wins": 67,
+      "ties": 1359
+    },
+    "highest_trust": {
+      "lcm_correct": 254,
+      "baseline_correct": 303,
+      "lcm_wins": 18,
+      "baseline_wins": 67,
+      "ties": 1404
+    },
+    "c_only": {
+      "lcm_correct": 254,
+      "baseline_correct": 265,
+      "lcm_wins": 56,
+      "baseline_wins": 67,
+      "ties": 1359
+    }
+  },
+  "key_scientific_question": "Does the presence of each proposed signal change decisions in cases where that signal genuinely differs, and does that change improve resolution against independent gold?"
+}

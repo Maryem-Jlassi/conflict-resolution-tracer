@@ -1,0 +1,45 @@
+{
+  "framework": "ollama",
+  "endpoint": "http://127.0.0.1:11434",
+  "ollama_version": "unknown (CLI subcommand `version` unsupported in this build; API present)",
+  "discovery_method": "GET /api/tags + GET /api/show",
+  "discovery_timestamp_utc": "2026-08-20T00:16:46Z",
+  "models": [
+    {
+      "name": "llama3.2:1b",
+      "family": "llama",
+      "parameter_size": "1.2B",
+      "quantization_level": "Q8_0",
+      "context_length": 131072,
+      "embedding_length": 2048,
+      "modified_at": "2026-07-15T15:52:48Z",
+      "digest": "baf6a787fdffd633537aa2eb51cfd54cb93ff08e28040095462bb63daf552878",
+      "generation_params": {"temperature": 0.4, "top_p": 0.9, "stream": false}
+    },
+    {
+      "name": "llama3.2:latest",
+      "family": "llama",
+      "parameter_size": "3.2B",
+      "quantization_level": "Q4_K_M",
+      "context_length": 131072,
+      "embedding_length": 3072,
+      "modified_at": "2026-08-19T13:16:36Z",
+      "digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+      "generation_params": {"temperature": 0.4, "top_p": 0.9, "stream": false}
+    },
+    {
+      "name": "llama3.1:8b",
+      "family": "llama",
+      "parameter_size": "8.0B",
+      "quantization_level": "Q4_K_M",
+      "context_length": 131072,
+      "embedding_length": 4096,
+      "modified_at": "2026-07-29T12:47:47Z",
+      "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+      "generation_params": {"temperature": 0.4, "top_p": 0.9, "stream": false}
+    }
+  ],
+  "heterogeneity_note": "All detected models are in the 'llama' family (no Qwen/Gemma/Mistral/Phi present). Heterogeneity here = parameter count (1.2B/3.2B/8.0B) and quantization (Q8_0 vs Q4_K_M). Cross-family generality is NOT claimed.",
+  "temperature": 0.4,
+  "seed_supported": false
+}

@@ -1,0 +1,112 @@
+[
+  {
+    "n_units": 3337,
+    "n_resolved": 2057,
+    "resolution_coverage": 0.6164219358705424,
+    "strict_accuracy": 0.6655678753371291,
+    "abstention_rate": 0.3835780641294576,
+    "ct_ratio": 0.1,
+    "w_c": 0.09090909090909091,
+    "w_t": 0.9090909090909091
+  },
+  {
+    "n_units": 3337,
+    "n_resolved": 2198,
+    "resolution_coverage": 0.658675456997303,
+    "strict_accuracy": 0.6658675456997303,
+    "abstention_rate": 0.34132454300269705,
+    "ct_ratio": 0.2,
+    "w_c": 0.16666666666666669,
+    "w_t": 0.8333333333333334
+  },
+  {
+    "n_units": 3337,
+    "n_resolved": 2208,
+    "resolution_coverage": 0.6616721606233144,
+    "strict_accuracy": 0.6631705124363201,
+    "abstention_rate": 0.33832783937668565,
+    "ct_ratio": 0.3,
+    "w_c": 0.23076923076923075,
+    "w_t": 0.7692307692307692
+  },
+  {
+    "n_units": 3337,
+    "n_resolved": 2296,
+    "resolution_coverage": 0.6880431525322146,
+    "strict_accuracy": 0.6610728198981121,
+    "abstention_rate": 0.31195684746778546,
+    "ct_ratio": 0.5,
+    "w_c": 0.3333333333333333,
+    "w_t": 0.6666666666666666
+  },
+  {
+    "n_units": 3337,
+    "n_resolved": 2399,
+    "resolution_coverage": 0.7189091998801318,
+    "strict_accuracy": 0.6484866646688643,
+    "abstention_rate": 0.28109080011986814,
+    "ct_ratio": 0.7,
+    "w_c": 0.4117647058823529,
+    "w_t": 0.5882352941176471
+  },
+  {
+    "n_units": 3337,
+    "n_resolved": 2397,
+    "resolution_coverage": 0.7183098591549296,
+    "strict_accuracy": 0.641594246329038,
+    "abstention_rate": 0.28169014084507044,
+    "ct_ratio": 1.0,
+    "w_c": 0.5,
+    "w_t": 0.5
+  },
+  {
+    "n_units": 3337,
+    "n_resolved": 2629,
+    "resolution_coverage": 0.7878333832783938,
+    "strict_accuracy": 0.6448906203176505,
+    "abstention_rate": 0.21216661672160622,
+    "ct_ratio": 1.5,
+    "w_c": 0.6,
+    "w_t": 0.4
+  },
+  {
+    "n_units": 3337,
+    "n_resolved": 2631,
+    "resolution_coverage": 0.7884327240035961,
+    "strict_accuracy": 0.6436919388672461,
+    "abstention_rate": 0.21156727599640396,
+    "ct_ratio": 2.0,
+    "w_c": 0.6666666666666666,
+    "w_t": 0.3333333333333333
+  },
+  {
+    "n_units": 3337,
+    "n_resolved": 2594,
+    "resolution_coverage": 0.7773449205873539,
+    "strict_accuracy": 0.6344021576266107,
+    "abstention_rate": 0.2226550794126461,
+    "ct_ratio": 3.0,
+    "w_c": 0.75,
+    "w_t": 0.25
+  },
+  {
+    "n_units": 3337,
+    "n_resolved": 2724,
+    "resolution_coverage": 0.816302067725502,
+    "strict_accuracy": 0.5999400659274797,
+    "abstention_rate": 0.18369793227449804,
+    "ct_ratio": 5.0,
+    "w_c": 0.8333333333333334,
+    "w_t": 0.16666666666666666
+  },
+  {
+    "n_units": 3337,
+    "n_resolved": 2839,
+    "resolution_coverage": 0.8507641594246329,
+    "strict_accuracy": 0.5885525921486365,
+    "abstention_rate": 0.1492358405753671,
+    "ct_ratio": 10.0,
+    "w_c": 0.9090909090909091,
+    "w_t": 0.09090909090909091
+  }
+]

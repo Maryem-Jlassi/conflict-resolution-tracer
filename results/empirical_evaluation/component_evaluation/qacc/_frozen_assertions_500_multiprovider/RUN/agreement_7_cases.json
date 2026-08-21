@@ -1,0 +1,139 @@
+{
+  "n_total": 7,
+  "n_agreement": 3,
+  "n_disagreement": 4,
+  "point_estimate": 0.42857142857142855,
+  "wilson_95ci": [
+    0.1582,
+    0.7495
+  ],
+  "matching_rule": "exact_string_match",
+  "cases": [
+    {
+      "case_id": 276,
+      "source_id": 6,
+      "source": "en.wikipedia.org",
+      "category": "GENUINE_AGREEMENT",
+      "usable_providers": [
+        "ollama",
+        "openai"
+      ],
+      "answers": {
+        "ollama": {
+          "answer": "many",
+          "support_status": "supported",
+          "evidence_excerpt": "Linear eukaryotic chromosomes contain many replication origins.",
+          "authority_score": 0.75
+        }
+      },
+      "matching_rule": "exact_string_match"
+    },
+    {
+      "case_id": 2287,
+      "source_id": 4,
+      "source": "www.express.co.uk",
+      "category": "GENUINE_DISAGREEMENT",
+      "usable_providers": [
+        "ollama",
+        "openai"
+      ],
+      "answers": {
+        "openai": {
+          "answer": "January 20, 1988",
+          "support_status": "supported",
+          "evidence_excerpt": "On January 20, 1988, The Beatles were finally inducted into the Rock and Roll Hall of Fame.",
+          "authority_score": 0.75
+        }
+      },
+      "matching_rule": "exact_string_match"
+    },
+    {
+      "case_id": 3173,
+      "source_id": 7,
+      "source": "recipes.howstuffworks.com",
+      "category": "GENUINE_DISAGREEMENT",
+      "usable_providers": [
+        "ollama",
+        "openai"
+      ],
+      "answers": {
+        "ollama": {
+          "answer": null,
+          "support_status": null,
+          "evidence_excerpt": null,
+          "authority_score": 0.75
+        }
+      },
+      "matching_rule": "exact_string_match"
+    },
+    {
+      "case_id": 243,
+      "source_id": 0,
+      "source": "en.wikipedia.org",
+      "category": "GENUINE_AGREEMENT",
+      "usable_providers": [
+        "ollama",
+        "openai"
+      ],
+      "answers": {},
+      "matching_rule": "exact_string_match"
+    },
+    {
+      "case_id": 3207,
+      "source_id": 7,
+      "source": "mapsplatform.google.com",
+      "category": "GENUINE_DISAGREEMENT",
+      "usable_providers": [
+        "ollama",
+        "openai"
+      ],
+      "answers": {
+        "ollama": {
+          "answer": "the length and direction of a straight line between two locations or positions",
+          "support_status": "supported",
+          "evidence_excerpt": "mapsplatform.google.com",
+          "authority_score": 0.75
+        }
+      },
+      "matching_rule": "exact_string_match"
+    },
+    {
+      "case_id": 59,
+      "source_id": 0,
+      "source": "apnews.com",
+      "category": "GENUINE_AGREEMENT",
+      "usable_providers": [
+        "ollama",
+        "openai"
+      ],
+      "answers": {
+        "openai": {
+          "answer": "Sept. 14, 1972",
+          "support_status": "supported",
+          "evidence_excerpt": "the Currys identified closely with the ... debuted on CBS on Sept. 14, 1972",
+          "authority_score": 0.75
+        }
+      },
+      "matching_rule": "exact_string_match"
+    },
+    {
+      "case_id": 95,
+      "source_id": 1,
+      "source": "byjus.com",
+      "category": "GENUINE_DISAGREEMENT",
+      "usable_providers": [
+        "ollama",
+        "openai"
+      ],
+      "answers": {
+        "ollama": {
+          "answer": "Interphase",
+          "support_status": "supported",
+          "evidence_excerpt": "The metabolic or \"everyday life\" phase of the cell cycle.",
+          "authority_score": 0.75
+        }
+      },
+      "matching_rule": "exact_string_match"
+    }
+  ]
+}

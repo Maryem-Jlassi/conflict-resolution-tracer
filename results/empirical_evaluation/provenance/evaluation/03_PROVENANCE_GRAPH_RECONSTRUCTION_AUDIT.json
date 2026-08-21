@@ -1,0 +1,13 @@
+{
+ "reaction_parent_consistent_with_in_reply_to": 95073,
+ "reaction_parent_mismatch_in_reply_to": 0,
+ "reaction_parent_only_in_structure": 0,
+ "reactions_total": 95073,
+ "in_reply_to_agreement_rate": 1.0,
+ "case_unit_label_recovered": 1045,
+ "case_unit_label_missing": 0,
+ "case_unit_file_exists": 1045,
+ "case_unit_file_missing": 0,
+ "case_edges_unresolvable": 0,
+ "methodology": "all parent edges from structure.json; in_reply_to_status_id_str cross-check; label re-read from recorded label_source file."
+}

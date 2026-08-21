@@ -1,0 +1,502 @@
+{
+  "experiment_id": "MSM_V1_POOLED_TRUST_TABLE",
+  "seeds": [
+    "s20260321",
+    "s20260322",
+    "s20260323",
+    "s20260324"
+  ],
+  "n_train_personas": 864,
+  "trust_table": {
+    "profile_ltm:A1": {
+      "source": "profile_ltm",
+      "question_id": "A1",
+      "n_outcomes": 576,
+      "correct": 318,
+      "wrong": 258,
+      "raw_trust_score": 0.5520833333333334,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "daily_self_report:A1": {
+      "source": "daily_self_report",
+      "question_id": "A1",
+      "n_outcomes": 864,
+      "correct": 457,
+      "wrong": 407,
+      "raw_trust_score": 0.5289351851851852,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "device_log:A1": {
+      "source": "device_log",
+      "question_id": "A1",
+      "n_outcomes": 864,
+      "correct": 274,
+      "wrong": 590,
+      "raw_trust_score": 0.31712962962962965,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "daily_self_report:A2": {
+      "source": "daily_self_report",
+      "question_id": "A2",
+      "n_outcomes": 864,
+      "correct": 485,
+      "wrong": 379,
+      "raw_trust_score": 0.5613425925925926,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "planner:A2": {
+      "source": "planner",
+      "question_id": "A2",
+      "n_outcomes": 864,
+      "correct": 409,
+      "wrong": 455,
+      "raw_trust_score": 0.47337962962962965,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "objective_log:A2": {
+      "source": "objective_log",
+      "question_id": "A2",
+      "n_outcomes": 864,
+      "correct": 614,
+      "wrong": 250,
+      "raw_trust_score": 0.7106481481481481,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "profile_ltm:A3": {
+      "source": "profile_ltm",
+      "question_id": "A3",
+      "n_outcomes": 864,
+      "correct": 387,
+      "wrong": 477,
+      "raw_trust_score": 0.4479166666666667,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "daily_self_report:A3": {
+      "source": "daily_self_report",
+      "question_id": "A3",
+      "n_outcomes": 864,
+      "correct": 401,
+      "wrong": 463,
+      "raw_trust_score": 0.46412037037037035,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "objective_log:A3": {
+      "source": "objective_log",
+      "question_id": "A3",
+      "n_outcomes": 864,
+      "correct": 499,
+      "wrong": 365,
+      "raw_trust_score": 0.5775462962962963,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "profile_ltm:B2": {
+      "source": "profile_ltm",
+      "question_id": "B2",
+      "n_outcomes": 864,
+      "correct": 478,
+      "wrong": 386,
+      "raw_trust_score": 0.5532407407407407,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "daily_self_report:B2": {
+      "source": "daily_self_report",
+      "question_id": "B2",
+      "n_outcomes": 864,
+      "correct": 643,
+      "wrong": 221,
+      "raw_trust_score": 0.7442129629629629,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "device_log:B2": {
+      "source": "device_log",
+      "question_id": "B2",
+      "n_outcomes": 864,
+      "correct": 174,
+      "wrong": 690,
+      "raw_trust_score": 0.2013888888888889,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "objective_log:B2": {
+      "source": "objective_log",
+      "question_id": "B2",
+      "n_outcomes": 864,
+      "correct": 611,
+      "wrong": 253,
+      "raw_trust_score": 0.7071759259259259,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "profile_ltm:B3": {
+      "source": "profile_ltm",
+      "question_id": "B3",
+      "n_outcomes": 864,
+      "correct": 609,
+      "wrong": 255,
+      "raw_trust_score": 0.7048611111111112,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "daily_self_report:B3": {
+      "source": "daily_self_report",
+      "question_id": "B3",
+      "n_outcomes": 864,
+      "correct": 470,
+      "wrong": 394,
+      "raw_trust_score": 0.5439814814814815,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "planner:B3": {
+      "source": "planner",
+      "question_id": "B3",
+      "n_outcomes": 864,
+      "correct": 596,
+      "wrong": 268,
+      "raw_trust_score": 0.6898148148148148,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "daily_self_report:C2": {
+      "source": "daily_self_report",
+      "question_id": "C2",
+      "n_outcomes": 864,
+      "correct": 374,
+      "wrong": 490,
+      "raw_trust_score": 0.43287037037037035,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "planner:C2": {
+      "source": "planner",
+      "question_id": "C2",
+      "n_outcomes": 864,
+      "correct": 182,
+      "wrong": 682,
+      "raw_trust_score": 0.21064814814814814,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "objective_log:C2": {
+      "source": "objective_log",
+      "question_id": "C2",
+      "n_outcomes": 864,
+      "correct": 511,
+      "wrong": 353,
+      "raw_trust_score": 0.5914351851851852,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "daily_self_report:C3": {
+      "source": "daily_self_report",
+      "question_id": "C3",
+      "n_outcomes": 864,
+      "correct": 392,
+      "wrong": 472,
+      "raw_trust_score": 0.4537037037037037,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "planner:C3": {
+      "source": "planner",
+      "question_id": "C3",
+      "n_outcomes": 864,
+      "correct": 213,
+      "wrong": 651,
+      "raw_trust_score": 0.2465277777777778,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "device_log:C3": {
+      "source": "device_log",
+      "question_id": "C3",
+      "n_outcomes": 864,
+      "correct": 416,
+      "wrong": 448,
+      "raw_trust_score": 0.48148148148148145,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "daily_self_report:D1": {
+      "source": "daily_self_report",
+      "question_id": "D1",
+      "n_outcomes": 864,
+      "correct": 460,
+      "wrong": 404,
+      "raw_trust_score": 0.5324074074074074,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "objective_log:D1": {
+      "source": "objective_log",
+      "question_id": "D1",
+      "n_outcomes": 864,
+      "correct": 520,
+      "wrong": 344,
+      "raw_trust_score": 0.6018518518518519,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "profile_ltm:D2": {
+      "source": "profile_ltm",
+      "question_id": "D2",
+      "n_outcomes": 864,
+      "correct": 595,
+      "wrong": 269,
+      "raw_trust_score": 0.6886574074074074,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "daily_self_report:D2": {
+      "source": "daily_self_report",
+      "question_id": "D2",
+      "n_outcomes": 864,
+      "correct": 611,
+      "wrong": 253,
+      "raw_trust_score": 0.7071759259259259,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "objective_log:D2": {
+      "source": "objective_log",
+      "question_id": "D2",
+      "n_outcomes": 864,
+      "correct": 615,
+      "wrong": 249,
+      "raw_trust_score": 0.7118055555555556,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "daily_self_report:E1": {
+      "source": "daily_self_report",
+      "question_id": "E1",
+      "n_outcomes": 864,
+      "correct": 396,
+      "wrong": 468,
+      "raw_trust_score": 0.4583333333333333,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "device_log:E1": {
+      "source": "device_log",
+      "question_id": "E1",
+      "n_outcomes": 864,
+      "correct": 615,
+      "wrong": 249,
+      "raw_trust_score": 0.7118055555555556,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "daily_self_report:E2": {
+      "source": "daily_self_report",
+      "question_id": "E2",
+      "n_outcomes": 864,
+      "correct": 698,
+      "wrong": 166,
+      "raw_trust_score": 0.8078703703703703,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "planner:E2": {
+      "source": "planner",
+      "question_id": "E2",
+      "n_outcomes": 864,
+      "correct": 589,
+      "wrong": 275,
+      "raw_trust_score": 0.6817129629629629,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "objective_log:E2": {
+      "source": "objective_log",
+      "question_id": "E2",
+      "n_outcomes": 864,
+      "correct": 183,
+      "wrong": 681,
+      "raw_trust_score": 0.21180555555555555,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "daily_self_report:F1": {
+      "source": "daily_self_report",
+      "question_id": "F1",
+      "n_outcomes": 864,
+      "correct": 479,
+      "wrong": 385,
+      "raw_trust_score": 0.5543981481481481,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "objective_log:F1": {
+      "source": "objective_log",
+      "question_id": "F1",
+      "n_outcomes": 864,
+      "correct": 612,
+      "wrong": 252,
+      "raw_trust_score": 0.7083333333333334,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "daily_self_report:F2": {
+      "source": "daily_self_report",
+      "question_id": "F2",
+      "n_outcomes": 864,
+      "correct": 609,
+      "wrong": 255,
+      "raw_trust_score": 0.7048611111111112,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "device_log:F2": {
+      "source": "device_log",
+      "question_id": "F2",
+      "n_outcomes": 864,
+      "correct": 609,
+      "wrong": 255,
+      "raw_trust_score": 0.7048611111111112,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "objective_log:F2": {
+      "source": "objective_log",
+      "question_id": "F2",
+      "n_outcomes": 864,
+      "correct": 609,
+      "wrong": 255,
+      "raw_trust_score": 0.7048611111111112,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "daily_self_report:F3": {
+      "source": "daily_self_report",
+      "question_id": "F3",
+      "n_outcomes": 328,
+      "correct": 51,
+      "wrong": 277,
+      "raw_trust_score": 0.15548780487804878,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "planner:F3": {
+      "source": "planner",
+      "question_id": "F3",
+      "n_outcomes": 328,
+      "correct": 108,
+      "wrong": 220,
+      "raw_trust_score": 0.32926829268292684,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "daily_self_report:G1": {
+      "source": "daily_self_report",
+      "question_id": "G1",
+      "n_outcomes": 864,
+      "correct": 387,
+      "wrong": 477,
+      "raw_trust_score": 0.4479166666666667,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "planner:G1": {
+      "source": "planner",
+      "question_id": "G1",
+      "n_outcomes": 864,
+      "correct": 396,
+      "wrong": 468,
+      "raw_trust_score": 0.4583333333333333,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "device_log:G1": {
+      "source": "device_log",
+      "question_id": "G1",
+      "n_outcomes": 864,
+      "correct": 365,
+      "wrong": 499,
+      "raw_trust_score": 0.4224537037037037,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "objective_log:G1": {
+      "source": "objective_log",
+      "question_id": "G1",
+      "n_outcomes": 864,
+      "correct": 395,
+      "wrong": 469,
+      "raw_trust_score": 0.45717592592592593,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "daily_self_report:G2": {
+      "source": "daily_self_report",
+      "question_id": "G2",
+      "n_outcomes": 864,
+      "correct": 318,
+      "wrong": 546,
+      "raw_trust_score": 0.3680555555555556,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "daily_self_report:Ctrl1": {
+      "source": "daily_self_report",
+      "question_id": "Ctrl1",
+      "n_outcomes": 864,
+      "correct": 738,
+      "wrong": 126,
+      "raw_trust_score": 0.8541666666666666,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "objective_log:Ctrl1": {
+      "source": "objective_log",
+      "question_id": "Ctrl1",
+      "n_outcomes": 864,
+      "correct": 272,
+      "wrong": 592,
+      "raw_trust_score": 0.3148148148148148,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "daily_self_report:Ctrl2": {
+      "source": "daily_self_report",
+      "question_id": "Ctrl2",
+      "n_outcomes": 864,
+      "correct": 740,
+      "wrong": 124,
+      "raw_trust_score": 0.8564814814814815,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "device_log:Ctrl2": {
+      "source": "device_log",
+      "question_id": "Ctrl2",
+      "n_outcomes": 864,
+      "correct": 742,
+      "wrong": 122,
+      "raw_trust_score": 0.8587962962962963,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "device_log:E2": {
+      "source": "device_log",
+      "question_id": "E2",
+      "n_outcomes": 18,
+      "correct": 13,
+      "wrong": 5,
+      "raw_trust_score": 0.7222222222222222,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    }
+  }
+}

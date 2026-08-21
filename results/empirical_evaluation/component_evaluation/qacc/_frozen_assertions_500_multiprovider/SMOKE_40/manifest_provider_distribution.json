@@ -1,0 +1,1190 @@
+{
+  "aggregation_method": "round_robin_stratified",
+  "seed_cases": 20260820,
+  "seed_assign": 20260821,
+  "n_cases": 40,
+  "total_sources": 352,
+  "source_to_provider": {
+    "1:0": "openai",
+    "1:1": "openai",
+    "1:2": "groq",
+    "1:3": "openai",
+    "1:4": "groq",
+    "1:5": "openai",
+    "1:6": "openai",
+    "1:7": "openai",
+    "1:8": "openai",
+    "8:0": "openai",
+    "8:1": "groq",
+    "8:2": "ollama",
+    "8:3": "ollama",
+    "8:4": "groq",
+    "8:5": "groq",
+    "8:6": "openai",
+    "8:7": "openai",
+    "8:8": "groq",
+    "10:0": "openai",
+    "10:1": "ollama",
+    "10:2": "openai",
+    "10:3": "groq",
+    "10:4": "groq",
+    "10:5": "ollama",
+    "10:6": "ollama",
+    "10:7": "groq",
+    "10:8": "groq",
+    "12:0": "ollama",
+    "12:1": "groq",
+    "12:2": "openai",
+    "12:3": "openai",
+    "12:4": "groq",
+    "12:5": "openai",
+    "12:6": "groq",
+    "12:7": "groq",
+    "12:8": "groq",
+    "14:0": "groq",
+    "14:1": "openai",
+    "14:2": "openai",
+    "14:3": "ollama",
+    "14:4": "groq",
+    "14:5": "ollama",
+    "14:6": "openai",
+    "14:7": "ollama",
+    "14:8": "ollama",
+    "17:0": "openai",
+    "17:1": "groq",
+    "17:2": "ollama",
+    "17:3": "openai",
+    "17:4": "groq",
+    "17:5": "openai",
+    "17:6": "openai",
+    "18:0": "groq",
+    "18:1": "groq",
+    "18:2": "groq",
+    "18:3": "openai",
+    "18:4": "openai",
+    "18:5": "ollama",
+    "18:6": "groq",
+    "18:7": "groq",
+    "18:8": "openai",
+    "18:9": "ollama",
+    "20:0": "groq",
+    "20:1": "ollama",
+    "20:2": "openai",
+    "20:3": "openai",
+    "20:4": "openai",
+    "20:5": "openai",
+    "20:6": "openai",
+    "20:7": "openai",
+    "20:8": "ollama",
+    "21:0": "ollama",
+    "21:1": "openai",
+    "21:2": "openai",
+    "21:3": "groq",
+    "21:4": "ollama",
+    "21:5": "openai",
+    "21:6": "ollama",
+    "21:7": "ollama",
+    "21:8": "groq",
+    "21:9": "openai",
+    "22:0": "ollama",
+    "22:1": "groq",
+    "22:2": "openai",
+    "22:3": "openai",
+    "22:4": "openai",
+    "22:5": "openai",
+    "22:6": "ollama",
+    "22:7": "ollama",
+    "22:8": "openai",
+    "22:9": "groq",
+    "25:0": "ollama",
+    "25:1": "groq",
+    "25:2": "groq",
+    "25:3": "groq",
+    "25:4": "groq",
+    "25:5": "ollama",
+    "25:6": "groq",
+    "25:7": "openai",
+    "25:8": "ollama",
+    "25:9": "openai",
+    "30:0": "groq",
+    "30:1": "openai",
+    "30:2": "ollama",
+    "30:3": "openai",
+    "30:4": "groq",
+    "30:5": "groq",
+    "30:6": "openai",
+    "30:7": "ollama",
+    "30:8": "openai",
+    "31:0": "openai",
+    "31:1": "ollama",
+    "31:2": "openai",
+    "31:3": "ollama",
+    "31:4": "ollama",
+    "31:5": "openai",
+    "31:6": "openai",
+    "31:7": "ollama",
+    "31:8": "ollama",
+    "33:0": "ollama",
+    "33:1": "openai",
+    "33:2": "ollama",
+    "33:3": "ollama",
+    "33:4": "groq",
+    "33:5": "groq",
+    "33:6": "groq",
+    "33:7": "ollama",
+    "33:8": "ollama",
+    "33:9": "groq",
+    "34:0": "groq",
+    "34:1": "openai",
+    "34:2": "openai",
+    "34:3": "ollama",
+    "34:4": "ollama",
+    "34:5": "groq",
+    "36:0": "groq",
+    "36:1": "ollama",
+    "36:2": "groq",
+    "36:3": "groq",
+    "36:4": "ollama",
+    "36:5": "ollama",
+    "36:6": "groq",
+    "36:7": "groq",
+    "36:8": "openai",
+    "36:9": "ollama",
+    "37:0": "ollama",
+    "37:1": "groq",
+    "37:2": "openai",
+    "37:3": "groq",
+    "37:4": "groq",
+    "37:5": "openai",
+    "37:6": "ollama",
+    "38:0": "groq",
+    "38:1": "openai",
+    "38:2": "ollama",
+    "38:3": "groq",
+    "38:4": "groq",
+    "38:5": "openai",
+    "38:6": "groq",
+    "38:7": "groq",
+    "38:8": "openai",
+    "39:0": "ollama",
+    "39:1": "openai",
+    "39:2": "ollama",
+    "39:3": "openai",
+    "39:4": "groq",
+    "39:5": "groq",
+    "41:0": "ollama",
+    "41:1": "groq",
+    "41:2": "groq",
+    "41:3": "openai",
+    "41:4": "ollama",
+    "41:5": "groq",
+    "41:6": "openai",
+    "41:7": "ollama",
+    "41:8": "groq",
+    "41:9": "groq",
+    "44:0": "openai",
+    "44:1": "openai",
+    "44:2": "groq",
+    "44:3": "ollama",
+    "44:4": "openai",
+    "44:5": "ollama",
+    "44:6": "ollama",
+    "44:7": "ollama",
+    "44:8": "openai",
+    "44:9": "ollama",
+    "49:0": "ollama",
+    "49:1": "ollama",
+    "49:2": "ollama",
+    "49:3": "openai",
+    "49:4": "ollama",
+    "49:5": "ollama",
+    "49:6": "ollama",
+    "49:7": "openai",
+    "49:8": "openai",
+    "49:9": "groq",
+    "54:0": "groq",
+    "54:1": "ollama",
+    "54:2": "groq",
+    "54:3": "ollama",
+    "54:4": "ollama",
+    "54:5": "groq",
+    "54:6": "ollama",
+    "54:7": "ollama",
+    "54:8": "ollama",
+    "56:0": "openai",
+    "56:1": "ollama",
+    "56:2": "groq",
+    "56:3": "openai",
+    "56:4": "ollama",
+    "56:5": "groq",
+    "56:6": "ollama",
+    "56:7": "groq",
+    "56:8": "openai",
+    "56:9": "ollama",
+    "57:0": "groq",
+    "57:1": "openai",
+    "57:2": "openai",
+    "57:3": "openai",
+    "57:4": "openai",
+    "57:5": "ollama",
+    "57:6": "groq",
+    "57:7": "openai",
+    "57:8": "ollama",
+    "57:9": "ollama",
+    "58:0": "openai",
+    "58:1": "ollama",
+    "58:2": "ollama",
+    "58:3": "openai",
+    "58:4": "groq",
+    "58:5": "groq",
+    "58:6": "ollama",
+    "58:7": "openai",
+    "58:8": "ollama",
+    "58:9": "groq",
+    "59:0": "groq",
+    "59:1": "groq",
+    "59:2": "ollama",
+    "59:3": "openai",
+    "59:4": "openai",
+    "59:5": "openai",
+    "61:0": "groq",
+    "61:1": "groq",
+    "61:2": "ollama",
+    "61:3": "groq",
+    "61:4": "openai",
+    "61:5": "ollama",
+    "61:6": "openai",
+    "61:7": "groq",
+    "61:8": "groq",
+    "62:0": "openai",
+    "62:1": "openai",
+    "62:2": "ollama",
+    "62:3": "groq",
+    "62:4": "ollama",
+    "62:5": "openai",
+    "62:6": "groq",
+    "62:7": "ollama",
+    "62:8": "groq",
+    "63:0": "groq",
+    "63:1": "ollama",
+    "63:2": "ollama",
+    "63:3": "ollama",
+    "63:4": "ollama",
+    "63:5": "groq",
+    "63:6": "groq",
+    "63:7": "ollama",
+    "63:8": "openai",
+    "63:9": "openai",
+    "64:0": "groq",
+    "64:1": "openai",
+    "64:2": "openai",
+    "64:3": "groq",
+    "64:4": "groq",
+    "64:5": "openai",
+    "64:6": "openai",
+    "64:7": "openai",
+    "64:8": "ollama",
+    "67:0": "groq",
+    "67:1": "openai",
+    "67:2": "ollama",
+    "67:3": "groq",
+    "67:4": "ollama",
+    "67:5": "groq",
+    "67:6": "groq",
+    "67:7": "groq",
+    "67:8": "groq",
+    "68:0": "ollama",
+    "68:1": "ollama",
+    "68:2": "openai",
+    "68:3": "openai",
+    "68:4": "openai",
+    "68:5": "ollama",
+    "68:6": "ollama",
+    "70:0": "groq",
+    "70:1": "groq",
+    "70:2": "ollama",
+    "70:3": "openai",
+    "70:4": "groq",
+    "70:5": "openai",
+    "70:6": "ollama",
+    "73:0": "groq",
+    "73:1": "openai",
+    "73:2": "groq",
+    "73:3": "openai",
+    "73:4": "ollama",
+    "73:5": "ollama",
+    "76:0": "groq",
+    "76:1": "ollama",
+    "76:2": "ollama",
+    "76:3": "ollama",
+    "76:4": "groq",
+    "76:5": "openai",
+    "76:6": "openai",
+    "76:7": "ollama",
+    "76:8": "openai",
+    "76:9": "groq",
+    "80:0": "groq",
+    "80:1": "groq",
+    "80:2": "openai",
+    "80:3": "groq",
+    "80:4": "groq",
+    "80:5": "groq",
+    "86:0": "ollama",
+    "86:1": "ollama",
+    "86:2": "openai",
+    "86:3": "groq",
+    "86:4": "openai",
+    "86:5": "groq",
+    "86:6": "ollama",
+    "86:7": "ollama",
+    "86:8": "ollama",
+    "86:9": "openai",
+    "87:0": "ollama",
+    "87:1": "openai",
+    "87:2": "openai",
+    "87:3": "openai",
+    "87:4": "ollama",
+    "87:5": "groq",
+    "87:6": "openai",
+    "87:7": "ollama",
+    "88:0": "ollama",
+    "88:1": "groq",
+    "88:2": "ollama",
+    "88:3": "openai",
+    "88:4": "ollama",
+    "88:5": "ollama",
+    "88:6": "groq",
+    "88:7": "groq",
+    "88:8": "ollama",
+    "88:9": "openai"
+  },
+  "provider_counts": {
+    "ollama": 118,
+    "openai": 117,
+    "groq": 117
+  },
+  "actual_provider_counts": {
+    "openai": 117,
+    "groq": 117,
+    "ollama": 118
+  },
+  "n_failed_extracess": 136,
+  "failures": [
+    {
+      "case_id": 1,
+      "source_id": 2,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199918, Requested 554. Please try again in 3m23.904s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 1,
+      "source_id": 4,
+      "provider": "groq",
+      "error": "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+    },
+    {
+      "case_id": 8,
+      "source_id": 1,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199896, Requested 574. Please try again in 3m23.04s. Need more tokens? Upgrad"
+    },
+    {
+      "case_id": 8,
+      "source_id": 2,
+      "provider": "ollama",
+      "error": "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+    },
+    {
+      "case_id": 8,
+      "source_id": 3,
+      "provider": "ollama",
+      "error": "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+    },
+    {
+      "case_id": 8,
+      "source_id": 4,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199916, Requested 554. Please try again in 3m23.04s. Need more tokens? Upgrad"
+    },
+    {
+      "case_id": 8,
+      "source_id": 5,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199930, Requested 569. Please try again in 3m35.567999999s. Need more tokens?"
+    },
+    {
+      "case_id": 8,
+      "source_id": 8,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199924, Requested 558. Please try again in 3m28.224s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 10,
+      "source_id": 3,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199919, Requested 535. Please try again in 3m16.128s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 10,
+      "source_id": 4,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199919, Requested 561. Please try again in 3m27.36s. Need more tokens? Upgrad"
+    },
+    {
+      "case_id": 10,
+      "source_id": 7,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199916, Requested 556. Please try again in 3m23.904s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 10,
+      "source_id": 8,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199916, Requested 549. Please try again in 3m20.88s. Need more tokens? Upgrad"
+    },
+    {
+      "case_id": 12,
+      "source_id": 0,
+      "provider": "ollama",
+      "error": "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+    },
+    {
+      "case_id": 12,
+      "source_id": 1,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199911, Requested 550. Please try again in 3m19.152s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 12,
+      "source_id": 4,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199907, Requested 561. Please try again in 3m22.176s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 12,
+      "source_id": 6,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199904, Requested 559. Please try again in 3m20.016s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 12,
+      "source_id": 7,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199904, Requested 558. Please try again in 3m19.584s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 12,
+      "source_id": 8,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199904, Requested 570. Please try again in 3m24.768s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 14,
+      "source_id": 0,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199903, Requested 542. Please try again in 3m12.24s. Need more tokens? Upgrad"
+    },
+    {
+      "case_id": 14,
+      "source_id": 4,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199898, Requested 556. Please try again in 3m16.128s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 17,
+      "source_id": 1,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199883, Requested 540. Please try again in 3m2.736s. Need more tokens? Upgrad"
+    },
+    {
+      "case_id": 17,
+      "source_id": 4,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199860, Requested 555. Please try again in 2m59.28s. Need more tokens? Upgrad"
+    },
+    {
+      "case_id": 18,
+      "source_id": 0,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199855, Requested 541. Please try again in 2m51.072s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 18,
+      "source_id": 1,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199855, Requested 549. Please try again in 2m54.528s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 18,
+      "source_id": 2,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199855, Requested 541. Please try again in 2m51.072s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 18,
+      "source_id": 6,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199852, Requested 561. Please try again in 2m58.416s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 18,
+      "source_id": 7,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199852, Requested 545. Please try again in 2m51.504s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 18,
+      "source_id": 9,
+      "provider": "ollama",
+      "error": "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+    },
+    {
+      "case_id": 20,
+      "source_id": 0,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199847, Requested 539. Please try again in 2m46.752s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 21,
+      "source_id": 3,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199796, Requested 541. Please try again in 2m25.584s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 21,
+      "source_id": 8,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199748, Requested 541. Please try again in 2m4.848s. Need more tokens? Upgrad"
+    },
+    {
+      "case_id": 22,
+      "source_id": 0,
+      "provider": "ollama",
+      "error": "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+    },
+    {
+      "case_id": 22,
+      "source_id": 1,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199740, Requested 545. Please try again in 2m3.12s. Need more tokens? Upgrade"
+    },
+    {
+      "case_id": 22,
+      "source_id": 7,
+      "provider": "ollama",
+      "error": "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+    },
+    {
+      "case_id": 22,
+      "source_id": 9,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199716, Requested 538. Please try again in 1m49.728s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 25,
+      "source_id": 0,
+      "provider": "ollama",
+      "error": "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+    },
+    {
+      "case_id": 25,
+      "source_id": 1,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199709, Requested 544. Please try again in 1m49.296s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 25,
+      "source_id": 2,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199709, Requested 544. Please try again in 1m49.296s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 25,
+      "source_id": 3,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199708, Requested 546. Please try again in 1m49.728s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 25,
+      "source_id": 4,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199708, Requested 540. Please try again in 1m47.136s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 25,
+      "source_id": 6,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199701, Requested 567. Please try again in 1m55.776s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 25,
+      "source_id": 8,
+      "provider": "ollama",
+      "error": "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+    },
+    {
+      "case_id": 30,
+      "source_id": 0,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199664, Requested 544. Please try again in 1m29.856s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 30,
+      "source_id": 4,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199650, Requested 543. Please try again in 1m23.376s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 30,
+      "source_id": 5,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199650, Requested 558. Please try again in 1m29.856s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 33,
+      "source_id": 4,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199990, Requested 559. Please try again in 3m57.168s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 33,
+      "source_id": 5,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199999, Requested 549. Please try again in 3m56.736s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 33,
+      "source_id": 6,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199999, Requested 549. Please try again in 3m56.736s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 33,
+      "source_id": 8,
+      "provider": "ollama",
+      "error": "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+    },
+    {
+      "case_id": 34,
+      "source_id": 0,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199999, Requested 549. Please try again in 3m56.736s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 34,
+      "source_id": 5,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199999, Requested 553. Please try again in 3m58.464s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 36,
+      "source_id": 0,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199999, Requested 565. Please try again in 4m3.648s. Need more tokens? Upgrad"
+    },
+    {
+      "case_id": 36,
+      "source_id": 2,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199998, Requested 546. Please try again in 3m55.008s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 36,
+      "source_id": 3,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199998, Requested 559. Please try again in 4m0.624s. Need more tokens? Upgrad"
+    },
+    {
+      "case_id": 36,
+      "source_id": 5,
+      "provider": "ollama",
+      "error": "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+    },
+    {
+      "case_id": 36,
+      "source_id": 6,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199990, Requested 553. Please try again in 3m54.576s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 36,
+      "source_id": 7,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199989, Requested 542. Please try again in 3m49.392s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 37,
+      "source_id": 1,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199968, Requested 542. Please try again in 3m40.32s. Need more tokens? Upgrad"
+    },
+    {
+      "case_id": 37,
+      "source_id": 3,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199965, Requested 557. Please try again in 3m45.504s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 37,
+      "source_id": 4,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199965, Requested 550. Please try again in 3m42.48s. Need more tokens? Upgrad"
+    },
+    {
+      "case_id": 38,
+      "source_id": 0,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199956, Requested 546. Please try again in 3m36.864s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 38,
+      "source_id": 3,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199948, Requested 552. Please try again in 3m36s. Need more tokens? Upgrade t"
+    },
+    {
+      "case_id": 38,
+      "source_id": 4,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199948, Requested 550. Please try again in 3m35.136s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 38,
+      "source_id": 6,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199945, Requested 543. Please try again in 3m30.816s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 38,
+      "source_id": 7,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199945, Requested 553. Please try again in 3m35.136s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 39,
+      "source_id": 4,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199924, Requested 555. Please try again in 3m26.928s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 39,
+      "source_id": 5,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199924, Requested 548. Please try again in 3m23.904s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 41,
+      "source_id": 1,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199916, Requested 556. Please try again in 3m23.904s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 41,
+      "source_id": 2,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199916, Requested 541. Please try again in 3m17.424s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 41,
+      "source_id": 5,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199906, Requested 549. Please try again in 3m16.56s. Need more tokens? Upgrad"
+    },
+    {
+      "case_id": 41,
+      "source_id": 8,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199896, Requested 538. Please try again in 3m7.488s. Need more tokens? Upgrad"
+    },
+    {
+      "case_id": 41,
+      "source_id": 9,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199896, Requested 557. Please try again in 3m15.696s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 44,
+      "source_id": 2,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199892, Requested 537. Please try again in 3m5.328s. Need more tokens? Upgrad"
+    },
+    {
+      "case_id": 44,
+      "source_id": 3,
+      "provider": "ollama",
+      "error": "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+    },
+    {
+      "case_id": 49,
+      "source_id": 1,
+      "provider": "ollama",
+      "error": "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+    },
+    {
+      "case_id": 49,
+      "source_id": 2,
+      "provider": "ollama",
+      "error": "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+    },
+    {
+      "case_id": 49,
+      "source_id": 5,
+      "provider": "ollama",
+      "error": "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+    },
+    {
+      "case_id": 49,
+      "source_id": 6,
+      "provider": "ollama",
+      "error": "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+    },
+    {
+      "case_id": 49,
+      "source_id": 9,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199793, Requested 540. Please try again in 2m23.856s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 54,
+      "source_id": 0,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199793, Requested 540. Please try again in 2m23.856s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 54,
+      "source_id": 2,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199783, Requested 561. Please try again in 2m28.608s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 54,
+      "source_id": 5,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199763, Requested 560. Please try again in 2m19.536s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 56,
+      "source_id": 2,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199715, Requested 547. Please try again in 1m53.184s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 56,
+      "source_id": 5,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199707, Requested 546. Please try again in 1m49.296s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 56,
+      "source_id": 7,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199699, Requested 562. Please try again in 1m52.752s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 57,
+      "source_id": 0,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199692, Requested 537. Please try again in 1m38.928s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 57,
+      "source_id": 6,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199683, Requested 547. Please try again in 1m39.36s. Need more tokens? Upgrad"
+    },
+    {
+      "case_id": 58,
+      "source_id": 4,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199640, Requested 549. Please try again in 1m21.648s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 58,
+      "source_id": 5,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199640, Requested 541. Please try again in 1m18.192s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 58,
+      "source_id": 9,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199619, Requested 556. Please try again in 1m15.6s. Need more tokens? Upgrade"
+    },
+    {
+      "case_id": 59,
+      "source_id": 0,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199619, Requested 564. Please try again in 1m19.056s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 59,
+      "source_id": 1,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199619, Requested 558. Please try again in 1m16.464s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 61,
+      "source_id": 0,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199604, Requested 554. Please try again in 1m8.256s. Need more tokens? Upgrad"
+    },
+    {
+      "case_id": 61,
+      "source_id": 1,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199603, Requested 582. Please try again in 1m19.92s. Need more tokens? Upgrad"
+    },
+    {
+      "case_id": 61,
+      "source_id": 2,
+      "provider": "ollama",
+      "error": "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+    },
+    {
+      "case_id": 61,
+      "source_id": 3,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199602, Requested 553. Please try again in 1m6.959999999s. Need more tokens? "
+    },
+    {
+      "case_id": 61,
+      "source_id": 5,
+      "provider": "ollama",
+      "error": "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+    },
+    {
+      "case_id": 61,
+      "source_id": 7,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199993, Requested 553. Please try again in 3m55.872s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 61,
+      "source_id": 8,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199986, Requested 560. Please try again in 3m55.872s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 62,
+      "source_id": 3,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199999, Requested 545. Please try again in 3m55.008s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 62,
+      "source_id": 4,
+      "provider": "ollama",
+      "error": "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+    },
+    {
+      "case_id": 62,
+      "source_id": 6,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199998, Requested 548. Please try again in 3m55.872s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 63,
+      "source_id": 0,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199999, Requested 547. Please try again in 3m55.872s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 63,
+      "source_id": 5,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199993, Requested 528. Please try again in 3m45.072s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 63,
+      "source_id": 6,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199992, Requested 553. Please try again in 3m55.44s. Need more tokens? Upgrad"
+    },
+    {
+      "case_id": 64,
+      "source_id": 0,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199981, Requested 538. Please try again in 3m44.208s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 64,
+      "source_id": 3,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199979, Requested 548. Please try again in 3m47.664s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 64,
+      "source_id": 4,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199978, Requested 561. Please try again in 3m52.848s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 67,
+      "source_id": 0,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199973, Requested 557. Please try again in 3m48.96s. Need more tokens? Upgrad"
+    },
+    {
+      "case_id": 67,
+      "source_id": 3,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199969, Requested 555. Please try again in 3m46.368s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 67,
+      "source_id": 5,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199961, Requested 551. Please try again in 3m41.184s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 67,
+      "source_id": 6,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199961, Requested 558. Please try again in 3m44.208s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 67,
+      "source_id": 7,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199961, Requested 549. Please try again in 3m40.32s. Need more tokens? Upgrad"
+    },
+    {
+      "case_id": 67,
+      "source_id": 8,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199960, Requested 563. Please try again in 3m45.936s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 68,
+      "source_id": 1,
+      "provider": "ollama",
+      "error": "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+    },
+    {
+      "case_id": 68,
+      "source_id": 5,
+      "provider": "ollama",
+      "error": "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+    },
+    {
+      "case_id": 70,
+      "source_id": 0,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199926, Requested 538. Please try again in 3m20.448s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 70,
+      "source_id": 1,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199926, Requested 540. Please try again in 3m21.312s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 70,
+      "source_id": 4,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199913, Requested 543. Please try again in 3m16.992s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 70,
+      "source_id": 6,
+      "provider": "ollama",
+      "error": "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+    },
+    {
+      "case_id": 73,
+      "source_id": 0,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199905, Requested 545. Please try again in 3m14.399999999s. Need more tokens?"
+    },
+    {
+      "case_id": 73,
+      "source_id": 2,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199903, Requested 542. Please try again in 3m12.24s. Need more tokens? Upgrad"
+    },
+    {
+      "case_id": 76,
+      "source_id": 0,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199864, Requested 549. Please try again in 2m58.416s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 76,
+      "source_id": 4,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199831, Requested 550. Please try again in 2m44.592s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 76,
+      "source_id": 9,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199818, Requested 570. Please try again in 2m47.616s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 80,
+      "source_id": 0,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199818, Requested 542. Please try again in 2m35.519999999s. Need more tokens?"
+    },
+    {
+      "case_id": 80,
+      "source_id": 1,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199818, Requested 544. Please try again in 2m36.384s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 80,
+      "source_id": 3,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199815, Requested 556. Please try again in 2m40.272s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 80,
+      "source_id": 4,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199815, Requested 548. Please try again in 2m36.816s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 80,
+      "source_id": 5,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199815, Requested 546. Please try again in 2m35.952s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 86,
+      "source_id": 3,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199797, Requested 553. Please try again in 2m31.2s. Need more tokens? Upgrade"
+    },
+    {
+      "case_id": 86,
+      "source_id": 5,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199795, Requested 555. Please try again in 2m31.2s. Need more tokens? Upgrade"
+    },
+    {
+      "case_id": 87,
+      "source_id": 5,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199733, Requested 555. Please try again in 2m4.416s. Need more tokens? Upgrad"
+    },
+    {
+      "case_id": 88,
+      "source_id": 1,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199713, Requested 537. Please try again in 1m48s. Need more tokens? Upgrade t"
+    },
+    {
+      "case_id": 88,
+      "source_id": 6,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199688, Requested 554. Please try again in 1m44.544s. Need more tokens? Upgra"
+    },
+    {
+      "case_id": 88,
+      "source_id": 7,
+      "provider": "groq",
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199688, Requested 541. Please try again in 1m38.928s. Need more tokens? Upgra"
+    }
+  ]
+}

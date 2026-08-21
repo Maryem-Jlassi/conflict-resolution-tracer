@@ -8,8 +8,8 @@ using the ConflictResolutionEngine for Ψ-driven eviction decisions.
 import pytest
 from datetime import datetime, timedelta
 
-from lcm_core.conflict import ConflictResolutionEngine
-from lcm_core.memory_mgmt import MemoryManager
+from crt_core.conflict import ConflictResolutionEngine
+from crt_core.memory_mgmt import MemoryManager
 from tests.conftest import REFERENCE_TIME, make_memory
 
 REF = REFERENCE_TIME

@@ -1,0 +1,7199 @@
+{
+  "schema_version": "PHEME_TEST_RISK_COVERAGE/1.0",
+  "method": "lcm_v1",
+  "curve": [
+    {
+      "coverage": 0.0005,
+      "selective_risk": 1.0,
+      "margin_threshold": 0.28185
+    },
+    {
+      "coverage": 0.001,
+      "selective_risk": 1.0,
+      "margin_threshold": 0.24847
+    },
+    {
+      "coverage": 0.0015,
+      "selective_risk": 1.0,
+      "margin_threshold": 0.24672
+    },
+    {
+      "coverage": 0.0021,
+      "selective_risk": 1.0,
+      "margin_threshold": 0.24123
+    },
+    {
+      "coverage": 0.0026,
+      "selective_risk": 1.0,
+      "margin_threshold": 0.23671
+    },
+    {
+      "coverage": 0.0031,
+      "selective_risk": 1.0,
+      "margin_threshold": 0.23079
+    },
+    {
+      "coverage": 0.0036,
+      "selective_risk": 1.0,
+      "margin_threshold": 0.22908
+    },
+    {
+      "coverage": 0.0041,
+      "selective_risk": 1.0,
+      "margin_threshold": 0.22903
+    },
+    {
+      "coverage": 0.0046,
+      "selective_risk": 1.0,
+      "margin_threshold": 0.22756
+    },
+    {
+      "coverage": 0.0051,
+      "selective_risk": 0.9,
+      "margin_threshold": 0.2228
+    },
+    {
+      "coverage": 0.0056,
+      "selective_risk": 0.9091,
+      "margin_threshold": 0.21592
+    },
+    {
+      "coverage": 0.0062,
+      "selective_risk": 0.9167,
+      "margin_threshold": 0.21522
+    },
+    {
+      "coverage": 0.0067,
+      "selective_risk": 0.9231,
+      "margin_threshold": 0.21521
+    },
+    {
+      "coverage": 0.0072,
+      "selective_risk": 0.9286,
+      "margin_threshold": 0.21314
+    },
+    {
+      "coverage": 0.0077,
+      "selective_risk": 0.9333,
+      "margin_threshold": 0.21291
+    },
+    {
+      "coverage": 0.0082,
+      "selective_risk": 0.9375,
+      "margin_threshold": 0.20922
+    },
+    {
+      "coverage": 0.0087,
+      "selective_risk": 0.9412,
+      "margin_threshold": 0.20756
+    },
+    {
+      "coverage": 0.0092,
+      "selective_risk": 0.8889,
+      "margin_threshold": 0.20698
+    },
+    {
+      "coverage": 0.0097,
+      "selective_risk": 0.8947,
+      "margin_threshold": 0.20626
+    },
+    {
+      "coverage": 0.0103,
+      "selective_risk": 0.9,
+      "margin_threshold": 0.20611
+    },
+    {
+      "coverage": 0.0108,
+      "selective_risk": 0.9048,
+      "margin_threshold": 0.20419
+    },
+    {
+      "coverage": 0.0113,
+      "selective_risk": 0.9091,
+      "margin_threshold": 0.2033
+    },
+    {
+      "coverage": 0.0118,
+      "selective_risk": 0.913,
+      "margin_threshold": 0.20141
+    },
+    {
+      "coverage": 0.0123,
+      "selective_risk": 0.9167,
+      "margin_threshold": 0.20073
+    },
+    {
+      "coverage": 0.0128,
+      "selective_risk": 0.92,
+      "margin_threshold": 0.19885
+    },
+    {
+      "coverage": 0.0133,
+      "selective_risk": 0.9231,
+      "margin_threshold": 0.197
+    },
+    {
+      "coverage": 0.0138,
+      "selective_risk": 0.9259,
+      "margin_threshold": 0.19637
+    },
+    {
+      "coverage": 0.0144,
+      "selective_risk": 0.8929,
+      "margin_threshold": 0.19634
+    },
+    {
+      "coverage": 0.0149,
+      "selective_risk": 0.8966,
+      "margin_threshold": 0.19489
+    },
+    {
+      "coverage": 0.0154,
+      "selective_risk": 0.9,
+      "margin_threshold": 0.19473
+    },
+    {
+      "coverage": 0.0159,
+      "selective_risk": 0.871,
+      "margin_threshold": 0.18738
+    },
+    {
+      "coverage": 0.0164,
+      "selective_risk": 0.875,
+      "margin_threshold": 0.18554
+    },
+    {
+      "coverage": 0.0169,
+      "selective_risk": 0.8485,
+      "margin_threshold": 0.18492
+    },
+    {
+      "coverage": 0.0174,
+      "selective_risk": 0.8235,
+      "margin_threshold": 0.18383
+    },
+    {
+      "coverage": 0.0179,
+      "selective_risk": 0.8286,
+      "margin_threshold": 0.18277
+    },
+    {
+      "coverage": 0.0185,
+      "selective_risk": 0.8333,
+      "margin_threshold": 0.18048
+    },
+    {
+      "coverage": 0.019,
+      "selective_risk": 0.8378,
+      "margin_threshold": 0.17899
+    },
+    {
+      "coverage": 0.0195,
+      "selective_risk": 0.8421,
+      "margin_threshold": 0.17856
+    },
+    {
+      "coverage": 0.02,
+      "selective_risk": 0.8462,
+      "margin_threshold": 0.1784
+    },
+    {
+      "coverage": 0.0205,
+      "selective_risk": 0.825,
+      "margin_threshold": 0.17801
+    },
+    {
+      "coverage": 0.021,
+      "selective_risk": 0.8049,
+      "margin_threshold": 0.17764
+    },
+    {
+      "coverage": 0.0215,
+      "selective_risk": 0.8095,
+      "margin_threshold": 0.17748
+    },
+    {
+      "coverage": 0.0221,
+      "selective_risk": 0.814,
+      "margin_threshold": 0.17741
+    },
+    {
+      "coverage": 0.0226,
+      "selective_risk": 0.8182,
+      "margin_threshold": 0.17678
+    },
+    {
+      "coverage": 0.0231,
+      "selective_risk": 0.8222,
+      "margin_threshold": 0.17649
+    },
+    {
+      "coverage": 0.0236,
+      "selective_risk": 0.8261,
+      "margin_threshold": 0.17641
+    },
+    {
+      "coverage": 0.0241,
+      "selective_risk": 0.8298,
+      "margin_threshold": 0.17625
+    },
+    {
+      "coverage": 0.0246,
+      "selective_risk": 0.8125,
+      "margin_threshold": 0.17596
+    },
+    {
+      "coverage": 0.0251,
+      "selective_risk": 0.8163,
+      "margin_threshold": 0.1759
+    },
+    {
+      "coverage": 0.0256,
+      "selective_risk": 0.82,
+      "margin_threshold": 0.17567
+    },
+    {
+      "coverage": 0.0262,
+      "selective_risk": 0.8235,
+      "margin_threshold": 0.17564
+    },
+    {
+      "coverage": 0.0267,
+      "selective_risk": 0.8269,
+      "margin_threshold": 0.17554
+    },
+    {
+      "coverage": 0.0272,
+      "selective_risk": 0.8302,
+      "margin_threshold": 0.17533
+    },
+    {
+      "coverage": 0.0277,
+      "selective_risk": 0.8333,
+      "margin_threshold": 0.1753
+    },
+    {
+      "coverage": 0.0282,
+      "selective_risk": 0.8364,
+      "margin_threshold": 0.17499
+    },
+    {
+      "coverage": 0.0287,
+      "selective_risk": 0.8393,
+      "margin_threshold": 0.17463
+    },
+    {
+      "coverage": 0.0292,
+      "selective_risk": 0.8421,
+      "margin_threshold": 0.17449
+    },
+    {
+      "coverage": 0.0297,
+      "selective_risk": 0.8448,
+      "margin_threshold": 0.17413
+    },
+    {
+      "coverage": 0.0303,
+      "selective_risk": 0.8475,
+      "margin_threshold": 0.17405
+    },
+    {
+      "coverage": 0.0308,
+      "selective_risk": 0.85,
+      "margin_threshold": 0.17398
+    },
+    {
+      "coverage": 0.0313,
+      "selective_risk": 0.8525,
+      "margin_threshold": 0.17388
+    },
+    {
+      "coverage": 0.0318,
+      "selective_risk": 0.8387,
+      "margin_threshold": 0.17386
+    },
+    {
+      "coverage": 0.0323,
+      "selective_risk": 0.8413,
+      "margin_threshold": 0.17353
+    },
+    {
+      "coverage": 0.0328,
+      "selective_risk": 0.8281,
+      "margin_threshold": 0.17343
+    },
+    {
+      "coverage": 0.0333,
+      "selective_risk": 0.8308,
+      "margin_threshold": 0.17338
+    },
+    {
+      "coverage": 0.0338,
+      "selective_risk": 0.8333,
+      "margin_threshold": 0.17337
+    },
+    {
+      "coverage": 0.0344,
+      "selective_risk": 0.8358,
+      "margin_threshold": 0.17318
+    },
+    {
+      "coverage": 0.0349,
+      "selective_risk": 0.8382,
+      "margin_threshold": 0.17317
+    },
+    {
+      "coverage": 0.0354,
+      "selective_risk": 0.8406,
+      "margin_threshold": 0.17301
+    },
+    {
+      "coverage": 0.0359,
+      "selective_risk": 0.8429,
+      "margin_threshold": 0.17272
+    },
+    {
+      "coverage": 0.0364,
+      "selective_risk": 0.8451,
+      "margin_threshold": 0.17268
+    },
+    {
+      "coverage": 0.0369,
+      "selective_risk": 0.8472,
+      "margin_threshold": 0.17253
+    },
+    {
+      "coverage": 0.0374,
+      "selective_risk": 0.8356,
+      "margin_threshold": 0.17239
+    },
+    {
+      "coverage": 0.0379,
+      "selective_risk": 0.8378,
+      "margin_threshold": 0.17236
+    },
+    {
+      "coverage": 0.0385,
+      "selective_risk": 0.84,
+      "margin_threshold": 0.17228
+    },
+    {
+      "coverage": 0.039,
+      "selective_risk": 0.8421,
+      "margin_threshold": 0.17204
+    },
+    {
+      "coverage": 0.0395,
+      "selective_risk": 0.8442,
+      "margin_threshold": 0.17202
+    },
+    {
+      "coverage": 0.04,
+      "selective_risk": 0.8462,
+      "margin_threshold": 0.17193
+    },
+    {
+      "coverage": 0.0405,
+      "selective_risk": 0.8354,
+      "margin_threshold": 0.1719
+    },
+    {
+      "coverage": 0.041,
+      "selective_risk": 0.8375,
+      "margin_threshold": 0.17166
+    },
+    {
+      "coverage": 0.0415,
+      "selective_risk": 0.8395,
+      "margin_threshold": 0.17163
+    },
+    {
+      "coverage": 0.0421,
+      "selective_risk": 0.8415,
+      "margin_threshold": 0.17155
+    },
+    {
+      "coverage": 0.0426,
+      "selective_risk": 0.8434,
+      "margin_threshold": 0.17146
+    },
+    {
+      "coverage": 0.0431,
+      "selective_risk": 0.8452,
+      "margin_threshold": 0.17134
+    },
+    {
+      "coverage": 0.0436,
+      "selective_risk": 0.8471,
+      "margin_threshold": 0.17128
+    },
+    {
+      "coverage": 0.0441,
+      "selective_risk": 0.8488,
+      "margin_threshold": 0.17115
+    },
+    {
+      "coverage": 0.0446,
+      "selective_risk": 0.8506,
+      "margin_threshold": 0.17101
+    },
+    {
+      "coverage": 0.0451,
+      "selective_risk": 0.8409,
+      "margin_threshold": 0.1709
+    },
+    {
+      "coverage": 0.0456,
+      "selective_risk": 0.8427,
+      "margin_threshold": 0.17083
+    },
+    {
+      "coverage": 0.0462,
+      "selective_risk": 0.8444,
+      "margin_threshold": 0.17061
+    },
+    {
+      "coverage": 0.0467,
+      "selective_risk": 0.8462,
+      "margin_threshold": 0.17025
+    },
+    {
+      "coverage": 0.0472,
+      "selective_risk": 0.837,
+      "margin_threshold": 0.17003
+    },
+    {
+      "coverage": 0.0477,
+      "selective_risk": 0.828,
+      "margin_threshold": 0.1699
+    },
+    {
+      "coverage": 0.0482,
+      "selective_risk": 0.8298,
+      "margin_threshold": 0.16972
+    },
+    {
+      "coverage": 0.0487,
+      "selective_risk": 0.8316,
+      "margin_threshold": 0.16936
+    },
+    {
+      "coverage": 0.0492,
+      "selective_risk": 0.8229,
+      "margin_threshold": 0.16931
+    },
+    {
+      "coverage": 0.0497,
+      "selective_risk": 0.8247,
+      "margin_threshold": 0.16923
+    },
+    {
+      "coverage": 0.0503,
+      "selective_risk": 0.8265,
+      "margin_threshold": 0.16922
+    },
+    {
+      "coverage": 0.0508,
+      "selective_risk": 0.8283,
+      "margin_threshold": 0.1692
+    },
+    {
+      "coverage": 0.0513,
+      "selective_risk": 0.83,
+      "margin_threshold": 0.1692
+    },
+    {
+      "coverage": 0.0518,
+      "selective_risk": 0.8317,
+      "margin_threshold": 0.16909
+    },
+    {
+      "coverage": 0.0523,
+      "selective_risk": 0.8333,
+      "margin_threshold": 0.16906
+    },
+    {
+      "coverage": 0.0528,
+      "selective_risk": 0.835,
+      "margin_threshold": 0.16904
+    },
+    {
+      "coverage": 0.0533,
+      "selective_risk": 0.8365,
+      "margin_threshold": 0.16896
+    },
+    {
+      "coverage": 0.0538,
+      "selective_risk": 0.8381,
+      "margin_threshold": 0.16894
+    },
+    {
+      "coverage": 0.0544,
+      "selective_risk": 0.8396,
+      "margin_threshold": 0.16878
+    },
+    {
+      "coverage": 0.0549,
+      "selective_risk": 0.8318,
+      "margin_threshold": 0.16854
+    },
+    {
+      "coverage": 0.0554,
+      "selective_risk": 0.8333,
+      "margin_threshold": 0.16852
+    },
+    {
+      "coverage": 0.0559,
+      "selective_risk": 0.8349,
+      "margin_threshold": 0.16845
+    },
+    {
+      "coverage": 0.0564,
+      "selective_risk": 0.8364,
+      "margin_threshold": 0.16836
+    },
+    {
+      "coverage": 0.0569,
+      "selective_risk": 0.8378,
+      "margin_threshold": 0.16833
+    },
+    {
+      "coverage": 0.0574,
+      "selective_risk": 0.8393,
+      "margin_threshold": 0.16822
+    },
+    {
+      "coverage": 0.0579,
+      "selective_risk": 0.8407,
+      "margin_threshold": 0.16817
+    },
+    {
+      "coverage": 0.0585,
+      "selective_risk": 0.8421,
+      "margin_threshold": 0.16814
+    },
+    {
+      "coverage": 0.059,
+      "selective_risk": 0.8435,
+      "margin_threshold": 0.16813
+    },
+    {
+      "coverage": 0.0595,
+      "selective_risk": 0.8362,
+      "margin_threshold": 0.1681
+    },
+    {
+      "coverage": 0.06,
+      "selective_risk": 0.8291,
+      "margin_threshold": 0.16802
+    },
+    {
+      "coverage": 0.0605,
+      "selective_risk": 0.8305,
+      "margin_threshold": 0.16792
+    },
+    {
+      "coverage": 0.061,
+      "selective_risk": 0.8319,
+      "margin_threshold": 0.16785
+    },
+    {
+      "coverage": 0.0615,
+      "selective_risk": 0.825,
+      "margin_threshold": 0.16783
+    },
+    {
+      "coverage": 0.0621,
+      "selective_risk": 0.8264,
+      "margin_threshold": 0.16763
+    },
+    {
+      "coverage": 0.0626,
+      "selective_risk": 0.8279,
+      "margin_threshold": 0.16757
+    },
+    {
+      "coverage": 0.0631,
+      "selective_risk": 0.8293,
+      "margin_threshold": 0.16754
+    },
+    {
+      "coverage": 0.0636,
+      "selective_risk": 0.8306,
+      "margin_threshold": 0.16744
+    },
+    {
+      "coverage": 0.0641,
+      "selective_risk": 0.832,
+      "margin_threshold": 0.16729
+    },
+    {
+      "coverage": 0.0646,
+      "selective_risk": 0.8333,
+      "margin_threshold": 0.16714
+    },
+    {
+      "coverage": 0.0651,
+      "selective_risk": 0.8346,
+      "margin_threshold": 0.16704
+    },
+    {
+      "coverage": 0.0656,
+      "selective_risk": 0.8359,
+      "margin_threshold": 0.16678
+    },
+    {
+      "coverage": 0.0662,
+      "selective_risk": 0.8372,
+      "margin_threshold": 0.16651
+    },
+    {
+      "coverage": 0.0667,
+      "selective_risk": 0.8385,
+      "margin_threshold": 0.1663
+    },
+    {
+      "coverage": 0.0672,
+      "selective_risk": 0.8397,
+      "margin_threshold": 0.16626
+    },
+    {
+      "coverage": 0.0677,
+      "selective_risk": 0.8409,
+      "margin_threshold": 0.16621
+    },
+    {
+      "coverage": 0.0682,
+      "selective_risk": 0.8421,
+      "margin_threshold": 0.16613
+    },
+    {
+      "coverage": 0.0687,
+      "selective_risk": 0.8433,
+      "margin_threshold": 0.16611
+    },
+    {
+      "coverage": 0.0692,
+      "selective_risk": 0.8444,
+      "margin_threshold": 0.16606
+    },
+    {
+      "coverage": 0.0697,
+      "selective_risk": 0.8456,
+      "margin_threshold": 0.16599
+    },
+    {
+      "coverage": 0.0703,
+      "selective_risk": 0.8467,
+      "margin_threshold": 0.16589
+    },
+    {
+      "coverage": 0.0708,
+      "selective_risk": 0.8478,
+      "margin_threshold": 0.16586
+    },
+    {
+      "coverage": 0.0713,
+      "selective_risk": 0.8489,
+      "margin_threshold": 0.16574
+    },
+    {
+      "coverage": 0.0718,
+      "selective_risk": 0.85,
+      "margin_threshold": 0.16572
+    },
+    {
+      "coverage": 0.0723,
+      "selective_risk": 0.8511,
+      "margin_threshold": 0.16563
+    },
+    {
+      "coverage": 0.0728,
+      "selective_risk": 0.8521,
+      "margin_threshold": 0.16563
+    },
+    {
+      "coverage": 0.0733,
+      "selective_risk": 0.8531,
+      "margin_threshold": 0.16546
+    },
+    {
+      "coverage": 0.0738,
+      "selective_risk": 0.8542,
+      "margin_threshold": 0.16545
+    },
+    {
+      "coverage": 0.0744,
+      "selective_risk": 0.8552,
+      "margin_threshold": 0.1654
+    },
+    {
+      "coverage": 0.0749,
+      "selective_risk": 0.8562,
+      "margin_threshold": 0.16511
+    },
+    {
+      "coverage": 0.0754,
+      "selective_risk": 0.8503,
+      "margin_threshold": 0.16502
+    },
+    {
+      "coverage": 0.0759,
+      "selective_risk": 0.8446,
+      "margin_threshold": 0.16501
+    },
+    {
+      "coverage": 0.0764,
+      "selective_risk": 0.8456,
+      "margin_threshold": 0.16497
+    },
+    {
+      "coverage": 0.0769,
+      "selective_risk": 0.8467,
+      "margin_threshold": 0.16489
+    },
+    {
+      "coverage": 0.0774,
+      "selective_risk": 0.8411,
+      "margin_threshold": 0.16471
+    },
+    {
+      "coverage": 0.0779,
+      "selective_risk": 0.8355,
+      "margin_threshold": 0.16467
+    },
+    {
+      "coverage": 0.0785,
+      "selective_risk": 0.8301,
+      "margin_threshold": 0.16458
+    },
+    {
+      "coverage": 0.079,
+      "selective_risk": 0.8312,
+      "margin_threshold": 0.16456
+    },
+    {
+      "coverage": 0.0795,
+      "selective_risk": 0.8323,
+      "margin_threshold": 0.16438
+    },
+    {
+      "coverage": 0.08,
+      "selective_risk": 0.8333,
+      "margin_threshold": 0.16436
+    },
+    {
+      "coverage": 0.0805,
+      "selective_risk": 0.8344,
+      "margin_threshold": 0.16425
+    },
+    {
+      "coverage": 0.081,
+      "selective_risk": 0.8354,
+      "margin_threshold": 0.16423
+    },
+    {
+      "coverage": 0.0815,
+      "selective_risk": 0.8365,
+      "margin_threshold": 0.16419
+    },
+    {
+      "coverage": 0.0821,
+      "selective_risk": 0.8375,
+      "margin_threshold": 0.16402
+    },
+    {
+      "coverage": 0.0826,
+      "selective_risk": 0.8385,
+      "margin_threshold": 0.16388
+    },
+    {
+      "coverage": 0.0831,
+      "selective_risk": 0.8395,
+      "margin_threshold": 0.16388
+    },
+    {
+      "coverage": 0.0836,
+      "selective_risk": 0.8344,
+      "margin_threshold": 0.16384
+    },
+    {
+      "coverage": 0.0841,
+      "selective_risk": 0.8354,
+      "margin_threshold": 0.16382
+    },
+    {
+      "coverage": 0.0846,
+      "selective_risk": 0.8364,
+      "margin_threshold": 0.16371
+    },
+    {
+      "coverage": 0.0851,
+      "selective_risk": 0.8373,
+      "margin_threshold": 0.16349
+    },
+    {
+      "coverage": 0.0856,
+      "selective_risk": 0.8383,
+      "margin_threshold": 0.16343
+    },
+    {
+      "coverage": 0.0862,
+      "selective_risk": 0.8393,
+      "margin_threshold": 0.16328
+    },
+    {
+      "coverage": 0.0867,
+      "selective_risk": 0.8402,
+      "margin_threshold": 0.16304
+    },
+    {
+      "coverage": 0.0872,
+      "selective_risk": 0.8412,
+      "margin_threshold": 0.16299
+    },
+    {
+      "coverage": 0.0877,
+      "selective_risk": 0.8363,
+      "margin_threshold": 0.16276
+    },
+    {
+      "coverage": 0.0882,
+      "selective_risk": 0.8372,
+      "margin_threshold": 0.16276
+    },
+    {
+      "coverage": 0.0887,
+      "selective_risk": 0.8324,
+      "margin_threshold": 0.16262
+    },
+    {
+      "coverage": 0.0892,
+      "selective_risk": 0.8333,
+      "margin_threshold": 0.16247
+    },
+    {
+      "coverage": 0.0897,
+      "selective_risk": 0.8343,
+      "margin_threshold": 0.16232
+    },
+    {
+      "coverage": 0.0903,
+      "selective_risk": 0.8352,
+      "margin_threshold": 0.16218
+    },
+    {
+      "coverage": 0.0908,
+      "selective_risk": 0.8362,
+      "margin_threshold": 0.16217
+    },
+    {
+      "coverage": 0.0913,
+      "selective_risk": 0.8371,
+      "margin_threshold": 0.16188
+    },
+    {
+      "coverage": 0.0918,
+      "selective_risk": 0.838,
+      "margin_threshold": 0.16179
+    },
+    {
+      "coverage": 0.0923,
+      "selective_risk": 0.8333,
+      "margin_threshold": 0.16171
+    },
+    {
+      "coverage": 0.0928,
+      "selective_risk": 0.8343,
+      "margin_threshold": 0.16169
+    },
+    {
+      "coverage": 0.0933,
+      "selective_risk": 0.8352,
+      "margin_threshold": 0.16163
+    },
+    {
+      "coverage": 0.0938,
+      "selective_risk": 0.8361,
+      "margin_threshold": 0.16157
+    },
+    {
+      "coverage": 0.0944,
+      "selective_risk": 0.837,
+      "margin_threshold": 0.16151
+    },
+    {
+      "coverage": 0.0949,
+      "selective_risk": 0.8378,
+      "margin_threshold": 0.16144
+    },
+    {
+      "coverage": 0.0954,
+      "selective_risk": 0.8387,
+      "margin_threshold": 0.16137
+    },
+    {
+      "coverage": 0.0959,
+      "selective_risk": 0.8396,
+      "margin_threshold": 0.16133
+    },
+    {
+      "coverage": 0.0964,
+      "selective_risk": 0.8404,
+      "margin_threshold": 0.16093
+    },
+    {
+      "coverage": 0.0969,
+      "selective_risk": 0.8413,
+      "margin_threshold": 0.16076
+    },
+    {
+      "coverage": 0.0974,
+      "selective_risk": 0.8368,
+      "margin_threshold": 0.1607
+    },
+    {
+      "coverage": 0.0979,
+      "selective_risk": 0.8377,
+      "margin_threshold": 0.16066
+    },
+    {
+      "coverage": 0.0985,
+      "selective_risk": 0.8385,
+      "margin_threshold": 0.16065
+    },
+    {
+      "coverage": 0.099,
+      "selective_risk": 0.8342,
+      "margin_threshold": 0.16058
+    },
+    {
+      "coverage": 0.0995,
+      "selective_risk": 0.8351,
+      "margin_threshold": 0.16055
+    },
+    {
+      "coverage": 0.1,
+      "selective_risk": 0.8359,
+      "margin_threshold": 0.16047
+    },
+    {
+      "coverage": 0.1005,
+      "selective_risk": 0.8316,
+      "margin_threshold": 0.16039
+    },
+    {
+      "coverage": 0.101,
+      "selective_risk": 0.8325,
+      "margin_threshold": 0.1603
+    },
+    {
+      "coverage": 0.1015,
+      "selective_risk": 0.8283,
+      "margin_threshold": 0.16028
+    },
+    {
+      "coverage": 0.1021,
+      "selective_risk": 0.8291,
+      "margin_threshold": 0.16014
+    },
+    {
+      "coverage": 0.1026,
+      "selective_risk": 0.83,
+      "margin_threshold": 0.16013
+    },
+    {
+      "coverage": 0.1031,
+      "selective_risk": 0.8308,
+      "margin_threshold": 0.16009
+    },
+    {
+      "coverage": 0.1036,
+      "selective_risk": 0.8317,
+      "margin_threshold": 0.16008
+    },
+    {
+      "coverage": 0.1041,
+      "selective_risk": 0.8325,
+      "margin_threshold": 0.15994
+    },
+    {
+      "coverage": 0.1046,
+      "selective_risk": 0.8333,
+      "margin_threshold": 0.15988
+    },
+    {
+      "coverage": 0.1051,
+      "selective_risk": 0.8341,
+      "margin_threshold": 0.15987
+    },
+    {
+      "coverage": 0.1056,
+      "selective_risk": 0.8301,
+      "margin_threshold": 0.15976
+    },
+    {
+      "coverage": 0.1062,
+      "selective_risk": 0.8309,
+      "margin_threshold": 0.15961
+    },
+    {
+      "coverage": 0.1067,
+      "selective_risk": 0.8317,
+      "margin_threshold": 0.15944
+    },
+    {
+      "coverage": 0.1072,
+      "selective_risk": 0.8325,
+      "margin_threshold": 0.15943
+    },
+    {
+      "coverage": 0.1077,
+      "selective_risk": 0.8333,
+      "margin_threshold": 0.15889
+    },
+    {
+      "coverage": 0.1082,
+      "selective_risk": 0.8341,
+      "margin_threshold": 0.15873
+    },
+    {
+      "coverage": 0.1087,
+      "selective_risk": 0.8349,
+      "margin_threshold": 0.1586
+    },
+    {
+      "coverage": 0.1092,
+      "selective_risk": 0.8357,
+      "margin_threshold": 0.1585
+    },
+    {
+      "coverage": 0.1097,
+      "selective_risk": 0.8318,
+      "margin_threshold": 0.15831
+    },
+    {
+      "coverage": 0.1103,
+      "selective_risk": 0.8326,
+      "margin_threshold": 0.15828
+    },
+    {
+      "coverage": 0.1108,
+      "selective_risk": 0.8287,
+      "margin_threshold": 0.15817
+    },
+    {
+      "coverage": 0.1113,
+      "selective_risk": 0.8249,
+      "margin_threshold": 0.15797
+    },
+    {
+      "coverage": 0.1118,
+      "selective_risk": 0.8257,
+      "margin_threshold": 0.15791
+    },
+    {
+      "coverage": 0.1123,
+      "selective_risk": 0.8265,
+      "margin_threshold": 0.15786
+    },
+    {
+      "coverage": 0.1128,
+      "selective_risk": 0.8273,
+      "margin_threshold": 0.15784
+    },
+    {
+      "coverage": 0.1133,
+      "selective_risk": 0.8281,
+      "margin_threshold": 0.15759
+    },
+    {
+      "coverage": 0.1138,
+      "selective_risk": 0.8288,
+      "margin_threshold": 0.15758
+    },
+    {
+      "coverage": 0.1144,
+      "selective_risk": 0.8296,
+      "margin_threshold": 0.15758
+    },
+    {
+      "coverage": 0.1149,
+      "selective_risk": 0.8304,
+      "margin_threshold": 0.1572
+    },
+    {
+      "coverage": 0.1154,
+      "selective_risk": 0.8311,
+      "margin_threshold": 0.1571
+    },
+    {
+      "coverage": 0.1159,
+      "selective_risk": 0.8319,
+      "margin_threshold": 0.15706
+    },
+    {
+      "coverage": 0.1164,
+      "selective_risk": 0.8326,
+      "margin_threshold": 0.15691
+    },
+    {
+      "coverage": 0.1169,
+      "selective_risk": 0.8333,
+      "margin_threshold": 0.15653
+    },
+    {
+      "coverage": 0.1174,
+      "selective_risk": 0.8341,
+      "margin_threshold": 0.15604
+    },
+    {
+      "coverage": 0.1179,
+      "selective_risk": 0.8348,
+      "margin_threshold": 0.156
+    },
+    {
+      "coverage": 0.1185,
+      "selective_risk": 0.8355,
+      "margin_threshold": 0.15545
+    },
+    {
+      "coverage": 0.119,
+      "selective_risk": 0.8362,
+      "margin_threshold": 0.15457
+    },
+    {
+      "coverage": 0.1195,
+      "selective_risk": 0.8369,
+      "margin_threshold": 0.15455
+    },
+    {
+      "coverage": 0.12,
+      "selective_risk": 0.8376,
+      "margin_threshold": 0.15455
+    },
+    {
+      "coverage": 0.1205,
+      "selective_risk": 0.8383,
+      "margin_threshold": 0.1542
+    },
+    {
+      "coverage": 0.121,
+      "selective_risk": 0.8347,
+      "margin_threshold": 0.15404
+    },
+    {
+      "coverage": 0.1215,
+      "selective_risk": 0.8354,
+      "margin_threshold": 0.15402
+    },
+    {
+      "coverage": 0.1221,
+      "selective_risk": 0.8319,
+      "margin_threshold": 0.15379
+    },
+    {
+      "coverage": 0.1226,
+      "selective_risk": 0.8285,
+      "margin_threshold": 0.15351
+    },
+    {
+      "coverage": 0.1231,
+      "selective_risk": 0.8292,
+      "margin_threshold": 0.15322
+    },
+    {
+      "coverage": 0.1236,
+      "selective_risk": 0.8299,
+      "margin_threshold": 0.15321
+    },
+    {
+      "coverage": 0.1241,
+      "selective_risk": 0.8264,
+      "margin_threshold": 0.15305
+    },
+    {
+      "coverage": 0.1246,
+      "selective_risk": 0.8272,
+      "margin_threshold": 0.15305
+    },
+    {
+      "coverage": 0.1251,
+      "selective_risk": 0.8279,
+      "margin_threshold": 0.15289
+    },
+    {
+      "coverage": 0.1256,
+      "selective_risk": 0.8286,
+      "margin_threshold": 0.15287
+    },
+    {
+      "coverage": 0.1262,
+      "selective_risk": 0.8293,
+      "margin_threshold": 0.15285
+    },
+    {
+      "coverage": 0.1267,
+      "selective_risk": 0.83,
+      "margin_threshold": 0.1528
+    },
+    {
+      "coverage": 0.1272,
+      "selective_risk": 0.8306,
+      "margin_threshold": 0.15278
+    },
+    {
+      "coverage": 0.1277,
+      "selective_risk": 0.8313,
+      "margin_threshold": 0.15277
+    },
+    {
+      "coverage": 0.1282,
+      "selective_risk": 0.828,
+      "margin_threshold": 0.15223
+    },
+    {
+      "coverage": 0.1287,
+      "selective_risk": 0.8287,
+      "margin_threshold": 0.15217
+    },
+    {
+      "coverage": 0.1292,
+      "selective_risk": 0.8294,
+      "margin_threshold": 0.15196
+    },
+    {
+      "coverage": 0.1297,
+      "selective_risk": 0.83,
+      "margin_threshold": 0.15195
+    },
+    {
+      "coverage": 0.1303,
+      "selective_risk": 0.8268,
+      "margin_threshold": 0.15182
+    },
+    {
+      "coverage": 0.1308,
+      "selective_risk": 0.8275,
+      "margin_threshold": 0.1517
+    },
+    {
+      "coverage": 0.1313,
+      "selective_risk": 0.8281,
+      "margin_threshold": 0.15144
+    },
+    {
+      "coverage": 0.1318,
+      "selective_risk": 0.8288,
+      "margin_threshold": 0.1514
+    },
+    {
+      "coverage": 0.1323,
+      "selective_risk": 0.8295,
+      "margin_threshold": 0.15135
+    },
+    {
+      "coverage": 0.1328,
+      "selective_risk": 0.8263,
+      "margin_threshold": 0.15079
+    },
+    {
+      "coverage": 0.1333,
+      "selective_risk": 0.8269,
+      "margin_threshold": 0.15077
+    },
+    {
+      "coverage": 0.1338,
+      "selective_risk": 0.8238,
+      "margin_threshold": 0.15067
+    },
+    {
+      "coverage": 0.1344,
+      "selective_risk": 0.8244,
+      "margin_threshold": 0.15064
+    },
+    {
+      "coverage": 0.1349,
+      "selective_risk": 0.8251,
+      "margin_threshold": 0.15058
+    },
+    {
+      "coverage": 0.1354,
+      "selective_risk": 0.8258,
+      "margin_threshold": 0.15057
+    },
+    {
+      "coverage": 0.1359,
+      "selective_risk": 0.8226,
+      "margin_threshold": 0.15056
+    },
+    {
+      "coverage": 0.1364,
+      "selective_risk": 0.8233,
+      "margin_threshold": 0.15041
+    },
+    {
+      "coverage": 0.1369,
+      "selective_risk": 0.824,
+      "margin_threshold": 0.15036
+    },
+    {
+      "coverage": 0.1374,
+      "selective_risk": 0.8209,
+      "margin_threshold": 0.15012
+    },
+    {
+      "coverage": 0.1379,
+      "selective_risk": 0.8216,
+      "margin_threshold": 0.15009
+    },
+    {
+      "coverage": 0.1385,
+      "selective_risk": 0.8222,
+      "margin_threshold": 0.14987
+    },
+    {
+      "coverage": 0.139,
+      "selective_risk": 0.8192,
+      "margin_threshold": 0.14963
+    },
+    {
+      "coverage": 0.1395,
+      "selective_risk": 0.8199,
+      "margin_threshold": 0.14954
+    },
+    {
+      "coverage": 0.14,
+      "selective_risk": 0.8205,
+      "margin_threshold": 0.14923
+    },
+    {
+      "coverage": 0.1405,
+      "selective_risk": 0.8175,
+      "margin_threshold": 0.14919
+    },
+    {
+      "coverage": 0.141,
+      "selective_risk": 0.8182,
+      "margin_threshold": 0.14859
+    },
+    {
+      "coverage": 0.1415,
+      "selective_risk": 0.8188,
+      "margin_threshold": 0.14848
+    },
+    {
+      "coverage": 0.1421,
+      "selective_risk": 0.8159,
+      "margin_threshold": 0.14844
+    },
+    {
+      "coverage": 0.1426,
+      "selective_risk": 0.8165,
+      "margin_threshold": 0.14827
+    },
+    {
+      "coverage": 0.1431,
+      "selective_risk": 0.8172,
+      "margin_threshold": 0.14825
+    },
+    {
+      "coverage": 0.1436,
+      "selective_risk": 0.8179,
+      "margin_threshold": 0.14825
+    },
+    {
+      "coverage": 0.1441,
+      "selective_risk": 0.8185,
+      "margin_threshold": 0.14824
+    },
+    {
+      "coverage": 0.1446,
+      "selective_risk": 0.8191,
+      "margin_threshold": 0.14799
+    },
+    {
+      "coverage": 0.1451,
+      "selective_risk": 0.8198,
+      "margin_threshold": 0.14799
+    },
+    {
+      "coverage": 0.1456,
+      "selective_risk": 0.8204,
+      "margin_threshold": 0.14793
+    },
+    {
+      "coverage": 0.1462,
+      "selective_risk": 0.8211,
+      "margin_threshold": 0.14787
+    },
+    {
+      "coverage": 0.1467,
+      "selective_risk": 0.8217,
+      "margin_threshold": 0.14768
+    },
+    {
+      "coverage": 0.1472,
+      "selective_risk": 0.8188,
+      "margin_threshold": 0.14764
+    },
+    {
+      "coverage": 0.1477,
+      "selective_risk": 0.8194,
+      "margin_threshold": 0.14748
+    },
+    {
+      "coverage": 0.1482,
+      "selective_risk": 0.8201,
+      "margin_threshold": 0.14739
+    },
+    {
+      "coverage": 0.1487,
+      "selective_risk": 0.8207,
+      "margin_threshold": 0.14732
+    },
+    {
+      "coverage": 0.1492,
+      "selective_risk": 0.8213,
+      "margin_threshold": 0.14716
+    },
+    {
+      "coverage": 0.1497,
+      "selective_risk": 0.8219,
+      "margin_threshold": 0.14683
+    },
+    {
+      "coverage": 0.1503,
+      "selective_risk": 0.8191,
+      "margin_threshold": 0.14681
+    },
+    {
+      "coverage": 0.1508,
+      "selective_risk": 0.8197,
+      "margin_threshold": 0.14672
+    },
+    {
+      "coverage": 0.1513,
+      "selective_risk": 0.8203,
+      "margin_threshold": 0.14667
+    },
+    {
+      "coverage": 0.1518,
+      "selective_risk": 0.8176,
+      "margin_threshold": 0.14666
+    },
+    {
+      "coverage": 0.1523,
+      "selective_risk": 0.8148,
+      "margin_threshold": 0.1465
+    },
+    {
+      "coverage": 0.1528,
+      "selective_risk": 0.8154,
+      "margin_threshold": 0.14629
+    },
+    {
+      "coverage": 0.1533,
+      "selective_risk": 0.8161,
+      "margin_threshold": 0.14626
+    },
+    {
+      "coverage": 0.1538,
+      "selective_risk": 0.8167,
+      "margin_threshold": 0.1462
+    },
+    {
+      "coverage": 0.1544,
+      "selective_risk": 0.8173,
+      "margin_threshold": 0.14603
+    },
+    {
+      "coverage": 0.1549,
+      "selective_risk": 0.8179,
+      "margin_threshold": 0.14579
+    },
+    {
+      "coverage": 0.1554,
+      "selective_risk": 0.8185,
+      "margin_threshold": 0.14574
+    },
+    {
+      "coverage": 0.1559,
+      "selective_risk": 0.8191,
+      "margin_threshold": 0.14573
+    },
+    {
+      "coverage": 0.1564,
+      "selective_risk": 0.8164,
+      "margin_threshold": 0.14572
+    },
+    {
+      "coverage": 0.1569,
+      "selective_risk": 0.817,
+      "margin_threshold": 0.1456
+    },
+    {
+      "coverage": 0.1574,
+      "selective_risk": 0.8176,
+      "margin_threshold": 0.14554
+    },
+    {
+      "coverage": 0.1579,
+      "selective_risk": 0.8182,
+      "margin_threshold": 0.14525
+    },
+    {
+      "coverage": 0.1585,
+      "selective_risk": 0.8188,
+      "margin_threshold": 0.14505
+    },
+    {
+      "coverage": 0.159,
+      "selective_risk": 0.8161,
+      "margin_threshold": 0.14504
+    },
+    {
+      "coverage": 0.1595,
+      "selective_risk": 0.8167,
+      "margin_threshold": 0.14495
+    },
+    {
+      "coverage": 0.16,
+      "selective_risk": 0.8173,
+      "margin_threshold": 0.14479
+    },
+    {
+      "coverage": 0.1605,
+      "selective_risk": 0.8179,
+      "margin_threshold": 0.14478
+    },
+    {
+      "coverage": 0.161,
+      "selective_risk": 0.8185,
+      "margin_threshold": 0.14464
+    },
+    {
+      "coverage": 0.1615,
+      "selective_risk": 0.819,
+      "margin_threshold": 0.14454
+    },
+    {
+      "coverage": 0.1621,
+      "selective_risk": 0.8196,
+      "margin_threshold": 0.14446
+    },
+    {
+      "coverage": 0.1626,
+      "selective_risk": 0.8202,
+      "margin_threshold": 0.14442
+    },
+    {
+      "coverage": 0.1631,
+      "selective_risk": 0.8208,
+      "margin_threshold": 0.14434
+    },
+    {
+      "coverage": 0.1636,
+      "selective_risk": 0.8213,
+      "margin_threshold": 0.14427
+    },
+    {
+      "coverage": 0.1641,
+      "selective_risk": 0.8219,
+      "margin_threshold": 0.14424
+    },
+    {
+      "coverage": 0.1646,
+      "selective_risk": 0.8224,
+      "margin_threshold": 0.14423
+    },
+    {
+      "coverage": 0.1651,
+      "selective_risk": 0.8199,
+      "margin_threshold": 0.14422
+    },
+    {
+      "coverage": 0.1656,
+      "selective_risk": 0.8204,
+      "margin_threshold": 0.14421
+    },
+    {
+      "coverage": 0.1662,
+      "selective_risk": 0.821,
+      "margin_threshold": 0.14421
+    },
+    {
+      "coverage": 0.1667,
+      "selective_risk": 0.8185,
+      "margin_threshold": 0.14417
+    },
+    {
+      "coverage": 0.1672,
+      "selective_risk": 0.819,
+      "margin_threshold": 0.14395
+    },
+    {
+      "coverage": 0.1677,
+      "selective_risk": 0.8196,
+      "margin_threshold": 0.14389
+    },
+    {
+      "coverage": 0.1682,
+      "selective_risk": 0.8171,
+      "margin_threshold": 0.14385
+    },
+    {
+      "coverage": 0.1687,
+      "selective_risk": 0.8146,
+      "margin_threshold": 0.14381
+    },
+    {
+      "coverage": 0.1692,
+      "selective_risk": 0.8152,
+      "margin_threshold": 0.14374
+    },
+    {
+      "coverage": 0.1697,
+      "selective_risk": 0.8157,
+      "margin_threshold": 0.14362
+    },
+    {
+      "coverage": 0.1703,
+      "selective_risk": 0.8133,
+      "margin_threshold": 0.1436
+    },
+    {
+      "coverage": 0.1708,
+      "selective_risk": 0.8138,
+      "margin_threshold": 0.1432
+    },
+    {
+      "coverage": 0.1713,
+      "selective_risk": 0.8144,
+      "margin_threshold": 0.14315
+    },
+    {
+      "coverage": 0.1718,
+      "selective_risk": 0.8149,
+      "margin_threshold": 0.14311
+    },
+    {
+      "coverage": 0.1723,
+      "selective_risk": 0.8155,
+      "margin_threshold": 0.14307
+    },
+    {
+      "coverage": 0.1728,
+      "selective_risk": 0.816,
+      "margin_threshold": 0.14269
+    },
+    {
+      "coverage": 0.1733,
+      "selective_risk": 0.8136,
+      "margin_threshold": 0.14267
+    },
+    {
+      "coverage": 0.1738,
+      "selective_risk": 0.8142,
+      "margin_threshold": 0.14258
+    },
+    {
+      "coverage": 0.1744,
+      "selective_risk": 0.8118,
+      "margin_threshold": 0.14239
+    },
+    {
+      "coverage": 0.1749,
+      "selective_risk": 0.8123,
+      "margin_threshold": 0.14214
+    },
+    {
+      "coverage": 0.1754,
+      "selective_risk": 0.8129,
+      "margin_threshold": 0.14208
+    },
+    {
+      "coverage": 0.1759,
+      "selective_risk": 0.8105,
+      "margin_threshold": 0.14207
+    },
+    {
+      "coverage": 0.1764,
+      "selective_risk": 0.811,
+      "margin_threshold": 0.142
+    },
+    {
+      "coverage": 0.1769,
+      "selective_risk": 0.8116,
+      "margin_threshold": 0.14185
+    },
+    {
+      "coverage": 0.1774,
+      "selective_risk": 0.8121,
+      "margin_threshold": 0.14178
+    },
+    {
+      "coverage": 0.1779,
+      "selective_risk": 0.8098,
+      "margin_threshold": 0.14163
+    },
+    {
+      "coverage": 0.1785,
+      "selective_risk": 0.8075,
+      "margin_threshold": 0.1415
+    },
+    {
+      "coverage": 0.179,
+      "selective_risk": 0.808,
+      "margin_threshold": 0.14144
+    },
+    {
+      "coverage": 0.1795,
+      "selective_risk": 0.8086,
+      "margin_threshold": 0.14141
+    },
+    {
+      "coverage": 0.18,
+      "selective_risk": 0.8091,
+      "margin_threshold": 0.14136
+    },
+    {
+      "coverage": 0.1805,
+      "selective_risk": 0.8097,
+      "margin_threshold": 0.14125
+    },
+    {
+      "coverage": 0.181,
+      "selective_risk": 0.8102,
+      "margin_threshold": 0.14123
+    },
+    {
+      "coverage": 0.1815,
+      "selective_risk": 0.8107,
+      "margin_threshold": 0.14118
+    },
+    {
+      "coverage": 0.1821,
+      "selective_risk": 0.8113,
+      "margin_threshold": 0.14112
+    },
+    {
+      "coverage": 0.1826,
+      "selective_risk": 0.8118,
+      "margin_threshold": 0.14098
+    },
+    {
+      "coverage": 0.1831,
+      "selective_risk": 0.8123,
+      "margin_threshold": 0.14073
+    },
+    {
+      "coverage": 0.1836,
+      "selective_risk": 0.8128,
+      "margin_threshold": 0.1407
+    },
+    {
+      "coverage": 0.1841,
+      "selective_risk": 0.8134,
+      "margin_threshold": 0.14069
+    },
+    {
+      "coverage": 0.1846,
+      "selective_risk": 0.8139,
+      "margin_threshold": 0.14057
+    },
+    {
+      "coverage": 0.1851,
+      "selective_risk": 0.8144,
+      "margin_threshold": 0.14056
+    },
+    {
+      "coverage": 0.1856,
+      "selective_risk": 0.8149,
+      "margin_threshold": 0.14053
+    },
+    {
+      "coverage": 0.1862,
+      "selective_risk": 0.8154,
+      "margin_threshold": 0.14047
+    },
+    {
+      "coverage": 0.1867,
+      "selective_risk": 0.8159,
+      "margin_threshold": 0.14043
+    },
+    {
+      "coverage": 0.1872,
+      "selective_risk": 0.8164,
+      "margin_threshold": 0.14038
+    },
+    {
+      "coverage": 0.1877,
+      "selective_risk": 0.8142,
+      "margin_threshold": 0.14028
+    },
+    {
+      "coverage": 0.1882,
+      "selective_risk": 0.8147,
+      "margin_threshold": 0.14028
+    },
+    {
+      "coverage": 0.1887,
+      "selective_risk": 0.8152,
+      "margin_threshold": 0.14011
+    },
+    {
+      "coverage": 0.1892,
+      "selective_risk": 0.8157,
+      "margin_threshold": 0.14009
+    },
+    {
+      "coverage": 0.1897,
+      "selective_risk": 0.8162,
+      "margin_threshold": 0.14008
+    },
+    {
+      "coverage": 0.1903,
+      "selective_risk": 0.8167,
+      "margin_threshold": 0.14007
+    },
+    {
+      "coverage": 0.1908,
+      "selective_risk": 0.8145,
+      "margin_threshold": 0.13997
+    },
+    {
+      "coverage": 0.1913,
+      "selective_risk": 0.815,
+      "margin_threshold": 0.13992
+    },
+    {
+      "coverage": 0.1918,
+      "selective_risk": 0.8155,
+      "margin_threshold": 0.13986
+    },
+    {
+      "coverage": 0.1923,
+      "selective_risk": 0.8133,
+      "margin_threshold": 0.13983
+    },
+    {
+      "coverage": 0.1928,
+      "selective_risk": 0.8138,
+      "margin_threshold": 0.13976
+    },
+    {
+      "coverage": 0.1933,
+      "selective_risk": 0.8117,
+      "margin_threshold": 0.13975
+    },
+    {
+      "coverage": 0.1938,
+      "selective_risk": 0.8122,
+      "margin_threshold": 0.1397
+    },
+    {
+      "coverage": 0.1944,
+      "selective_risk": 0.8127,
+      "margin_threshold": 0.13936
+    },
+    {
+      "coverage": 0.1949,
+      "selective_risk": 0.8132,
+      "margin_threshold": 0.13935
+    },
+    {
+      "coverage": 0.1954,
+      "selective_risk": 0.8136,
+      "margin_threshold": 0.13935
+    },
+    {
+      "coverage": 0.1959,
+      "selective_risk": 0.8115,
+      "margin_threshold": 0.1393
+    },
+    {
+      "coverage": 0.1964,
+      "selective_risk": 0.812,
+      "margin_threshold": 0.13913
+    },
+    {
+      "coverage": 0.1969,
+      "selective_risk": 0.8125,
+      "margin_threshold": 0.13913
+    },
+    {
+      "coverage": 0.1974,
+      "selective_risk": 0.813,
+      "margin_threshold": 0.13901
+    },
+    {
+      "coverage": 0.1979,
+      "selective_risk": 0.8135,
+      "margin_threshold": 0.13895
+    },
+    {
+      "coverage": 0.1985,
+      "selective_risk": 0.8114,
+      "margin_threshold": 0.13881
+    },
+    {
+      "coverage": 0.199,
+      "selective_risk": 0.8119,
+      "margin_threshold": 0.13855
+    },
+    {
+      "coverage": 0.1995,
+      "selective_risk": 0.8123,
+      "margin_threshold": 0.13854
+    },
+    {
+      "coverage": 0.2,
+      "selective_risk": 0.8128,
+      "margin_threshold": 0.1385
+    },
+    {
+      "coverage": 0.2005,
+      "selective_risk": 0.8133,
+      "margin_threshold": 0.13849
+    },
+    {
+      "coverage": 0.201,
+      "selective_risk": 0.8138,
+      "margin_threshold": 0.13846
+    },
+    {
+      "coverage": 0.2015,
+      "selective_risk": 0.8142,
+      "margin_threshold": 0.13845
+    },
+    {
+      "coverage": 0.2021,
+      "selective_risk": 0.8147,
+      "margin_threshold": 0.13845
+    },
+    {
+      "coverage": 0.2026,
+      "selective_risk": 0.8127,
+      "margin_threshold": 0.13839
+    },
+    {
+      "coverage": 0.2031,
+      "selective_risk": 0.8106,
+      "margin_threshold": 0.13832
+    },
+    {
+      "coverage": 0.2036,
+      "selective_risk": 0.8111,
+      "margin_threshold": 0.13819
+    },
+    {
+      "coverage": 0.2041,
+      "selective_risk": 0.8116,
+      "margin_threshold": 0.13782
+    },
+    {
+      "coverage": 0.2046,
+      "selective_risk": 0.812,
+      "margin_threshold": 0.13778
+    },
+    {
+      "coverage": 0.2051,
+      "selective_risk": 0.8125,
+      "margin_threshold": 0.13777
+    },
+    {
+      "coverage": 0.2056,
+      "selective_risk": 0.813,
+      "margin_threshold": 0.13775
+    },
+    {
+      "coverage": 0.2062,
+      "selective_risk": 0.8134,
+      "margin_threshold": 0.13769
+    },
+    {
+      "coverage": 0.2067,
+      "selective_risk": 0.8114,
+      "margin_threshold": 0.13769
+    },
+    {
+      "coverage": 0.2072,
+      "selective_risk": 0.8094,
+      "margin_threshold": 0.1376
+    },
+    {
+      "coverage": 0.2077,
+      "selective_risk": 0.8099,
+      "margin_threshold": 0.13759
+    },
+    {
+      "coverage": 0.2082,
+      "selective_risk": 0.8103,
+      "margin_threshold": 0.1375
+    },
+    {
+      "coverage": 0.2087,
+      "selective_risk": 0.8108,
+      "margin_threshold": 0.13743
+    },
+    {
+      "coverage": 0.2092,
+      "selective_risk": 0.8088,
+      "margin_threshold": 0.13726
+    },
+    {
+      "coverage": 0.2097,
+      "selective_risk": 0.8093,
+      "margin_threshold": 0.1372
+    },
+    {
+      "coverage": 0.2103,
+      "selective_risk": 0.8098,
+      "margin_threshold": 0.13711
+    },
+    {
+      "coverage": 0.2108,
+      "selective_risk": 0.8102,
+      "margin_threshold": 0.13704
+    },
+    {
+      "coverage": 0.2113,
+      "selective_risk": 0.8083,
+      "margin_threshold": 0.13685
+    },
+    {
+      "coverage": 0.2118,
+      "selective_risk": 0.8063,
+      "margin_threshold": 0.13657
+    },
+    {
+      "coverage": 0.2123,
+      "selective_risk": 0.8068,
+      "margin_threshold": 0.13652
+    },
+    {
+      "coverage": 0.2128,
+      "selective_risk": 0.8072,
+      "margin_threshold": 0.13645
+    },
+    {
+      "coverage": 0.2133,
+      "selective_risk": 0.8077,
+      "margin_threshold": 0.1363
+    },
+    {
+      "coverage": 0.2138,
+      "selective_risk": 0.8082,
+      "margin_threshold": 0.13629
+    },
+    {
+      "coverage": 0.2144,
+      "selective_risk": 0.8086,
+      "margin_threshold": 0.13629
+    },
+    {
+      "coverage": 0.2149,
+      "selective_risk": 0.8091,
+      "margin_threshold": 0.13626
+    },
+    {
+      "coverage": 0.2154,
+      "selective_risk": 0.8095,
+      "margin_threshold": 0.13624
+    },
+    {
+      "coverage": 0.2159,
+      "selective_risk": 0.81,
+      "margin_threshold": 0.13596
+    },
+    {
+      "coverage": 0.2164,
+      "selective_risk": 0.8104,
+      "margin_threshold": 0.13552
+    },
+    {
+      "coverage": 0.2169,
+      "selective_risk": 0.8109,
+      "margin_threshold": 0.13551
+    },
+    {
+      "coverage": 0.2174,
+      "selective_risk": 0.8113,
+      "margin_threshold": 0.13538
+    },
+    {
+      "coverage": 0.2179,
+      "selective_risk": 0.8118,
+      "margin_threshold": 0.13535
+    },
+    {
+      "coverage": 0.2185,
+      "selective_risk": 0.8122,
+      "margin_threshold": 0.13529
+    },
+    {
+      "coverage": 0.219,
+      "selective_risk": 0.8103,
+      "margin_threshold": 0.13527
+    },
+    {
+      "coverage": 0.2195,
+      "selective_risk": 0.8107,
+      "margin_threshold": 0.1352
+    },
+    {
+      "coverage": 0.22,
+      "selective_risk": 0.8089,
+      "margin_threshold": 0.13497
+    },
+    {
+      "coverage": 0.2205,
+      "selective_risk": 0.8093,
+      "margin_threshold": 0.13491
+    },
+    {
+      "coverage": 0.221,
+      "selective_risk": 0.8074,
+      "margin_threshold": 0.1349
+    },
+    {
+      "coverage": 0.2215,
+      "selective_risk": 0.8079,
+      "margin_threshold": 0.13484
+    },
+    {
+      "coverage": 0.2221,
+      "selective_risk": 0.806,
+      "margin_threshold": 0.13479
+    },
+    {
+      "coverage": 0.2226,
+      "selective_risk": 0.8041,
+      "margin_threshold": 0.13478
+    },
+    {
+      "coverage": 0.2231,
+      "selective_risk": 0.8023,
+      "margin_threshold": 0.13476
+    },
+    {
+      "coverage": 0.2236,
+      "selective_risk": 0.8028,
+      "margin_threshold": 0.13466
+    },
+    {
+      "coverage": 0.2241,
+      "selective_risk": 0.8032,
+      "margin_threshold": 0.13461
+    },
+    {
+      "coverage": 0.2246,
+      "selective_risk": 0.8037,
+      "margin_threshold": 0.13437
+    },
+    {
+      "coverage": 0.2251,
+      "selective_risk": 0.8041,
+      "margin_threshold": 0.13413
+    },
+    {
+      "coverage": 0.2256,
+      "selective_risk": 0.8023,
+      "margin_threshold": 0.13403
+    },
+    {
+      "coverage": 0.2262,
+      "selective_risk": 0.8027,
+      "margin_threshold": 0.13392
+    },
+    {
+      "coverage": 0.2267,
+      "selective_risk": 0.8032,
+      "margin_threshold": 0.13381
+    },
+    {
+      "coverage": 0.2272,
+      "selective_risk": 0.8036,
+      "margin_threshold": 0.13375
+    },
+    {
+      "coverage": 0.2277,
+      "selective_risk": 0.8041,
+      "margin_threshold": 0.13366
+    },
+    {
+      "coverage": 0.2282,
+      "selective_risk": 0.8022,
+      "margin_threshold": 0.13348
+    },
+    {
+      "coverage": 0.2287,
+      "selective_risk": 0.8027,
+      "margin_threshold": 0.13346
+    },
+    {
+      "coverage": 0.2292,
+      "selective_risk": 0.8031,
+      "margin_threshold": 0.13336
+    },
+    {
+      "coverage": 0.2297,
+      "selective_risk": 0.8036,
+      "margin_threshold": 0.13333
+    },
+    {
+      "coverage": 0.2303,
+      "selective_risk": 0.804,
+      "margin_threshold": 0.13326
+    },
+    {
+      "coverage": 0.2308,
+      "selective_risk": 0.8022,
+      "margin_threshold": 0.13313
+    },
+    {
+      "coverage": 0.2313,
+      "selective_risk": 0.8004,
+      "margin_threshold": 0.13307
+    },
+    {
+      "coverage": 0.2318,
+      "selective_risk": 0.7987,
+      "margin_threshold": 0.13304
+    },
+    {
+      "coverage": 0.2323,
+      "selective_risk": 0.7991,
+      "margin_threshold": 0.13295
+    },
+    {
+      "coverage": 0.2328,
+      "selective_risk": 0.7974,
+      "margin_threshold": 0.13286
+    },
+    {
+      "coverage": 0.2333,
+      "selective_risk": 0.7956,
+      "margin_threshold": 0.13241
+    },
+    {
+      "coverage": 0.2338,
+      "selective_risk": 0.7939,
+      "margin_threshold": 0.13228
+    },
+    {
+      "coverage": 0.2344,
+      "selective_risk": 0.7943,
+      "margin_threshold": 0.13227
+    },
+    {
+      "coverage": 0.2349,
+      "selective_risk": 0.7948,
+      "margin_threshold": 0.13214
+    },
+    {
+      "coverage": 0.2354,
+      "selective_risk": 0.7952,
+      "margin_threshold": 0.13211
+    },
+    {
+      "coverage": 0.2359,
+      "selective_risk": 0.7935,
+      "margin_threshold": 0.132
+    },
+    {
+      "coverage": 0.2364,
+      "selective_risk": 0.7939,
+      "margin_threshold": 0.132
+    },
+    {
+      "coverage": 0.2369,
+      "selective_risk": 0.7944,
+      "margin_threshold": 0.1317
+    },
+    {
+      "coverage": 0.2374,
+      "selective_risk": 0.7948,
+      "margin_threshold": 0.13137
+    },
+    {
+      "coverage": 0.2379,
+      "selective_risk": 0.7953,
+      "margin_threshold": 0.13124
+    },
+    {
+      "coverage": 0.2385,
+      "selective_risk": 0.7935,
+      "margin_threshold": 0.13099
+    },
+    {
+      "coverage": 0.239,
+      "selective_risk": 0.794,
+      "margin_threshold": 0.13089
+    },
+    {
+      "coverage": 0.2395,
+      "selective_risk": 0.7944,
+      "margin_threshold": 0.13088
+    },
+    {
+      "coverage": 0.24,
+      "selective_risk": 0.7949,
+      "margin_threshold": 0.13051
+    },
+    {
+      "coverage": 0.2405,
+      "selective_risk": 0.7932,
+      "margin_threshold": 0.13037
+    },
+    {
+      "coverage": 0.241,
+      "selective_risk": 0.7936,
+      "margin_threshold": 0.13027
+    },
+    {
+      "coverage": 0.2415,
+      "selective_risk": 0.7919,
+      "margin_threshold": 0.13014
+    },
+    {
+      "coverage": 0.2421,
+      "selective_risk": 0.7924,
+      "margin_threshold": 0.12989
+    },
+    {
+      "coverage": 0.2426,
+      "selective_risk": 0.7928,
+      "margin_threshold": 0.12985
+    },
+    {
+      "coverage": 0.2431,
+      "selective_risk": 0.7911,
+      "margin_threshold": 0.12966
+    },
+    {
+      "coverage": 0.2436,
+      "selective_risk": 0.7916,
+      "margin_threshold": 0.12943
+    },
+    {
+      "coverage": 0.2441,
+      "selective_risk": 0.792,
+      "margin_threshold": 0.12891
+    },
+    {
+      "coverage": 0.2446,
+      "selective_risk": 0.7925,
+      "margin_threshold": 0.12889
+    },
+    {
+      "coverage": 0.2451,
+      "selective_risk": 0.7929,
+      "margin_threshold": 0.12878
+    },
+    {
+      "coverage": 0.2456,
+      "selective_risk": 0.7933,
+      "margin_threshold": 0.12872
+    },
+    {
+      "coverage": 0.2462,
+      "selective_risk": 0.7937,
+      "margin_threshold": 0.12863
+    },
+    {
+      "coverage": 0.2467,
+      "selective_risk": 0.7942,
+      "margin_threshold": 0.12838
+    },
+    {
+      "coverage": 0.2472,
+      "selective_risk": 0.7925,
+      "margin_threshold": 0.12718
+    },
+    {
+      "coverage": 0.2477,
+      "selective_risk": 0.793,
+      "margin_threshold": 0.12706
+    },
+    {
+      "coverage": 0.2482,
+      "selective_risk": 0.7913,
+      "margin_threshold": 0.12671
+    },
+    {
+      "coverage": 0.2487,
+      "selective_risk": 0.7918,
+      "margin_threshold": 0.12664
+    },
+    {
+      "coverage": 0.2492,
+      "selective_risk": 0.7922,
+      "margin_threshold": 0.12646
+    },
+    {
+      "coverage": 0.2497,
+      "selective_risk": 0.7906,
+      "margin_threshold": 0.12642
+    },
+    {
+      "coverage": 0.2503,
+      "selective_risk": 0.7889,
+      "margin_threshold": 0.12606
+    },
+    {
+      "coverage": 0.2508,
+      "selective_risk": 0.7894,
+      "margin_threshold": 0.12599
+    },
+    {
+      "coverage": 0.2513,
+      "selective_risk": 0.7898,
+      "margin_threshold": 0.12555
+    },
+    {
+      "coverage": 0.2518,
+      "selective_risk": 0.7902,
+      "margin_threshold": 0.12548
+    },
+    {
+      "coverage": 0.2523,
+      "selective_risk": 0.7886,
+      "margin_threshold": 0.12542
+    },
+    {
+      "coverage": 0.2528,
+      "selective_risk": 0.789,
+      "margin_threshold": 0.12541
+    },
+    {
+      "coverage": 0.2533,
+      "selective_risk": 0.7874,
+      "margin_threshold": 0.12539
+    },
+    {
+      "coverage": 0.2538,
+      "selective_risk": 0.7879,
+      "margin_threshold": 0.12531
+    },
+    {
+      "coverage": 0.2544,
+      "selective_risk": 0.7883,
+      "margin_threshold": 0.12505
+    },
+    {
+      "coverage": 0.2549,
+      "selective_risk": 0.7867,
+      "margin_threshold": 0.12491
+    },
+    {
+      "coverage": 0.2554,
+      "selective_risk": 0.7851,
+      "margin_threshold": 0.12479
+    },
+    {
+      "coverage": 0.2559,
+      "selective_risk": 0.7856,
+      "margin_threshold": 0.12476
+    },
+    {
+      "coverage": 0.2564,
+      "selective_risk": 0.786,
+      "margin_threshold": 0.12468
+    },
+    {
+      "coverage": 0.2569,
+      "selective_risk": 0.7864,
+      "margin_threshold": 0.12432
+    },
+    {
+      "coverage": 0.2574,
+      "selective_risk": 0.7869,
+      "margin_threshold": 0.12357
+    },
+    {
+      "coverage": 0.2579,
+      "selective_risk": 0.7853,
+      "margin_threshold": 0.1234
+    },
+    {
+      "coverage": 0.2585,
+      "selective_risk": 0.7837,
+      "margin_threshold": 0.12333
+    },
+    {
+      "coverage": 0.259,
+      "selective_risk": 0.7822,
+      "margin_threshold": 0.12261
+    },
+    {
+      "coverage": 0.2595,
+      "selective_risk": 0.7826,
+      "margin_threshold": 0.12258
+    },
+    {
+      "coverage": 0.26,
+      "selective_risk": 0.783,
+      "margin_threshold": 0.12256
+    },
+    {
+      "coverage": 0.2605,
+      "selective_risk": 0.7815,
+      "margin_threshold": 0.12253
+    },
+    {
+      "coverage": 0.261,
+      "selective_risk": 0.7819,
+      "margin_threshold": 0.12191
+    },
+    {
+      "coverage": 0.2615,
+      "selective_risk": 0.7824,
+      "margin_threshold": 0.12181
+    },
+    {
+      "coverage": 0.2621,
+      "selective_risk": 0.7828,
+      "margin_threshold": 0.12167
+    },
+    {
+      "coverage": 0.2626,
+      "selective_risk": 0.7832,
+      "margin_threshold": 0.12113
+    },
+    {
+      "coverage": 0.2631,
+      "selective_risk": 0.7836,
+      "margin_threshold": 0.12112
+    },
+    {
+      "coverage": 0.2636,
+      "selective_risk": 0.784,
+      "margin_threshold": 0.12088
+    },
+    {
+      "coverage": 0.2641,
+      "selective_risk": 0.7845,
+      "margin_threshold": 0.12084
+    },
+    {
+      "coverage": 0.2646,
+      "selective_risk": 0.7849,
+      "margin_threshold": 0.12075
+    },
+    {
+      "coverage": 0.2651,
+      "selective_risk": 0.7853,
+      "margin_threshold": 0.12035
+    },
+    {
+      "coverage": 0.2656,
+      "selective_risk": 0.7857,
+      "margin_threshold": 0.12034
+    },
+    {
+      "coverage": 0.2662,
+      "selective_risk": 0.7842,
+      "margin_threshold": 0.12032
+    },
+    {
+      "coverage": 0.2667,
+      "selective_risk": 0.7846,
+      "margin_threshold": 0.12028
+    },
+    {
+      "coverage": 0.2672,
+      "selective_risk": 0.7831,
+      "margin_threshold": 0.12018
+    },
+    {
+      "coverage": 0.2677,
+      "selective_risk": 0.7816,
+      "margin_threshold": 0.12014
+    },
+    {
+      "coverage": 0.2682,
+      "selective_risk": 0.7801,
+      "margin_threshold": 0.11994
+    },
+    {
+      "coverage": 0.2687,
+      "selective_risk": 0.7805,
+      "margin_threshold": 0.11993
+    },
+    {
+      "coverage": 0.2692,
+      "selective_risk": 0.781,
+      "margin_threshold": 0.11981
+    },
+    {
+      "coverage": 0.2697,
+      "selective_risk": 0.7814,
+      "margin_threshold": 0.11978
+    },
+    {
+      "coverage": 0.2703,
+      "selective_risk": 0.7818,
+      "margin_threshold": 0.11978
+    },
+    {
+      "coverage": 0.2708,
+      "selective_risk": 0.7822,
+      "margin_threshold": 0.11972
+    },
+    {
+      "coverage": 0.2713,
+      "selective_risk": 0.7826,
+      "margin_threshold": 0.11968
+    },
+    {
+      "coverage": 0.2718,
+      "selective_risk": 0.783,
+      "margin_threshold": 0.11916
+    },
+    {
+      "coverage": 0.2723,
+      "selective_risk": 0.7834,
+      "margin_threshold": 0.11905
+    },
+    {
+      "coverage": 0.2728,
+      "selective_risk": 0.7838,
+      "margin_threshold": 0.1189
+    },
+    {
+      "coverage": 0.2733,
+      "selective_risk": 0.7842,
+      "margin_threshold": 0.11884
+    },
+    {
+      "coverage": 0.2738,
+      "selective_risk": 0.7828,
+      "margin_threshold": 0.11874
+    },
+    {
+      "coverage": 0.2744,
+      "selective_risk": 0.7832,
+      "margin_threshold": 0.11848
+    },
+    {
+      "coverage": 0.2749,
+      "selective_risk": 0.7836,
+      "margin_threshold": 0.11843
+    },
+    {
+      "coverage": 0.2754,
+      "selective_risk": 0.784,
+      "margin_threshold": 0.11828
+    },
+    {
+      "coverage": 0.2759,
+      "selective_risk": 0.7825,
+      "margin_threshold": 0.11784
+    },
+    {
+      "coverage": 0.2764,
+      "selective_risk": 0.7811,
+      "margin_threshold": 0.11763
+    },
+    {
+      "coverage": 0.2769,
+      "selective_risk": 0.7815,
+      "margin_threshold": 0.11755
+    },
+    {
+      "coverage": 0.2774,
+      "selective_risk": 0.7819,
+      "margin_threshold": 0.11736
+    },
+    {
+      "coverage": 0.2779,
+      "selective_risk": 0.7823,
+      "margin_threshold": 0.11648
+    },
+    {
+      "coverage": 0.2785,
+      "selective_risk": 0.7827,
+      "margin_threshold": 0.11642
+    },
+    {
+      "coverage": 0.279,
+      "selective_risk": 0.7831,
+      "margin_threshold": 0.11632
+    },
+    {
+      "coverage": 0.2795,
+      "selective_risk": 0.7835,
+      "margin_threshold": 0.1162
+    },
+    {
+      "coverage": 0.28,
+      "selective_risk": 0.7839,
+      "margin_threshold": 0.11612
+    },
+    {
+      "coverage": 0.2805,
+      "selective_risk": 0.7824,
+      "margin_threshold": 0.11591
+    },
+    {
+      "coverage": 0.281,
+      "selective_risk": 0.7828,
+      "margin_threshold": 0.11574
+    },
+    {
+      "coverage": 0.2815,
+      "selective_risk": 0.7832,
+      "margin_threshold": 0.1157
+    },
+    {
+      "coverage": 0.2821,
+      "selective_risk": 0.7836,
+      "margin_threshold": 0.11563
+    },
+    {
+      "coverage": 0.2826,
+      "selective_risk": 0.784,
+      "margin_threshold": 0.11552
+    },
+    {
+      "coverage": 0.2831,
+      "selective_risk": 0.7826,
+      "margin_threshold": 0.11537
+    },
+    {
+      "coverage": 0.2836,
+      "selective_risk": 0.783,
+      "margin_threshold": 0.11527
+    },
+    {
+      "coverage": 0.2841,
+      "selective_risk": 0.7816,
+      "margin_threshold": 0.1152
+    },
+    {
+      "coverage": 0.2846,
+      "selective_risk": 0.782,
+      "margin_threshold": 0.11515
+    },
+    {
+      "coverage": 0.2851,
+      "selective_risk": 0.7824,
+      "margin_threshold": 0.11508
+    },
+    {
+      "coverage": 0.2856,
+      "selective_risk": 0.781,
+      "margin_threshold": 0.11504
+    },
+    {
+      "coverage": 0.2862,
+      "selective_risk": 0.7814,
+      "margin_threshold": 0.115
+    },
+    {
+      "coverage": 0.2867,
+      "selective_risk": 0.78,
+      "margin_threshold": 0.11483
+    },
+    {
+      "coverage": 0.2872,
+      "selective_risk": 0.7804,
+      "margin_threshold": 0.11461
+    },
+    {
+      "coverage": 0.2877,
+      "selective_risk": 0.779,
+      "margin_threshold": 0.1145
+    },
+    {
+      "coverage": 0.2882,
+      "selective_risk": 0.7794,
+      "margin_threshold": 0.11445
+    },
+    {
+      "coverage": 0.2887,
+      "selective_risk": 0.7798,
+      "margin_threshold": 0.11442
+    },
+    {
+      "coverage": 0.2892,
+      "selective_risk": 0.7784,
+      "margin_threshold": 0.1142
+    },
+    {
+      "coverage": 0.2897,
+      "selective_risk": 0.7788,
+      "margin_threshold": 0.11411
+    },
+    {
+      "coverage": 0.2903,
+      "selective_risk": 0.7792,
+      "margin_threshold": 0.1141
+    },
+    {
+      "coverage": 0.2908,
+      "selective_risk": 0.7778,
+      "margin_threshold": 0.11406
+    },
+    {
+      "coverage": 0.2913,
+      "selective_risk": 0.7764,
+      "margin_threshold": 0.11376
+    },
+    {
+      "coverage": 0.2918,
+      "selective_risk": 0.775,
+      "margin_threshold": 0.11366
+    },
+    {
+      "coverage": 0.2923,
+      "selective_risk": 0.7737,
+      "margin_threshold": 0.11349
+    },
+    {
+      "coverage": 0.2928,
+      "selective_risk": 0.7723,
+      "margin_threshold": 0.11345
+    },
+    {
+      "coverage": 0.2933,
+      "selective_risk": 0.771,
+      "margin_threshold": 0.11344
+    },
+    {
+      "coverage": 0.2938,
+      "selective_risk": 0.7714,
+      "margin_threshold": 0.11331
+    },
+    {
+      "coverage": 0.2944,
+      "selective_risk": 0.77,
+      "margin_threshold": 0.11325
+    },
+    {
+      "coverage": 0.2949,
+      "selective_risk": 0.7704,
+      "margin_threshold": 0.1132
+    },
+    {
+      "coverage": 0.2954,
+      "selective_risk": 0.7708,
+      "margin_threshold": 0.11314
+    },
+    {
+      "coverage": 0.2959,
+      "selective_risk": 0.7712,
+      "margin_threshold": 0.11312
+    },
+    {
+      "coverage": 0.2964,
+      "selective_risk": 0.7716,
+      "margin_threshold": 0.11274
+    },
+    {
+      "coverage": 0.2969,
+      "selective_risk": 0.7703,
+      "margin_threshold": 0.11271
+    },
+    {
+      "coverage": 0.2974,
+      "selective_risk": 0.7707,
+      "margin_threshold": 0.1127
+    },
+    {
+      "coverage": 0.2979,
+      "selective_risk": 0.7694,
+      "margin_threshold": 0.11263
+    },
+    {
+      "coverage": 0.2985,
+      "selective_risk": 0.768,
+      "margin_threshold": 0.11242
+    },
+    {
+      "coverage": 0.299,
+      "selective_risk": 0.7684,
+      "margin_threshold": 0.11236
+    },
+    {
+      "coverage": 0.2995,
+      "selective_risk": 0.7688,
+      "margin_threshold": 0.11232
+    },
+    {
+      "coverage": 0.3,
+      "selective_risk": 0.7692,
+      "margin_threshold": 0.11224
+    },
+    {
+      "coverage": 0.3005,
+      "selective_risk": 0.7696,
+      "margin_threshold": 0.11217
+    },
+    {
+      "coverage": 0.301,
+      "selective_risk": 0.7683,
+      "margin_threshold": 0.11215
+    },
+    {
+      "coverage": 0.3015,
+      "selective_risk": 0.7687,
+      "margin_threshold": 0.11209
+    },
+    {
+      "coverage": 0.3021,
+      "selective_risk": 0.7674,
+      "margin_threshold": 0.112
+    },
+    {
+      "coverage": 0.3026,
+      "selective_risk": 0.7678,
+      "margin_threshold": 0.11196
+    },
+    {
+      "coverage": 0.3031,
+      "selective_risk": 0.7665,
+      "margin_threshold": 0.11188
+    },
+    {
+      "coverage": 0.3036,
+      "selective_risk": 0.7669,
+      "margin_threshold": 0.11176
+    },
+    {
+      "coverage": 0.3041,
+      "selective_risk": 0.7656,
+      "margin_threshold": 0.11173
+    },
+    {
+      "coverage": 0.3046,
+      "selective_risk": 0.766,
+      "margin_threshold": 0.11171
+    },
+    {
+      "coverage": 0.3051,
+      "selective_risk": 0.7664,
+      "margin_threshold": 0.11163
+    },
+    {
+      "coverage": 0.3056,
+      "selective_risk": 0.7668,
+      "margin_threshold": 0.11157
+    },
+    {
+      "coverage": 0.3062,
+      "selective_risk": 0.7672,
+      "margin_threshold": 0.11152
+    },
+    {
+      "coverage": 0.3067,
+      "selective_risk": 0.7676,
+      "margin_threshold": 0.11145
+    },
+    {
+      "coverage": 0.3072,
+      "selective_risk": 0.7663,
+      "margin_threshold": 0.11144
+    },
+    {
+      "coverage": 0.3077,
+      "selective_risk": 0.7667,
+      "margin_threshold": 0.11126
+    },
+    {
+      "coverage": 0.3082,
+      "selective_risk": 0.7671,
+      "margin_threshold": 0.11124
+    },
+    {
+      "coverage": 0.3087,
+      "selective_risk": 0.7674,
+      "margin_threshold": 0.11119
+    },
+    {
+      "coverage": 0.3092,
+      "selective_risk": 0.7678,
+      "margin_threshold": 0.11106
+    },
+    {
+      "coverage": 0.3097,
+      "selective_risk": 0.7682,
+      "margin_threshold": 0.11098
+    },
+    {
+      "coverage": 0.3103,
+      "selective_risk": 0.7669,
+      "margin_threshold": 0.11096
+    },
+    {
+      "coverage": 0.3108,
+      "selective_risk": 0.7673,
+      "margin_threshold": 0.11083
+    },
+    {
+      "coverage": 0.3113,
+      "selective_risk": 0.7677,
+      "margin_threshold": 0.1108
+    },
+    {
+      "coverage": 0.3118,
+      "selective_risk": 0.7681,
+      "margin_threshold": 0.11067
+    },
+    {
+      "coverage": 0.3123,
+      "selective_risk": 0.7685,
+      "margin_threshold": 0.11065
+    },
+    {
+      "coverage": 0.3128,
+      "selective_risk": 0.7689,
+      "margin_threshold": 0.11059
+    },
+    {
+      "coverage": 0.3133,
+      "selective_risk": 0.7692,
+      "margin_threshold": 0.11051
+    },
+    {
+      "coverage": 0.3138,
+      "selective_risk": 0.7696,
+      "margin_threshold": 0.1105
+    },
+    {
+      "coverage": 0.3144,
+      "selective_risk": 0.77,
+      "margin_threshold": 0.11026
+    },
+    {
+      "coverage": 0.3149,
+      "selective_risk": 0.7704,
+      "margin_threshold": 0.11025
+    },
+    {
+      "coverage": 0.3154,
+      "selective_risk": 0.7707,
+      "margin_threshold": 0.11023
+    },
+    {
+      "coverage": 0.3159,
+      "selective_risk": 0.7711,
+      "margin_threshold": 0.10981
+    },
+    {
+      "coverage": 0.3164,
+      "selective_risk": 0.7715,
+      "margin_threshold": 0.10972
+    },
+    {
+      "coverage": 0.3169,
+      "selective_risk": 0.7718,
+      "margin_threshold": 0.1096
+    },
+    {
+      "coverage": 0.3174,
+      "selective_risk": 0.7722,
+      "margin_threshold": 0.10958
+    },
+    {
+      "coverage": 0.3179,
+      "selective_risk": 0.7726,
+      "margin_threshold": 0.10945
+    },
+    {
+      "coverage": 0.3185,
+      "selective_risk": 0.7729,
+      "margin_threshold": 0.10944
+    },
+    {
+      "coverage": 0.319,
+      "selective_risk": 0.7733,
+      "margin_threshold": 0.10943
+    },
+    {
+      "coverage": 0.3195,
+      "selective_risk": 0.7737,
+      "margin_threshold": 0.10929
+    },
+    {
+      "coverage": 0.32,
+      "selective_risk": 0.774,
+      "margin_threshold": 0.10923
+    },
+    {
+      "coverage": 0.3205,
+      "selective_risk": 0.7744,
+      "margin_threshold": 0.10919
+    },
+    {
+      "coverage": 0.321,
+      "selective_risk": 0.7732,
+      "margin_threshold": 0.10888
+    },
+    {
+      "coverage": 0.3215,
+      "selective_risk": 0.7735,
+      "margin_threshold": 0.10878
+    },
+    {
+      "coverage": 0.3221,
+      "selective_risk": 0.7739,
+      "margin_threshold": 0.10864
+    },
+    {
+      "coverage": 0.3226,
+      "selective_risk": 0.7742,
+      "margin_threshold": 0.10858
+    },
+    {
+      "coverage": 0.3231,
+      "selective_risk": 0.7746,
+      "margin_threshold": 0.10829
+    },
+    {
+      "coverage": 0.3236,
+      "selective_risk": 0.7734,
+      "margin_threshold": 0.10826
+    },
+    {
+      "coverage": 0.3241,
+      "selective_risk": 0.7722,
+      "margin_threshold": 0.10807
+    },
+    {
+      "coverage": 0.3246,
+      "selective_risk": 0.7725,
+      "margin_threshold": 0.10802
+    },
+    {
+      "coverage": 0.3251,
+      "selective_risk": 0.7729,
+      "margin_threshold": 0.10789
+    },
+    {
+      "coverage": 0.3256,
+      "selective_risk": 0.7717,
+      "margin_threshold": 0.10787
+    },
+    {
+      "coverage": 0.3262,
+      "selective_risk": 0.772,
+      "margin_threshold": 0.1075
+    },
+    {
+      "coverage": 0.3267,
+      "selective_risk": 0.7708,
+      "margin_threshold": 0.10747
+    },
+    {
+      "coverage": 0.3272,
+      "selective_risk": 0.7712,
+      "margin_threshold": 0.10734
+    },
+    {
+      "coverage": 0.3277,
+      "selective_risk": 0.7715,
+      "margin_threshold": 0.10714
+    },
+    {
+      "coverage": 0.3282,
+      "selective_risk": 0.7719,
+      "margin_threshold": 0.10688
+    },
+    {
+      "coverage": 0.3287,
+      "selective_risk": 0.7722,
+      "margin_threshold": 0.1067
+    },
+    {
+      "coverage": 0.3292,
+      "selective_risk": 0.7726,
+      "margin_threshold": 0.1064
+    },
+    {
+      "coverage": 0.3297,
+      "selective_risk": 0.7714,
+      "margin_threshold": 0.10635
+    },
+    {
+      "coverage": 0.3303,
+      "selective_risk": 0.7717,
+      "margin_threshold": 0.10624
+    },
+    {
+      "coverage": 0.3308,
+      "selective_risk": 0.7721,
+      "margin_threshold": 0.10621
+    },
+    {
+      "coverage": 0.3313,
+      "selective_risk": 0.7724,
+      "margin_threshold": 0.10617
+    },
+    {
+      "coverage": 0.3318,
+      "selective_risk": 0.7728,
+      "margin_threshold": 0.10611
+    },
+    {
+      "coverage": 0.3323,
+      "selective_risk": 0.7731,
+      "margin_threshold": 0.10573
+    },
+    {
+      "coverage": 0.3328,
+      "selective_risk": 0.772,
+      "margin_threshold": 0.10573
+    },
+    {
+      "coverage": 0.3333,
+      "selective_risk": 0.7723,
+      "margin_threshold": 0.10558
+    },
+    {
+      "coverage": 0.3338,
+      "selective_risk": 0.7727,
+      "margin_threshold": 0.10553
+    },
+    {
+      "coverage": 0.3344,
+      "selective_risk": 0.773,
+      "margin_threshold": 0.10523
+    },
+    {
+      "coverage": 0.3349,
+      "selective_risk": 0.7734,
+      "margin_threshold": 0.10516
+    },
+    {
+      "coverage": 0.3354,
+      "selective_risk": 0.7722,
+      "margin_threshold": 0.10512
+    },
+    {
+      "coverage": 0.3359,
+      "selective_risk": 0.7725,
+      "margin_threshold": 0.10506
+    },
+    {
+      "coverage": 0.3364,
+      "selective_risk": 0.7729,
+      "margin_threshold": 0.10499
+    },
+    {
+      "coverage": 0.3369,
+      "selective_risk": 0.7732,
+      "margin_threshold": 0.1049
+    },
+    {
+      "coverage": 0.3374,
+      "selective_risk": 0.7736,
+      "margin_threshold": 0.10486
+    },
+    {
+      "coverage": 0.3379,
+      "selective_risk": 0.7739,
+      "margin_threshold": 0.10482
+    },
+    {
+      "coverage": 0.3385,
+      "selective_risk": 0.7742,
+      "margin_threshold": 0.10462
+    },
+    {
+      "coverage": 0.339,
+      "selective_risk": 0.7731,
+      "margin_threshold": 0.10429
+    },
+    {
+      "coverage": 0.3395,
+      "selective_risk": 0.7734,
+      "margin_threshold": 0.10426
+    },
+    {
+      "coverage": 0.34,
+      "selective_risk": 0.7722,
+      "margin_threshold": 0.10424
+    },
+    {
+      "coverage": 0.3405,
+      "selective_risk": 0.7726,
+      "margin_threshold": 0.10411
+    },
+    {
+      "coverage": 0.341,
+      "selective_risk": 0.7714,
+      "margin_threshold": 0.10408
+    },
+    {
+      "coverage": 0.3415,
+      "selective_risk": 0.7718,
+      "margin_threshold": 0.10389
+    },
+    {
+      "coverage": 0.3421,
+      "selective_risk": 0.7721,
+      "margin_threshold": 0.10381
+    },
+    {
+      "coverage": 0.3426,
+      "selective_risk": 0.7725,
+      "margin_threshold": 0.10369
+    },
+    {
+      "coverage": 0.3431,
+      "selective_risk": 0.7728,
+      "margin_threshold": 0.10362
+    },
+    {
+      "coverage": 0.3436,
+      "selective_risk": 0.7731,
+      "margin_threshold": 0.10361
+    },
+    {
+      "coverage": 0.3441,
+      "selective_risk": 0.7735,
+      "margin_threshold": 0.10336
+    },
+    {
+      "coverage": 0.3446,
+      "selective_risk": 0.7738,
+      "margin_threshold": 0.10329
+    },
+    {
+      "coverage": 0.3451,
+      "selective_risk": 0.7727,
+      "margin_threshold": 0.10295
+    },
+    {
+      "coverage": 0.3456,
+      "selective_risk": 0.773,
+      "margin_threshold": 0.10289
+    },
+    {
+      "coverage": 0.3462,
+      "selective_risk": 0.7733,
+      "margin_threshold": 0.10281
+    },
+    {
+      "coverage": 0.3467,
+      "selective_risk": 0.7737,
+      "margin_threshold": 0.10278
+    },
+    {
+      "coverage": 0.3472,
+      "selective_risk": 0.774,
+      "margin_threshold": 0.10267
+    },
+    {
+      "coverage": 0.3477,
+      "selective_risk": 0.7743,
+      "margin_threshold": 0.10246
+    },
+    {
+      "coverage": 0.3482,
+      "selective_risk": 0.7747,
+      "margin_threshold": 0.10227
+    },
+    {
+      "coverage": 0.3487,
+      "selective_risk": 0.775,
+      "margin_threshold": 0.10218
+    },
+    {
+      "coverage": 0.3492,
+      "selective_risk": 0.7753,
+      "margin_threshold": 0.10198
+    },
+    {
+      "coverage": 0.3497,
+      "selective_risk": 0.7757,
+      "margin_threshold": 0.10182
+    },
+    {
+      "coverage": 0.3503,
+      "selective_risk": 0.7745,
+      "margin_threshold": 0.10174
+    },
+    {
+      "coverage": 0.3508,
+      "selective_risk": 0.7734,
+      "margin_threshold": 0.1011
+    },
+    {
+      "coverage": 0.3513,
+      "selective_risk": 0.7737,
+      "margin_threshold": 0.10107
+    },
+    {
+      "coverage": 0.3518,
+      "selective_risk": 0.7741,
+      "margin_threshold": 0.10102
+    },
+    {
+      "coverage": 0.3523,
+      "selective_risk": 0.7744,
+      "margin_threshold": 0.10089
+    },
+    {
+      "coverage": 0.3528,
+      "selective_risk": 0.7747,
+      "margin_threshold": 0.10083
+    },
+    {
+      "coverage": 0.3533,
+      "selective_risk": 0.775,
+      "margin_threshold": 0.10082
+    },
+    {
+      "coverage": 0.3538,
+      "selective_risk": 0.7739,
+      "margin_threshold": 0.10078
+    },
+    {
+      "coverage": 0.3544,
+      "selective_risk": 0.7742,
+      "margin_threshold": 0.1006
+    },
+    {
+      "coverage": 0.3549,
+      "selective_risk": 0.7746,
+      "margin_threshold": 0.10041
+    },
+    {
+      "coverage": 0.3554,
+      "selective_risk": 0.7749,
+      "margin_threshold": 0.10034
+    },
+    {
+      "coverage": 0.3559,
+      "selective_risk": 0.7752,
+      "margin_threshold": 0.10023
+    },
+    {
+      "coverage": 0.3564,
+      "selective_risk": 0.7755,
+      "margin_threshold": 0.10022
+    },
+    {
+      "coverage": 0.3569,
+      "selective_risk": 0.7759,
+      "margin_threshold": 0.10021
+    },
+    {
+      "coverage": 0.3574,
+      "selective_risk": 0.7762,
+      "margin_threshold": 0.10013
+    },
+    {
+      "coverage": 0.3579,
+      "selective_risk": 0.7765,
+      "margin_threshold": 0.10002
+    },
+    {
+      "coverage": 0.3585,
+      "selective_risk": 0.7768,
+      "margin_threshold": 0.09996
+    },
+    {
+      "coverage": 0.359,
+      "selective_risk": 0.7771,
+      "margin_threshold": 0.09989
+    },
+    {
+      "coverage": 0.3595,
+      "selective_risk": 0.776,
+      "margin_threshold": 0.0993
+    },
+    {
+      "coverage": 0.36,
+      "selective_risk": 0.7764,
+      "margin_threshold": 0.09915
+    },
+    {
+      "coverage": 0.3605,
+      "selective_risk": 0.7767,
+      "margin_threshold": 0.09901
+    },
+    {
+      "coverage": 0.361,
+      "selective_risk": 0.777,
+      "margin_threshold": 0.09896
+    },
+    {
+      "coverage": 0.3615,
+      "selective_risk": 0.7759,
+      "margin_threshold": 0.09859
+    },
+    {
+      "coverage": 0.3621,
+      "selective_risk": 0.7762,
+      "margin_threshold": 0.09857
+    },
+    {
+      "coverage": 0.3626,
+      "selective_risk": 0.7765,
+      "margin_threshold": 0.09856
+    },
+    {
+      "coverage": 0.3631,
+      "selective_risk": 0.7754,
+      "margin_threshold": 0.0985
+    },
+    {
+      "coverage": 0.3636,
+      "selective_risk": 0.7757,
+      "margin_threshold": 0.09848
+    },
+    {
+      "coverage": 0.3641,
+      "selective_risk": 0.7761,
+      "margin_threshold": 0.09845
+    },
+    {
+      "coverage": 0.3646,
+      "selective_risk": 0.7764,
+      "margin_threshold": 0.09827
+    },
+    {
+      "coverage": 0.3651,
+      "selective_risk": 0.7767,
+      "margin_threshold": 0.09822
+    },
+    {
+      "coverage": 0.3656,
+      "selective_risk": 0.777,
+      "margin_threshold": 0.09812
+    },
+    {
+      "coverage": 0.3662,
+      "selective_risk": 0.7773,
+      "margin_threshold": 0.09811
+    },
+    {
+      "coverage": 0.3667,
+      "selective_risk": 0.7776,
+      "margin_threshold": 0.09779
+    },
+    {
+      "coverage": 0.3672,
+      "selective_risk": 0.7779,
+      "margin_threshold": 0.09772
+    },
+    {
+      "coverage": 0.3677,
+      "selective_risk": 0.7782,
+      "margin_threshold": 0.09762
+    },
+    {
+      "coverage": 0.3682,
+      "selective_risk": 0.7786,
+      "margin_threshold": 0.09761
+    },
+    {
+      "coverage": 0.3687,
+      "selective_risk": 0.7789,
+      "margin_threshold": 0.09759
+    },
+    {
+      "coverage": 0.3692,
+      "selective_risk": 0.7792,
+      "margin_threshold": 0.09759
+    },
+    {
+      "coverage": 0.3697,
+      "selective_risk": 0.7795,
+      "margin_threshold": 0.09748
+    },
+    {
+      "coverage": 0.3703,
+      "selective_risk": 0.7798,
+      "margin_threshold": 0.09738
+    },
+    {
+      "coverage": 0.3708,
+      "selective_risk": 0.7801,
+      "margin_threshold": 0.09736
+    },
+    {
+      "coverage": 0.3713,
+      "selective_risk": 0.7804,
+      "margin_threshold": 0.09728
+    },
+    {
+      "coverage": 0.3718,
+      "selective_risk": 0.7807,
+      "margin_threshold": 0.09698
+    },
+    {
+      "coverage": 0.3723,
+      "selective_risk": 0.781,
+      "margin_threshold": 0.09693
+    },
+    {
+      "coverage": 0.3728,
+      "selective_risk": 0.7799,
+      "margin_threshold": 0.09691
+    },
+    {
+      "coverage": 0.3733,
+      "selective_risk": 0.7802,
+      "margin_threshold": 0.09668
+    },
+    {
+      "coverage": 0.3738,
+      "selective_risk": 0.7805,
+      "margin_threshold": 0.09664
+    },
+    {
+      "coverage": 0.3744,
+      "selective_risk": 0.7808,
+      "margin_threshold": 0.09662
+    },
+    {
+      "coverage": 0.3749,
+      "selective_risk": 0.7811,
+      "margin_threshold": 0.0966
+    },
+    {
+      "coverage": 0.3754,
+      "selective_risk": 0.7814,
+      "margin_threshold": 0.09654
+    },
+    {
+      "coverage": 0.3759,
+      "selective_risk": 0.7817,
+      "margin_threshold": 0.09654
+    },
+    {
+      "coverage": 0.3764,
+      "selective_risk": 0.782,
+      "margin_threshold": 0.09646
+    },
+    {
+      "coverage": 0.3769,
+      "selective_risk": 0.7823,
+      "margin_threshold": 0.09633
+    },
+    {
+      "coverage": 0.3774,
+      "selective_risk": 0.7826,
+      "margin_threshold": 0.09625
+    },
+    {
+      "coverage": 0.3779,
+      "selective_risk": 0.7829,
+      "margin_threshold": 0.09614
+    },
+    {
+      "coverage": 0.3785,
+      "selective_risk": 0.7832,
+      "margin_threshold": 0.09613
+    },
+    {
+      "coverage": 0.379,
+      "selective_risk": 0.7835,
+      "margin_threshold": 0.09607
+    },
+    {
+      "coverage": 0.3795,
+      "selective_risk": 0.7838,
+      "margin_threshold": 0.09605
+    },
+    {
+      "coverage": 0.38,
+      "selective_risk": 0.7827,
+      "margin_threshold": 0.09585
+    },
+    {
+      "coverage": 0.3805,
+      "selective_risk": 0.783,
+      "margin_threshold": 0.09573
+    },
+    {
+      "coverage": 0.381,
+      "selective_risk": 0.7833,
+      "margin_threshold": 0.09567
+    },
+    {
+      "coverage": 0.3815,
+      "selective_risk": 0.7836,
+      "margin_threshold": 0.09563
+    },
+    {
+      "coverage": 0.3821,
+      "selective_risk": 0.7826,
+      "margin_threshold": 0.09563
+    },
+    {
+      "coverage": 0.3826,
+      "selective_risk": 0.7828,
+      "margin_threshold": 0.09545
+    },
+    {
+      "coverage": 0.3831,
+      "selective_risk": 0.7831,
+      "margin_threshold": 0.09537
+    },
+    {
+      "coverage": 0.3836,
+      "selective_risk": 0.7821,
+      "margin_threshold": 0.09507
+    },
+    {
+      "coverage": 0.3841,
+      "selective_risk": 0.7824,
+      "margin_threshold": 0.09498
+    },
+    {
+      "coverage": 0.3846,
+      "selective_risk": 0.7827,
+      "margin_threshold": 0.09492
+    },
+    {
+      "coverage": 0.3851,
+      "selective_risk": 0.7816,
+      "margin_threshold": 0.09488
+    },
+    {
+      "coverage": 0.3856,
+      "selective_risk": 0.7819,
+      "margin_threshold": 0.09483
+    },
+    {
+      "coverage": 0.3862,
+      "selective_risk": 0.7822,
+      "margin_threshold": 0.09475
+    },
+    {
+      "coverage": 0.3867,
+      "selective_risk": 0.7812,
+      "margin_threshold": 0.09466
+    },
+    {
+      "coverage": 0.3872,
+      "selective_risk": 0.7815,
+      "margin_threshold": 0.09439
+    },
+    {
+      "coverage": 0.3877,
+      "selective_risk": 0.7817,
+      "margin_threshold": 0.0942
+    },
+    {
+      "coverage": 0.3882,
+      "selective_risk": 0.782,
+      "margin_threshold": 0.09417
+    },
+    {
+      "coverage": 0.3887,
+      "selective_risk": 0.7823,
+      "margin_threshold": 0.09414
+    },
+    {
+      "coverage": 0.3892,
+      "selective_risk": 0.7826,
+      "margin_threshold": 0.09412
+    },
+    {
+      "coverage": 0.3897,
+      "selective_risk": 0.7829,
+      "margin_threshold": 0.09408
+    },
+    {
+      "coverage": 0.3903,
+      "selective_risk": 0.7832,
+      "margin_threshold": 0.09403
+    },
+    {
+      "coverage": 0.3908,
+      "selective_risk": 0.7835,
+      "margin_threshold": 0.09391
+    },
+    {
+      "coverage": 0.3913,
+      "selective_risk": 0.7824,
+      "margin_threshold": 0.09363
+    },
+    {
+      "coverage": 0.3918,
+      "selective_risk": 0.7827,
+      "margin_threshold": 0.09356
+    },
+    {
+      "coverage": 0.3923,
+      "selective_risk": 0.783,
+      "margin_threshold": 0.09348
+    },
+    {
+      "coverage": 0.3928,
+      "selective_risk": 0.782,
+      "margin_threshold": 0.09344
+    },
+    {
+      "coverage": 0.3933,
+      "selective_risk": 0.7823,
+      "margin_threshold": 0.09342
+    },
+    {
+      "coverage": 0.3938,
+      "selective_risk": 0.7826,
+      "margin_threshold": 0.09336
+    },
+    {
+      "coverage": 0.3944,
+      "selective_risk": 0.7828,
+      "margin_threshold": 0.09317
+    },
+    {
+      "coverage": 0.3949,
+      "selective_risk": 0.7831,
+      "margin_threshold": 0.09308
+    },
+    {
+      "coverage": 0.3954,
+      "selective_risk": 0.7834,
+      "margin_threshold": 0.09302
+    },
+    {
+      "coverage": 0.3959,
+      "selective_risk": 0.7837,
+      "margin_threshold": 0.09286
+    },
+    {
+      "coverage": 0.3964,
+      "selective_risk": 0.784,
+      "margin_threshold": 0.09286
+    },
+    {
+      "coverage": 0.3969,
+      "selective_risk": 0.7842,
+      "margin_threshold": 0.09285
+    },
+    {
+      "coverage": 0.3974,
+      "selective_risk": 0.7845,
+      "margin_threshold": 0.0928
+    },
+    {
+      "coverage": 0.3979,
+      "selective_risk": 0.7848,
+      "margin_threshold": 0.09275
+    },
+    {
+      "coverage": 0.3985,
+      "selective_risk": 0.7851,
+      "margin_threshold": 0.0927
+    },
+    {
+      "coverage": 0.399,
+      "selective_risk": 0.7853,
+      "margin_threshold": 0.09267
+    },
+    {
+      "coverage": 0.3995,
+      "selective_risk": 0.7856,
+      "margin_threshold": 0.09264
+    },
+    {
+      "coverage": 0.4,
+      "selective_risk": 0.7859,
+      "margin_threshold": 0.09259
+    },
+    {
+      "coverage": 0.4005,
+      "selective_risk": 0.7862,
+      "margin_threshold": 0.09255
+    },
+    {
+      "coverage": 0.401,
+      "selective_risk": 0.7864,
+      "margin_threshold": 0.09246
+    },
+    {
+      "coverage": 0.4015,
+      "selective_risk": 0.7867,
+      "margin_threshold": 0.09235
+    },
+    {
+      "coverage": 0.4021,
+      "selective_risk": 0.787,
+      "margin_threshold": 0.0923
+    },
+    {
+      "coverage": 0.4026,
+      "selective_risk": 0.7873,
+      "margin_threshold": 0.09226
+    },
+    {
+      "coverage": 0.4031,
+      "selective_risk": 0.7875,
+      "margin_threshold": 0.09226
+    },
+    {
+      "coverage": 0.4036,
+      "selective_risk": 0.7878,
+      "margin_threshold": 0.09216
+    },
+    {
+      "coverage": 0.4041,
+      "selective_risk": 0.7881,
+      "margin_threshold": 0.09214
+    },
+    {
+      "coverage": 0.4046,
+      "selective_risk": 0.7883,
+      "margin_threshold": 0.0921
+    },
+    {
+      "coverage": 0.4051,
+      "selective_risk": 0.7873,
+      "margin_threshold": 0.0921
+    },
+    {
+      "coverage": 0.4056,
+      "selective_risk": 0.7876,
+      "margin_threshold": 0.09209
+    },
+    {
+      "coverage": 0.4062,
+      "selective_risk": 0.7879,
+      "margin_threshold": 0.09202
+    },
+    {
+      "coverage": 0.4067,
+      "selective_risk": 0.7869,
+      "margin_threshold": 0.0918
+    },
+    {
+      "coverage": 0.4072,
+      "selective_risk": 0.7859,
+      "margin_threshold": 0.0917
+    },
+    {
+      "coverage": 0.4077,
+      "selective_risk": 0.7862,
+      "margin_threshold": 0.09152
+    },
+    {
+      "coverage": 0.4082,
+      "selective_risk": 0.7864,
+      "margin_threshold": 0.09152
+    },
+    {
+      "coverage": 0.4087,
+      "selective_risk": 0.7867,
+      "margin_threshold": 0.0915
+    },
+    {
+      "coverage": 0.4092,
+      "selective_risk": 0.7857,
+      "margin_threshold": 0.09135
+    },
+    {
+      "coverage": 0.4097,
+      "selective_risk": 0.786,
+      "margin_threshold": 0.0913
+    },
+    {
+      "coverage": 0.4103,
+      "selective_risk": 0.785,
+      "margin_threshold": 0.09122
+    },
+    {
+      "coverage": 0.4108,
+      "selective_risk": 0.7853,
+      "margin_threshold": 0.09113
+    },
+    {
+      "coverage": 0.4113,
+      "selective_risk": 0.7855,
+      "margin_threshold": 0.0911
+    },
+    {
+      "coverage": 0.4118,
+      "selective_risk": 0.7858,
+      "margin_threshold": 0.09082
+    },
+    {
+      "coverage": 0.4123,
+      "selective_risk": 0.7861,
+      "margin_threshold": 0.09073
+    },
+    {
+      "coverage": 0.4128,
+      "selective_risk": 0.7863,
+      "margin_threshold": 0.09065
+    },
+    {
+      "coverage": 0.4133,
+      "selective_risk": 0.7866,
+      "margin_threshold": 0.09063
+    },
+    {
+      "coverage": 0.4138,
+      "selective_risk": 0.7856,
+      "margin_threshold": 0.09041
+    },
+    {
+      "coverage": 0.4144,
+      "selective_risk": 0.7859,
+      "margin_threshold": 0.09037
+    },
+    {
+      "coverage": 0.4149,
+      "selective_risk": 0.7862,
+      "margin_threshold": 0.09023
+    },
+    {
+      "coverage": 0.4154,
+      "selective_risk": 0.7864,
+      "margin_threshold": 0.09021
+    },
+    {
+      "coverage": 0.4159,
+      "selective_risk": 0.7867,
+      "margin_threshold": 0.09018
+    },
+    {
+      "coverage": 0.4164,
+      "selective_risk": 0.7869,
+      "margin_threshold": 0.09016
+    },
+    {
+      "coverage": 0.4169,
+      "selective_risk": 0.7872,
+      "margin_threshold": 0.09006
+    },
+    {
+      "coverage": 0.4174,
+      "selective_risk": 0.7875,
+      "margin_threshold": 0.09005
+    },
+    {
+      "coverage": 0.4179,
+      "selective_risk": 0.7877,
+      "margin_threshold": 0.08997
+    },
+    {
+      "coverage": 0.4185,
+      "selective_risk": 0.788,
+      "margin_threshold": 0.08976
+    },
+    {
+      "coverage": 0.419,
+      "selective_risk": 0.787,
+      "margin_threshold": 0.0897
+    },
+    {
+      "coverage": 0.4195,
+      "selective_risk": 0.7873,
+      "margin_threshold": 0.08958
+    },
+    {
+      "coverage": 0.42,
+      "selective_risk": 0.7875,
+      "margin_threshold": 0.08958
+    },
+    {
+      "coverage": 0.4205,
+      "selective_risk": 0.7866,
+      "margin_threshold": 0.08957
+    },
+    {
+      "coverage": 0.421,
+      "selective_risk": 0.7868,
+      "margin_threshold": 0.08954
+    },
+    {
+      "coverage": 0.4215,
+      "selective_risk": 0.7859,
+      "margin_threshold": 0.08952
+    },
+    {
+      "coverage": 0.4221,
+      "selective_risk": 0.7861,
+      "margin_threshold": 0.0895
+    },
+    {
+      "coverage": 0.4226,
+      "selective_risk": 0.7864,
+      "margin_threshold": 0.08934
+    },
+    {
+      "coverage": 0.4231,
+      "selective_risk": 0.7855,
+      "margin_threshold": 0.08922
+    },
+    {
+      "coverage": 0.4236,
+      "selective_risk": 0.7845,
+      "margin_threshold": 0.08921
+    },
+    {
+      "coverage": 0.4241,
+      "selective_risk": 0.7848,
+      "margin_threshold": 0.08919
+    },
+    {
+      "coverage": 0.4246,
+      "selective_risk": 0.785,
+      "margin_threshold": 0.08916
+    },
+    {
+      "coverage": 0.4251,
+      "selective_risk": 0.7853,
+      "margin_threshold": 0.08915
+    },
+    {
+      "coverage": 0.4256,
+      "selective_risk": 0.7855,
+      "margin_threshold": 0.08913
+    },
+    {
+      "coverage": 0.4262,
+      "selective_risk": 0.7858,
+      "margin_threshold": 0.08897
+    },
+    {
+      "coverage": 0.4267,
+      "selective_risk": 0.7861,
+      "margin_threshold": 0.08897
+    },
+    {
+      "coverage": 0.4272,
+      "selective_risk": 0.7863,
+      "margin_threshold": 0.08894
+    },
+    {
+      "coverage": 0.4277,
+      "selective_risk": 0.7854,
+      "margin_threshold": 0.08889
+    },
+    {
+      "coverage": 0.4282,
+      "selective_risk": 0.7856,
+      "margin_threshold": 0.08886
+    },
+    {
+      "coverage": 0.4287,
+      "selective_risk": 0.7859,
+      "margin_threshold": 0.08885
+    },
+    {
+      "coverage": 0.4292,
+      "selective_risk": 0.7861,
+      "margin_threshold": 0.08875
+    },
+    {
+      "coverage": 0.4297,
+      "selective_risk": 0.7864,
+      "margin_threshold": 0.08875
+    },
+    {
+      "coverage": 0.4303,
+      "selective_risk": 0.7867,
+      "margin_threshold": 0.08874
+    },
+    {
+      "coverage": 0.4308,
+      "selective_risk": 0.7869,
+      "margin_threshold": 0.08873
+    },
+    {
+      "coverage": 0.4313,
+      "selective_risk": 0.786,
+      "margin_threshold": 0.0887
+    },
+    {
+      "coverage": 0.4318,
+      "selective_risk": 0.7862,
+      "margin_threshold": 0.08865
+    },
+    {
+      "coverage": 0.4323,
+      "selective_risk": 0.7865,
+      "margin_threshold": 0.08864
+    },
+    {
+      "coverage": 0.4328,
+      "selective_risk": 0.7867,
+      "margin_threshold": 0.08855
+    },
+    {
+      "coverage": 0.4333,
+      "selective_risk": 0.787,
+      "margin_threshold": 0.08853
+    },
+    {
+      "coverage": 0.4338,
+      "selective_risk": 0.7872,
+      "margin_threshold": 0.0885
+    },
+    {
+      "coverage": 0.4344,
+      "selective_risk": 0.7875,
+      "margin_threshold": 0.08843
+    },
+    {
+      "coverage": 0.4349,
+      "selective_risk": 0.7866,
+      "margin_threshold": 0.08839
+    },
+    {
+      "coverage": 0.4354,
+      "selective_risk": 0.7868,
+      "margin_threshold": 0.08829
+    },
+    {
+      "coverage": 0.4359,
+      "selective_risk": 0.7871,
+      "margin_threshold": 0.08827
+    },
+    {
+      "coverage": 0.4364,
+      "selective_risk": 0.7873,
+      "margin_threshold": 0.08822
+    },
+    {
+      "coverage": 0.4369,
+      "selective_risk": 0.7864,
+      "margin_threshold": 0.08812
+    },
+    {
+      "coverage": 0.4374,
+      "selective_risk": 0.7866,
+      "margin_threshold": 0.08812
+    },
+    {
+      "coverage": 0.4379,
+      "selective_risk": 0.7869,
+      "margin_threshold": 0.08811
+    },
+    {
+      "coverage": 0.4385,
+      "selective_risk": 0.7871,
+      "margin_threshold": 0.0881
+    },
+    {
+      "coverage": 0.439,
+      "selective_risk": 0.7874,
+      "margin_threshold": 0.08804
+    },
+    {
+      "coverage": 0.4395,
+      "selective_risk": 0.7876,
+      "margin_threshold": 0.08801
+    },
+    {
+      "coverage": 0.44,
+      "selective_risk": 0.7879,
+      "margin_threshold": 0.08801
+    },
+    {
+      "coverage": 0.4405,
+      "selective_risk": 0.7881,
+      "margin_threshold": 0.08797
+    },
+    {
+      "coverage": 0.441,
+      "selective_risk": 0.7884,
+      "margin_threshold": 0.0879
+    },
+    {
+      "coverage": 0.4415,
+      "selective_risk": 0.7886,
+      "margin_threshold": 0.08786
+    },
+    {
+      "coverage": 0.4421,
+      "selective_risk": 0.7877,
+      "margin_threshold": 0.08785
+    },
+    {
+      "coverage": 0.4426,
+      "selective_risk": 0.7879,
+      "margin_threshold": 0.08768
+    },
+    {
+      "coverage": 0.4431,
+      "selective_risk": 0.7882,
+      "margin_threshold": 0.08761
+    },
+    {
+      "coverage": 0.4436,
+      "selective_risk": 0.7873,
+      "margin_threshold": 0.08759
+    },
+    {
+      "coverage": 0.4441,
+      "selective_risk": 0.7875,
+      "margin_threshold": 0.08759
+    },
+    {
+      "coverage": 0.4446,
+      "selective_risk": 0.7878,
+      "margin_threshold": 0.08752
+    },
+    {
+      "coverage": 0.4451,
+      "selective_risk": 0.7869,
+      "margin_threshold": 0.08751
+    },
+    {
+      "coverage": 0.4456,
+      "selective_risk": 0.7871,
+      "margin_threshold": 0.08734
+    },
+    {
+      "coverage": 0.4462,
+      "selective_risk": 0.7874,
+      "margin_threshold": 0.08732
+    },
+    {
+      "coverage": 0.4467,
+      "selective_risk": 0.7876,
+      "margin_threshold": 0.08731
+    },
+    {
+      "coverage": 0.4472,
+      "selective_risk": 0.7878,
+      "margin_threshold": 0.0873
+    },
+    {
+      "coverage": 0.4477,
+      "selective_risk": 0.7881,
+      "margin_threshold": 0.08729
+    },
+    {
+      "coverage": 0.4482,
+      "selective_risk": 0.7872,
+      "margin_threshold": 0.08722
+    },
+    {
+      "coverage": 0.4487,
+      "selective_risk": 0.7874,
+      "margin_threshold": 0.08711
+    },
+    {
+      "coverage": 0.4492,
+      "selective_risk": 0.7877,
+      "margin_threshold": 0.08706
+    },
+    {
+      "coverage": 0.4497,
+      "selective_risk": 0.7879,
+      "margin_threshold": 0.08701
+    },
+    {
+      "coverage": 0.4503,
+      "selective_risk": 0.7882,
+      "margin_threshold": 0.08701
+    },
+    {
+      "coverage": 0.4508,
+      "selective_risk": 0.7884,
+      "margin_threshold": 0.08696
+    },
+    {
+      "coverage": 0.4513,
+      "selective_risk": 0.7886,
+      "margin_threshold": 0.08694
+    },
+    {
+      "coverage": 0.4518,
+      "selective_risk": 0.7889,
+      "margin_threshold": 0.08694
+    },
+    {
+      "coverage": 0.4523,
+      "selective_risk": 0.7891,
+      "margin_threshold": 0.08693
+    },
+    {
+      "coverage": 0.4528,
+      "selective_risk": 0.7894,
+      "margin_threshold": 0.08683
+    },
+    {
+      "coverage": 0.4533,
+      "selective_risk": 0.7896,
+      "margin_threshold": 0.08671
+    },
+    {
+      "coverage": 0.4538,
+      "selective_risk": 0.7898,
+      "margin_threshold": 0.08669
+    },
+    {
+      "coverage": 0.4544,
+      "selective_risk": 0.7901,
+      "margin_threshold": 0.08666
+    },
+    {
+      "coverage": 0.4549,
+      "selective_risk": 0.7903,
+      "margin_threshold": 0.08652
+    },
+    {
+      "coverage": 0.4554,
+      "selective_risk": 0.7905,
+      "margin_threshold": 0.08635
+    },
+    {
+      "coverage": 0.4559,
+      "selective_risk": 0.7908,
+      "margin_threshold": 0.08634
+    },
+    {
+      "coverage": 0.4564,
+      "selective_risk": 0.791,
+      "margin_threshold": 0.08634
+    },
+    {
+      "coverage": 0.4569,
+      "selective_risk": 0.7912,
+      "margin_threshold": 0.08633
+    },
+    {
+      "coverage": 0.4574,
+      "selective_risk": 0.7915,
+      "margin_threshold": 0.08631
+    },
+    {
+      "coverage": 0.4579,
+      "selective_risk": 0.7917,
+      "margin_threshold": 0.08627
+    },
+    {
+      "coverage": 0.4585,
+      "selective_risk": 0.7919,
+      "margin_threshold": 0.08621
+    },
+    {
+      "coverage": 0.459,
+      "selective_risk": 0.7922,
+      "margin_threshold": 0.08618
+    },
+    {
+      "coverage": 0.4595,
+      "selective_risk": 0.7924,
+      "margin_threshold": 0.08612
+    },
+    {
+      "coverage": 0.46,
+      "selective_risk": 0.7926,
+      "margin_threshold": 0.08606
+    },
+    {
+      "coverage": 0.4605,
+      "selective_risk": 0.7918,
+      "margin_threshold": 0.08602
+    },
+    {
+      "coverage": 0.461,
+      "selective_risk": 0.792,
+      "margin_threshold": 0.086
+    },
+    {
+      "coverage": 0.4615,
+      "selective_risk": 0.7922,
+      "margin_threshold": 0.08589
+    },
+    {
+      "coverage": 0.4621,
+      "selective_risk": 0.7925,
+      "margin_threshold": 0.08588
+    },
+    {
+      "coverage": 0.4626,
+      "selective_risk": 0.7927,
+      "margin_threshold": 0.08585
+    },
+    {
+      "coverage": 0.4631,
+      "selective_risk": 0.7929,
+      "margin_threshold": 0.08579
+    },
+    {
+      "coverage": 0.4636,
+      "selective_risk": 0.792,
+      "margin_threshold": 0.08573
+    },
+    {
+      "coverage": 0.4641,
+      "selective_risk": 0.7923,
+      "margin_threshold": 0.08571
+    },
+    {
+      "coverage": 0.4646,
+      "selective_risk": 0.7925,
+      "margin_threshold": 0.08569
+    },
+    {
+      "coverage": 0.4651,
+      "selective_risk": 0.7927,
+      "margin_threshold": 0.08562
+    },
+    {
+      "coverage": 0.4656,
+      "selective_risk": 0.793,
+      "margin_threshold": 0.08561
+    },
+    {
+      "coverage": 0.4662,
+      "selective_risk": 0.7932,
+      "margin_threshold": 0.08559
+    },
+    {
+      "coverage": 0.4667,
+      "selective_risk": 0.7934,
+      "margin_threshold": 0.08557
+    },
+    {
+      "coverage": 0.4672,
+      "selective_risk": 0.7936,
+      "margin_threshold": 0.08552
+    },
+    {
+      "coverage": 0.4677,
+      "selective_risk": 0.7939,
+      "margin_threshold": 0.08552
+    },
+    {
+      "coverage": 0.4682,
+      "selective_risk": 0.7941,
+      "margin_threshold": 0.08544
+    },
+    {
+      "coverage": 0.4687,
+      "selective_risk": 0.7943,
+      "margin_threshold": 0.08541
+    },
+    {
+      "coverage": 0.4692,
+      "selective_risk": 0.7945,
+      "margin_threshold": 0.08531
+    },
+    {
+      "coverage": 0.4697,
+      "selective_risk": 0.7937,
+      "margin_threshold": 0.08523
+    },
+    {
+      "coverage": 0.4703,
+      "selective_risk": 0.7939,
+      "margin_threshold": 0.0852
+    },
+    {
+      "coverage": 0.4708,
+      "selective_risk": 0.7941,
+      "margin_threshold": 0.08519
+    },
+    {
+      "coverage": 0.4713,
+      "selective_risk": 0.7943,
+      "margin_threshold": 0.08508
+    },
+    {
+      "coverage": 0.4718,
+      "selective_risk": 0.7946,
+      "margin_threshold": 0.08489
+    },
+    {
+      "coverage": 0.4723,
+      "selective_risk": 0.7948,
+      "margin_threshold": 0.08483
+    },
+    {
+      "coverage": 0.4728,
+      "selective_risk": 0.795,
+      "margin_threshold": 0.08477
+    },
+    {
+      "coverage": 0.4733,
+      "selective_risk": 0.7952,
+      "margin_threshold": 0.08476
+    },
+    {
+      "coverage": 0.4738,
+      "selective_risk": 0.7955,
+      "margin_threshold": 0.0847
+    },
+    {
+      "coverage": 0.4744,
+      "selective_risk": 0.7957,
+      "margin_threshold": 0.08468
+    },
+    {
+      "coverage": 0.4749,
+      "selective_risk": 0.7959,
+      "margin_threshold": 0.08467
+    },
+    {
+      "coverage": 0.4754,
+      "selective_risk": 0.7961,
+      "margin_threshold": 0.08459
+    },
+    {
+      "coverage": 0.4759,
+      "selective_risk": 0.7963,
+      "margin_threshold": 0.08455
+    },
+    {
+      "coverage": 0.4764,
+      "selective_risk": 0.7966,
+      "margin_threshold": 0.08445
+    },
+    {
+      "coverage": 0.4769,
+      "selective_risk": 0.7968,
+      "margin_threshold": 0.08444
+    },
+    {
+      "coverage": 0.4774,
+      "selective_risk": 0.797,
+      "margin_threshold": 0.08434
+    },
+    {
+      "coverage": 0.4779,
+      "selective_risk": 0.7961,
+      "margin_threshold": 0.08432
+    },
+    {
+      "coverage": 0.4785,
+      "selective_risk": 0.7964,
+      "margin_threshold": 0.08431
+    },
+    {
+      "coverage": 0.479,
+      "selective_risk": 0.7955,
+      "margin_threshold": 0.0843
+    },
+    {
+      "coverage": 0.4795,
+      "selective_risk": 0.7957,
+      "margin_threshold": 0.0842
+    },
+    {
+      "coverage": 0.48,
+      "selective_risk": 0.7949,
+      "margin_threshold": 0.08419
+    },
+    {
+      "coverage": 0.4805,
+      "selective_risk": 0.7951,
+      "margin_threshold": 0.08418
+    },
+    {
+      "coverage": 0.481,
+      "selective_risk": 0.7953,
+      "margin_threshold": 0.08417
+    },
+    {
+      "coverage": 0.4815,
+      "selective_risk": 0.7955,
+      "margin_threshold": 0.08416
+    },
+    {
+      "coverage": 0.4821,
+      "selective_risk": 0.7957,
+      "margin_threshold": 0.08416
+    },
+    {
+      "coverage": 0.4826,
+      "selective_risk": 0.796,
+      "margin_threshold": 0.08413
+    },
+    {
+      "coverage": 0.4831,
+      "selective_risk": 0.7962,
+      "margin_threshold": 0.0841
+    },
+    {
+      "coverage": 0.4836,
+      "selective_risk": 0.7964,
+      "margin_threshold": 0.08406
+    },
+    {
+      "coverage": 0.4841,
+      "selective_risk": 0.7966,
+      "margin_threshold": 0.08401
+    },
+    {
+      "coverage": 0.4846,
+      "selective_risk": 0.7968,
+      "margin_threshold": 0.08394
+    },
+    {
+      "coverage": 0.4851,
+      "selective_risk": 0.797,
+      "margin_threshold": 0.08391
+    },
+    {
+      "coverage": 0.4856,
+      "selective_risk": 0.7973,
+      "margin_threshold": 0.08383
+    },
+    {
+      "coverage": 0.4862,
+      "selective_risk": 0.7975,
+      "margin_threshold": 0.08383
+    },
+    {
+      "coverage": 0.4867,
+      "selective_risk": 0.7977,
+      "margin_threshold": 0.08377
+    },
+    {
+      "coverage": 0.4872,
+      "selective_risk": 0.7979,
+      "margin_threshold": 0.08376
+    },
+    {
+      "coverage": 0.4877,
+      "selective_risk": 0.7981,
+      "margin_threshold": 0.0837
+    },
+    {
+      "coverage": 0.4882,
+      "selective_risk": 0.7983,
+      "margin_threshold": 0.08369
+    },
+    {
+      "coverage": 0.4887,
+      "selective_risk": 0.7985,
+      "margin_threshold": 0.08368
+    },
+    {
+      "coverage": 0.4892,
+      "selective_risk": 0.7977,
+      "margin_threshold": 0.08366
+    },
+    {
+      "coverage": 0.4897,
+      "selective_risk": 0.7979,
+      "margin_threshold": 0.08365
+    },
+    {
+      "coverage": 0.4903,
+      "selective_risk": 0.7981,
+      "margin_threshold": 0.08361
+    },
+    {
+      "coverage": 0.4908,
+      "selective_risk": 0.7983,
+      "margin_threshold": 0.08361
+    },
+    {
+      "coverage": 0.4913,
+      "selective_risk": 0.7985,
+      "margin_threshold": 0.08359
+    },
+    {
+      "coverage": 0.4918,
+      "selective_risk": 0.7987,
+      "margin_threshold": 0.08355
+    },
+    {
+      "coverage": 0.4923,
+      "selective_risk": 0.799,
+      "margin_threshold": 0.08351
+    },
+    {
+      "coverage": 0.4928,
+      "selective_risk": 0.7981,
+      "margin_threshold": 0.08351
+    },
+    {
+      "coverage": 0.4933,
+      "selective_risk": 0.7983,
+      "margin_threshold": 0.08348
+    },
+    {
+      "coverage": 0.4938,
+      "selective_risk": 0.7975,
+      "margin_threshold": 0.08346
+    },
+    {
+      "coverage": 0.4944,
+      "selective_risk": 0.7977,
+      "margin_threshold": 0.08344
+    },
+    {
+      "coverage": 0.4949,
+      "selective_risk": 0.7969,
+      "margin_threshold": 0.08344
+    },
+    {
+      "coverage": 0.4954,
+      "selective_risk": 0.7971,
+      "margin_threshold": 0.08341
+    },
+    {
+      "coverage": 0.4959,
+      "selective_risk": 0.7973,
+      "margin_threshold": 0.08339
+    },
+    {
+      "coverage": 0.4964,
+      "selective_risk": 0.7975,
+      "margin_threshold": 0.0833
+    },
+    {
+      "coverage": 0.4969,
+      "selective_risk": 0.7977,
+      "margin_threshold": 0.08324
+    },
+    {
+      "coverage": 0.4974,
+      "selective_risk": 0.7979,
+      "margin_threshold": 0.08322
+    },
+    {
+      "coverage": 0.4979,
+      "selective_risk": 0.7981,
+      "margin_threshold": 0.0832
+    },
+    {
+      "coverage": 0.4985,
+      "selective_risk": 0.7984,
+      "margin_threshold": 0.08314
+    },
+    {
+      "coverage": 0.499,
+      "selective_risk": 0.7986,
+      "margin_threshold": 0.0831
+    },
+    {
+      "coverage": 0.4995,
+      "selective_risk": 0.7988,
+      "margin_threshold": 0.08305
+    },
+    {
+      "coverage": 0.5,
+      "selective_risk": 0.799,
+      "margin_threshold": 0.08304
+    },
+    {
+      "coverage": 0.5005,
+      "selective_risk": 0.7992,
+      "margin_threshold": 0.08296
+    },
+    {
+      "coverage": 0.501,
+      "selective_risk": 0.7994,
+      "margin_threshold": 0.08296
+    },
+    {
+      "coverage": 0.5015,
+      "selective_risk": 0.7986,
+      "margin_threshold": 0.08295
+    },
+    {
+      "coverage": 0.5021,
+      "selective_risk": 0.7988,
+      "margin_threshold": 0.08294
+    },
+    {
+      "coverage": 0.5026,
+      "selective_risk": 0.798,
+      "margin_threshold": 0.0828
+    },
+    {
+      "coverage": 0.5031,
+      "selective_risk": 0.7982,
+      "margin_threshold": 0.08277
+    },
+    {
+      "coverage": 0.5036,
+      "selective_risk": 0.7984,
+      "margin_threshold": 0.08277
+    },
+    {
+      "coverage": 0.5041,
+      "selective_risk": 0.7986,
+      "margin_threshold": 0.08274
+    },
+    {
+      "coverage": 0.5046,
+      "selective_risk": 0.7988,
+      "margin_threshold": 0.08273
+    },
+    {
+      "coverage": 0.5051,
+      "selective_risk": 0.799,
+      "margin_threshold": 0.08273
+    },
+    {
+      "coverage": 0.5056,
+      "selective_risk": 0.7992,
+      "margin_threshold": 0.0827
+    },
+    {
+      "coverage": 0.5062,
+      "selective_risk": 0.7994,
+      "margin_threshold": 0.0826
+    },
+    {
+      "coverage": 0.5067,
+      "selective_risk": 0.7996,
+      "margin_threshold": 0.0826
+    },
+    {
+      "coverage": 0.5072,
+      "selective_risk": 0.7998,
+      "margin_threshold": 0.08251
+    },
+    {
+      "coverage": 0.5077,
+      "selective_risk": 0.8,
+      "margin_threshold": 0.08249
+    },
+    {
+      "coverage": 0.5082,
+      "selective_risk": 0.7992,
+      "margin_threshold": 0.08244
+    },
+    {
+      "coverage": 0.5087,
+      "selective_risk": 0.7994,
+      "margin_threshold": 0.08243
+    },
+    {
+      "coverage": 0.5092,
+      "selective_risk": 0.7986,
+      "margin_threshold": 0.08236
+    },
+    {
+      "coverage": 0.5097,
+      "selective_risk": 0.7988,
+      "margin_threshold": 0.08218
+    },
+    {
+      "coverage": 0.5103,
+      "selective_risk": 0.799,
+      "margin_threshold": 0.08217
+    },
+    {
+      "coverage": 0.5108,
+      "selective_risk": 0.7982,
+      "margin_threshold": 0.08217
+    },
+    {
+      "coverage": 0.5113,
+      "selective_risk": 0.7984,
+      "margin_threshold": 0.08216
+    },
+    {
+      "coverage": 0.5118,
+      "selective_risk": 0.7986,
+      "margin_threshold": 0.08206
+    },
+    {
+      "coverage": 0.5123,
+      "selective_risk": 0.7988,
+      "margin_threshold": 0.082
+    },
+    {
+      "coverage": 0.5128,
+      "selective_risk": 0.798,
+      "margin_threshold": 0.08195
+    },
+    {
+      "coverage": 0.5133,
+      "selective_risk": 0.7982,
+      "margin_threshold": 0.08187
+    },
+    {
+      "coverage": 0.5138,
+      "selective_risk": 0.7984,
+      "margin_threshold": 0.08182
+    },
+    {
+      "coverage": 0.5144,
+      "selective_risk": 0.7986,
+      "margin_threshold": 0.0818
+    },
+    {
+      "coverage": 0.5149,
+      "selective_risk": 0.7988,
+      "margin_threshold": 0.08172
+    },
+    {
+      "coverage": 0.5154,
+      "selective_risk": 0.799,
+      "margin_threshold": 0.08171
+    },
+    {
+      "coverage": 0.5159,
+      "selective_risk": 0.7992,
+      "margin_threshold": 0.08171
+    },
+    {
+      "coverage": 0.5164,
+      "selective_risk": 0.7994,
+      "margin_threshold": 0.08167
+    },
+    {
+      "coverage": 0.5169,
+      "selective_risk": 0.7986,
+      "margin_threshold": 0.08165
+    },
+    {
+      "coverage": 0.5174,
+      "selective_risk": 0.7988,
+      "margin_threshold": 0.08164
+    },
+    {
+      "coverage": 0.5179,
+      "selective_risk": 0.799,
+      "margin_threshold": 0.08161
+    },
+    {
+      "coverage": 0.5185,
+      "selective_risk": 0.7992,
+      "margin_threshold": 0.08154
+    },
+    {
+      "coverage": 0.519,
+      "selective_risk": 0.7994,
+      "margin_threshold": 0.0815
+    },
+    {
+      "coverage": 0.5195,
+      "selective_risk": 0.7986,
+      "margin_threshold": 0.08145
+    },
+    {
+      "coverage": 0.52,
+      "selective_risk": 0.7988,
+      "margin_threshold": 0.08142
+    },
+    {
+      "coverage": 0.5205,
+      "selective_risk": 0.799,
+      "margin_threshold": 0.08142
+    },
+    {
+      "coverage": 0.521,
+      "selective_risk": 0.7992,
+      "margin_threshold": 0.08141
+    },
+    {
+      "coverage": 0.5215,
+      "selective_risk": 0.7994,
+      "margin_threshold": 0.08138
+    },
+    {
+      "coverage": 0.5221,
+      "selective_risk": 0.7996,
+      "margin_threshold": 0.08136
+    },
+    {
+      "coverage": 0.5226,
+      "selective_risk": 0.7998,
+      "margin_threshold": 0.08136
+    },
+    {
+      "coverage": 0.5231,
+      "selective_risk": 0.8,
+      "margin_threshold": 0.08131
+    },
+    {
+      "coverage": 0.5236,
+      "selective_risk": 0.8002,
+      "margin_threshold": 0.08108
+    },
+    {
+      "coverage": 0.5241,
+      "selective_risk": 0.8004,
+      "margin_threshold": 0.08106
+    },
+    {
+      "coverage": 0.5246,
+      "selective_risk": 0.8006,
+      "margin_threshold": 0.08097
+    },
+    {
+      "coverage": 0.5251,
+      "selective_risk": 0.7998,
+      "margin_threshold": 0.08096
+    },
+    {
+      "coverage": 0.5256,
+      "selective_risk": 0.8,
+      "margin_threshold": 0.08095
+    },
+    {
+      "coverage": 0.5262,
+      "selective_risk": 0.8002,
+      "margin_threshold": 0.08093
+    },
+    {
+      "coverage": 0.5267,
+      "selective_risk": 0.7994,
+      "margin_threshold": 0.08089
+    },
+    {
+      "coverage": 0.5272,
+      "selective_risk": 0.7996,
+      "margin_threshold": 0.08087
+    },
+    {
+      "coverage": 0.5277,
+      "selective_risk": 0.7998,
+      "margin_threshold": 0.08084
+    },
+    {
+      "coverage": 0.5282,
+      "selective_risk": 0.8,
+      "margin_threshold": 0.08081
+    },
+    {
+      "coverage": 0.5287,
+      "selective_risk": 0.8002,
+      "margin_threshold": 0.08078
+    },
+    {
+      "coverage": 0.5292,
+      "selective_risk": 0.7994,
+      "margin_threshold": 0.08074
+    },
+    {
+      "coverage": 0.5297,
+      "selective_risk": 0.7996,
+      "margin_threshold": 0.08072
+    },
+    {
+      "coverage": 0.5303,
+      "selective_risk": 0.7998,
+      "margin_threshold": 0.0807
+    },
+    {
+      "coverage": 0.5308,
+      "selective_risk": 0.8,
+      "margin_threshold": 0.0807
+    },
+    {
+      "coverage": 0.5313,
+      "selective_risk": 0.8002,
+      "margin_threshold": 0.08069
+    },
+    {
+      "coverage": 0.5318,
+      "selective_risk": 0.8004,
+      "margin_threshold": 0.08067
+    },
+    {
+      "coverage": 0.5323,
+      "selective_risk": 0.8006,
+      "margin_threshold": 0.08063
+    },
+    {
+      "coverage": 0.5328,
+      "selective_risk": 0.8008,
+      "margin_threshold": 0.08053
+    },
+    {
+      "coverage": 0.5333,
+      "selective_risk": 0.8,
+      "margin_threshold": 0.08042
+    },
+    {
+      "coverage": 0.5338,
+      "selective_risk": 0.8002,
+      "margin_threshold": 0.0803
+    },
+    {
+      "coverage": 0.5344,
+      "selective_risk": 0.8004,
+      "margin_threshold": 0.08029
+    },
+    {
+      "coverage": 0.5349,
+      "selective_risk": 0.8006,
+      "margin_threshold": 0.08027
+    },
+    {
+      "coverage": 0.5354,
+      "selective_risk": 0.7998,
+      "margin_threshold": 0.08024
+    },
+    {
+      "coverage": 0.5359,
+      "selective_risk": 0.8,
+      "margin_threshold": 0.08011
+    },
+    {
+      "coverage": 0.5364,
+      "selective_risk": 0.8002,
+      "margin_threshold": 0.08008
+    },
+    {
+      "coverage": 0.5369,
+      "selective_risk": 0.8004,
+      "margin_threshold": 0.07988
+    },
+    {
+      "coverage": 0.5374,
+      "selective_risk": 0.8006,
+      "margin_threshold": 0.07983
+    },
+    {
+      "coverage": 0.5379,
+      "selective_risk": 0.8008,
+      "margin_threshold": 0.07978
+    },
+    {
+      "coverage": 0.5385,
+      "selective_risk": 0.801,
+      "margin_threshold": 0.07973
+    },
+    {
+      "coverage": 0.539,
+      "selective_risk": 0.8011,
+      "margin_threshold": 0.07967
+    },
+    {
+      "coverage": 0.5395,
+      "selective_risk": 0.8004,
+      "margin_threshold": 0.07963
+    },
+    {
+      "coverage": 0.54,
+      "selective_risk": 0.7996,
+      "margin_threshold": 0.07963
+    },
+    {
+      "coverage": 0.5405,
+      "selective_risk": 0.7998,
+      "margin_threshold": 0.07961
+    },
+    {
+      "coverage": 0.541,
+      "selective_risk": 0.8,
+      "margin_threshold": 0.07959
+    },
+    {
+      "coverage": 0.5415,
+      "selective_risk": 0.8002,
+      "margin_threshold": 0.07956
+    },
+    {
+      "coverage": 0.5421,
+      "selective_risk": 0.8004,
+      "margin_threshold": 0.07947
+    },
+    {
+      "coverage": 0.5426,
+      "selective_risk": 0.8006,
+      "margin_threshold": 0.07946
+    },
+    {
+      "coverage": 0.5431,
+      "selective_risk": 0.7998,
+      "margin_threshold": 0.07942
+    },
+    {
+      "coverage": 0.5436,
+      "selective_risk": 0.8,
+      "margin_threshold": 0.07924
+    },
+    {
+      "coverage": 0.5441,
+      "selective_risk": 0.8002,
+      "margin_threshold": 0.07911
+    },
+    {
+      "coverage": 0.5446,
+      "selective_risk": 0.8004,
+      "margin_threshold": 0.07904
+    },
+    {
+      "coverage": 0.5451,
+      "selective_risk": 0.8006,
+      "margin_threshold": 0.07902
+    },
+    {
+      "coverage": 0.5456,
+      "selective_risk": 0.8008,
+      "margin_threshold": 0.07901
+    },
+    {
+      "coverage": 0.5462,
+      "selective_risk": 0.8009,
+      "margin_threshold": 0.07895
+    },
+    {
+      "coverage": 0.5467,
+      "selective_risk": 0.8011,
+      "margin_threshold": 0.07889
+    },
+    {
+      "coverage": 0.5472,
+      "selective_risk": 0.8013,
+      "margin_threshold": 0.07884
+    },
+    {
+      "coverage": 0.5477,
+      "selective_risk": 0.8015,
+      "margin_threshold": 0.07881
+    },
+    {
+      "coverage": 0.5482,
+      "selective_risk": 0.8017,
+      "margin_threshold": 0.0788
+    },
+    {
+      "coverage": 0.5487,
+      "selective_risk": 0.8019,
+      "margin_threshold": 0.07878
+    },
+    {
+      "coverage": 0.5492,
+      "selective_risk": 0.8021,
+      "margin_threshold": 0.07871
+    },
+    {
+      "coverage": 0.5497,
+      "selective_risk": 0.8022,
+      "margin_threshold": 0.07866
+    },
+    {
+      "coverage": 0.5503,
+      "selective_risk": 0.8024,
+      "margin_threshold": 0.07861
+    },
+    {
+      "coverage": 0.5508,
+      "selective_risk": 0.8026,
+      "margin_threshold": 0.07859
+    },
+    {
+      "coverage": 0.5513,
+      "selective_risk": 0.8028,
+      "margin_threshold": 0.07856
+    },
+    {
+      "coverage": 0.5518,
+      "selective_risk": 0.803,
+      "margin_threshold": 0.07852
+    },
+    {
+      "coverage": 0.5523,
+      "selective_risk": 0.8032,
+      "margin_threshold": 0.07846
+    },
+    {
+      "coverage": 0.5528,
+      "selective_risk": 0.8033,
+      "margin_threshold": 0.07846
+    },
+    {
+      "coverage": 0.5533,
+      "selective_risk": 0.8026,
+      "margin_threshold": 0.0784
+    },
+    {
+      "coverage": 0.5538,
+      "selective_risk": 0.8028,
+      "margin_threshold": 0.07838
+    },
+    {
+      "coverage": 0.5544,
+      "selective_risk": 0.802,
+      "margin_threshold": 0.07837
+    },
+    {
+      "coverage": 0.5549,
+      "selective_risk": 0.8022,
+      "margin_threshold": 0.07833
+    },
+    {
+      "coverage": 0.5554,
+      "selective_risk": 0.8024,
+      "margin_threshold": 0.07833
+    },
+    {
+      "coverage": 0.5559,
+      "selective_risk": 0.8026,
+      "margin_threshold": 0.0783
+    },
+    {
+      "coverage": 0.5564,
+      "selective_risk": 0.8028,
+      "margin_threshold": 0.07826
+    },
+    {
+      "coverage": 0.5569,
+      "selective_risk": 0.8029,
+      "margin_threshold": 0.07811
+    },
+    {
+      "coverage": 0.5574,
+      "selective_risk": 0.8031,
+      "margin_threshold": 0.07807
+    },
+    {
+      "coverage": 0.5579,
+      "selective_risk": 0.8033,
+      "margin_threshold": 0.07799
+    },
+    {
+      "coverage": 0.5585,
+      "selective_risk": 0.8035,
+      "margin_threshold": 0.07798
+    },
+    {
+      "coverage": 0.559,
+      "selective_risk": 0.8037,
+      "margin_threshold": 0.07788
+    },
+    {
+      "coverage": 0.5595,
+      "selective_risk": 0.8038,
+      "margin_threshold": 0.07782
+    },
+    {
+      "coverage": 0.56,
+      "selective_risk": 0.8031,
+      "margin_threshold": 0.07782
+    },
+    {
+      "coverage": 0.5605,
+      "selective_risk": 0.8033,
+      "margin_threshold": 0.07778
+    },
+    {
+      "coverage": 0.561,
+      "selective_risk": 0.8035,
+      "margin_threshold": 0.07772
+    },
+    {
+      "coverage": 0.5615,
+      "selective_risk": 0.8037,
+      "margin_threshold": 0.07769
+    },
+    {
+      "coverage": 0.5621,
+      "selective_risk": 0.8038,
+      "margin_threshold": 0.07766
+    },
+    {
+      "coverage": 0.5626,
+      "selective_risk": 0.804,
+      "margin_threshold": 0.07765
+    },
+    {
+      "coverage": 0.5631,
+      "selective_risk": 0.8042,
+      "margin_threshold": 0.07763
+    },
+    {
+      "coverage": 0.5636,
+      "selective_risk": 0.8044,
+      "margin_threshold": 0.0776
+    },
+    {
+      "coverage": 0.5641,
+      "selective_risk": 0.8045,
+      "margin_threshold": 0.07756
+    },
+    {
+      "coverage": 0.5646,
+      "selective_risk": 0.8047,
+      "margin_threshold": 0.07752
+    },
+    {
+      "coverage": 0.5651,
+      "selective_risk": 0.8049,
+      "margin_threshold": 0.07741
+    },
+    {
+      "coverage": 0.5656,
+      "selective_risk": 0.8051,
+      "margin_threshold": 0.07725
+    },
+    {
+      "coverage": 0.5662,
+      "selective_risk": 0.8053,
+      "margin_threshold": 0.07725
+    },
+    {
+      "coverage": 0.5667,
+      "selective_risk": 0.8054,
+      "margin_threshold": 0.07719
+    },
+    {
+      "coverage": 0.5672,
+      "selective_risk": 0.8056,
+      "margin_threshold": 0.07715
+    },
+    {
+      "coverage": 0.5677,
+      "selective_risk": 0.8058,
+      "margin_threshold": 0.07714
+    },
+    {
+      "coverage": 0.5682,
+      "selective_risk": 0.806,
+      "margin_threshold": 0.07713
+    },
+    {
+      "coverage": 0.5687,
+      "selective_risk": 0.8061,
+      "margin_threshold": 0.07705
+    },
+    {
+      "coverage": 0.5692,
+      "selective_risk": 0.8063,
+      "margin_threshold": 0.07705
+    },
+    {
+      "coverage": 0.5697,
+      "selective_risk": 0.8065,
+      "margin_threshold": 0.07703
+    },
+    {
+      "coverage": 0.5703,
+      "selective_risk": 0.8067,
+      "margin_threshold": 0.07701
+    },
+    {
+      "coverage": 0.5708,
+      "selective_risk": 0.8068,
+      "margin_threshold": 0.077
+    },
+    {
+      "coverage": 0.5713,
+      "selective_risk": 0.807,
+      "margin_threshold": 0.07698
+    },
+    {
+      "coverage": 0.5718,
+      "selective_risk": 0.8072,
+      "margin_threshold": 0.07691
+    },
+    {
+      "coverage": 0.5723,
+      "selective_risk": 0.8073,
+      "margin_threshold": 0.07691
+    },
+    {
+      "coverage": 0.5728,
+      "selective_risk": 0.8075,
+      "margin_threshold": 0.07684
+    },
+    {
+      "coverage": 0.5733,
+      "selective_risk": 0.8077,
+      "margin_threshold": 0.0768
+    },
+    {
+      "coverage": 0.5738,
+      "selective_risk": 0.807,
+      "margin_threshold": 0.07678
+    },
+    {
+      "coverage": 0.5744,
+      "selective_risk": 0.8071,
+      "margin_threshold": 0.07676
+    },
+    {
+      "coverage": 0.5749,
+      "selective_risk": 0.8073,
+      "margin_threshold": 0.07675
+    },
+    {
+      "coverage": 0.5754,
+      "selective_risk": 0.8075,
+      "margin_threshold": 0.07664
+    },
+    {
+      "coverage": 0.5759,
+      "selective_risk": 0.8077,
+      "margin_threshold": 0.07663
+    },
+    {
+      "coverage": 0.5764,
+      "selective_risk": 0.8069,
+      "margin_threshold": 0.07659
+    },
+    {
+      "coverage": 0.5769,
+      "selective_risk": 0.8071,
+      "margin_threshold": 0.07651
+    },
+    {
+      "coverage": 0.5774,
+      "selective_risk": 0.8073,
+      "margin_threshold": 0.0764
+    },
+    {
+      "coverage": 0.5779,
+      "selective_risk": 0.8075,
+      "margin_threshold": 0.07638
+    },
+    {
+      "coverage": 0.5785,
+      "selective_risk": 0.8076,
+      "margin_threshold": 0.07637
+    },
+    {
+      "coverage": 0.579,
+      "selective_risk": 0.8078,
+      "margin_threshold": 0.07631
+    },
+    {
+      "coverage": 0.5795,
+      "selective_risk": 0.808,
+      "margin_threshold": 0.0763
+    },
+    {
+      "coverage": 0.58,
+      "selective_risk": 0.8081,
+      "margin_threshold": 0.07629
+    },
+    {
+      "coverage": 0.5805,
+      "selective_risk": 0.8083,
+      "margin_threshold": 0.07627
+    },
+    {
+      "coverage": 0.581,
+      "selective_risk": 0.8085,
+      "margin_threshold": 0.07627
+    },
+    {
+      "coverage": 0.5815,
+      "selective_risk": 0.8086,
+      "margin_threshold": 0.07626
+    },
+    {
+      "coverage": 0.5821,
+      "selective_risk": 0.8088,
+      "margin_threshold": 0.07613
+    },
+    {
+      "coverage": 0.5826,
+      "selective_risk": 0.809,
+      "margin_threshold": 0.0761
+    },
+    {
+      "coverage": 0.5831,
+      "selective_risk": 0.8091,
+      "margin_threshold": 0.07609
+    },
+    {
+      "coverage": 0.5836,
+      "selective_risk": 0.8084,
+      "margin_threshold": 0.07606
+    },
+    {
+      "coverage": 0.5841,
+      "selective_risk": 0.8086,
+      "margin_threshold": 0.07605
+    },
+    {
+      "coverage": 0.5846,
+      "selective_risk": 0.8088,
+      "margin_threshold": 0.07591
+    },
+    {
+      "coverage": 0.5851,
+      "selective_risk": 0.8089,
+      "margin_threshold": 0.07589
+    },
+    {
+      "coverage": 0.5856,
+      "selective_risk": 0.8091,
+      "margin_threshold": 0.07587
+    },
+    {
+      "coverage": 0.5862,
+      "selective_risk": 0.8093,
+      "margin_threshold": 0.07557
+    },
+    {
+      "coverage": 0.5867,
+      "selective_risk": 0.8094,
+      "margin_threshold": 0.07556
+    },
+    {
+      "coverage": 0.5872,
+      "selective_risk": 0.8096,
+      "margin_threshold": 0.07554
+    },
+    {
+      "coverage": 0.5877,
+      "selective_risk": 0.8098,
+      "margin_threshold": 0.0755
+    },
+    {
+      "coverage": 0.5882,
+      "selective_risk": 0.8099,
+      "margin_threshold": 0.07547
+    },
+    {
+      "coverage": 0.5887,
+      "selective_risk": 0.8092,
+      "margin_threshold": 0.07543
+    },
+    {
+      "coverage": 0.5892,
+      "selective_risk": 0.8094,
+      "margin_threshold": 0.07541
+    },
+    {
+      "coverage": 0.5897,
+      "selective_risk": 0.8096,
+      "margin_threshold": 0.07537
+    },
+    {
+      "coverage": 0.5903,
+      "selective_risk": 0.8097,
+      "margin_threshold": 0.07536
+    },
+    {
+      "coverage": 0.5908,
+      "selective_risk": 0.8099,
+      "margin_threshold": 0.07533
+    },
+    {
+      "coverage": 0.5913,
+      "selective_risk": 0.8101,
+      "margin_threshold": 0.07533
+    },
+    {
+      "coverage": 0.5918,
+      "selective_risk": 0.8102,
+      "margin_threshold": 0.07523
+    },
+    {
+      "coverage": 0.5923,
+      "selective_risk": 0.8095,
+      "margin_threshold": 0.07521
+    },
+    {
+      "coverage": 0.5928,
+      "selective_risk": 0.8097,
+      "margin_threshold": 0.07516
+    },
+    {
+      "coverage": 0.5933,
+      "selective_risk": 0.8099,
+      "margin_threshold": 0.07514
+    },
+    {
+      "coverage": 0.5938,
+      "selective_risk": 0.81,
+      "margin_threshold": 0.07508
+    },
+    {
+      "coverage": 0.5944,
+      "selective_risk": 0.8102,
+      "margin_threshold": 0.07505
+    },
+    {
+      "coverage": 0.5949,
+      "selective_risk": 0.8103,
+      "margin_threshold": 0.075
+    },
+    {
+      "coverage": 0.5954,
+      "selective_risk": 0.8105,
+      "margin_threshold": 0.07493
+    },
+    {
+      "coverage": 0.5959,
+      "selective_risk": 0.8107,
+      "margin_threshold": 0.07492
+    },
+    {
+      "coverage": 0.5964,
+      "selective_risk": 0.8108,
+      "margin_threshold": 0.07491
+    },
+    {
+      "coverage": 0.5969,
+      "selective_risk": 0.811,
+      "margin_threshold": 0.07485
+    },
+    {
+      "coverage": 0.5974,
+      "selective_risk": 0.8103,
+      "margin_threshold": 0.07484
+    },
+    {
+      "coverage": 0.5979,
+      "selective_risk": 0.8105,
+      "margin_threshold": 0.07475
+    },
+    {
+      "coverage": 0.5985,
+      "selective_risk": 0.8098,
+      "margin_threshold": 0.07475
+    },
+    {
+      "coverage": 0.599,
+      "selective_risk": 0.8099,
+      "margin_threshold": 0.07469
+    },
+    {
+      "coverage": 0.5995,
+      "selective_risk": 0.8101,
+      "margin_threshold": 0.07455
+    },
+    {
+      "coverage": 0.6,
+      "selective_risk": 0.8103,
+      "margin_threshold": 0.0745
+    },
+    {
+      "coverage": 0.6005,
+      "selective_risk": 0.8104,
+      "margin_threshold": 0.07448
+    },
+    {
+      "coverage": 0.601,
+      "selective_risk": 0.8097,
+      "margin_threshold": 0.07447
+    },
+    {
+      "coverage": 0.6015,
+      "selective_risk": 0.8099,
+      "margin_threshold": 0.07443
+    },
+    {
+      "coverage": 0.6021,
+      "selective_risk": 0.8101,
+      "margin_threshold": 0.0744
+    },
+    {
+      "coverage": 0.6026,
+      "selective_risk": 0.8102,
+      "margin_threshold": 0.07439
+    },
+    {
+      "coverage": 0.6031,
+      "selective_risk": 0.8104,
+      "margin_threshold": 0.07438
+    },
+    {
+      "coverage": 0.6036,
+      "selective_risk": 0.8105,
+      "margin_threshold": 0.07436
+    },
+    {
+      "coverage": 0.6041,
+      "selective_risk": 0.8107,
+      "margin_threshold": 0.07433
+    },
+    {
+      "coverage": 0.6046,
+      "selective_risk": 0.8109,
+      "margin_threshold": 0.07432
+    },
+    {
+      "coverage": 0.6051,
+      "selective_risk": 0.811,
+      "margin_threshold": 0.0743
+    },
+    {
+      "coverage": 0.6056,
+      "selective_risk": 0.8112,
+      "margin_threshold": 0.07428
+    },
+    {
+      "coverage": 0.6062,
+      "selective_risk": 0.8105,
+      "margin_threshold": 0.07428
+    },
+    {
+      "coverage": 0.6067,
+      "selective_risk": 0.8107,
+      "margin_threshold": 0.07425
+    },
+    {
+      "coverage": 0.6072,
+      "selective_risk": 0.8108,
+      "margin_threshold": 0.07423
+    },
+    {
+      "coverage": 0.6077,
+      "selective_risk": 0.811,
+      "margin_threshold": 0.07419
+    },
+    {
+      "coverage": 0.6082,
+      "selective_risk": 0.8111,
+      "margin_threshold": 0.07413
+    },
+    {
+      "coverage": 0.6087,
+      "selective_risk": 0.8113,
+      "margin_threshold": 0.07405
+    },
+    {
+      "coverage": 0.6092,
+      "selective_risk": 0.8114,
+      "margin_threshold": 0.07405
+    },
+    {
+      "coverage": 0.6097,
+      "selective_risk": 0.8116,
+      "margin_threshold": 0.074
+    },
+    {
+      "coverage": 0.6103,
+      "selective_risk": 0.8109,
+      "margin_threshold": 0.07378
+    },
+    {
+      "coverage": 0.6108,
+      "selective_risk": 0.8111,
+      "margin_threshold": 0.07371
+    },
+    {
+      "coverage": 0.6113,
+      "selective_risk": 0.8112,
+      "margin_threshold": 0.0736
+    },
+    {
+      "coverage": 0.6118,
+      "selective_risk": 0.8114,
+      "margin_threshold": 0.07357
+    },
+    {
+      "coverage": 0.6123,
+      "selective_risk": 0.8107,
+      "margin_threshold": 0.0735
+    },
+    {
+      "coverage": 0.6128,
+      "selective_risk": 0.81,
+      "margin_threshold": 0.07344
+    },
+    {
+      "coverage": 0.6133,
+      "selective_risk": 0.8102,
+      "margin_threshold": 0.07343
+    },
+    {
+      "coverage": 0.6138,
+      "selective_risk": 0.8104,
+      "margin_threshold": 0.0734
+    },
+    {
+      "coverage": 0.6144,
+      "selective_risk": 0.8105,
+      "margin_threshold": 0.07338
+    },
+    {
+      "coverage": 0.6149,
+      "selective_risk": 0.8107,
+      "margin_threshold": 0.07338
+    },
+    {
+      "coverage": 0.6154,
+      "selective_risk": 0.8108,
+      "margin_threshold": 0.07331
+    },
+    {
+      "coverage": 0.6159,
+      "selective_risk": 0.811,
+      "margin_threshold": 0.07329
+    },
+    {
+      "coverage": 0.6164,
+      "selective_risk": 0.8111,
+      "margin_threshold": 0.07327
+    },
+    {
+      "coverage": 0.6169,
+      "selective_risk": 0.8113,
+      "margin_threshold": 0.07321
+    },
+    {
+      "coverage": 0.6174,
+      "selective_risk": 0.8115,
+      "margin_threshold": 0.07316
+    },
+    {
+      "coverage": 0.6179,
+      "selective_risk": 0.8116,
+      "margin_threshold": 0.073
+    },
+    {
+      "coverage": 0.6185,
+      "selective_risk": 0.8118,
+      "margin_threshold": 0.07297
+    },
+    {
+      "coverage": 0.619,
+      "selective_risk": 0.8119,
+      "margin_threshold": 0.07292
+    },
+    {
+      "coverage": 0.6195,
+      "selective_risk": 0.8121,
+      "margin_threshold": 0.07288
+    },
+    {
+      "coverage": 0.62,
+      "selective_risk": 0.8114,
+      "margin_threshold": 0.07272
+    },
+    {
+      "coverage": 0.6205,
+      "selective_risk": 0.8116,
+      "margin_threshold": 0.0727
+    },
+    {
+      "coverage": 0.621,
+      "selective_risk": 0.8117,
+      "margin_threshold": 0.07268
+    },
+    {
+      "coverage": 0.6215,
+      "selective_risk": 0.8119,
+      "margin_threshold": 0.07264
+    },
+    {
+      "coverage": 0.6221,
+      "selective_risk": 0.812,
+      "margin_threshold": 0.07257
+    },
+    {
+      "coverage": 0.6226,
+      "selective_risk": 0.8122,
+      "margin_threshold": 0.07246
+    },
+    {
+      "coverage": 0.6231,
+      "selective_risk": 0.8123,
+      "margin_threshold": 0.07243
+    },
+    {
+      "coverage": 0.6236,
+      "selective_risk": 0.8125,
+      "margin_threshold": 0.07234
+    },
+    {
+      "coverage": 0.6241,
+      "selective_risk": 0.8127,
+      "margin_threshold": 0.07207
+    },
+    {
+      "coverage": 0.6246,
+      "selective_risk": 0.812,
+      "margin_threshold": 0.07204
+    },
+    {
+      "coverage": 0.6251,
+      "selective_risk": 0.8121,
+      "margin_threshold": 0.07203
+    },
+    {
+      "coverage": 0.6256,
+      "selective_risk": 0.8123,
+      "margin_threshold": 0.07195
+    },
+    {
+      "coverage": 0.6262,
+      "selective_risk": 0.8124,
+      "margin_threshold": 0.07193
+    },
+    {
+      "coverage": 0.6267,
+      "selective_risk": 0.8126,
+      "margin_threshold": 0.07191
+    },
+    {
+      "coverage": 0.6272,
+      "selective_risk": 0.8128,
+      "margin_threshold": 0.07166
+    },
+    {
+      "coverage": 0.6277,
+      "selective_risk": 0.8129,
+      "margin_threshold": 0.07162
+    },
+    {
+      "coverage": 0.6282,
+      "selective_risk": 0.8131,
+      "margin_threshold": 0.0715
+    },
+    {
+      "coverage": 0.6287,
+      "selective_risk": 0.8132,
+      "margin_threshold": 0.07149
+    },
+    {
+      "coverage": 0.6292,
+      "selective_risk": 0.8126,
+      "margin_threshold": 0.07148
+    },
+    {
+      "coverage": 0.6297,
+      "selective_risk": 0.8119,
+      "margin_threshold": 0.07143
+    },
+    {
+      "coverage": 0.6303,
+      "selective_risk": 0.812,
+      "margin_threshold": 0.07141
+    },
+    {
+      "coverage": 0.6308,
+      "selective_risk": 0.8122,
+      "margin_threshold": 0.0713
+    },
+    {
+      "coverage": 0.6313,
+      "selective_risk": 0.8123,
+      "margin_threshold": 0.07129
+    },
+    {
+      "coverage": 0.6318,
+      "selective_risk": 0.8125,
+      "margin_threshold": 0.07128
+    },
+    {
+      "coverage": 0.6323,
+      "selective_risk": 0.8127,
+      "margin_threshold": 0.07127
+    },
+    {
+      "coverage": 0.6328,
+      "selective_risk": 0.812,
+      "margin_threshold": 0.07121
+    },
+    {
+      "coverage": 0.6333,
+      "selective_risk": 0.8121,
+      "margin_threshold": 0.07114
+    },
+    {
+      "coverage": 0.6338,
+      "selective_risk": 0.8123,
+      "margin_threshold": 0.07113
+    },
+    {
+      "coverage": 0.6344,
+      "selective_risk": 0.8124,
+      "margin_threshold": 0.07101
+    },
+    {
+      "coverage": 0.6349,
+      "selective_risk": 0.8118,
+      "margin_threshold": 0.07091
+    },
+    {
+      "coverage": 0.6354,
+      "selective_risk": 0.8119,
+      "margin_threshold": 0.07086
+    },
+    {
+      "coverage": 0.6359,
+      "selective_risk": 0.8113,
+      "margin_threshold": 0.07084
+    },
+    {
+      "coverage": 0.6364,
+      "selective_risk": 0.8114,
+      "margin_threshold": 0.07073
+    },
+    {
+      "coverage": 0.6369,
+      "selective_risk": 0.8116,
+      "margin_threshold": 0.07058
+    },
+    {
+      "coverage": 0.6374,
+      "selective_risk": 0.8117,
+      "margin_threshold": 0.07047
+    },
+    {
+      "coverage": 0.6379,
+      "selective_risk": 0.8111,
+      "margin_threshold": 0.07044
+    },
+    {
+      "coverage": 0.6385,
+      "selective_risk": 0.8112,
+      "margin_threshold": 0.07043
+    },
+    {
+      "coverage": 0.639,
+      "selective_risk": 0.8114,
+      "margin_threshold": 0.07042
+    },
+    {
+      "coverage": 0.6395,
+      "selective_risk": 0.8115,
+      "margin_threshold": 0.07041
+    },
+    {
+      "coverage": 0.64,
+      "selective_risk": 0.8117,
+      "margin_threshold": 0.07025
+    },
+    {
+      "coverage": 0.6405,
+      "selective_risk": 0.8118,
+      "margin_threshold": 0.07004
+    },
+    {
+      "coverage": 0.641,
+      "selective_risk": 0.812,
+      "margin_threshold": 0.07003
+    },
+    {
+      "coverage": 0.6415,
+      "selective_risk": 0.8122,
+      "margin_threshold": 0.06999
+    },
+    {
+      "coverage": 0.6421,
+      "selective_risk": 0.8123,
+      "margin_threshold": 0.06992
+    },
+    {
+      "coverage": 0.6426,
+      "selective_risk": 0.8125,
+      "margin_threshold": 0.0699
+    },
+    {
+      "coverage": 0.6431,
+      "selective_risk": 0.8126,
+      "margin_threshold": 0.06989
+    },
+    {
+      "coverage": 0.6436,
+      "selective_risk": 0.8127,
+      "margin_threshold": 0.06977
+    },
+    {
+      "coverage": 0.6441,
+      "selective_risk": 0.8121,
+      "margin_threshold": 0.06974
+    },
+    {
+      "coverage": 0.6446,
+      "selective_risk": 0.8123,
+      "margin_threshold": 0.06963
+    },
+    {
+      "coverage": 0.6451,
+      "selective_risk": 0.8124,
+      "margin_threshold": 0.06947
+    },
+    {
+      "coverage": 0.6456,
+      "selective_risk": 0.8125,
+      "margin_threshold": 0.06942
+    },
+    {
+      "coverage": 0.6462,
+      "selective_risk": 0.8127,
+      "margin_threshold": 0.06941
+    },
+    {
+      "coverage": 0.6467,
+      "selective_risk": 0.8128,
+      "margin_threshold": 0.06938
+    },
+    {
+      "coverage": 0.6472,
+      "selective_risk": 0.813,
+      "margin_threshold": 0.06938
+    },
+    {
+      "coverage": 0.6477,
+      "selective_risk": 0.8131,
+      "margin_threshold": 0.06917
+    },
+    {
+      "coverage": 0.6482,
+      "selective_risk": 0.8133,
+      "margin_threshold": 0.06917
+    },
+    {
+      "coverage": 0.6487,
+      "selective_risk": 0.8134,
+      "margin_threshold": 0.06914
+    },
+    {
+      "coverage": 0.6492,
+      "selective_risk": 0.8136,
+      "margin_threshold": 0.06914
+    },
+    {
+      "coverage": 0.6497,
+      "selective_risk": 0.8137,
+      "margin_threshold": 0.06907
+    },
+    {
+      "coverage": 0.6503,
+      "selective_risk": 0.8139,
+      "margin_threshold": 0.06907
+    },
+    {
+      "coverage": 0.6508,
+      "selective_risk": 0.814,
+      "margin_threshold": 0.06889
+    },
+    {
+      "coverage": 0.6513,
+      "selective_risk": 0.8134,
+      "margin_threshold": 0.06886
+    },
+    {
+      "coverage": 0.6518,
+      "selective_risk": 0.8135,
+      "margin_threshold": 0.06852
+    },
+    {
+      "coverage": 0.6523,
+      "selective_risk": 0.8137,
+      "margin_threshold": 0.06848
+    },
+    {
+      "coverage": 0.6528,
+      "selective_risk": 0.8138,
+      "margin_threshold": 0.06821
+    },
+    {
+      "coverage": 0.6533,
+      "selective_risk": 0.814,
+      "margin_threshold": 0.06799
+    },
+    {
+      "coverage": 0.6538,
+      "selective_risk": 0.8141,
+      "margin_threshold": 0.06784
+    },
+    {
+      "coverage": 0.6544,
+      "selective_risk": 0.8143,
+      "margin_threshold": 0.06743
+    },
+    {
+      "coverage": 0.6549,
+      "selective_risk": 0.8144,
+      "margin_threshold": 0.06735
+    },
+    {
+      "coverage": 0.6554,
+      "selective_risk": 0.8146,
+      "margin_threshold": 0.06715
+    },
+    {
+      "coverage": 0.6559,
+      "selective_risk": 0.8147,
+      "margin_threshold": 0.06706
+    },
+    {
+      "coverage": 0.6564,
+      "selective_risk": 0.8148,
+      "margin_threshold": 0.06698
+    },
+    {
+      "coverage": 0.6569,
+      "selective_risk": 0.8142,
+      "margin_threshold": 0.06694
+    },
+    {
+      "coverage": 0.6574,
+      "selective_risk": 0.8144,
+      "margin_threshold": 0.0669
+    },
+    {
+      "coverage": 0.6579,
+      "selective_risk": 0.8137,
+      "margin_threshold": 0.06685
+    },
+    {
+      "coverage": 0.6585,
+      "selective_risk": 0.8139,
+      "margin_threshold": 0.06679
+    },
+    {
+      "coverage": 0.659,
+      "selective_risk": 0.814,
+      "margin_threshold": 0.06676
+    },
+    {
+      "coverage": 0.6595,
+      "selective_risk": 0.8142,
+      "margin_threshold": 0.06668
+    },
+    {
+      "coverage": 0.66,
+      "selective_risk": 0.8143,
+      "margin_threshold": 0.06662
+    },
+    {
+      "coverage": 0.6605,
+      "selective_risk": 0.8144,
+      "margin_threshold": 0.06657
+    },
+    {
+      "coverage": 0.661,
+      "selective_risk": 0.8146,
+      "margin_threshold": 0.06648
+    },
+    {
+      "coverage": 0.6615,
+      "selective_risk": 0.814,
+      "margin_threshold": 0.06643
+    },
+    {
+      "coverage": 0.6621,
+      "selective_risk": 0.8141,
+      "margin_threshold": 0.0664
+    },
+    {
+      "coverage": 0.6626,
+      "selective_risk": 0.8142,
+      "margin_threshold": 0.06636
+    },
+    {
+      "coverage": 0.6631,
+      "selective_risk": 0.8144,
+      "margin_threshold": 0.0661
+    },
+    {
+      "coverage": 0.6636,
+      "selective_risk": 0.8145,
+      "margin_threshold": 0.06595
+    },
+    {
+      "coverage": 0.6641,
+      "selective_risk": 0.8147,
+      "margin_threshold": 0.06592
+    },
+    {
+      "coverage": 0.6646,
+      "selective_risk": 0.8148,
+      "margin_threshold": 0.06585
+    },
+    {
+      "coverage": 0.6651,
+      "selective_risk": 0.815,
+      "margin_threshold": 0.06576
+    },
+    {
+      "coverage": 0.6656,
+      "selective_risk": 0.8151,
+      "margin_threshold": 0.06564
+    },
+    {
+      "coverage": 0.6662,
+      "selective_risk": 0.8145,
+      "margin_threshold": 0.06561
+    },
+    {
+      "coverage": 0.6667,
+      "selective_risk": 0.8146,
+      "margin_threshold": 0.06549
+    },
+    {
+      "coverage": 0.6672,
+      "selective_risk": 0.814,
+      "margin_threshold": 0.06534
+    },
+    {
+      "coverage": 0.6677,
+      "selective_risk": 0.8141,
+      "margin_threshold": 0.06518
+    },
+    {
+      "coverage": 0.6682,
+      "selective_risk": 0.8143,
+      "margin_threshold": 0.06508
+    },
+    {
+      "coverage": 0.6687,
+      "selective_risk": 0.8144,
+      "margin_threshold": 0.06501
+    },
+    {
+      "coverage": 0.6692,
+      "selective_risk": 0.8138,
+      "margin_threshold": 0.06449
+    },
+    {
+      "coverage": 0.6697,
+      "selective_risk": 0.8139,
+      "margin_threshold": 0.06442
+    },
+    {
+      "coverage": 0.6703,
+      "selective_risk": 0.8141,
+      "margin_threshold": 0.06438
+    },
+    {
+      "coverage": 0.6708,
+      "selective_risk": 0.8142,
+      "margin_threshold": 0.06437
+    },
+    {
+      "coverage": 0.6713,
+      "selective_risk": 0.8144,
+      "margin_threshold": 0.06432
+    },
+    {
+      "coverage": 0.6718,
+      "selective_risk": 0.8145,
+      "margin_threshold": 0.06427
+    },
+    {
+      "coverage": 0.6723,
+      "selective_risk": 0.8146,
+      "margin_threshold": 0.06422
+    },
+    {
+      "coverage": 0.6728,
+      "selective_risk": 0.8148,
+      "margin_threshold": 0.06416
+    },
+    {
+      "coverage": 0.6733,
+      "selective_risk": 0.8149,
+      "margin_threshold": 0.06408
+    },
+    {
+      "coverage": 0.6738,
+      "selective_risk": 0.8151,
+      "margin_threshold": 0.06403
+    },
+    {
+      "coverage": 0.6744,
+      "selective_risk": 0.8144,
+      "margin_threshold": 0.06397
+    },
+    {
+      "coverage": 0.6749,
+      "selective_risk": 0.8146,
+      "margin_threshold": 0.06396
+    },
+    {
+      "coverage": 0.6754,
+      "selective_risk": 0.814,
+      "margin_threshold": 0.06395
+    },
+    {
+      "coverage": 0.6759,
+      "selective_risk": 0.8141,
+      "margin_threshold": 0.06382
+    },
+    {
+      "coverage": 0.6764,
+      "selective_risk": 0.8143,
+      "margin_threshold": 0.06343
+    },
+    {
+      "coverage": 0.6769,
+      "selective_risk": 0.8136,
+      "margin_threshold": 0.06339
+    },
+    {
+      "coverage": 0.6774,
+      "selective_risk": 0.8138,
+      "margin_threshold": 0.06338
+    },
+    {
+      "coverage": 0.6779,
+      "selective_risk": 0.8139,
+      "margin_threshold": 0.06336
+    },
+    {
+      "coverage": 0.6785,
+      "selective_risk": 0.8141,
+      "margin_threshold": 0.06327
+    },
+    {
+      "coverage": 0.679,
+      "selective_risk": 0.8142,
+      "margin_threshold": 0.0631
+    },
+    {
+      "coverage": 0.6795,
+      "selective_risk": 0.8143,
+      "margin_threshold": 0.06269
+    },
+    {
+      "coverage": 0.68,
+      "selective_risk": 0.8145,
+      "margin_threshold": 0.06263
+    },
+    {
+      "coverage": 0.6805,
+      "selective_risk": 0.8146,
+      "margin_threshold": 0.06263
+    },
+    {
+      "coverage": 0.681,
+      "selective_risk": 0.8148,
+      "margin_threshold": 0.06263
+    },
+    {
+      "coverage": 0.6815,
+      "selective_risk": 0.8149,
+      "margin_threshold": 0.06258
+    },
+    {
+      "coverage": 0.6821,
+      "selective_risk": 0.815,
+      "margin_threshold": 0.06254
+    },
+    {
+      "coverage": 0.6826,
+      "selective_risk": 0.8152,
+      "margin_threshold": 0.06246
+    },
+    {
+      "coverage": 0.6831,
+      "selective_risk": 0.8153,
+      "margin_threshold": 0.06231
+    },
+    {
+      "coverage": 0.6836,
+      "selective_risk": 0.8155,
+      "margin_threshold": 0.06223
+    },
+    {
+      "coverage": 0.6841,
+      "selective_risk": 0.8156,
+      "margin_threshold": 0.06204
+    },
+    {
+      "coverage": 0.6846,
+      "selective_risk": 0.8157,
+      "margin_threshold": 0.06193
+    },
+    {
+      "coverage": 0.6851,
+      "selective_risk": 0.8151,
+      "margin_threshold": 0.06193
+    },
+    {
+      "coverage": 0.6856,
+      "selective_risk": 0.8153,
+      "margin_threshold": 0.0617
+    },
+    {
+      "coverage": 0.6862,
+      "selective_risk": 0.8154,
+      "margin_threshold": 0.06159
+    },
+    {
+      "coverage": 0.6867,
+      "selective_risk": 0.8155,
+      "margin_threshold": 0.06136
+    },
+    {
+      "coverage": 0.6872,
+      "selective_risk": 0.8157,
+      "margin_threshold": 0.0611
+    },
+    {
+      "coverage": 0.6877,
+      "selective_risk": 0.8158,
+      "margin_threshold": 0.06101
+    },
+    {
+      "coverage": 0.6882,
+      "selective_risk": 0.8159,
+      "margin_threshold": 0.0609
+    },
+    {
+      "coverage": 0.6887,
+      "selective_risk": 0.8161,
+      "margin_threshold": 0.06087
+    },
+    {
+      "coverage": 0.6892,
+      "selective_risk": 0.8162,
+      "margin_threshold": 0.06081
+    },
+    {
+      "coverage": 0.6897,
+      "selective_risk": 0.8164,
+      "margin_threshold": 0.06042
+    },
+    {
+      "coverage": 0.6903,
+      "selective_risk": 0.8165,
+      "margin_threshold": 0.06037
+    },
+    {
+      "coverage": 0.6908,
+      "selective_risk": 0.8159,
+      "margin_threshold": 0.06036
+    },
+    {
+      "coverage": 0.6913,
+      "selective_risk": 0.816,
+      "margin_threshold": 0.06031
+    },
+    {
+      "coverage": 0.6918,
+      "selective_risk": 0.8162,
+      "margin_threshold": 0.06025
+    },
+    {
+      "coverage": 0.6923,
+      "selective_risk": 0.8163,
+      "margin_threshold": 0.06023
+    },
+    {
+      "coverage": 0.6928,
+      "selective_risk": 0.8164,
+      "margin_threshold": 0.06006
+    },
+    {
+      "coverage": 0.6933,
+      "selective_risk": 0.8166,
+      "margin_threshold": 0.05997
+    },
+    {
+      "coverage": 0.6938,
+      "selective_risk": 0.816,
+      "margin_threshold": 0.05995
+    },
+    {
+      "coverage": 0.6944,
+      "selective_risk": 0.8161,
+      "margin_threshold": 0.05988
+    },
+    {
+      "coverage": 0.6949,
+      "selective_risk": 0.8155,
+      "margin_threshold": 0.05961
+    },
+    {
+      "coverage": 0.6954,
+      "selective_risk": 0.8149,
+      "margin_threshold": 0.05937
+    },
+    {
+      "coverage": 0.6959,
+      "selective_risk": 0.815,
+      "margin_threshold": 0.05936
+    },
+    {
+      "coverage": 0.6964,
+      "selective_risk": 0.8152,
+      "margin_threshold": 0.0592
+    },
+    {
+      "coverage": 0.6969,
+      "selective_risk": 0.8153,
+      "margin_threshold": 0.05908
+    },
+    {
+      "coverage": 0.6974,
+      "selective_risk": 0.8154,
+      "margin_threshold": 0.05902
+    },
+    {
+      "coverage": 0.6979,
+      "selective_risk": 0.8156,
+      "margin_threshold": 0.05901
+    },
+    {
+      "coverage": 0.6985,
+      "selective_risk": 0.8157,
+      "margin_threshold": 0.059
+    },
+    {
+      "coverage": 0.699,
+      "selective_risk": 0.8158,
+      "margin_threshold": 0.05895
+    },
+    {
+      "coverage": 0.6995,
+      "selective_risk": 0.816,
+      "margin_threshold": 0.05868
+    },
+    {
+      "coverage": 0.7,
+      "selective_risk": 0.8161,
+      "margin_threshold": 0.05867
+    },
+    {
+      "coverage": 0.7005,
+      "selective_risk": 0.8163,
+      "margin_threshold": 0.05857
+    },
+    {
+      "coverage": 0.701,
+      "selective_risk": 0.8164,
+      "margin_threshold": 0.05851
+    },
+    {
+      "coverage": 0.7015,
+      "selective_risk": 0.8165,
+      "margin_threshold": 0.05841
+    },
+    {
+      "coverage": 0.7021,
+      "selective_risk": 0.8167,
+      "margin_threshold": 0.05791
+    },
+    {
+      "coverage": 0.7026,
+      "selective_risk": 0.8168,
+      "margin_threshold": 0.05785
+    },
+    {
+      "coverage": 0.7031,
+      "selective_risk": 0.8169,
+      "margin_threshold": 0.0578
+    },
+    {
+      "coverage": 0.7036,
+      "selective_risk": 0.8171,
+      "margin_threshold": 0.05779
+    },
+    {
+      "coverage": 0.7041,
+      "selective_risk": 0.8172,
+      "margin_threshold": 0.05776
+    },
+    {
+      "coverage": 0.7046,
+      "selective_risk": 0.8173,
+      "margin_threshold": 0.05753
+    },
+    {
+      "coverage": 0.7051,
+      "selective_risk": 0.8175,
+      "margin_threshold": 0.05735
+    },
+    {
+      "coverage": 0.7056,
+      "selective_risk": 0.8176,
+      "margin_threshold": 0.05732
+    },
+    {
+      "coverage": 0.7062,
+      "selective_risk": 0.8177,
+      "margin_threshold": 0.05721
+    },
+    {
+      "coverage": 0.7067,
+      "selective_risk": 0.8179,
+      "margin_threshold": 0.05687
+    },
+    {
+      "coverage": 0.7072,
+      "selective_risk": 0.818,
+      "margin_threshold": 0.05671
+    },
+    {
+      "coverage": 0.7077,
+      "selective_risk": 0.8181,
+      "margin_threshold": 0.05657
+    },
+    {
+      "coverage": 0.7082,
+      "selective_risk": 0.8182,
+      "margin_threshold": 0.0565
+    },
+    {
+      "coverage": 0.7087,
+      "selective_risk": 0.8184,
+      "margin_threshold": 0.05632
+    },
+    {
+      "coverage": 0.7092,
+      "selective_risk": 0.8185,
+      "margin_threshold": 0.05631
+    },
+    {
+      "coverage": 0.7097,
+      "selective_risk": 0.8186,
+      "margin_threshold": 0.05617
+    },
+    {
+      "coverage": 0.7103,
+      "selective_risk": 0.8188,
+      "margin_threshold": 0.05617
+    },
+    {
+      "coverage": 0.7108,
+      "selective_risk": 0.8189,
+      "margin_threshold": 0.05598
+    },
+    {
+      "coverage": 0.7113,
+      "selective_risk": 0.819,
+      "margin_threshold": 0.05589
+    },
+    {
+      "coverage": 0.7118,
+      "selective_risk": 0.8192,
+      "margin_threshold": 0.05573
+    },
+    {
+      "coverage": 0.7123,
+      "selective_risk": 0.8193,
+      "margin_threshold": 0.05564
+    },
+    {
+      "coverage": 0.7128,
+      "selective_risk": 0.8194,
+      "margin_threshold": 0.05559
+    },
+    {
+      "coverage": 0.7133,
+      "selective_risk": 0.8196,
+      "margin_threshold": 0.05557
+    },
+    {
+      "coverage": 0.7138,
+      "selective_risk": 0.8197,
+      "margin_threshold": 0.05552
+    },
+    {
+      "coverage": 0.7144,
+      "selective_risk": 0.8198,
+      "margin_threshold": 0.05534
+    },
+    {
+      "coverage": 0.7149,
+      "selective_risk": 0.8199,
+      "margin_threshold": 0.05525
+    },
+    {
+      "coverage": 0.7154,
+      "selective_risk": 0.8201,
+      "margin_threshold": 0.05522
+    },
+    {
+      "coverage": 0.7159,
+      "selective_risk": 0.8202,
+      "margin_threshold": 0.05515
+    },
+    {
+      "coverage": 0.7164,
+      "selective_risk": 0.8203,
+      "margin_threshold": 0.05512
+    },
+    {
+      "coverage": 0.7169,
+      "selective_risk": 0.8205,
+      "margin_threshold": 0.05471
+    },
+    {
+      "coverage": 0.7174,
+      "selective_risk": 0.8206,
+      "margin_threshold": 0.05421
+    },
+    {
+      "coverage": 0.7179,
+      "selective_risk": 0.8207,
+      "margin_threshold": 0.0542
+    },
+    {
+      "coverage": 0.7185,
+      "selective_risk": 0.8208,
+      "margin_threshold": 0.05411
+    },
+    {
+      "coverage": 0.719,
+      "selective_risk": 0.821,
+      "margin_threshold": 0.0541
+    },
+    {
+      "coverage": 0.7195,
+      "selective_risk": 0.8211,
+      "margin_threshold": 0.0541
+    },
+    {
+      "coverage": 0.72,
+      "selective_risk": 0.8212,
+      "margin_threshold": 0.05401
+    },
+    {
+      "coverage": 0.7205,
+      "selective_risk": 0.8214,
+      "margin_threshold": 0.054
+    },
+    {
+      "coverage": 0.721,
+      "selective_risk": 0.8215,
+      "margin_threshold": 0.05358
+    },
+    {
+      "coverage": 0.7215,
+      "selective_risk": 0.8216,
+      "margin_threshold": 0.05348
+    },
+    {
+      "coverage": 0.7221,
+      "selective_risk": 0.821,
+      "margin_threshold": 0.05334
+    },
+    {
+      "coverage": 0.7226,
+      "selective_risk": 0.8211,
+      "margin_threshold": 0.05333
+    },
+    {
+      "coverage": 0.7231,
+      "selective_risk": 0.8213,
+      "margin_threshold": 0.05329
+    },
+    {
+      "coverage": 0.7236,
+      "selective_risk": 0.8214,
+      "margin_threshold": 0.05301
+    },
+    {
+      "coverage": 0.7241,
+      "selective_risk": 0.8215,
+      "margin_threshold": 0.05291
+    },
+    {
+      "coverage": 0.7246,
+      "selective_risk": 0.8217,
+      "margin_threshold": 0.05276
+    },
+    {
+      "coverage": 0.7251,
+      "selective_risk": 0.8218,
+      "margin_threshold": 0.05254
+    },
+    {
+      "coverage": 0.7256,
+      "selective_risk": 0.8219,
+      "margin_threshold": 0.05248
+    },
+    {
+      "coverage": 0.7262,
+      "selective_risk": 0.822,
+      "margin_threshold": 0.05241
+    },
+    {
+      "coverage": 0.7267,
+      "selective_risk": 0.8222,
+      "margin_threshold": 0.05236
+    },
+    {
+      "coverage": 0.7272,
+      "selective_risk": 0.8223,
+      "margin_threshold": 0.05233
+    },
+    {
+      "coverage": 0.7277,
+      "selective_risk": 0.8224,
+      "margin_threshold": 0.05233
+    },
+    {
+      "coverage": 0.7282,
+      "selective_risk": 0.8225,
+      "margin_threshold": 0.05222
+    },
+    {
+      "coverage": 0.7287,
+      "selective_risk": 0.8227,
+      "margin_threshold": 0.05222
+    },
+    {
+      "coverage": 0.7292,
+      "selective_risk": 0.8228,
+      "margin_threshold": 0.05219
+    },
+    {
+      "coverage": 0.7297,
+      "selective_risk": 0.8229,
+      "margin_threshold": 0.05219
+    },
+    {
+      "coverage": 0.7303,
+      "selective_risk": 0.823,
+      "margin_threshold": 0.05207
+    },
+    {
+      "coverage": 0.7308,
+      "selective_risk": 0.8232,
+      "margin_threshold": 0.05205
+    },
+    {
+      "coverage": 0.7313,
+      "selective_risk": 0.8233,
+      "margin_threshold": 0.05187
+    },
+    {
+      "coverage": 0.7318,
+      "selective_risk": 0.8227,
+      "margin_threshold": 0.05186
+    },
+    {
+      "coverage": 0.7323,
+      "selective_risk": 0.8228,
+      "margin_threshold": 0.05148
+    },
+    {
+      "coverage": 0.7328,
+      "selective_risk": 0.823,
+      "margin_threshold": 0.05122
+    },
+    {
+      "coverage": 0.7333,
+      "selective_risk": 0.8231,
+      "margin_threshold": 0.05112
+    },
+    {
+      "coverage": 0.7338,
+      "selective_risk": 0.8232,
+      "margin_threshold": 0.05106
+    },
+    {
+      "coverage": 0.7344,
+      "selective_risk": 0.8233,
+      "margin_threshold": 0.05094
+    },
+    {
+      "coverage": 0.7349,
+      "selective_risk": 0.8234,
+      "margin_threshold": 0.05086
+    },
+    {
+      "coverage": 0.7354,
+      "selective_risk": 0.8236,
+      "margin_threshold": 0.05067
+    },
+    {
+      "coverage": 0.7359,
+      "selective_risk": 0.823,
+      "margin_threshold": 0.05067
+    },
+    {
+      "coverage": 0.7364,
+      "selective_risk": 0.8231,
+      "margin_threshold": 0.05057
+    },
+    {
+      "coverage": 0.7369,
+      "selective_risk": 0.8232,
+      "margin_threshold": 0.0504
+    },
+    {
+      "coverage": 0.7374,
+      "selective_risk": 0.8234,
+      "margin_threshold": 0.05033
+    }
+  ],
+  "total_episodes": 1950,
+  "resolved_episodes": 1438,
+  "unresolved_episodes": 512
+}

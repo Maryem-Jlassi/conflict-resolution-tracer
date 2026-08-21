@@ -1,0 +1,102 @@
+{
+ "report_id": "01",
+ "title": "Provenance Data Eligibility Report (PHEME + RumourEval / SemEval-2017 Task 8)",
+ "status": "PASS",
+ "grade_ceiling": "A/B",
+ "decision": "All provenance case types P1-P5 supported on real data at A/B grade; MSM-style provenance unsupported and reported as such.",
+ "datasets": [
+  {
+   "name": "PHEME-veracity",
+   "location": "mechanism/data/pheme_6392078/PHEME_veracity.tar.bz2 (parsed: _data/pheme_extracted)",
+   "sha256": "079f6ffdbc0b367399262f101774372e5d19dd8278c33d6c97a84461a9bc58dd",
+   "facts": {
+    "events": 9,
+    "threads": 6425,
+    "rumour_threads": 2402,
+    "non_rumour_threads": 4023,
+    "tweets": 105354,
+    "source_tweets": 6425,
+    "reactions": 98929,
+    "unique_users": 50593,
+    "true_rumour_threads": 1067,
+    "false_rumour_threads": 966,
+    "misinformation_threads": 638,
+    "retweets_present": 0
+   }
+  },
+  {
+   "name": "RumourEval / SemEval-2017 Task 8 (train+dev)",
+   "location": "_data/external/semeval2017-task8-dataset.tar.bz2",
+   "sha256": "7e2390ef05264262ccdccbd5c315450b8b9c0bcdeb96456bb04570ada5927643",
+   "facts": {
+    "train_threads": 4238,
+    "train_labels": 28007,
+    "dev_threads": 281,
+    "dev_labels": 1878
+   }
+  },
+  {
+   "name": "RumourEval / SemEval-2017 Task 8 (test threads)",
+   "location": "_data/external/rumoureval2017-test.tar.bz2",
+   "sha256": "e4b12b29ab295c8bf9343b94a7cc9833616d47ce2bbe76dd6dbf03fa8d325cea"
+  },
+  {
+   "name": "RumourEval / SemEval-2017 Task 8 (QCRI test labels)",
+   "location": "_data/external/subtaska.json",
+   "sha256": "a336f092ce2f8cad889f87326c992d2d003ba511f05ac3bd073097bce11facf5"
+  }
+ ],
+ "join": {
+  "labelled_keys": 5568,
+  "in_pheme": 5026,
+  "stance_distribution": {"comment": 3278, "support": 960, "deny": 358, "query": 430},
+  "labelled_rumour_threads": 317,
+  "asserting_labels_in_pheme": 1318,
+  "asserting_labels_skipped_no_truth": 64
+ },
+ "rules": [
+  {"id": "R1", "rule": "Message-level claim values that are human ground truth", "verdict": "PASS", "grade": "A",
+   "evidence": "RumourEval subtask-A stance labels (support/deny -> claim value) are human-annotated; 960 support + 358 deny occur in PHEME."},
+  {"id": "R2", "rule": "Explicit reply genealogy recoverable from stored files", "verdict": "PASS", "grade": "A",
+   "evidence": "structure.json per thread; reconstruction audit recomputes 95,073 parent edges with 100% agreement vs in_reply_to_status_id_str (0 mismatches)."},
+  {"id": "R3", "rule": "Reliable per-message timestamps", "verdict": "PASS", "grade": "A",
+   "evidence": "Tweet created_at (RFC-2822) parsed for all 105,354 tweets; drives frozen R (7-day half-life)."},
+  {"id": "R4", "rule": "Multiple events spanning a meaningful window", "verdict": "PASS", "grade": "A",
+   "evidence": "9 events, ferguson (2014-08-09) -> germanwings-crash (2015-03-24); ~7.5 months."},
+  {"id": "R5", "rule": "Veracity gold independent of resolver inputs", "verdict": "PASS", "grade": "A",
+   "evidence": "Journalist true/misinformation never an input to R, C or T; per-case gold coherence = 1.0."},
+  {"id": "R6", "rule": "No authorship/text shortcut to independence", "verdict": "PASS", "grade": "A",
+   "evidence": "Independence defined by distinct thread origins (category index only); L1 classifier consumes explicit lineage only."},
+  {"id": "R7", "rule": "Sufficient volume of asserting messages", "verdict": "PASS", "grade": "A/B",
+   "evidence": "1,045 case units (manifest 02); global asserting pool 1,318 labels (960+358)."},
+  {"id": "R8", "rule": "Cross-thread independent-origin structures (P1)", "verdict": "PASS", "grade": "B",
+   "evidence": "14 selected cases, each >= 2 distinct roots (2-7 origins); 35 candidate categories globally; composition B."},
+  {"id": "R9", "rule": "Within-thread propagation chains (P2)", "verdict": "PASS", "grade": "A",
+   "evidence": "20 selected cases with explicit ancestor-descendant labelled pairs; 112 candidate threads globally."},
+  {"id": "R10", "rule": "Shared-root multi-branch structures (P3)", "verdict": "PASS", "grade": "A",
+   "evidence": "20 selected cases with >= 2 distinct structure branches under one root; 260 candidate threads globally."},
+  {"id": "R11", "rule": "Conflicting values, intra-thread and inter-thread (P2/P4/P5)", "verdict": "PASS", "grade": "A/B",
+   "evidence": "P2 intra-thread support and deny chains (20); P4 cross-thread support x deny (20); P5 mixed (6)."},
+  {"id": "R12", "rule": "Author diversity (context only, never evidence)", "verdict": "PASS", "grade": "A",
+   "evidence": "50,593 unique users; case units span many distinct user_id values."},
+  {"id": "R13", "rule": "Frozen labels, no tuning on TEST / no calibration", "verdict": "PASS", "grade": "A",
+   "evidence": "All labels are stock QCRI train/dev/test files; Psi, C, T, theta, R half-life frozen; no grid search, no retraining."},
+  {"id": "R14", "rule": "Reproducibility", "verdict": "PASS", "grade": "A",
+   "evidence": "Artifact 09 records SHA-256 of archives, labels, frozen protocol, tools, outputs, download provenance and environment."}
+ ],
+ "decision_table": [
+  {"item": "P1 same category, >=2 independent root threads, no shared lineage, converging claim value", "supported": "YES", "cases": 14, "grade": "A labels + B composition"},
+  {"item": "P2 reply-tree parent -> child propagation chain (incl. intra-thread conflict)", "supported": "YES", "cases": 20, "grade": "A"},
+  {"item": "P3 shared root with >=2 distinct branches", "supported": "YES", "cases": 20, "grade": "A"},
+  {"item": "P4 support in one root thread vs deny in another root thread (cross-thread conflict)", "supported": "YES", "cases": 20, "grade": "A labels + B composition"},
+  {"item": "P5 mixed provenance (P1/P4/P2 within one category)", "supported": "YES", "cases": 6, "grade": "A/B"},
+  {"item": "MSM-style personal long-term memory provenance", "supported": "NO", "cases": 0, "grade": "D"},
+  {"item": "Fingerprint/device-log lineage (FibVID)", "supported": "PARTIAL", "cases": 0, "grade": "C"}
+ ],
+ "integrity": [
+  "3,270 of 5,026 joined labels are comment/query (non-asserting); they never become case units.",
+  "64 labelled asserting tweets skipped (thread lacked category/true); documented as skipped_no_truth.",
+  "Case units are disjoint across all 80 cases (0 duplicates).",
+  "annotation.links[*].position is per-link and was not used as a message-level stance; values come exclusively from RumourEval subtask-A labels."
+ ]
+}

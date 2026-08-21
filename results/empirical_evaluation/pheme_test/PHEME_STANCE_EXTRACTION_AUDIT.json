@@ -1,0 +1,53 @@
+{
+  "schema_version": "PHEME_STANCE_EXTRACTION_AUDIT/1.0",
+  "audit_date": "2026-08-18T19:24:25.051650Z",
+  "model_version": "pheme_stance_v1.0_deterministic",
+  "is_deterministic": true,
+  "uses_llm": false,
+  "gold_blind": true,
+  "inputs_used": [
+    "tweet.text",
+    "tweet.entities.urls",
+    "tweet.entities.media",
+    "tweet.user.followers_count",
+    "tweet.retweet_count",
+    "tweet.favorite_count"
+  ],
+  "inputs_excluded": [
+    "annotation.json.true",
+    "annotation.json.misinformation",
+    "annotation.json.category",
+    "annotation.json.links[].position",
+    "annotation.json.links[].mediatype",
+    "future tweets",
+    "future reactions",
+    "any gold label"
+  ],
+  "lexicon_size_support": 57,
+  "lexicon_size_deny": 33,
+  "threshold_support": 0.6,
+  "threshold_deny": 0.4,
+  "stance_distribution": {
+    "comment": 14081,
+    "deny": 71170,
+    "support": 20103
+  },
+  "stance_by_role": {
+    "source": {
+      "comment": 3300,
+      "support": 2538,
+      "deny": 587
+    },
+    "reaction": {
+      "deny": 70583,
+      "support": 17565,
+      "comment": 10781
+    }
+  },
+  "total_tweets_extracted": 105354,
+  "current_gold_to_stance_extraction": "FALSE — no annotation fields read during extraction",
+  "current_gold_to_C": "FALSE — C uses only tweet metadata, computed AFTER stance extraction",
+  "current_gold_to_R": "FALSE — R uses only timestamps",
+  "current_gold_to_T": "FALSE — T uses only chronologically prior outcomes, not current gold",
+  "current_gold_to_provenance_features": "FALSE — provenance derived from tweet metadata only"
+}

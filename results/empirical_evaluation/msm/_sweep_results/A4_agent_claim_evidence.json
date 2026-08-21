@@ -1,0 +1,38 @@
+{
+  "total_episodes": 3337,
+  "agent_claim_wins": 0,
+  "matchups_by_grounded_tier": {
+    "profile_ltm": {
+      "total": 297,
+      "agent_wins": 0
+    },
+    "objective_log": {
+      "total": 1728,
+      "agent_wins": 0
+    },
+    "device_log": {
+      "total": 581,
+      "agent_wins": 0
+    },
+    "daily_self_report": {
+      "total": 658,
+      "agent_wins": 0
+    },
+    "planner": {
+      "total": 73,
+      "agent_wins": 0
+    }
+  },
+  "max_agent_psi": 0,
+  "min_grounded_psi": 1.829268292682927,
+  "sample_matchups": [],
+  "theoretical_analysis": {
+    "agent_claim_authority": 0.3,
+    "max_possible_agent_psi": 2.3,
+    "median_corpus_r": 1.0,
+    "median_corpus_t": 0.5532407407407407,
+    "min_realistic_document_psi": 2.3032407407407405,
+    "ceiling_below_floor": true,
+    "interpretation": "arithmetic_consequence"
+  }
+}

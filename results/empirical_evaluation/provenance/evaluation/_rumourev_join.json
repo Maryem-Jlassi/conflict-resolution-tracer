@@ -1,0 +1,35 @@
+{
+  "rumoureval_labelled_tweets": 5568,
+  "labelled_in_pheme": 5026,
+  "joined": 5026,
+  "stance_in_pheme": {
+    "comment": 3278,
+    "support": 960,
+    "deny": 358,
+    "query": 430
+  },
+  "categories_with_labels": 140,
+  "P4_candidates": 87,
+  "P1_support_candidates": 70,
+  "P4_top": [
+    "M. Brown was involved in a robbery before being shot",
+    "There is a hostage situation at a cafe in Sydney",
+    "Suspected shooter has been killed/is dead",
+    "Prince will play a show in Toronto on November 4",
+    "Uber introduced surge pricing in downtown Sydney during hostage crisis",
+    "Putin is facing a \"palace coup\"",
+    "There are multiple shooting suspects still at large",
+    "(Alleged) ISIS militants are behind the hostage-taking in the Sydney cafe",
+    "A distress/mayday/SOS call was sent from the airplane before the crash",
+    "The co-pilot interrupted his training because of burnout or depression / had a serious depressive episode in 2009",
+    "12 people died in connection with the Charlie Hebdo attack",
+    "Kosher supermarket gunman is asking for release of Charlie Hebdo suspects",
+    "Ferguson police once beat up a man and charged him for bleeding on their uniforms",
+    "Hostages are running out/escaping from the cafe",
+    "There was a shooting incident near/at the Rideau Centre"
+  ],
+  "threads_with_any_label": 317,
+  "example_label_lookup": {
+    "501760642928635904": "comment"
+  }
+}

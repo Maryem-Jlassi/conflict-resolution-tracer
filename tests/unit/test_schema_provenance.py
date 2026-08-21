@@ -7,10 +7,10 @@ Tests validation rules, rejection cases, and provenance stamping in isolation.
 import pytest
 from datetime import datetime
 
-from lcm_core.provenance import validate_and_stamp, RejectionError
-from lcm_core.schema import StampedUMF
-from lcm_core.confidence_engine import EvidenceRecord, EvidenceType
-from lcm_core.crypto import sign_evidence_message
+from crt_core.provenance import validate_and_stamp, RejectionError
+from crt_core.schema import StampedUMF
+from crt_core.confidence_engine import EvidenceRecord, EvidenceType
+from crt_core.crypto import sign_assertion_evidence, sign_evidence_message
 
 
 # ---------------------------------------------------------------------------
@@ -156,7 +156,10 @@ def test_database_evidence_raises_verified_confidence():
     result = validate_and_stamp(
         raw,
         evidence_records=[ev],
-        evidence_signature=sign_evidence_message(EvidenceType.DATABASE, None),
+        evidence_signature=sign_assertion_evidence(
+            EvidenceType.DATABASE, None, agent_id=raw["agent_id"],
+            timestamp=raw["timestamp"], assertion_payload=raw["assertion_payload"],
+        ),
     )
     assert result.provenance_info.verified_confidence > 0.3
 

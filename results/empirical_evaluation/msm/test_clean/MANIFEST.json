@@ -1,0 +1,98 @@
+{
+  "experiment_id": "MSM_V1_FINAL_TEST_MANIFEST",
+  "execution_timestamp": "2026-08-19T18:49:15.042219Z",
+  "python_version": "3.10.0",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "dataset": {
+    "id": "multisource_memory",
+    "revision": "5b428c8d6826a7dc73ac05f5239b089a6c631ac1",
+    "seed": "s20260321",
+    "split": "test"
+  },
+  "random_seeds": "none (deterministic)",
+  "policy_configuration": {
+    "full_lcm": {
+      "w_r": 0.3333333333333333,
+      "w_c": 0.3333333333333333,
+      "w_t": 0.3333333333333333
+    },
+    "c_only": {
+      "w_r": 0.0,
+      "w_c": 1.0,
+      "w_t": 0.0
+    },
+    "r_only": {
+      "w_r": 1.0,
+      "w_c": 0.0,
+      "w_t": 0.0
+    },
+    "t_only": {
+      "w_r": 0.0,
+      "w_c": 0.0,
+      "w_t": 1.0
+    },
+    "fixed_neutral_trust": {
+      "w_r": 0.3333333333333333,
+      "w_c": 0.3333333333333333,
+      "w_t": 0.3333333333333333
+    },
+    "full_minus_recency": {
+      "w_r": 0.0,
+      "w_c": 0.5,
+      "w_t": 0.5
+    },
+    "full_minus_confidence": {
+      "w_r": 0.5,
+      "w_c": 0.0,
+      "w_t": 0.5
+    },
+    "full_minus_trust": {
+      "w_r": 0.5,
+      "w_c": 0.5,
+      "w_t": 0.0
+    }
+  },
+  "arm_order": [
+    "full_lcm",
+    "c_only",
+    "r_only",
+    "t_only",
+    "last_write_wins",
+    "fixed_neutral_trust",
+    "full_minus_recency",
+    "full_minus_confidence",
+    "full_minus_trust"
+  ],
+  "git_commit": null,
+  "sha256": {
+    "dataset_split_config": "d3e32ee16928592234931e52e1003b4933e96a1d7730a7cc2737d537aab7dc7b",
+    "frozen_deriver": "890218dfe0d863bfa8fa244492c9d3e3420733fde9d7ad54a64b7b05bfe515f5",
+    "frozen_trust_table": "5018e9521e85bafc4b2a01345ce13b01cd48dd5918d5d38510f3ce115eff558c",
+    "frozen_train_claims": "ed73438090a5b7d1688310a40454726ac8ce027f3d015c83db43b62373ceae1f",
+    "frozen_dev_results": "d96ffff32cb77084e9d73c8a077bbd3d9fd84754726b9b6fc1f8c85cab1a9caf",
+    "test_derived_claims": "37cf78b46dd76f71ef681509aac9a716a4adfb80ff11ba72cd7e86d2541fcb85",
+    "test_results": "78949913b3dab2b6cae29d9eb1ff27e2238852c87c9fd7337762960d5824ccc7",
+    "identifiability": "ab5b61f1c51a0acf31dca81928a8c698069f02a8f8e192b62363fdb40191dcc3",
+    "policy_comparison": "b0898be206d31fb862fdba5f508eadc7888d50897844c1e94fab328e8c2f34de",
+    "dev_test_comparison": "e667786e04ac511f63c691a242dcb93453e95604af8e5e47e4ad9ce752f6de5e",
+    "test_methodology": "1734cce475aebe79c0cb348609ce520278fc4f9c5c8c3db89f23b3bde340c0b3",
+    "test_leakage_audit": "6d5cba860d8999b3a1994dee14c705624d977976b573e4212a3d264cf5f3e6d5",
+    "final_report": "f8e29c1a8c38d09d532ff0f4733ea07828a72d9623c9ab097e752866097b0d7d"
+  },
+  "population": {
+    "N_personas": 120,
+    "N_units": 2160,
+    "N_with_claims": 2078,
+    "N_without_claims": 82
+  },
+  "methodology": {
+    "psu": "one (persona, question) episode; grid = all 18 questions x all TEST personas (2160)",
+    "no_claim_handling": "units without any claim are kept in the grid; scored unresolved/as incorrect for strict accuracy; explicitly counted",
+    "trust_source": "dev_v1_clean/TRUST_TABLE.json (TRAIN-only, frozen)",
+    "deriver": "research_evaluation/msm_v1_deriver.py",
+    "policy": "run_clean_dev.py POLICY_WEIGHTS / decide / score_episodes / arm_metrics (unchanged)",
+    "metrics": "resolution_coverage = resolved/total; strict = correct/total; selective = correct_among_resolved/resolved; overwrite = gold-in-claims & resolved & wrong",
+    "identifiable_units": "units with at least one claim whose value equals gold"
+  },
+  "sha256_note": "self-hash of the manifest is intentionally omitted (circular); recompute via hashlib.sha256(MANIFEST.json)."
+}

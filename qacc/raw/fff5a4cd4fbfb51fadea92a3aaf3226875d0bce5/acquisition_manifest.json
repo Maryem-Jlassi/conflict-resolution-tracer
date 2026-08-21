@@ -1,0 +1,192 @@
+{
+  "all_verified": true,
+  "file_count": 18,
+  "files": [
+    {
+      "git_blob_sha1": "5b627cfa60b5313da2c7df81aab2340225c2329f",
+      "local_git_blob_sha1": "5b627cfa60b5313da2c7df81aab2340225c2329f",
+      "path": "CODE_OF_CONDUCT.md",
+      "read_back_verified": true,
+      "sha256": "34b6c98d5c23127ae6769e95e483e5bf6d3704ae1f0d3ae4e69d15f4ede118b6",
+      "size": 309,
+      "tree_size": 309,
+      "verified": true
+    },
+    {
+      "git_blob_sha1": "c4b6a1c5081adcf78822222488e7c5b0f1dc6499",
+      "local_git_blob_sha1": "c4b6a1c5081adcf78822222488e7c5b0f1dc6499",
+      "path": "CONTRIBUTING.md",
+      "read_back_verified": true,
+      "sha256": "993e7639b93ea44d96be9813b63f5beada0deb2d4677d2e91ea96bc51e15b44b",
+      "size": 3160,
+      "tree_size": 3160,
+      "verified": true
+    },
+    {
+      "git_blob_sha1": "67db8588217f266eb561f75fae738656325deac9",
+      "local_git_blob_sha1": "67db8588217f266eb561f75fae738656325deac9",
+      "path": "LICENSE",
+      "read_back_verified": true,
+      "sha256": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b",
+      "size": 10142,
+      "tree_size": 10142,
+      "verified": true
+    },
+    {
+      "git_blob_sha1": "5a0b4e4214d86a19cde0437d21f8bb497a3048dc",
+      "local_git_blob_sha1": "5a0b4e4214d86a19cde0437d21f8bb497a3048dc",
+      "path": "NOTICE",
+      "read_back_verified": true,
+      "sha256": "556c46fd30e97a169e1b9df6f1e35eb4f12e566e1b9453e2740979f0b1e5621e",
+      "size": 95,
+      "tree_size": 95,
+      "verified": true
+    },
+    {
+      "git_blob_sha1": "243fa3e19acabc0622946b995a4cd1b86ed087dc",
+      "local_git_blob_sha1": "243fa3e19acabc0622946b995a4cd1b86ed087dc",
+      "path": "README.md",
+      "read_back_verified": true,
+      "sha256": "6f4fc1384c8e246665a0e5befc9b4dd05e85d6d8188e8372f831434ca2a0162d",
+      "size": 3108,
+      "tree_size": 3108,
+      "verified": true
+    },
+    {
+      "git_blob_sha1": "528e4947c4d75bfadeef693b6e65221067f94326",
+      "local_git_blob_sha1": "528e4947c4d75bfadeef693b6e65221067f94326",
+      "path": "data/ConflictQA_Dataset.json",
+      "read_back_verified": true,
+      "sha256": "37541c0d3f386293bad6c9992e62a2e6e510636fe02bcbf5d45895b8b5cc8694",
+      "size": 3719599,
+      "tree_size": 3719599,
+      "verified": true
+    },
+    {
+      "git_blob_sha1": "d6d9324814f9ec09fe3fdd672834478b11ad8aca",
+      "local_git_blob_sha1": "d6d9324814f9ec09fe3fdd672834478b11ad8aca",
+      "path": "data/LICENSE",
+      "read_back_verified": true,
+      "sha256": "c47928a9a374fb45906f607994c56495dd780a2314b94368bd9d60d192440ea0",
+      "size": 259,
+      "tree_size": 259,
+      "verified": true
+    },
+    {
+      "git_blob_sha1": "8b11328e14f9f5e24d8f7ae02d24fb9aa96f3bfb",
+      "local_git_blob_sha1": "8b11328e14f9f5e24d8f7ae02d24fb9aa96f3bfb",
+      "path": "data/README.md",
+      "read_back_verified": true,
+      "sha256": "607a3a8181d04b77fd54cecc4aefd10cda7fa80276da11c4fa1f45f8109ced4b",
+      "size": 550,
+      "tree_size": 550,
+      "verified": true
+    },
+    {
+      "git_blob_sha1": "75e30ab80fb6f2ec95c4b49b232c4afdec1bde4a",
+      "local_git_blob_sha1": "75e30ab80fb6f2ec95c4b49b232c4afdec1bde4a",
+      "path": "requirements.txt",
+      "read_back_verified": true,
+      "sha256": "3f32a1d31ec1511847b75d63862b3971d806415cf1831eca1ec3d2df56acfee6",
+      "size": 238,
+      "tree_size": 238,
+      "verified": true
+    },
+    {
+      "git_blob_sha1": "7ea480992d310a893d278388caa33ac366fdfc01",
+      "local_git_blob_sha1": "7ea480992d310a893d278388caa33ac366fdfc01",
+      "path": "src/README",
+      "read_back_verified": true,
+      "sha256": "aec3a150ec57d8e9a45cbb85681c33337c69416ac908774b407e47ddb75b9481",
+      "size": 2427,
+      "tree_size": 2427,
+      "verified": true
+    },
+    {
+      "git_blob_sha1": "ad64b13b3e9d089bb922f68b21a37bc44318a980",
+      "local_git_blob_sha1": "ad64b13b3e9d089bb922f68b21a37bc44318a980",
+      "path": "src/evaluation/evaluate_conflictqa.py",
+      "read_back_verified": true,
+      "sha256": "7e86cd24e8a508af3bcf9558086f4ceaf1584c9b577af350ab8e2e01571ec20b",
+      "size": 4147,
+      "tree_size": 4147,
+      "verified": true
+    },
+    {
+      "git_blob_sha1": "2ee4c79e25ba00a8dc6affc27ad22b95212de0f6",
+      "local_git_blob_sha1": "2ee4c79e25ba00a8dc6affc27ad22b95212de0f6",
+      "path": "src/finetuning/get_conflictqa_training_data_phi3.py",
+      "read_back_verified": true,
+      "sha256": "6f29ff8cb4a1fa33f81c39d70ce83c63ac96f10cbefc0a8e4f8cb0ea27f478d4",
+      "size": 2219,
+      "tree_size": 2219,
+      "verified": true
+    },
+    {
+      "git_blob_sha1": "a6e954ad1e660edd58b4b44a598538697e00faf4",
+      "local_git_blob_sha1": "a6e954ad1e660edd58b4b44a598538697e00faf4",
+      "path": "src/finetuning/save_for_tgi.py",
+      "read_back_verified": true,
+      "sha256": "7f5d6140a13cf122a80dbaabb235ae65c284b35da9958ee628c10ece611df6f1",
+      "size": 1274,
+      "tree_size": 1274,
+      "verified": true
+    },
+    {
+      "git_blob_sha1": "b8649d972061d38f904473befcf16c49be504d1b",
+      "local_git_blob_sha1": "b8649d972061d38f904473befcf16c49be504d1b",
+      "path": "src/finetuning/train.sh",
+      "read_back_verified": true,
+      "sha256": "ba0d34392949fde5f528dc4664d162716113238028969dc01d70675c21970acb",
+      "size": 232,
+      "tree_size": 232,
+      "verified": true
+    },
+    {
+      "git_blob_sha1": "dad32aa5afc7e6ea8d15479b5ad2e5bc1cdde121",
+      "local_git_blob_sha1": "dad32aa5afc7e6ea8d15479b5ad2e5bc1cdde121",
+      "path": "src/generation/generate_phi3_conflictqa_test.py",
+      "read_back_verified": true,
+      "sha256": "7df670e6c023ea3070a84aa7f36de04ebb707d4b2ffc62a8fa86a851980e722e",
+      "size": 2162,
+      "tree_size": 2162,
+      "verified": true
+    },
+    {
+      "git_blob_sha1": "74f77df20264409037232f80bd26c0a7026b0914",
+      "local_git_blob_sha1": "74f77df20264409037232f80bd26c0a7026b0914",
+      "path": "src/generation/start_server_huggingface.sh",
+      "read_back_verified": true,
+      "sha256": "616216efe316ea194b5aa4ab389de58b5ff389ef3b47d577e908f7bf11ea4b54",
+      "size": 451,
+      "tree_size": 451,
+      "verified": true
+    },
+    {
+      "git_blob_sha1": "d914f15f210a9321c87c169d1f931a50a826c42b",
+      "local_git_blob_sha1": "d914f15f210a9321c87c169d1f931a50a826c42b",
+      "path": "src/generation/start_server_local.sh",
+      "read_back_verified": true,
+      "sha256": "70375d8ab3c03273289d9fb85186b2b2706091cbfad5ac08abbff4a20a6a2c96",
+      "size": 368,
+      "tree_size": 368,
+      "verified": true
+    },
+    {
+      "git_blob_sha1": "677d93d27693a497378c2b15c05a8ff03619030c",
+      "local_git_blob_sha1": "677d93d27693a497378c2b15c05a8ff03619030c",
+      "path": "src/generation/text_generation_inference.py",
+      "read_back_verified": true,
+      "sha256": "8218268b589b80e5bff43112dbbac77a5f82e4eab09d28aa219cd9e18031a14b",
+      "size": 2424,
+      "tree_size": 2424,
+      "verified": true
+    }
+  ],
+  "repository": "https://github.com/amazon-science/qa-with-conflicting-context",
+  "revision": "fff5a4cd4fbfb51fadea92a3aaf3226875d0bce5",
+  "source_archive_sha256": "8cb70671198dd5528f87cc9bb6871098c35b838089815d30b8de5b80f53c5f32",
+  "source_archive_size": 1179628,
+  "tree": "9f35d1c9515486a0eba232c666f1f494c51ec613",
+  "unexpected_files": []
+}

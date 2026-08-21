@@ -1,0 +1,25 @@
+{
+  "dataset_total": 1617,
+  "splits": {
+    "dev": 410,
+    "test": 813,
+    "train": 394
+  },
+  "test_total": 813,
+  "test_clean": 558,
+  "test_conflict": 166,
+  "test_control": 392,
+  "exclusion_reasons": {
+    "no_supporting_context": 65,
+    "mostly_silent": 151,
+    "non_scalar_correct_answer": 39
+  },
+  "context_stats": {
+    "mean_tokens": 27.514198395517635,
+    "median_tokens": 28,
+    "p95_tokens": 33,
+    "max_tokens": 46
+  },
+  "est_total_input_tokens_test": 287371.76999999996,
+  "est_per_provider_share": 95790.58999999998
+}

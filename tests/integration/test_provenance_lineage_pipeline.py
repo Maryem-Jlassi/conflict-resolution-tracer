@@ -14,13 +14,13 @@ import os
 from datetime import datetime, timedelta
 import tempfile
 
-from lcm_core.pipeline import WritePipeline
-from lcm_core.conflict import ConflictResolutionEngine
-from lcm_core.trust_manager import TrustManager
-from lcm_core.locking import AsyncLockManager
-from lcm_core.loop_detection import LoopDetector
-from lcm_core.lineage import walk_chain
-from lcm_service.storage import SQLiteLineageStore, SQLiteStorage
+from crt_core.pipeline import WritePipeline
+from crt_core.conflict import ConflictResolutionEngine
+from crt_core.trust_manager import TrustManager
+from crt_core.locking import AsyncLockManager
+from crt_core.loop_detection import LoopDetector
+from crt_core.lineage import walk_chain
+from crt_service.storage import SQLiteLineageStore, SQLiteStorage
 
 
 class TestLineagePipeline:
@@ -75,7 +75,7 @@ class TestLineagePipeline:
         pipeline_obj, storage, _ = pipeline
         r1 = await self._write(pipeline_obj, "agent_a", {"base": "v1"})
         r2 = await self._write(
-            pipeline_obj, "agent_b", {"derived": "v2"},
+            pipeline_obj, "agent_b", {"derived": "v1"},
             parents=[r1.committed.provenance_id],
         )
         assert r2.status == "committed"

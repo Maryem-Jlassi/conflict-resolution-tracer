@@ -1,0 +1,931 @@
+{
+  "seed": "s20260321",
+  "split": "train",
+  "n_personas": 216,
+  "identity_scheme": "source:question_id",
+  "formula": "raw_trust_score = verified_correct/total_claims (prior 0.5); wilson_low z=1.96",
+  "frozen_before_dev": true,
+  "n_claims_derived": 10024,
+  "per_qid_claim_units": {
+    "A1": 576,
+    "A2": 648,
+    "A3": 648,
+    "B2": 864,
+    "B3": 648,
+    "C2": 648,
+    "C3": 648,
+    "D1": 432,
+    "D2": 648,
+    "E1": 432,
+    "E2": 652,
+    "F1": 432,
+    "F2": 648,
+    "F3": 156,
+    "G1": 864,
+    "G2": 216,
+    "Ctrl1": 432,
+    "Ctrl2": 432
+  },
+  "table": {
+    "profile_ltm:A1": {
+      "source": "profile_ltm",
+      "question_id": "A1",
+      "n_outcomes": 144,
+      "correct": 72,
+      "wrong": 72,
+      "raw_trust_score": 0.5,
+      "wilson_low": 0.4194013535061103,
+      "coverage": 0.6666666666666666
+    },
+    "profile_ltm:A2": {
+      "source": "profile_ltm",
+      "question_id": "A2",
+      "n_outcomes": 0,
+      "correct": 0,
+      "wrong": 0,
+      "raw_trust_score": 0.5,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "profile_ltm:A3": {
+      "source": "profile_ltm",
+      "question_id": "A3",
+      "n_outcomes": 216,
+      "correct": 96,
+      "wrong": 120,
+      "raw_trust_score": 0.4444444444444444,
+      "wilson_low": 0.3797219490537479,
+      "coverage": 1.0
+    },
+    "profile_ltm:B2": {
+      "source": "profile_ltm",
+      "question_id": "B2",
+      "n_outcomes": 216,
+      "correct": 120,
+      "wrong": 96,
+      "raw_trust_score": 0.5555555555555556,
+      "wilson_low": 0.48889146019267704,
+      "coverage": 1.0
+    },
+    "profile_ltm:B3": {
+      "source": "profile_ltm",
+      "question_id": "B3",
+      "n_outcomes": 216,
+      "correct": 157,
+      "wrong": 59,
+      "raw_trust_score": 0.7268518518518519,
+      "wilson_low": 0.663853434662427,
+      "coverage": 1.0
+    },
+    "profile_ltm:C2": {
+      "source": "profile_ltm",
+      "question_id": "C2",
+      "n_outcomes": 0,
+      "correct": 0,
+      "wrong": 0,
+      "raw_trust_score": 0.5,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "profile_ltm:C3": {
+      "source": "profile_ltm",
+      "question_id": "C3",
+      "n_outcomes": 0,
+      "correct": 0,
+      "wrong": 0,
+      "raw_trust_score": 0.5,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "profile_ltm:D1": {
+      "source": "profile_ltm",
+      "question_id": "D1",
+      "n_outcomes": 0,
+      "correct": 0,
+      "wrong": 0,
+      "raw_trust_score": 0.5,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "profile_ltm:D2": {
+      "source": "profile_ltm",
+      "question_id": "D2",
+      "n_outcomes": 216,
+      "correct": 149,
+      "wrong": 67,
+      "raw_trust_score": 0.6898148148148148,
+      "wilson_low": 0.6252606303661626,
+      "coverage": 1.0
+    },
+    "profile_ltm:E1": {
+      "source": "profile_ltm",
+      "question_id": "E1",
+      "n_outcomes": 0,
+      "correct": 0,
+      "wrong": 0,
+      "raw_trust_score": 0.5,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "profile_ltm:E2": {
+      "source": "profile_ltm",
+      "question_id": "E2",
+      "n_outcomes": 0,
+      "correct": 0,
+      "wrong": 0,
+      "raw_trust_score": 0.5,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "profile_ltm:F1": {
+      "source": "profile_ltm",
+      "question_id": "F1",
+      "n_outcomes": 0,
+      "correct": 0,
+      "wrong": 0,
+      "raw_trust_score": 0.5,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "profile_ltm:F2": {
+      "source": "profile_ltm",
+      "question_id": "F2",
+      "n_outcomes": 0,
+      "correct": 0,
+      "wrong": 0,
+      "raw_trust_score": 0.5,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "profile_ltm:F3": {
+      "source": "profile_ltm",
+      "question_id": "F3",
+      "n_outcomes": 0,
+      "correct": 0,
+      "wrong": 0,
+      "raw_trust_score": 0.5,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "profile_ltm:G1": {
+      "source": "profile_ltm",
+      "question_id": "G1",
+      "n_outcomes": 0,
+      "correct": 0,
+      "wrong": 0,
+      "raw_trust_score": 0.5,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "profile_ltm:G2": {
+      "source": "profile_ltm",
+      "question_id": "G2",
+      "n_outcomes": 0,
+      "correct": 0,
+      "wrong": 0,
+      "raw_trust_score": 0.5,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "profile_ltm:Ctrl1": {
+      "source": "profile_ltm",
+      "question_id": "Ctrl1",
+      "n_outcomes": 0,
+      "correct": 0,
+      "wrong": 0,
+      "raw_trust_score": 0.5,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "profile_ltm:Ctrl2": {
+      "source": "profile_ltm",
+      "question_id": "Ctrl2",
+      "n_outcomes": 0,
+      "correct": 0,
+      "wrong": 0,
+      "raw_trust_score": 0.5,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "daily_self_report:A1": {
+      "source": "daily_self_report",
+      "question_id": "A1",
+      "n_outcomes": 216,
+      "correct": 110,
+      "wrong": 106,
+      "raw_trust_score": 0.5092592592592593,
+      "wilson_low": 0.4430132102416934,
+      "coverage": 1.0
+    },
+    "daily_self_report:A2": {
+      "source": "daily_self_report",
+      "question_id": "A2",
+      "n_outcomes": 216,
+      "correct": 113,
+      "wrong": 103,
+      "raw_trust_score": 0.5231481481481481,
+      "wilson_low": 0.4567178946038097,
+      "coverage": 1.0
+    },
+    "daily_self_report:A3": {
+      "source": "daily_self_report",
+      "question_id": "A3",
+      "n_outcomes": 216,
+      "correct": 105,
+      "wrong": 111,
+      "raw_trust_score": 0.4861111111111111,
+      "wilson_low": 0.4202834848831271,
+      "coverage": 1.0
+    },
+    "daily_self_report:B2": {
+      "source": "daily_self_report",
+      "question_id": "B2",
+      "n_outcomes": 216,
+      "correct": 167,
+      "wrong": 49,
+      "raw_trust_score": 0.7731481481481481,
+      "wilson_low": 0.7128087003689365,
+      "coverage": 1.0
+    },
+    "daily_self_report:B3": {
+      "source": "daily_self_report",
+      "question_id": "B3",
+      "n_outcomes": 216,
+      "correct": 118,
+      "wrong": 98,
+      "raw_trust_score": 0.5462962962962963,
+      "wilson_low": 0.4796708795471455,
+      "coverage": 1.0
+    },
+    "daily_self_report:C2": {
+      "source": "daily_self_report",
+      "question_id": "C2",
+      "n_outcomes": 216,
+      "correct": 100,
+      "wrong": 116,
+      "raw_trust_score": 0.46296296296296297,
+      "wilson_low": 0.397693181566414,
+      "coverage": 1.0
+    },
+    "daily_self_report:C3": {
+      "source": "daily_self_report",
+      "question_id": "C3",
+      "n_outcomes": 216,
+      "correct": 89,
+      "wrong": 127,
+      "raw_trust_score": 0.41203703703703703,
+      "wilson_low": 0.3484914607845568,
+      "coverage": 1.0
+    },
+    "daily_self_report:D1": {
+      "source": "daily_self_report",
+      "question_id": "D1",
+      "n_outcomes": 216,
+      "correct": 107,
+      "wrong": 109,
+      "raw_trust_score": 0.49537037037037035,
+      "wilson_low": 0.4293586690799019,
+      "coverage": 1.0
+    },
+    "daily_self_report:D2": {
+      "source": "daily_self_report",
+      "question_id": "D2",
+      "n_outcomes": 216,
+      "correct": 153,
+      "wrong": 63,
+      "raw_trust_score": 0.7083333333333334,
+      "wilson_low": 0.6444980189232303,
+      "coverage": 1.0
+    },
+    "daily_self_report:E1": {
+      "source": "daily_self_report",
+      "question_id": "E1",
+      "n_outcomes": 216,
+      "correct": 105,
+      "wrong": 111,
+      "raw_trust_score": 0.4861111111111111,
+      "wilson_low": 0.4202834848831271,
+      "coverage": 1.0
+    },
+    "daily_self_report:E2": {
+      "source": "daily_self_report",
+      "question_id": "E2",
+      "n_outcomes": 216,
+      "correct": 173,
+      "wrong": 43,
+      "raw_trust_score": 0.8009259259259259,
+      "wilson_low": 0.7426218531411536,
+      "coverage": 1.0
+    },
+    "daily_self_report:F1": {
+      "source": "daily_self_report",
+      "question_id": "F1",
+      "n_outcomes": 216,
+      "correct": 114,
+      "wrong": 102,
+      "raw_trust_score": 0.5277777777777778,
+      "wilson_low": 0.46129728541096127,
+      "coverage": 1.0
+    },
+    "daily_self_report:F2": {
+      "source": "daily_self_report",
+      "question_id": "F2",
+      "n_outcomes": 216,
+      "correct": 148,
+      "wrong": 68,
+      "raw_trust_score": 0.6851851851851852,
+      "wilson_low": 0.6204690064546781,
+      "coverage": 1.0
+    },
+    "daily_self_report:F3": {
+      "source": "daily_self_report",
+      "question_id": "F3",
+      "n_outcomes": 78,
+      "correct": 15,
+      "wrong": 63,
+      "raw_trust_score": 0.19230769230769232,
+      "wilson_low": 0.12015101048823744,
+      "coverage": 0.3611111111111111
+    },
+    "daily_self_report:G1": {
+      "source": "daily_self_report",
+      "question_id": "G1",
+      "n_outcomes": 216,
+      "correct": 98,
+      "wrong": 118,
+      "raw_trust_score": 0.4537037037037037,
+      "wilson_low": 0.38869628693137126,
+      "coverage": 1.0
+    },
+    "daily_self_report:G2": {
+      "source": "daily_self_report",
+      "question_id": "G2",
+      "n_outcomes": 216,
+      "correct": 83,
+      "wrong": 133,
+      "raw_trust_score": 0.38425925925925924,
+      "wilson_low": 0.32194977030760125,
+      "coverage": 1.0
+    },
+    "daily_self_report:Ctrl1": {
+      "source": "daily_self_report",
+      "question_id": "Ctrl1",
+      "n_outcomes": 216,
+      "correct": 185,
+      "wrong": 31,
+      "raw_trust_score": 0.8564814814814815,
+      "wilson_low": 0.8034892255690972,
+      "coverage": 1.0
+    },
+    "daily_self_report:Ctrl2": {
+      "source": "daily_self_report",
+      "question_id": "Ctrl2",
+      "n_outcomes": 216,
+      "correct": 185,
+      "wrong": 31,
+      "raw_trust_score": 0.8564814814814815,
+      "wilson_low": 0.8034892255690972,
+      "coverage": 1.0
+    },
+    "planner:A1": {
+      "source": "planner",
+      "question_id": "A1",
+      "n_outcomes": 0,
+      "correct": 0,
+      "wrong": 0,
+      "raw_trust_score": 0.5,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "planner:A2": {
+      "source": "planner",
+      "question_id": "A2",
+      "n_outcomes": 216,
+      "correct": 89,
+      "wrong": 127,
+      "raw_trust_score": 0.41203703703703703,
+      "wilson_low": 0.3484914607845568,
+      "coverage": 1.0
+    },
+    "planner:A3": {
+      "source": "planner",
+      "question_id": "A3",
+      "n_outcomes": 0,
+      "correct": 0,
+      "wrong": 0,
+      "raw_trust_score": 0.5,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "planner:B2": {
+      "source": "planner",
+      "question_id": "B2",
+      "n_outcomes": 0,
+      "correct": 0,
+      "wrong": 0,
+      "raw_trust_score": 0.5,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "planner:B3": {
+      "source": "planner",
+      "question_id": "B3",
+      "n_outcomes": 216,
+      "correct": 156,
+      "wrong": 60,
+      "raw_trust_score": 0.7222222222222222,
+      "wilson_low": 0.659003148994931,
+      "coverage": 1.0
+    },
+    "planner:C2": {
+      "source": "planner",
+      "question_id": "C2",
+      "n_outcomes": 216,
+      "correct": 44,
+      "wrong": 172,
+      "raw_trust_score": 0.2037037037037037,
+      "wilson_low": 0.15539014738218296,
+      "coverage": 1.0
+    },
+    "planner:C3": {
+      "source": "planner",
+      "question_id": "C3",
+      "n_outcomes": 216,
+      "correct": 61,
+      "wrong": 155,
+      "raw_trust_score": 0.2824074074074074,
+      "wilson_low": 0.22657997383579856,
+      "coverage": 1.0
+    },
+    "planner:D1": {
+      "source": "planner",
+      "question_id": "D1",
+      "n_outcomes": 0,
+      "correct": 0,
+      "wrong": 0,
+      "raw_trust_score": 0.5,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "planner:D2": {
+      "source": "planner",
+      "question_id": "D2",
+      "n_outcomes": 0,
+      "correct": 0,
+      "wrong": 0,
+      "raw_trust_score": 0.5,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "planner:E1": {
+      "source": "planner",
+      "question_id": "E1",
+      "n_outcomes": 0,
+      "correct": 0,
+      "wrong": 0,
+      "raw_trust_score": 0.5,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "planner:E2": {
+      "source": "planner",
+      "question_id": "E2",
+      "n_outcomes": 216,
+      "correct": 134,
+      "wrong": 82,
+      "raw_trust_score": 0.6203703703703703,
+      "wilson_low": 0.5540810124701838,
+      "coverage": 1.0
+    },
+    "planner:F1": {
+      "source": "planner",
+      "question_id": "F1",
+      "n_outcomes": 0,
+      "correct": 0,
+      "wrong": 0,
+      "raw_trust_score": 0.5,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "planner:F2": {
+      "source": "planner",
+      "question_id": "F2",
+      "n_outcomes": 0,
+      "correct": 0,
+      "wrong": 0,
+      "raw_trust_score": 0.5,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "planner:F3": {
+      "source": "planner",
+      "question_id": "F3",
+      "n_outcomes": 78,
+      "correct": 26,
+      "wrong": 52,
+      "raw_trust_score": 0.3333333333333333,
+      "wilson_low": 0.23872517005631877,
+      "coverage": 0.3611111111111111
+    },
+    "planner:G1": {
+      "source": "planner",
+      "question_id": "G1",
+      "n_outcomes": 216,
+      "correct": 93,
+      "wrong": 123,
+      "raw_trust_score": 0.4305555555555556,
+      "wilson_low": 0.36630302092867645,
+      "coverage": 1.0
+    },
+    "planner:G2": {
+      "source": "planner",
+      "question_id": "G2",
+      "n_outcomes": 0,
+      "correct": 0,
+      "wrong": 0,
+      "raw_trust_score": 0.5,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "planner:Ctrl1": {
+      "source": "planner",
+      "question_id": "Ctrl1",
+      "n_outcomes": 0,
+      "correct": 0,
+      "wrong": 0,
+      "raw_trust_score": 0.5,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "planner:Ctrl2": {
+      "source": "planner",
+      "question_id": "Ctrl2",
+      "n_outcomes": 0,
+      "correct": 0,
+      "wrong": 0,
+      "raw_trust_score": 0.5,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "device_log:A1": {
+      "source": "device_log",
+      "question_id": "A1",
+      "n_outcomes": 216,
+      "correct": 74,
+      "wrong": 142,
+      "raw_trust_score": 0.3425925925925926,
+      "wilson_low": 0.28254828090469825,
+      "coverage": 1.0
+    },
+    "device_log:A2": {
+      "source": "device_log",
+      "question_id": "A2",
+      "n_outcomes": 0,
+      "correct": 0,
+      "wrong": 0,
+      "raw_trust_score": 0.5,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "device_log:A3": {
+      "source": "device_log",
+      "question_id": "A3",
+      "n_outcomes": 0,
+      "correct": 0,
+      "wrong": 0,
+      "raw_trust_score": 0.5,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "device_log:B2": {
+      "source": "device_log",
+      "question_id": "B2",
+      "n_outcomes": 216,
+      "correct": 40,
+      "wrong": 176,
+      "raw_trust_score": 0.18518518518518517,
+      "wilson_low": 0.139043341978217,
+      "coverage": 1.0
+    },
+    "device_log:B3": {
+      "source": "device_log",
+      "question_id": "B3",
+      "n_outcomes": 0,
+      "correct": 0,
+      "wrong": 0,
+      "raw_trust_score": 0.5,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "device_log:C2": {
+      "source": "device_log",
+      "question_id": "C2",
+      "n_outcomes": 0,
+      "correct": 0,
+      "wrong": 0,
+      "raw_trust_score": 0.5,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "device_log:C3": {
+      "source": "device_log",
+      "question_id": "C3",
+      "n_outcomes": 216,
+      "correct": 97,
+      "wrong": 119,
+      "raw_trust_score": 0.44907407407407407,
+      "wilson_low": 0.38420629102303117,
+      "coverage": 1.0
+    },
+    "device_log:D1": {
+      "source": "device_log",
+      "question_id": "D1",
+      "n_outcomes": 0,
+      "correct": 0,
+      "wrong": 0,
+      "raw_trust_score": 0.5,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "device_log:D2": {
+      "source": "device_log",
+      "question_id": "D2",
+      "n_outcomes": 0,
+      "correct": 0,
+      "wrong": 0,
+      "raw_trust_score": 0.5,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "device_log:E1": {
+      "source": "device_log",
+      "question_id": "E1",
+      "n_outcomes": 216,
+      "correct": 154,
+      "wrong": 62,
+      "raw_trust_score": 0.7129629629629629,
+      "wilson_low": 0.6493255518343187,
+      "coverage": 1.0
+    },
+    "device_log:E2": {
+      "source": "device_log",
+      "question_id": "E2",
+      "n_outcomes": 4,
+      "correct": 4,
+      "wrong": 0,
+      "raw_trust_score": 1.0,
+      "wilson_low": 0.5100999795960008,
+      "coverage": 0.018518518518518517
+    },
+    "device_log:F1": {
+      "source": "device_log",
+      "question_id": "F1",
+      "n_outcomes": 0,
+      "correct": 0,
+      "wrong": 0,
+      "raw_trust_score": 0.5,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "device_log:F2": {
+      "source": "device_log",
+      "question_id": "F2",
+      "n_outcomes": 216,
+      "correct": 148,
+      "wrong": 68,
+      "raw_trust_score": 0.6851851851851852,
+      "wilson_low": 0.6204690064546781,
+      "coverage": 1.0
+    },
+    "device_log:F3": {
+      "source": "device_log",
+      "question_id": "F3",
+      "n_outcomes": 0,
+      "correct": 0,
+      "wrong": 0,
+      "raw_trust_score": 0.5,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "device_log:G1": {
+      "source": "device_log",
+      "question_id": "G1",
+      "n_outcomes": 216,
+      "correct": 108,
+      "wrong": 108,
+      "raw_trust_score": 0.5,
+      "wilson_low": 0.4339046148554267,
+      "coverage": 1.0
+    },
+    "device_log:G2": {
+      "source": "device_log",
+      "question_id": "G2",
+      "n_outcomes": 0,
+      "correct": 0,
+      "wrong": 0,
+      "raw_trust_score": 0.5,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "device_log:Ctrl1": {
+      "source": "device_log",
+      "question_id": "Ctrl1",
+      "n_outcomes": 0,
+      "correct": 0,
+      "wrong": 0,
+      "raw_trust_score": 0.5,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "device_log:Ctrl2": {
+      "source": "device_log",
+      "question_id": "Ctrl2",
+      "n_outcomes": 216,
+      "correct": 190,
+      "wrong": 26,
+      "raw_trust_score": 0.8796296296296297,
+      "wilson_low": 0.8294731892069708,
+      "coverage": 1.0
+    },
+    "objective_log:A1": {
+      "source": "objective_log",
+      "question_id": "A1",
+      "n_outcomes": 0,
+      "correct": 0,
+      "wrong": 0,
+      "raw_trust_score": 0.5,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "objective_log:A2": {
+      "source": "objective_log",
+      "question_id": "A2",
+      "n_outcomes": 216,
+      "correct": 142,
+      "wrong": 74,
+      "raw_trust_score": 0.6574074074074074,
+      "wilson_low": 0.5918618957983307,
+      "coverage": 1.0
+    },
+    "objective_log:A3": {
+      "source": "objective_log",
+      "question_id": "A3",
+      "n_outcomes": 216,
+      "correct": 124,
+      "wrong": 92,
+      "raw_trust_score": 0.5740740740740741,
+      "wilson_low": 0.5074008248475179,
+      "coverage": 1.0
+    },
+    "objective_log:B2": {
+      "source": "objective_log",
+      "question_id": "B2",
+      "n_outcomes": 216,
+      "correct": 150,
+      "wrong": 66,
+      "raw_trust_score": 0.6944444444444444,
+      "wilson_low": 0.6300592551568773,
+      "coverage": 1.0
+    },
+    "objective_log:B3": {
+      "source": "objective_log",
+      "question_id": "B3",
+      "n_outcomes": 0,
+      "correct": 0,
+      "wrong": 0,
+      "raw_trust_score": 0.5,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "objective_log:C2": {
+      "source": "objective_log",
+      "question_id": "C2",
+      "n_outcomes": 216,
+      "correct": 122,
+      "wrong": 94,
+      "raw_trust_score": 0.5648148148148148,
+      "wilson_low": 0.4981347247042246,
+      "coverage": 1.0
+    },
+    "objective_log:C3": {
+      "source": "objective_log",
+      "question_id": "C3",
+      "n_outcomes": 0,
+      "correct": 0,
+      "wrong": 0,
+      "raw_trust_score": 0.5,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "objective_log:D1": {
+      "source": "objective_log",
+      "question_id": "D1",
+      "n_outcomes": 216,
+      "correct": 123,
+      "wrong": 93,
+      "raw_trust_score": 0.5694444444444444,
+      "wilson_low": 0.5027649098523378,
+      "coverage": 1.0
+    },
+    "objective_log:D2": {
+      "source": "objective_log",
+      "question_id": "D2",
+      "n_outcomes": 216,
+      "correct": 150,
+      "wrong": 66,
+      "raw_trust_score": 0.6944444444444444,
+      "wilson_low": 0.6300592551568773,
+      "coverage": 1.0
+    },
+    "objective_log:E1": {
+      "source": "objective_log",
+      "question_id": "E1",
+      "n_outcomes": 0,
+      "correct": 0,
+      "wrong": 0,
+      "raw_trust_score": 0.5,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "objective_log:E2": {
+      "source": "objective_log",
+      "question_id": "E2",
+      "n_outcomes": 216,
+      "correct": 59,
+      "wrong": 157,
+      "raw_trust_score": 0.27314814814814814,
+      "wilson_low": 0.2180779308451331,
+      "coverage": 1.0
+    },
+    "objective_log:F1": {
+      "source": "objective_log",
+      "question_id": "F1",
+      "n_outcomes": 216,
+      "correct": 158,
+      "wrong": 58,
+      "raw_trust_score": 0.7314814814814815,
+      "wilson_low": 0.6687115346874942,
+      "coverage": 1.0
+    },
+    "objective_log:F2": {
+      "source": "objective_log",
+      "question_id": "F2",
+      "n_outcomes": 216,
+      "correct": 148,
+      "wrong": 68,
+      "raw_trust_score": 0.6851851851851852,
+      "wilson_low": 0.6204690064546781,
+      "coverage": 1.0
+    },
+    "objective_log:F3": {
+      "source": "objective_log",
+      "question_id": "F3",
+      "n_outcomes": 0,
+      "correct": 0,
+      "wrong": 0,
+      "raw_trust_score": 0.5,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "objective_log:G1": {
+      "source": "objective_log",
+      "question_id": "G1",
+      "n_outcomes": 216,
+      "correct": 102,
+      "wrong": 114,
+      "raw_trust_score": 0.4722222222222222,
+      "wilson_low": 0.40671252984149675,
+      "coverage": 1.0
+    },
+    "objective_log:G2": {
+      "source": "objective_log",
+      "question_id": "G2",
+      "n_outcomes": 0,
+      "correct": 0,
+      "wrong": 0,
+      "raw_trust_score": 0.5,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    },
+    "objective_log:Ctrl1": {
+      "source": "objective_log",
+      "question_id": "Ctrl1",
+      "n_outcomes": 216,
+      "correct": 78,
+      "wrong": 138,
+      "raw_trust_score": 0.3611111111111111,
+      "wilson_low": 0.29999751824201837,
+      "coverage": 1.0
+    },
+    "objective_log:Ctrl2": {
+      "source": "objective_log",
+      "question_id": "Ctrl2",
+      "n_outcomes": 0,
+      "correct": 0,
+      "wrong": 0,
+      "raw_trust_score": 0.5,
+      "wilson_low": 0.0,
+      "coverage": 0.0
+    }
+  }
+}

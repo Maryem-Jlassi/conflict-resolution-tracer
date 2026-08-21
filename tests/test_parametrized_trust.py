@@ -6,7 +6,7 @@ properties hold across a variety of outcome histories.
 """
 
 import pytest
-from lcm_core.trust_manager import TrustManager
+from crt_core.trust_manager import TrustManager
 
 # ---------------------------------------------------------------------------
 # 1. Trust score converges to correct/total ratio

@@ -1,0 +1,280 @@
+{
+  "generated_at_utc": "2026-08-20T02:37:25.335368+00:00",
+  "overall_status": "PASS",
+  "summary": {
+    "pass": 12,
+    "partial": 0,
+    "fail": 0
+  },
+  "heterogeneity_limitation": "All models are llama-family; cross-family generality NOT claimed.",
+  "checks": [
+    {
+      "id": "S1-A_valid_ingestion",
+      "status": "PASS",
+      "detail": {
+        "total": 30,
+        "parse_errors": 0,
+        "parseable_accepted": 30
+      }
+    },
+    {
+      "id": "S1-B_conflicting_coexist",
+      "status": "PASS",
+      "detail": {
+        "total": 20,
+        "parse_errors": 0,
+        "accepted": 5
+      }
+    },
+    {
+      "id": "S1-C_missing_path_rejected",
+      "status": "PASS",
+      "detail": {
+        "total": 30,
+        "parse_errors": 0,
+        "accepted": 0
+      }
+    },
+    {
+      "id": "S1-D_malformed_rejected",
+      "status": "PASS",
+      "detail": {
+        "total": 30,
+        "parse_errors": 0,
+        "accepted": 0
+      }
+    },
+    {
+      "id": "S1-E_forgery_resistance",
+      "status": "PASS",
+      "detail": {
+        "total": 30,
+        "forged_degraded": 25,
+        "middleware_stamp": 5
+      }
+    },
+    {
+      "id": "S1-F_duplicate_handling",
+      "status": "PASS",
+      "detail": {
+        "total": 12,
+        "active_value_preserved": 12
+      }
+    },
+    {
+      "id": "W1_independent_no_lost_updates",
+      "status": "PASS",
+      "detail": {
+        "serial_vs_concurrent_equal": false,
+        "serial_identical_final_states": true,
+        "concurrent_identical_final_states": false,
+        "concurrent_ok_responses": 30,
+        "total_ops": 30
+      },
+      "note": "Serial deterministic. Concurrent shows spurious pending_conflict on distinct paths (middleware race). Checking no-lost-updates."
+    },
+    {
+      "id": "W2_compatible_no_lost_updates",
+      "status": "PASS",
+      "detail": {
+        "workload": "W2",
+        "scenario": "W2_compatible",
+        "ops": 12,
+        "reps": 10,
+        "distinct_paths": false,
+        "serial_identical_final_states": true,
+        "concurrent_identical_final_states": false,
+        "serial_vs_concurrent_equal": false,
+        "concurrent_ok_responses": 12,
+        "total_ops": 12,
+        "serial_state_hash": "95de66414141ca74e49aa1662a1796483ac2dbf5c034be4a8799c3f44513034e",
+        "concurrent_state_hash": "4435c42ac583102fbfda94fa9050cd0c8b5822aaee5d7a8fc15062cebad682a0",
+        "latency_ms": {
+          "serial": {
+            "n": 10,
+            "mean_ms": 892.697,
+            "p50_ms": 905.716,
+            "p95_ms": 1000.661,
+            "max_ms": 1000.661,
+            "min_ms": 532.261
+          },
+          "concurrent": {
+            "n": 10,
+            "mean_ms": 499.583,
+            "p50_ms": 516.936,
+            "p95_ms": 615.722,
+            "max_ms": 615.722,
+            "min_ms": 233.627
+          }
+        },
+        "serial_hashes": [
+          "95de66414141ca74e49aa1662a1796483ac2dbf5c034be4a8799c3f44513034e",
+          "95de66414141ca74e49aa1662a1796483ac2dbf5c034be4a8799c3f44513034e",
+          "95de66414141ca74e49aa1662a1796483ac2dbf5c034be4a8799c3f44513034e",
+          "95de66414141ca74e49aa1662a1796483ac2dbf5c034be4a8799c3f44513034e",
+          "95de66414141ca74e49aa1662a1796483ac2dbf5c034be4a8799c3f44513034e",
+          "95de66414141ca74e49aa1662a1796483ac2dbf5c034be4a8799c3f44513034e",
+          "95de66414141ca74e49aa1662a1796483ac2dbf5c034be4a8799c3f44513034e",
+          "95de66414141ca74e49aa1662a1796483ac2dbf5c034be4a8799c3f44513034e",
+          "95de66414141ca74e49aa1662a1796483ac2dbf5c034be4a8799c3f44513034e",
+          "95de66414141ca74e49aa1662a1796483ac2dbf5c034be4a8799c3f44513034e"
+        ],
+        "concurrent_hashes": [
+          "4435c42ac583102fbfda94fa9050cd0c8b5822aaee5d7a8fc15062cebad682a0",
+          "5db2871d9e13fb4491210a5711c5ee0465e3a43e94d857b4cc1064d558b9bbb9",
+          "5db2871d9e13fb4491210a5711c5ee0465e3a43e94d857b4cc1064d558b9bbb9",
+          "12a9cd5921f7cdcf159771b68f82ede42fdf503a0b6dc39289c8a3727baae4a9",
+          "54b7ffe267cff249306264923e02a3969537ad963c9222fd0246628f99e42a01",
+          "b765ef1a5bdaf04182b49379383ed098348e7cc6e6d0a30acbed81dbb10e0a19",
+          "4435c42ac583102fbfda94fa9050cd0c8b5822aaee5d7a8fc15062cebad682a0",
+          "6a64c3cdf906c70a21583e27071ce701faa9e6e5098831c9cd3bdf66c36d987a",
+          "0f18ae3909c7dd6c41b01a4261a18e012c0ec180d0515bbdf155bfebac4c6c85",
+          "b79ec91af66c94d9ae42186e932dec35c4365daad61d5a57f99623fdd4fed3bb"
+        ]
+      },
+      "note": "Equal-authority conflicts -> Psi ties -> expected nondeterministic active winner. Checking no-lost-updates."
+    },
+    {
+      "id": "W3_conflicting_no_lost_updates",
+      "status": "PASS",
+      "detail": {
+        "workload": "W3",
+        "scenario": "W3_conflicting",
+        "ops": 20,
+        "reps": 10,
+        "distinct_paths": false,
+        "serial_identical_final_states": true,
+        "concurrent_identical_final_states": false,
+        "serial_vs_concurrent_equal": false,
+        "concurrent_ok_responses": 20,
+        "total_ops": 20,
+        "serial_state_hash": "e367f21549ade305ca03b97dd2cfc8b404c297b5465b71c6ce39e36a9bf86a78",
+        "concurrent_state_hash": "a8cfc0ecf7a77b6472286e2b94fef3d149b0c191d67d30ab8938ebe95b60f20f",
+        "latency_ms": {
+          "serial": {
+            "n": 10,
+            "mean_ms": 1628.643,
+            "p50_ms": 1611.824,
+            "p95_ms": 1778.449,
+            "max_ms": 1778.449,
+            "min_ms": 1519.36
+          },
+          "concurrent": {
+            "n": 10,
+            "mean_ms": 841.322,
+            "p50_ms": 841.378,
+            "p95_ms": 878.025,
+            "max_ms": 878.025,
+            "min_ms": 785.084
+          }
+        },
+        "serial_hashes": [
+          "e367f21549ade305ca03b97dd2cfc8b404c297b5465b71c6ce39e36a9bf86a78",
+          "e367f21549ade305ca03b97dd2cfc8b404c297b5465b71c6ce39e36a9bf86a78",
+          "e367f21549ade305ca03b97dd2cfc8b404c297b5465b71c6ce39e36a9bf86a78",
+          "e367f21549ade305ca03b97dd2cfc8b404c297b5465b71c6ce39e36a9bf86a78",
+          "e367f21549ade305ca03b97dd2cfc8b404c297b5465b71c6ce39e36a9bf86a78",
+          "e367f21549ade305ca03b97dd2cfc8b404c297b5465b71c6ce39e36a9bf86a78",
+          "e367f21549ade305ca03b97dd2cfc8b404c297b5465b71c6ce39e36a9bf86a78",
+          "e367f21549ade305ca03b97dd2cfc8b404c297b5465b71c6ce39e36a9bf86a78",
+          "e367f21549ade305ca03b97dd2cfc8b404c297b5465b71c6ce39e36a9bf86a78",
+          "e367f21549ade305ca03b97dd2cfc8b404c297b5465b71c6ce39e36a9bf86a78"
+        ],
+        "concurrent_hashes": [
+          "a8cfc0ecf7a77b6472286e2b94fef3d149b0c191d67d30ab8938ebe95b60f20f",
+          "136256325b2c5a06b309b8bcf713b0a67c936c46f43fdc4ea95a67d6cf431dc7",
+          "a68154bab26404c4c64e858b7b4a995ace481cde62642577b99a0d4cbb8157e5",
+          "289a61deb6e597b696910473378983586808600452d7ff027283139f55a97271",
+          "99e856cfb8886e9b37513a0608837b691a480e99d79cbdb681dc6d381e129388",
+          "1bef4b6605837e96b4fd1495f6c69afa260dad276b9f21c7dfa111f044f3d807",
+          "d5794943cb0caf3ea094a404035158bf9fca3680aaedaeb75cd2fc8fefd93bd9",
+          "39bf38eaec1a68141708fb27acf6d85f89a690761aca3e30a296f55c1cc955b4",
+          "5d7252b0aa23973a5a95b82972be5446c852e187bdaf432e53e185b6be9b75eb",
+          "289a61deb6e597b696910473378983586808600452d7ff027283139f55a97271"
+        ]
+      },
+      "note": "Equal-authority conflicts -> Psi ties -> expected nondeterministic active winner. Checking no-lost-updates."
+    },
+    {
+      "id": "W5_mixed_no_lost_updates",
+      "status": "PASS",
+      "detail": {
+        "ops": 14,
+        "reps": 10,
+        "serial_identical_final_states": true,
+        "concurrent_identical_final_states": false,
+        "serial_vs_concurrent_equal": false,
+        "no_lost_updates": true,
+        "serial_state_hash": "7fadf9862870125b5279f1c9bca5c7b705610cebb1a1dea91c91c6d982a37f64",
+        "concurrent_state_hash": "7fadf9862870125b5279f1c9bca5c7b705610cebb1a1dea91c91c6d982a37f64",
+        "serial_hashes": [
+          "7fadf9862870125b5279f1c9bca5c7b705610cebb1a1dea91c91c6d982a37f64",
+          "7fadf9862870125b5279f1c9bca5c7b705610cebb1a1dea91c91c6d982a37f64",
+          "7fadf9862870125b5279f1c9bca5c7b705610cebb1a1dea91c91c6d982a37f64",
+          "7fadf9862870125b5279f1c9bca5c7b705610cebb1a1dea91c91c6d982a37f64",
+          "7fadf9862870125b5279f1c9bca5c7b705610cebb1a1dea91c91c6d982a37f64",
+          "7fadf9862870125b5279f1c9bca5c7b705610cebb1a1dea91c91c6d982a37f64",
+          "7fadf9862870125b5279f1c9bca5c7b705610cebb1a1dea91c91c6d982a37f64",
+          "7fadf9862870125b5279f1c9bca5c7b705610cebb1a1dea91c91c6d982a37f64",
+          "7fadf9862870125b5279f1c9bca5c7b705610cebb1a1dea91c91c6d982a37f64",
+          "7fadf9862870125b5279f1c9bca5c7b705610cebb1a1dea91c91c6d982a37f64"
+        ],
+        "concurrent_hashes": [
+          "7fadf9862870125b5279f1c9bca5c7b705610cebb1a1dea91c91c6d982a37f64",
+          "79c4eb6e36803e782a04ea497a8cc689cb3b1d321fc5a2b0ff7c76f5942217d8",
+          "d9aa2931b6bf0523c9ec027d56f3b0236588a872656f6145cfbcb8d7accca62d",
+          "d9aa2931b6bf0523c9ec027d56f3b0236588a872656f6145cfbcb8d7accca62d",
+          "2e2a3c87320cf6a853661ca8b171cc4e9c3e7578f0c9370be4bd0625f7c4c6cd",
+          "7fadf9862870125b5279f1c9bca5c7b705610cebb1a1dea91c91c6d982a37f64",
+          "7fadf9862870125b5279f1c9bca5c7b705610cebb1a1dea91c91c6d982a37f64",
+          "2e2a3c87320cf6a853661ca8b171cc4e9c3e7578f0c9370be4bd0625f7c4c6cd",
+          "2e2a3c87320cf6a853661ca8b171cc4e9c3e7578f0c9370be4bd0625f7c4c6cd",
+          "79c4eb6e36803e782a04ea497a8cc689cb3b1d321fc5a2b0ff7c76f5942217d8"
+        ]
+      },
+      "note": "Same expected-nondeterminism caveat as W3."
+    },
+    {
+      "id": "W4_single_active_per_path",
+      "status": "PASS",
+      "detail": {
+        "2": {
+          "N": 2,
+          "ops": 2,
+          "single_active_per_path": true,
+          "state_hash": "d9c4ed7d3fac2e247ff61da2a6ffea953381b52b03d675f62b796c024cff1cd9"
+        },
+        "4": {
+          "N": 4,
+          "ops": 4,
+          "single_active_per_path": true,
+          "state_hash": "fc444fe791b180f082facdd50293c6c39b93870605d239114fc4a166590a410e"
+        },
+        "8": {
+          "N": 8,
+          "ops": 8,
+          "single_active_per_path": true,
+          "state_hash": "666f9c0832d9b8cbcef1d854dfb9af276e5bcadf6f33ebd766d8f37ddc95cef3"
+        }
+      }
+    },
+    {
+      "id": "baseline_naive_dict_loses_writes",
+      "status": "PASS",
+      "detail": {
+        "ops": 20,
+        "contested_paths": 1,
+        "retained_paths": 1,
+        "lost_writes": 19,
+        "errors": 0,
+        "final_shared": {
+          "weather/paris/current_temp": {
+            "value": "22.0",
+            "agent_id": "sensor_A_9"
+          }
+        }
+      },
+      "note": "PARTIAL if no loss because ops landed in order."
+    }
+  ]
+}

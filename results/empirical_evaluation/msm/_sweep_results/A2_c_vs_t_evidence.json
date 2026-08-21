@@ -1,0 +1,12 @@
+{
+  "joint_agree_total": 1433,
+  "joint_agree_correct": 995,
+  "joint_accuracy": 0.6943475226796929,
+  "t_only_on_agree_correct": 982,
+  "t_only_accuracy_on_agree": 0.6852756454989533,
+  "joint_accuracy_lower_than_t_only": false,
+  "delta": -0.009071877180739651,
+  "full_lcm_accuracy": 0.6670662271501349,
+  "c_only_accuracy": 0.5774647887323944,
+  "t_only_accuracy": 0.6619718309859155
+}

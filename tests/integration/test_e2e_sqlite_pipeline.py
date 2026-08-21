@@ -15,12 +15,12 @@ from datetime import datetime, timedelta
 from pathlib import Path
 import tempfile
 
-from lcm_core.pipeline import WritePipeline
-from lcm_core.conflict import ConflictResolutionEngine
-from lcm_core.trust_manager import TrustManager
-from lcm_core.locking import AsyncLockManager
-from lcm_core.loop_detection import LoopDetector
-from lcm_service.storage import SQLiteStorage
+from crt_core.pipeline import WritePipeline
+from crt_core.conflict import ConflictResolutionEngine
+from crt_core.trust_manager import TrustManager
+from crt_core.locking import AsyncLockManager
+from crt_core.loop_detection import LoopDetector
+from crt_service.storage import SQLiteStorage
 
 
 class TestE2ESQLitePipeline:
@@ -335,7 +335,7 @@ class TestE2ESQLitePipeline:
         """Test that evidence records are processed correctly."""
         pipeline_obj, storage, trust = pipeline
         
-        from lcm_core.confidence_engine import EvidenceRecord, EvidenceType
+        from crt_core.confidence_engine import EvidenceRecord, EvidenceType
         
         # Use agent_claim evidence type to avoid verification rejection
         evidence_records = [

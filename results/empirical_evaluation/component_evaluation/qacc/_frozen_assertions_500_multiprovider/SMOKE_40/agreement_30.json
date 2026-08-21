@@ -1,0 +1,858 @@
+{
+  "seed": 20260822,
+  "n_sources": 30,
+  "metrics": {
+    "total_sources": 30,
+    "three_supported_agree": 1,
+    "three_value_agree": 1,
+    "three_value_agree_rate": 0.0333,
+    "all_three_abstain": 8,
+    "pairwise_value_agree_rate": {
+      "ollama|openai": 0.3,
+      "ollama|groq": 0.0333,
+      "openai|groq": 0.0333
+    }
+  },
+  "rows": [
+    {
+      "case_id": 64,
+      "source_id": 0,
+      "source": "en.wikipedia.org",
+      "results": {
+        "ollama": {
+          "success": true,
+          "status": "supported",
+          "answer": "Michael Grimm",
+          "parse": "ok",
+          "error": null
+        },
+        "openai": {
+          "success": true,
+          "status": "supported",
+          "answer": "Michael Grimm",
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": null,
+          "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199632, Requested 538. Please try again in 1m13.44s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+        }
+      }
+    },
+    {
+      "case_id": 18,
+      "source_id": 2,
+      "source": "www.toppr.com",
+      "results": {
+        "ollama": {
+          "success": true,
+          "status": "supported",
+          "answer": "energy loss per cycle of the paramagnetic materials used for electromagnets and transformer",
+          "parse": "ok",
+          "error": null
+        },
+        "openai": {
+          "success": true,
+          "status": "supported",
+          "answer": "energy loss per cycle of the paramagnetic materials used for electromagnets and transformer",
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": null,
+          "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199632, Requested 541. Please try again in 1m14.736s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+        }
+      }
+    },
+    {
+      "case_id": 20,
+      "source_id": 3,
+      "source": "nowordsnosong.medium.com",
+      "results": {
+        "ollama": {
+          "success": true,
+          "status": "supported",
+          "answer": "Roger Nichols and Paul Williams",
+          "parse": "ok",
+          "error": null
+        },
+        "openai": {
+          "success": true,
+          "status": "supported",
+          "answer": "Roger Nichols and Paul Williams",
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": null,
+          "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199630, Requested 554. Please try again in 1m19.488s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+        }
+      }
+    },
+    {
+      "case_id": 68,
+      "source_id": 4,
+      "source": "www.thoughtco.com",
+      "results": {
+        "ollama": {
+          "success": true,
+          "status": "supported",
+          "answer": "son of Edward",
+          "parse": "ok",
+          "error": null
+        },
+        "openai": {
+          "success": true,
+          "status": "supported",
+          "answer": "The last name Edwards comes from the early medieval English given name, Edward, meaning 'prosperous.'",
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": null,
+          "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199628, Requested 551. Please try again in 1m17.328s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+        }
+      }
+    },
+    {
+      "case_id": 21,
+      "source_id": 2,
+      "source": "israelmyglory.org",
+      "results": {
+        "ollama": {
+          "success": true,
+          "status": "supported",
+          "answer": null,
+          "parse": "ok",
+          "error": null
+        },
+        "openai": {
+          "success": true,
+          "status": "unsupported",
+          "answer": null,
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": null,
+          "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199623, Requested 547. Please try again in 1m13.44s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+        }
+      }
+    },
+    {
+      "case_id": 21,
+      "source_id": 1,
+      "source": "insight.org",
+      "results": {
+        "ollama": {
+          "success": true,
+          "status": "supported",
+          "answer": null,
+          "parse": "ok",
+          "error": null
+        },
+        "openai": {
+          "success": true,
+          "status": "unsupported",
+          "answer": null,
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": null,
+          "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199607, Requested 533. Please try again in 1m0.48s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+        }
+      }
+    },
+    {
+      "case_id": 1,
+      "source_id": 0,
+      "source": "hartofdixie.fandom.com",
+      "results": {
+        "ollama": {
+          "success": true,
+          "status": "supported",
+          "answer": "Rachel Bilson",
+          "parse": "ok",
+          "error": null
+        },
+        "openai": {
+          "success": true,
+          "status": "unsupported",
+          "answer": null,
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": null,
+          "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199990, Requested 554. Please try again in 3m55.008s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+        }
+      }
+    },
+    {
+      "case_id": 36,
+      "source_id": 2,
+      "source": "en.wikipedia.org",
+      "results": {
+        "ollama": {
+          "success": true,
+          "status": "unsupported",
+          "answer": null,
+          "parse": "ok",
+          "error": null
+        },
+        "openai": {
+          "success": true,
+          "status": "unsupported",
+          "answer": null,
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": null,
+          "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199999, Requested 546. Please try again in 3m55.44s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+        }
+      }
+    },
+    {
+      "case_id": 41,
+      "source_id": 7,
+      "source": "history-computer.com",
+      "results": {
+        "ollama": {
+          "success": true,
+          "status": "supported",
+          "answer": "1889",
+          "parse": "ok",
+          "error": null
+        },
+        "openai": {
+          "success": true,
+          "status": "supported",
+          "answer": "1889",
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": null,
+          "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199992, Requested 555. Please try again in 3m56.304s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+        }
+      }
+    },
+    {
+      "case_id": 80,
+      "source_id": 4,
+      "source": "www.congress.gov",
+      "results": {
+        "ollama": {
+          "success": true,
+          "status": "supported",
+          "answer": null,
+          "parse": "ok",
+          "error": null
+        },
+        "openai": {
+          "success": true,
+          "status": "unsupported",
+          "answer": null,
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": null,
+          "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199998, Requested 548. Please try again in 3m55.872s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+        }
+      }
+    },
+    {
+      "case_id": 31,
+      "source_id": 7,
+      "source": "www.travelingwilburys.com",
+      "results": {
+        "ollama": {
+          "success": true,
+          "status": "unsupported",
+          "answer": null,
+          "parse": "ok",
+          "error": null
+        },
+        "openai": {
+          "success": true,
+          "status": "unsupported",
+          "answer": null,
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": null,
+          "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199997, Requested 543. Please try again in 3m53.28s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+        }
+      }
+    },
+    {
+      "case_id": 14,
+      "source_id": 0,
+      "source": "www.youtube.com",
+      "results": {
+        "ollama": {
+          "success": true,
+          "status": "supported",
+          "answer": "Travis Tritt",
+          "parse": "ok",
+          "error": null
+        },
+        "openai": {
+          "success": true,
+          "status": "supported",
+          "answer": "Travis Tritt",
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": true,
+          "status": "supported",
+          "answer": "Travis Tritt",
+          "parse": "ok",
+          "error": null
+        }
+      }
+    },
+    {
+      "case_id": 62,
+      "source_id": 2,
+      "source": "en.wikipedia.org",
+      "results": {
+        "ollama": {
+          "success": true,
+          "status": "supported",
+          "answer": "Puerto Rican origin",
+          "parse": "ok",
+          "error": null
+        },
+        "openai": {
+          "success": true,
+          "status": "supported",
+          "answer": "Puerto Rican origin",
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": null,
+          "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199999, Requested 547. Please try again in 3m55.872s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+        }
+      }
+    },
+    {
+      "case_id": 62,
+      "source_id": 8,
+      "source": "www.urbandictionary.com",
+      "results": {
+        "ollama": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": "unparseable",
+          "error": "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+        },
+        "openai": {
+          "success": true,
+          "status": "supported",
+          "answer": "Spanish or Italian families",
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": null,
+          "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199998, Requested 545. Please try again in 3m54.576s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+        }
+      }
+    },
+    {
+      "case_id": 86,
+      "source_id": 6,
+      "source": "www.songfacts.com",
+      "results": {
+        "ollama": {
+          "success": true,
+          "status": "supported",
+          "answer": "Toni Morrison",
+          "parse": "ok",
+          "error": null
+        },
+        "openai": {
+          "success": true,
+          "status": "supported",
+          "answer": "McClure",
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": null,
+          "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199994, Requested 556. Please try again in 3m57.6s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+        }
+      }
+    },
+    {
+      "case_id": 88,
+      "source_id": 4,
+      "source": "www.worldanimalprotection.us",
+      "results": {
+        "ollama": {
+          "success": true,
+          "status": "unsupported",
+          "answer": null,
+          "parse": "ok",
+          "error": null
+        },
+        "openai": {
+          "success": true,
+          "status": "unsupported",
+          "answer": null,
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": null,
+          "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199990, Requested 553. Please try again in 3m54.576s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+        }
+      }
+    },
+    {
+      "case_id": 76,
+      "source_id": 3,
+      "source": "www.gktoday.in",
+      "results": {
+        "ollama": {
+          "success": true,
+          "status": "supported",
+          "answer": "Lord Irwin",
+          "parse": "ok",
+          "error": null
+        },
+        "openai": {
+          "success": true,
+          "status": "supported",
+          "answer": "Lord Irwin",
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": null,
+          "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199987, Requested 558. Please try again in 3m55.44s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+        }
+      }
+    },
+    {
+      "case_id": 8,
+      "source_id": 1,
+      "source": "brainly.in",
+      "results": {
+        "ollama": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": "unparseable",
+          "error": "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+        },
+        "openai": {
+          "success": true,
+          "status": "supported",
+          "answer": "373 degree Kelvin",
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": null,
+          "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199978, Requested 574. Please try again in 3m58.464s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+        }
+      }
+    },
+    {
+      "case_id": 44,
+      "source_id": 5,
+      "source": "www.sciencedirect.com",
+      "results": {
+        "ollama": {
+          "success": true,
+          "status": "unsupported",
+          "answer": null,
+          "parse": "ok",
+          "error": null
+        },
+        "openai": {
+          "success": true,
+          "status": "unsupported",
+          "answer": null,
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": null,
+          "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199963, Requested 545. Please try again in 3m39.456s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+        }
+      }
+    },
+    {
+      "case_id": 49,
+      "source_id": 5,
+      "source": "www.benvaughn.com",
+      "results": {
+        "ollama": {
+          "success": true,
+          "status": "supported",
+          "answer": "The Beatles",
+          "parse": "ok",
+          "error": null
+        },
+        "openai": {
+          "success": true,
+          "status": "supported",
+          "answer": "The Beatles",
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": null,
+          "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199955, Requested 559. Please try again in 3m42.047999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+        }
+      }
+    },
+    {
+      "case_id": 86,
+      "source_id": 5,
+      "source": "songmeanings.com",
+      "results": {
+        "ollama": {
+          "success": true,
+          "status": "supported",
+          "answer": "Linda Ronstadt",
+          "parse": "ok",
+          "error": null
+        },
+        "openai": {
+          "success": true,
+          "status": "unsupported",
+          "answer": null,
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": null,
+          "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199951, Requested 555. Please try again in 3m38.592s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+        }
+      }
+    },
+    {
+      "case_id": 10,
+      "source_id": 4,
+      "source": "tunebat.com",
+      "results": {
+        "ollama": {
+          "success": true,
+          "status": "supported",
+          "answer": "Keyshia Cole",
+          "parse": "ok",
+          "error": null
+        },
+        "openai": {
+          "success": true,
+          "status": "unsupported",
+          "answer": null,
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": null,
+          "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199943, Requested 561. Please try again in 3m37.728s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+        }
+      }
+    },
+    {
+      "case_id": 20,
+      "source_id": 2,
+      "source": "www.udiscovermusic.com",
+      "results": {
+        "ollama": {
+          "success": true,
+          "status": "supported",
+          "answer": "Paul Williams and Roger Nichols",
+          "parse": "ok",
+          "error": null
+        },
+        "openai": {
+          "success": true,
+          "status": "supported",
+          "answer": "Paul Williams and Roger Nichols",
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": null,
+          "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199925, Requested 553. Please try again in 3m26.496s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+        }
+      }
+    },
+    {
+      "case_id": 88,
+      "source_id": 5,
+      "source": "whalesanctuaryproject.org",
+      "results": {
+        "ollama": {
+          "success": true,
+          "status": "supported",
+          "answer": "1965",
+          "parse": "ok",
+          "error": null
+        },
+        "openai": {
+          "success": true,
+          "status": "unsupported",
+          "answer": null,
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": null,
+          "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199918, Requested 561. Please try again in 3m26.928s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+        }
+      }
+    },
+    {
+      "case_id": 41,
+      "source_id": 8,
+      "source": "www.nintendo.co.uk",
+      "results": {
+        "ollama": {
+          "success": true,
+          "status": "supported",
+          "answer": null,
+          "parse": "ok",
+          "error": null
+        },
+        "openai": {
+          "success": true,
+          "status": "unsupported",
+          "answer": null,
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": null,
+          "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199914, Requested 538. Please try again in 3m15.263999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+        }
+      }
+    },
+    {
+      "case_id": 18,
+      "source_id": 0,
+      "source": "www.toppr.com",
+      "results": {
+        "ollama": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": "unparseable",
+          "error": "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+        },
+        "openai": {
+          "success": true,
+          "status": "supported",
+          "answer": "energy loss per cycle of the paramagnetic materials used for electromagnets and transformer",
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": null,
+          "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199903, Requested 541. Please try again in 3m11.808s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+        }
+      }
+    },
+    {
+      "case_id": 33,
+      "source_id": 9,
+      "source": "theclio.com",
+      "results": {
+        "ollama": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": "unparseable",
+          "error": "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+        },
+        "openai": {
+          "success": true,
+          "status": "supported",
+          "answer": "San Francisco",
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": null,
+          "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199897, Requested 547. Please try again in 3m11.808s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+        }
+      }
+    },
+    {
+      "case_id": 63,
+      "source_id": 1,
+      "source": "en.wikipedia.org",
+      "results": {
+        "ollama": {
+          "success": true,
+          "status": "supported",
+          "answer": "Charles Darwin",
+          "parse": "ok",
+          "error": null
+        },
+        "openai": {
+          "success": true,
+          "status": "supported",
+          "answer": "Darwin",
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": null,
+          "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199888, Requested 540. Please try again in 3m4.896s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+        }
+      }
+    },
+    {
+      "case_id": 8,
+      "source_id": 0,
+      "source": "byjus.com",
+      "results": {
+        "ollama": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": "unparseable",
+          "error": "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+        },
+        "openai": {
+          "success": true,
+          "status": "supported",
+          "answer": "373 K",
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": null,
+          "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199881, Requested 567. Please try again in 3m13.535999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+        }
+      }
+    },
+    {
+      "case_id": 49,
+      "source_id": 9,
+      "source": "en.wikipedia.org",
+      "results": {
+        "ollama": {
+          "success": true,
+          "status": "supported",
+          "answer": "The Beatles",
+          "parse": "ok",
+          "error": null
+        },
+        "openai": {
+          "success": true,
+          "status": "unsupported",
+          "answer": null,
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": null,
+          "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_01jj80018gf4a91hq4a2eme4tq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199871, Requested 540. Please try again in 2m57.552s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+        }
+      }
+    }
+  ]
+}

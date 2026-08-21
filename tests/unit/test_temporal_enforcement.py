@@ -1,7 +1,7 @@
 """
 Unit tests — Temporal enforcement of evidence bindings (Phase 4).
 
-The V2 signing message binds ``issued_at`` / ``expires_at`` into the signature,
+The V1 signing message binds ``issued_at`` / ``expires_at`` into the signature,
 but historically those fields were never enforced. Phase 4 adds:
 
 * ``evidence_temporal_status`` classification (unconstrained/valid/expired/not_yet_valid).
@@ -16,22 +16,22 @@ from datetime import datetime, timedelta
 
 import pytest
 
-from lcm_core.confidence_engine import EvidenceRecord, EvidenceType
-from lcm_core.crypto import (
+from crt_core.confidence_engine import EvidenceRecord, EvidenceType
+from crt_core.crypto import (
     evidence_is_expired,
     evidence_temporal_status,
     parse_evidence_timestamp,
     sign_evidence_message,
     verify_evidence_signature_crypto,
 )
-from lcm_core.provenance import validate_and_stamp
+from crt_core.provenance import validate_and_stamp
 
 REF = datetime(2026, 7, 14, 10, 0, 0)
 
 
 @pytest.fixture(autouse=True)
 def _allow_dev_evidence_key(monkeypatch):
-    monkeypatch.setenv("LCM_ALLOW_DEV_EVIDENCE_KEY", "1")
+    monkeypatch.setenv("CRT_ALLOW_DEV_EVIDENCE_KEY", "1")
 
 
 def _iso(dt: datetime) -> str:
@@ -145,6 +145,12 @@ class TestTemporalEnforcementInVerify:
 
 
 class TestExpiryAwareVerifiedConfidence:
+    def _signature(self,ev):
+        from crt_core.crypto import sign_assertion_evidence
+        packet=self._raw()
+        return sign_assertion_evidence(EvidenceType.DATABASE,None,
+            agent_id=packet["agent_id"],timestamp=packet["timestamp"],assertion_payload=packet["assertion_payload"],
+            issued_at=ev.issued_at,expires_at=ev.expires_at)
     def _raw(self):
         return {
             "agent_id": "a",
@@ -164,11 +170,7 @@ class TestExpiryAwareVerifiedConfidence:
         result = validate_and_stamp(
             self._raw(),
             evidence_records=[ev],
-            evidence_signature=sign_evidence_message(
-                EvidenceType.DATABASE, None,
-                issued_at=ev.issued_at,
-                expires_at=ev.expires_at,
-            ),
+            evidence_signature=self._signature(ev),
             reference_time=REF,
         )
         assert result.provenance_info.verified_confidence > 0.3
@@ -183,15 +185,7 @@ class TestExpiryAwareVerifiedConfidence:
             issued_at=_iso(REF - timedelta(hours=2)),
             expires_at=_iso(REF - timedelta(hours=1)),
         )
-        result = validate_and_stamp(
-            self._raw(),
-            evidence_records=[ev],
-            evidence_signature=sign_evidence_message(
-                EvidenceType.DATABASE, None,
-                issued_at=ev.issued_at,
-                expires_at=ev.expires_at,
-            ),
-            reference_time=REF,
-        )
-        assert result.provenance_info.verified_confidence <= 0.1
-        assert result.provenance_info.authority_score <= 0.1
+        from crt_core.provenance import RejectionError
+        with pytest.raises(RejectionError):
+            validate_and_stamp(self._raw(),evidence_records=[ev],
+                evidence_signature=self._signature(ev),reference_time=REF)

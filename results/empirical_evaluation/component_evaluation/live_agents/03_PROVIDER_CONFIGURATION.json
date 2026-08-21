@@ -1,0 +1,71 @@
+{
+  "timestamp": "2026-08-20T04:44:00Z",
+  "environment_checked": true,
+  "providers": {
+    "ollama_llama3.2_1b": {
+      "provider": "ollama",
+      "model": "llama3.2:1b",
+      "status": "available",
+      "endpoint": "http://localhost:11434",
+      "temperature": 0.1,
+      "max_tokens": 512,
+      "timeout": 60
+    },
+    "ollama_llama3.2_latest": {
+      "provider": "ollama",
+      "model": "llama3.2:latest",
+      "status": "available",
+      "endpoint": "http://localhost:11434",
+      "temperature": 0.1,
+      "max_tokens": 512,
+      "timeout": 60
+    },
+    "ollama_llama3.1_8b": {
+      "provider": "ollama",
+      "model": "llama3.1:8b",
+      "status": "available",
+      "endpoint": "http://localhost:11434",
+      "temperature": 0.1,
+      "max_tokens": 512,
+      "timeout": 60
+    },
+    "openai_gpt4o_mini": {
+      "provider": "openai",
+      "model": "gpt-4o-mini",
+      "status": "available",
+      "api_key_env": "OPENAI_API_KEY",
+      "temperature": 0.1,
+      "max_tokens": 512,
+      "timeout": 30
+    },
+    "groq_qwen3.6_27b": {
+      "provider": "groq",
+      "model": "qwen/qwen3.6-27b",
+      "status": "available",
+      "api_key_env": "GROQ_API_KEY",
+      "temperature": 0.1,
+      "max_tokens": 1024,
+      "timeout": 30
+    }
+  },
+  "experimental_design": {
+    "required_providers": ["ollama"],
+    "optional_providers": ["openai", "groq"],
+    "minimum_provider_count": 1,
+    "heterogeneous_requirements": {
+      "min_different_models": 2,
+      "min_different_providers": 1
+    }
+  },
+  "security_notes": {
+    "api_keys": "Must remain in .env file",
+    "no_key_storage": "API keys must never be stored in artifacts",
+    "no_key_logging": "API keys must never be logged or printed",
+    "key_validation": "Providers validate API keys at runtime"
+  },
+  "fallback_behavior": {
+    "provider_unavailable": "Continue with available providers",
+    "all_providers_fail": "Record as limitation, continue with available subset",
+    "api_key_missing": "Mark provider as unavailable, do not fail entire experiment"
+  }
+}

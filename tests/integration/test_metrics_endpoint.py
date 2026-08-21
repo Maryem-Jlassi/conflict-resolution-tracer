@@ -10,9 +10,9 @@ import httpx
 import pytest
 from datetime import datetime
 
-from lcm_core.confidence_engine import EvidenceType
-from lcm_core.crypto import sign_evidence_message
-from lcm_service.app import app, reset_for_testing
+from crt_core.confidence_engine import EvidenceType
+from crt_core.crypto import sign_assertion_evidence
+from crt_service.app import app, reset_for_testing
 
 
 @pytest.fixture
@@ -33,7 +33,10 @@ def _payload(agent, path, value, *, confidence=0.9, evidence=False, ts="2026-08-
         payload["evidence_records"] = [
             {"type": "database", "source": "db", "relevance": 1.0}
         ]
-        payload["evidence_signature"] = sign_evidence_message(EvidenceType.DATABASE, "db")
+        payload["evidence_signature"] = sign_assertion_evidence(
+            EvidenceType.DATABASE, "db", agent_id=agent, timestamp=ts,
+            assertion_payload={path: value},
+        )
     return payload
 
 
@@ -66,7 +69,7 @@ async def test_metrics_endpoint_tracks_writes(http_client):
 async def test_metrics_endpoint_reflects_conflict(http_client):
     await http_client.post("/write", json=_payload("a", "m.conf", "v1"))
     r = await http_client.post(
-        "/write", json=_payload("b", "m.conf", "v2", evidence=True)
+        "/write", json=_payload("b", "m.conf", "v1", evidence=True)
     )
     assert r.status_code == 201, r.text
     data = (await http_client.get("/metrics")).json()

@@ -12,12 +12,12 @@ import pytest
 import tempfile
 from datetime import datetime, timedelta
 
-from lcm_core.pipeline import WritePipeline
-from lcm_core.conflict import ConflictResolutionEngine
-from lcm_core.trust_manager import TrustManager
-from lcm_core.locking import AsyncLockManager
-from lcm_core.loop_detection import LoopDetector
-from lcm_service.storage import SQLiteStorage
+from crt_core.pipeline import WritePipeline
+from crt_core.conflict import ConflictResolutionEngine
+from crt_core.trust_manager import TrustManager
+from crt_core.locking import AsyncLockManager
+from crt_core.loop_detection import LoopDetector
+from crt_service.storage import SQLiteStorage
 
 
 class TestColdStartVsHistory:
@@ -181,18 +181,22 @@ class TestColdStartVsHistory:
         # (should update).  Explicit DOCUMENT evidence with a valid signature
         # makes verified_confidence deterministic, so the update is not a
         # recency coin-flip between two near-identical utcnow() timestamps.
-        from lcm_core.confidence_engine import EvidenceRecord, EvidenceType
-        from lcm_core.crypto import sign_evidence_message
-        result_b = await pipeline_obj.process({
+        from crt_core.confidence_engine import EvidenceRecord, EvidenceType
+        from crt_core.crypto import sign_assertion_evidence
+        incoming = {
             "agent_id": "agent_a",
             "session_id": "test_session",
             "timestamp": datetime.utcnow() + timedelta(seconds=1),
             "confidence_score": 0.9,
             "assertion_payload": {"test.path": "value_B"},
-        }, evidence_records=[
+        }
+        result_b = await pipeline_obj.process(incoming, evidence_records=[
             EvidenceRecord(evidence_type=EvidenceType.DOCUMENT, relevance_score=1.0,
                            source_id="doc://updated")
-        ], evidence_signature=sign_evidence_message(EvidenceType.DOCUMENT, "doc://updated"))
+        ], evidence_signature=sign_assertion_evidence(
+            EvidenceType.DOCUMENT, "doc://updated", agent_id=incoming["agent_id"],
+            timestamp=incoming["timestamp"], assertion_payload=incoming["assertion_payload"],
+        ))
         
         # Should either commit (same agent updating) or resolve correctly
         assert result_b.status in ["committed", "conflict_resolved"]

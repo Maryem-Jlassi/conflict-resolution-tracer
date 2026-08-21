@@ -11,23 +11,23 @@ node recording.
 import pytest
 from datetime import datetime, timedelta
 
-from lcm_core.confidence_engine import EvidenceRecord, EvidenceType
-from lcm_core.crypto import (
+from crt_core.confidence_engine import EvidenceRecord, EvidenceType
+from crt_core.crypto import (
     reset_replay_guard,
     sign_evidence_message,
     verify_evidence_signature_crypto,
 )
-from lcm_core.locking import AsyncLockManager
-from lcm_core.loop_detection import LoopDetector
-from lcm_core.metrics import (
+from crt_core.locking import AsyncLockManager
+from crt_core.loop_detection import LoopDetector
+from crt_core.metrics import (
     MetricsRegistry,
     compute_metrics_snapshot,
     get_metrics_registry,
     record_write_status,
     reset_metrics_registry,
 )
-from lcm_core.pipeline import WritePipeline
-from lcm_core.trust_manager import TrustManager
+from crt_core.pipeline import WritePipeline
+from crt_core.trust_manager import TrustManager
 
 REF = datetime(2026, 7, 14, 10, 0, 0)
 
@@ -215,15 +215,17 @@ class TestPipelineInstrumentation:
 
     @pytest.mark.asyncio
     async def test_conflict_resolved_write_records_conflict(self):
-        from lcm_core.crypto import sign_evidence_message
+        from crt_core.crypto import sign_assertion_evidence
         ev = EvidenceRecord(
             evidence_type=EvidenceType.DATABASE, source_id="db", relevance_score=1.0
         )
-        sig = sign_evidence_message(EvidenceType.DATABASE, "db")
+        incoming=_raw("agent-b", "metrics.conflict", "v1", confidence=0.8)
+        sig = sign_assertion_evidence(EvidenceType.DATABASE, "db",
+            agent_id=incoming["agent_id"],timestamp=incoming["timestamp"],assertion_payload=incoming["assertion_payload"])
         pl = _pipeline()
         await pl.process(_raw("agent-a", "metrics.conflict", "v1", confidence=0.8))
         res = await pl.process(
-            _raw("agent-b", "metrics.conflict", "v2", confidence=0.8),
+            incoming,
             evidence_records=[ev],
             evidence_signature=sig,
         )
@@ -272,7 +274,7 @@ class TestPipelineInstrumentation:
 class TestCryptoInstrumentation:
     @pytest.fixture(autouse=True)
     def _dev_key(self, monkeypatch):
-        monkeypatch.setenv("LCM_ALLOW_DEV_EVIDENCE_KEY", "1")
+        monkeypatch.setenv("CRT_ALLOW_DEV_EVIDENCE_KEY", "1")
         reset_replay_guard()
         yield
         reset_replay_guard()

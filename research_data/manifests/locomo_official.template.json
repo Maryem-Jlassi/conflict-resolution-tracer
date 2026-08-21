@@ -1,1 +1,0 @@
-{"dataset":"LoCoMo","official_url":"https://github.com/snap-research/locomo","version":null,"license":"See official LICENSE.txt; record its hash and terms","archive_sha256":null,"retrieved_at":null,"official_source_validated":false,"expected_paths":["data/locomo10.json"],"citation":"Maharana et al., ACL 2024 / arXiv:2402.17753","labels_transformed":false}

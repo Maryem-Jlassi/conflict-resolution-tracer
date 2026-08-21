@@ -1,0 +1,16 @@
+{
+  "generated_at_utc": "2026-08-20T02:37:25.207738+00:00",
+  "no_lcm_baseline": {
+    "ops": 20,
+    "contested_paths": 1,
+    "retained_paths": 1,
+    "lost_writes": 19,
+    "errors": 0,
+    "final_shared": {
+      "weather/paris/current_temp": {
+        "value": "22.0",
+        "agent_id": "sensor_A_9"
+      }
+    }
+  }
+}

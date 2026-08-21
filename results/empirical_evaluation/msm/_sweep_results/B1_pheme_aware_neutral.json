@@ -1,0 +1,28 @@
+{
+  "aware": {
+    "n_cases": 80,
+    "n_resolved": 62,
+    "n_unresolved": 18,
+    "abstention_rate": 0.225,
+    "coverage": 0.775,
+    "strict_accuracy": 0.425,
+    "selective_accuracy": 0.5484,
+    "selective_risk": 0.4516,
+    "false_resolution_rate": 0.4516
+  },
+  "neutral": {
+    "n_cases": 80,
+    "n_resolved": 80,
+    "n_unresolved": 0,
+    "abstention_rate": 0.0,
+    "coverage": 1.0,
+    "strict_accuracy": 0.525,
+    "selective_accuracy": 0.525,
+    "selective_risk": 0.475,
+    "false_resolution_rate": 0.475
+  },
+  "verdict": "neutral_wins_strict",
+  "net_coverage_loss": -0.22499999999999998,
+  "net_strict_diff": 0.10000000000000003,
+  "net_selective_diff": 0.023399999999999976
+}

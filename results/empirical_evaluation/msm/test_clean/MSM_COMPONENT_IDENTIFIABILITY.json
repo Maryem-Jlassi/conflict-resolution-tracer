@@ -1,0 +1,25 @@
+{
+  "experiment_id": "MSM_V1_COMPONENT_IDENTIFIABILITY_TEST",
+  "config": "s20260321",
+  "split": "test",
+  "population": "official 120-persona test split",
+  "method": "argmax of the single component among claim-bearing units; identifiability = share equal to gold; identical to DEV",
+  "n_units": 2160,
+  "components": {
+    "R": {
+      "n_episodes_with_claims": 2078,
+      "component_identifiability": 0.5789,
+      "fraction": "1203/2078"
+    },
+    "C": {
+      "n_episodes_with_claims": 2078,
+      "component_identifiability": 0.5664,
+      "fraction": "1177/2078"
+    },
+    "T": {
+      "n_episodes_with_claims": 2078,
+      "component_identifiability": 0.6578,
+      "fraction": "1367/2078"
+    }
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "manifest": {
+    "aggregation_method": "round_robin_stratified",
+    "seed_cases": 20260820,
+    "seed_assign": 20260821,
+    "provider_counts": {
+      "ollama": 9,
+      "openai": 9,
+      "groq": 9
+    },
+    "total_sources": 27,
+    "n_cases": 3
+  },
+  "4_1_extraction_behavior": {
+    "ollama": {
+      "n_calls": 9,
+      "n_success": 7,
+      "parse_success_rate": 0.7778,
+      "n_parse_fail": 2,
+      "n_identity_fail": 0,
+      "n_transport_fail": 0,
+      "n_unsupported": 0,
+      "abstain_rate": 0.0,
+      "n_supported": 7,
+      "self_reported_confidence_used": false,
+      "claim_length": {
+        "n": 7,
+        "mean_len": 18.43,
+        "max_len": 53
+      }
+    },
+    "openai": {
+      "n_calls": 9,
+      "n_success": 9,
+      "parse_success_rate": 1.0,
+      "n_parse_fail": 0,
+      "n_identity_fail": 0,
+      "n_transport_fail": 0,
+      "n_unsupported": 3,
+      "abstain_rate": 0.3333,
+      "n_supported": 6,
+      "self_reported_confidence_used": false,
+      "claim_length": {
+        "n": 6,
+        "mean_len": 14.33,
+        "max_len": 30
+      }
+    },
+    "groq": {
+      "n_calls": 9,
+      "n_success": 5,
+      "parse_success_rate": 0.5556,
+      "n_parse_fail": 4,
+      "n_identity_fail": 0,
+      "n_transport_fail": 0,
+      "n_unsupported": 3,
+      "abstain_rate": 0.6,
+      "n_supported": 2,
+      "self_reported_confidence_used": false,
+      "claim_length": {
+        "n": 2,
+        "mean_len": 9.0,
+        "max_len": 13
+      }
+    }
+  },
+  "4_2_resolution_outcomes": {
+    "policy_table": {
+      "full_lcm": {
+        "total": 3,
+        "resolved": 0,
+        "resolution_coverage": 0.0,
+        "strict_accuracy": 0.0,
+        "selective_accuracy": 0.0,
+        "overwrite": 0,
+        "winners_by_provider": {}
+      },
+      "c_only": {
+        "total": 3,
+        "resolved": 0,
+        "resolution_coverage": 0.0,
+        "strict_accuracy": 0.0,
+        "selective_accuracy": 0.0,
+        "overwrite": 0,
+        "winners_by_provider": {}
+      },
+      "r_only": {
+        "total": 3,
+        "resolved": 0,
+        "resolution_coverage": 0.0,
+        "strict_accuracy": 0.0,
+        "selective_accuracy": 0.0,
+        "overwrite": 0,
+        "winners_by_provider": {}
+      },
+      "t_only": {
+        "total": 3,
+        "resolved": 0,
+        "resolution_coverage": 0.0,
+        "strict_accuracy": 0.0,
+        "selective_accuracy": 0.0,
+        "overwrite": 0,
+        "winners_by_provider": {}
+      },
+      "fixed_neutral_trust": {
+        "total": 3,
+        "resolved": 0,
+        "resolution_coverage": 0.0,
+        "strict_accuracy": 0.0,
+        "selective_accuracy": 0.0,
+        "overwrite": 0,
+        "winners_by_provider": {}
+      },
+      "last_write_wins": {
+        "total": 3,
+        "resolved": 3,
+        "resolution_coverage": 1.0,
+        "strict_accuracy": 0.0,
+        "selective_accuracy": 0.0,
+        "overwrite": 0,
+        "winners_by_provider": {
+          "ollama": 1,
+          "openai": 2
+        }
+      }
+    },
+    "supported_shares": {
+      "ollama": 7,
+      "openai": 6,
+      "groq": 2
+    },
+    "source_share": {
+      "ollama": 0.4667,
+      "openai": 0.4,
+      "groq": 0.1333
+    },
+    "resolved_cases": 0,
+    "win_share_full_lcm": {
+      "ollama": 0.0,
+      "openai": 0.0,
+      "groq": 0.0
+    },
+    "win_vs_share_ratio_full_lcm": {
+      "ollama": 0.0,
+      "openai": 0.0,
+      "groq": 0.0
+    },
+    "mean_authority_supported": {
+      "ollama": 0.75,
+      "openai": 0.675,
+      "groq": 0.75
+    }
+  },
+  "4_3_provider_blindness": {
+    "n_assertions_checked": 27,
+    "n_authority_mismatches": 0,
+    "one_authority_per_source": true,
+    "provider_blind_verification": "PASS",
+    "authority_per_provider": {
+      "ollama": {
+        "0.3": 1,
+        "0.75": 8
+      },
+      "openai": {
+        "0.3": 1,
+        "0.75": 8
+      },
+      "groq": {
+        "0.75": 9
+      }
+    },
+    "note": "authority_score re-derived strictly from source_type(source); provider identity is never an input. mismatches=0 and every source maps to exactly one authority value."
+  }
+}

@@ -1,0 +1,66 @@
+{
+ "classifier": {
+  "name": "deterministic-linear-provenance-classifier",
+  "inputs": [
+   "structure.json parent edges",
+   "root/branch/depth indices",
+   "label sets"
+  ],
+  "explicitly_not_used": [
+   "user authorship",
+   "text similarity",
+   "any ML/LLM"
+  ]
+ },
+ "gold_basis": "topology-derived (same explicit lineage) \u2014 consistency check, not external benchmark",
+ "overall": {
+  "n_pairs": 14392,
+  "hit": 14392,
+  "accuracy": 1.0
+ },
+ "per_case_type": {
+  "P5": {
+   "pairs": 9114,
+   "hit": 9114,
+   "conf": {
+    "same_origin->same_origin": 576,
+    "propagated->propagated": 281,
+    "independent->independent": 8257
+   }
+  },
+  "P4": {
+   "pairs": 3370,
+   "hit": 3370,
+   "conf": {
+    "independent->independent": 2207,
+    "propagated->propagated": 358,
+    "same_origin->same_origin": 805
+   }
+  },
+  "P1": {
+   "pairs": 493,
+   "hit": 493,
+   "conf": {
+    "propagated->propagated": 66,
+    "independent->independent": 367,
+    "same_origin->same_origin": 60
+   }
+  },
+  "P2": {
+   "pairs": 979,
+   "hit": 979,
+   "conf": {
+    "same_origin->same_origin": 752,
+    "propagated->propagated": 227
+   }
+  },
+  "P3": {
+   "pairs": 436,
+   "hit": 436,
+   "conf": {
+    "same_origin->same_origin": 311,
+    "propagated->propagated": 125
+   }
+  }
+ }
+}

@@ -11,7 +11,7 @@ Covers the first-class derivation chain:
 import pytest
 
 from tests.conftest import make_memory, REFERENCE_TIME
-from lcm_core.lineage import (
+from crt_core.lineage import (
     ChainIssue,
     InMemoryLineageStore,
     LineageNode,
@@ -20,8 +20,8 @@ from lcm_core.lineage import (
     node_from_stamped,
     walk_chain,
 )
-from lcm_core.provenance import _compute_content_hash
-from lcm_service.storage import SQLiteStorage, SQLiteLineageStore
+from crt_core.provenance import _compute_content_hash
+from crt_service.storage import SQLiteStorage, SQLiteLineageStore
 
 
 def _build_chain(store, root, n, *, prefix="node"):

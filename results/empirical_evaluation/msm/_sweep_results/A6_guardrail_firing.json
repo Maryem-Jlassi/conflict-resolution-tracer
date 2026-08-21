@@ -1,0 +1,8 @@
+{
+  "high_conf_threshold": 0.9,
+  "low_trust_threshold": 0.3,
+  "total_resolved": 1995,
+  "guardrail_violations": 0,
+  "firing_rate": 0.0,
+  "interpretation": "guardrail_with_rate"
+}

@@ -1,0 +1,186 @@
+{
+  "sha": "9f35d1c9515486a0eba232c666f1f494c51ec613",
+  "url": "https://api.github.com/repos/amazon-science/qa-with-conflicting-context/git/trees/9f35d1c9515486a0eba232c666f1f494c51ec613",
+  "tree": [
+    {
+      "path": "CODE_OF_CONDUCT.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b627cfa60b5313da2c7df81aab2340225c2329f",
+      "size": 309,
+      "url": "https://api.github.com/repos/amazon-science/qa-with-conflicting-context/git/blobs/5b627cfa60b5313da2c7df81aab2340225c2329f"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c4b6a1c5081adcf78822222488e7c5b0f1dc6499",
+      "size": 3160,
+      "url": "https://api.github.com/repos/amazon-science/qa-with-conflicting-context/git/blobs/c4b6a1c5081adcf78822222488e7c5b0f1dc6499"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "67db8588217f266eb561f75fae738656325deac9",
+      "size": 10142,
+      "url": "https://api.github.com/repos/amazon-science/qa-with-conflicting-context/git/blobs/67db8588217f266eb561f75fae738656325deac9"
+    },
+    {
+      "path": "NOTICE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a0b4e4214d86a19cde0437d21f8bb497a3048dc",
+      "size": 95,
+      "url": "https://api.github.com/repos/amazon-science/qa-with-conflicting-context/git/blobs/5a0b4e4214d86a19cde0437d21f8bb497a3048dc"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "243fa3e19acabc0622946b995a4cd1b86ed087dc",
+      "size": 3108,
+      "url": "https://api.github.com/repos/amazon-science/qa-with-conflicting-context/git/blobs/243fa3e19acabc0622946b995a4cd1b86ed087dc"
+    },
+    {
+      "path": "data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a990350569af3372a5c86acacc8a2414e477c6d5",
+      "url": "https://api.github.com/repos/amazon-science/qa-with-conflicting-context/git/trees/a990350569af3372a5c86acacc8a2414e477c6d5"
+    },
+    {
+      "path": "data/ConflictQA_Dataset.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "528e4947c4d75bfadeef693b6e65221067f94326",
+      "size": 3719599,
+      "url": "https://api.github.com/repos/amazon-science/qa-with-conflicting-context/git/blobs/528e4947c4d75bfadeef693b6e65221067f94326"
+    },
+    {
+      "path": "data/LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d6d9324814f9ec09fe3fdd672834478b11ad8aca",
+      "size": 259,
+      "url": "https://api.github.com/repos/amazon-science/qa-with-conflicting-context/git/blobs/d6d9324814f9ec09fe3fdd672834478b11ad8aca"
+    },
+    {
+      "path": "data/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b11328e14f9f5e24d8f7ae02d24fb9aa96f3bfb",
+      "size": 550,
+      "url": "https://api.github.com/repos/amazon-science/qa-with-conflicting-context/git/blobs/8b11328e14f9f5e24d8f7ae02d24fb9aa96f3bfb"
+    },
+    {
+      "path": "requirements.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "75e30ab80fb6f2ec95c4b49b232c4afdec1bde4a",
+      "size": 238,
+      "url": "https://api.github.com/repos/amazon-science/qa-with-conflicting-context/git/blobs/75e30ab80fb6f2ec95c4b49b232c4afdec1bde4a"
+    },
+    {
+      "path": "src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "30dbaf3c8540fc711e0a4c5160d8b1d44b3eec0c",
+      "url": "https://api.github.com/repos/amazon-science/qa-with-conflicting-context/git/trees/30dbaf3c8540fc711e0a4c5160d8b1d44b3eec0c"
+    },
+    {
+      "path": "src/README",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7ea480992d310a893d278388caa33ac366fdfc01",
+      "size": 2427,
+      "url": "https://api.github.com/repos/amazon-science/qa-with-conflicting-context/git/blobs/7ea480992d310a893d278388caa33ac366fdfc01"
+    },
+    {
+      "path": "src/evaluation",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "22b63600d8787d8a12a4c508a5971ad8ddfb3ed9",
+      "url": "https://api.github.com/repos/amazon-science/qa-with-conflicting-context/git/trees/22b63600d8787d8a12a4c508a5971ad8ddfb3ed9"
+    },
+    {
+      "path": "src/evaluation/evaluate_conflictqa.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad64b13b3e9d089bb922f68b21a37bc44318a980",
+      "size": 4147,
+      "url": "https://api.github.com/repos/amazon-science/qa-with-conflicting-context/git/blobs/ad64b13b3e9d089bb922f68b21a37bc44318a980"
+    },
+    {
+      "path": "src/finetuning",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "54c2695732913e832551a08984f988ba6ddfa164",
+      "url": "https://api.github.com/repos/amazon-science/qa-with-conflicting-context/git/trees/54c2695732913e832551a08984f988ba6ddfa164"
+    },
+    {
+      "path": "src/finetuning/get_conflictqa_training_data_phi3.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2ee4c79e25ba00a8dc6affc27ad22b95212de0f6",
+      "size": 2219,
+      "url": "https://api.github.com/repos/amazon-science/qa-with-conflicting-context/git/blobs/2ee4c79e25ba00a8dc6affc27ad22b95212de0f6"
+    },
+    {
+      "path": "src/finetuning/save_for_tgi.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a6e954ad1e660edd58b4b44a598538697e00faf4",
+      "size": 1274,
+      "url": "https://api.github.com/repos/amazon-science/qa-with-conflicting-context/git/blobs/a6e954ad1e660edd58b4b44a598538697e00faf4"
+    },
+    {
+      "path": "src/finetuning/train.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b8649d972061d38f904473befcf16c49be504d1b",
+      "size": 232,
+      "url": "https://api.github.com/repos/amazon-science/qa-with-conflicting-context/git/blobs/b8649d972061d38f904473befcf16c49be504d1b"
+    },
+    {
+      "path": "src/generation",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "51e4dc05cca4d5f9e2c2547f70ff583becbbf4ae",
+      "url": "https://api.github.com/repos/amazon-science/qa-with-conflicting-context/git/trees/51e4dc05cca4d5f9e2c2547f70ff583becbbf4ae"
+    },
+    {
+      "path": "src/generation/generate_phi3_conflictqa_test.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dad32aa5afc7e6ea8d15479b5ad2e5bc1cdde121",
+      "size": 2162,
+      "url": "https://api.github.com/repos/amazon-science/qa-with-conflicting-context/git/blobs/dad32aa5afc7e6ea8d15479b5ad2e5bc1cdde121"
+    },
+    {
+      "path": "src/generation/start_server_huggingface.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "74f77df20264409037232f80bd26c0a7026b0914",
+      "size": 451,
+      "url": "https://api.github.com/repos/amazon-science/qa-with-conflicting-context/git/blobs/74f77df20264409037232f80bd26c0a7026b0914"
+    },
+    {
+      "path": "src/generation/start_server_local.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d914f15f210a9321c87c169d1f931a50a826c42b",
+      "size": 368,
+      "url": "https://api.github.com/repos/amazon-science/qa-with-conflicting-context/git/blobs/d914f15f210a9321c87c169d1f931a50a826c42b"
+    },
+    {
+      "path": "src/generation/text_generation_inference.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "677d93d27693a497378c2b15c05a8ff03619030c",
+      "size": 2424,
+      "url": "https://api.github.com/repos/amazon-science/qa-with-conflicting-context/git/blobs/677d93d27693a497378c2b15c05a8ff03619030c"
+    }
+  ],
+  "truncated": false
+}

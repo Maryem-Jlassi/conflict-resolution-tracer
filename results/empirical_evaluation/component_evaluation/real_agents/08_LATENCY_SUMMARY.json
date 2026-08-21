@@ -1,0 +1,12 @@
+{
+  "generated_at_utc": "2026-08-20T02:37:25.209353+00:00",
+  "phase_separation_note": "Generation (Ollama) and submission (CRT /write) latencies recorded separately.",
+  "stage1_totals": {
+    "ollama_calls_prior": 152,
+    "models": [
+      "llama3.2:1b",
+      "llama3.2:latest",
+      "llama3.1:8b"
+    ]
+  }
+}

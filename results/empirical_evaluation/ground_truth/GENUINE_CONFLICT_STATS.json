@@ -1,0 +1,8 @@
+{
+  "total_genuine_conflicts": 106,
+  "a_correct": 37,
+  "b_correct": 0,
+  "both_false": 69,
+  "excluded_both_true": 25,
+  "excluded_insufficient": 13
+}

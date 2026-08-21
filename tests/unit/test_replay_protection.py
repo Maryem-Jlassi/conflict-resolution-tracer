@@ -1,7 +1,7 @@
 """
 Unit tests — Replay protection for evidence bindings (Phase 5).
 
-The V2 signing message binds a ``nonce``, and Phase 5 actually ENFORCES it:
+The V1 signing message binds a ``nonce``, and Phase 5 actually ENFORCES it:
 a nonce may be consumed exactly once. Reusing a signed packet (same nonce,
 same binding) is rejected, and the consumed nonces persist in a SQLite
 ``evidence_nonces`` replay table so protection survives restarts.
@@ -11,17 +11,17 @@ from datetime import datetime, timedelta
 
 import pytest
 
-from lcm_core.confidence_engine import EvidenceRecord, EvidenceType
-from lcm_core.crypto import (
+from crt_core.confidence_engine import EvidenceRecord, EvidenceType
+from crt_core.crypto import (
     get_replay_guard,
     reset_replay_guard,
     set_replay_guard,
     sign_evidence_message,
     verify_evidence_signature_crypto,
 )
-from lcm_core.provenance import validate_and_stamp
-from lcm_core.replay import InMemoryReplayGuard, nonce_fingerprint
-from lcm_service.storage import SQLiteReplayGuard, SQLiteStorage
+from crt_core.provenance import validate_and_stamp
+from crt_core.replay import InMemoryReplayGuard, nonce_fingerprint
+from crt_service.storage import SQLiteReplayGuard, SQLiteStorage
 
 REF = datetime(2026, 7, 14, 10, 0, 0)
 
@@ -29,7 +29,7 @@ REF = datetime(2026, 7, 14, 10, 0, 0)
 @pytest.fixture(autouse=True)
 def _dev_key_and_clean_guard(monkeypatch):
     """Opt into the dev key AND give every test a clean in-memory replay guard."""
-    monkeypatch.setenv("LCM_ALLOW_DEV_EVIDENCE_KEY", "1")
+    monkeypatch.setenv("CRT_ALLOW_DEV_EVIDENCE_KEY", "1")
     reset_replay_guard()
     yield
     reset_replay_guard()
@@ -89,7 +89,7 @@ class TestSQLiteReplayTable:
 
     def test_durable_across_connections(self, tmp_path):
         """Consumed nonces survive in a file-backed DB across instances."""
-        db = tmp_path / "lcm.db"
+        db = tmp_path / "crt.db"
         s1 = SQLiteStorage(str(db))
         s1.record_nonce("fp", provider_id="p", key_id="k", nonce="n")
         s2 = SQLiteStorage(str(db))
@@ -97,7 +97,7 @@ class TestSQLiteReplayTable:
         assert s2.check_and_record_nonce("fp", provider_id="p", key_id="k", nonce="n") is False
 
     def test_sqlite_replay_guard_adapter(self, tmp_path):
-        db = tmp_path / "lcm2.db"
+        db = tmp_path / "crt2.db"
         storage = SQLiteStorage(str(db))
         guard = SQLiteReplayGuard(storage)
         assert guard.check_and_record("fp") is True
@@ -191,32 +191,36 @@ class TestProvenanceReplay:
             expires_at=_iso(REF + timedelta(hours=1)),
         )
 
-    def test_first_binding_elevates_replay_degrades(self):
-        rec = self._record("prov-nonce-1")
-        sig = sign_evidence_message(
-            EvidenceType.DATABASE, None, nonce=rec.nonce,
+    def _signature(self, rec):
+        from crt_core.crypto import sign_assertion_evidence
+        packet = self._raw()
+        return sign_assertion_evidence(
+            EvidenceType.DATABASE, None,
+            agent_id=packet["agent_id"], timestamp=packet["timestamp"],
+            assertion_payload=packet["assertion_payload"], nonce=rec.nonce,
             issued_at=rec.issued_at, expires_at=rec.expires_at,
         )
+
+    def test_first_binding_elevates_replay_degrades(self):
+        rec = self._record("prov-nonce-1")
+        sig = self._signature(rec)
         first = validate_and_stamp(
             self._raw(), evidence_records=[rec], evidence_signature=sig,
             reference_time=REF,
         )
         assert first.provenance_info.verified_confidence > 0.3
 
-        replayed = validate_and_stamp(
-            self._raw(), evidence_records=[rec], evidence_signature=sig,
-            reference_time=REF,
-        )
-        # Replayed signature → fail closed.
-        assert replayed.provenance_info.verified_confidence <= 0.1
+        from crt_core.provenance import RejectionError
+        with pytest.raises(RejectionError):
+            validate_and_stamp(
+                self._raw(), evidence_records=[rec], evidence_signature=sig,
+                reference_time=REF,
+            )
 
     def test_distinct_nonce_still_elevates(self):
         for i in range(2):
             rec = self._record(f"prov-nonce-{i}")
-            sig = sign_evidence_message(
-                EvidenceType.DATABASE, None, nonce=rec.nonce,
-                issued_at=rec.issued_at, expires_at=rec.expires_at,
-            )
+            sig = self._signature(rec)
             result = validate_and_stamp(
                 self._raw(), evidence_records=[rec], evidence_signature=sig,
                 reference_time=REF,

@@ -1,0 +1,1214 @@
+{
+ "pipeline": "pheme_provenance_pipeline v1 (deterministic, no LLM)",
+ "frozen_mechanism": {
+  "psi": "(R+C+T)/3",
+  "weights": {
+   "wR": "1/3",
+   "wC": "1/3",
+   "wT": "1/3"
+  },
+  "theta": 0.05,
+  "R_half_life_days": 7,
+  "C_formula": "0.5*evidence+0.25",
+  "T_cold_start": 0.5
+ },
+ "gold_definition": "category majority journalist veracity (true) over rumour threads; coherence=1.0 verified",
+ "election_targets": {
+  "P1": 20,
+  "P2": 20,
+  "P3": 20,
+  "P4": 20,
+  "P5": 6
+ },
+ "elected_counts": {
+  "P5": 6,
+  "P4": 20,
+  "P1": 14,
+  "P2": 20,
+  "P3": 20
+ },
+ "n_cases": 80,
+ "dup_units": 0,
+ "skipped_no_truth": 64,
+ "trust_stats": {
+  "trust_warm_units": 212,
+  "trust_cold_units": 1042
+ },
+ "level1": {
+  "classifier": {
+   "name": "deterministic-linear-provenance-classifier",
+   "inputs": [
+    "structure.json parent edges",
+    "root/branch/depth indices",
+    "label sets"
+   ],
+   "explicitly_not_used": [
+    "user authorship",
+    "text similarity",
+    "any ML/LLM"
+   ]
+  },
+  "gold_basis": "topology-derived (same explicit lineage) \u2014 consistency check, not external benchmark",
+  "overall": {
+   "n_pairs": 14392,
+   "hit": 14392,
+   "accuracy": 1.0
+  },
+  "per_case_type": {
+   "P5": {
+    "pairs": 9114,
+    "hit": 9114,
+    "conf": {
+     "same_origin->same_origin": 576,
+     "propagated->propagated": 281,
+     "independent->independent": 8257
+    }
+   },
+   "P4": {
+    "pairs": 3370,
+    "hit": 3370,
+    "conf": {
+     "independent->independent": 2207,
+     "propagated->propagated": 358,
+     "same_origin->same_origin": 805
+    }
+   },
+   "P1": {
+    "pairs": 493,
+    "hit": 493,
+    "conf": {
+     "propagated->propagated": 66,
+     "independent->independent": 367,
+     "same_origin->same_origin": 60
+    }
+   },
+   "P2": {
+    "pairs": 979,
+    "hit": 979,
+    "conf": {
+     "same_origin->same_origin": 752,
+     "propagated->propagated": 227
+    }
+   },
+   "P3": {
+    "pairs": 436,
+    "hit": 436,
+    "conf": {
+     "same_origin->same_origin": 311,
+     "propagated->propagated": 125
+    }
+   }
+  }
+ },
+ "level2": {
+  "provenance_aware": {
+   "n_cases": 80,
+   "n_resolved": 62,
+   "n_unresolved": 18,
+   "abstention_rate": 0.225,
+   "coverage": 0.775,
+   "strict_accuracy": 0.425,
+   "selective_accuracy": 0.5484,
+   "selective_risk": 0.4516,
+   "false_resolution_rate": 0.4516
+  },
+  "provenance_neutral": {
+   "n_cases": 80,
+   "n_resolved": 80,
+   "n_unresolved": 0,
+   "abstention_rate": 0.0,
+   "coverage": 1.0,
+   "strict_accuracy": 0.525,
+   "selective_accuracy": 0.525,
+   "selective_risk": 0.475,
+   "false_resolution_rate": 0.475
+  },
+  "per_case_type_aware": {
+   "P5": {
+    "n_cases": 6,
+    "n_resolved": 6,
+    "n_unresolved": 0,
+    "abstention_rate": 0.0,
+    "coverage": 1.0,
+    "strict_accuracy": 0.8333,
+    "selective_accuracy": 0.8333,
+    "selective_risk": 0.1667,
+    "false_resolution_rate": 0.1667,
+    "n_winner_true": 6,
+    "n_winner_false": 0
+   },
+   "P4": {
+    "n_cases": 20,
+    "n_resolved": 19,
+    "n_unresolved": 1,
+    "abstention_rate": 0.05,
+    "coverage": 0.95,
+    "strict_accuracy": 0.5,
+    "selective_accuracy": 0.5263,
+    "selective_risk": 0.4737,
+    "false_resolution_rate": 0.4737,
+    "n_winner_true": 19,
+    "n_winner_false": 0
+   },
+   "P1": {
+    "n_cases": 14,
+    "n_resolved": 14,
+    "n_unresolved": 0,
+    "abstention_rate": 0.0,
+    "coverage": 1.0,
+    "strict_accuracy": 0.6429,
+    "selective_accuracy": 0.6429,
+    "selective_risk": 0.3571,
+    "false_resolution_rate": 0.3571,
+    "n_winner_true": 14,
+    "n_winner_false": 0
+   },
+   "P2": {
+    "n_cases": 20,
+    "n_resolved": 12,
+    "n_unresolved": 8,
+    "abstention_rate": 0.4,
+    "coverage": 0.6,
+    "strict_accuracy": 0.35,
+    "selective_accuracy": 0.5833,
+    "selective_risk": 0.4167,
+    "false_resolution_rate": 0.4167,
+    "n_winner_true": 7,
+    "n_winner_false": 5
+   },
+   "P3": {
+    "n_cases": 20,
+    "n_resolved": 11,
+    "n_unresolved": 9,
+    "abstention_rate": 0.45,
+    "coverage": 0.55,
+    "strict_accuracy": 0.15,
+    "selective_accuracy": 0.2727,
+    "selective_risk": 0.7273,
+    "false_resolution_rate": 0.7273,
+    "n_winner_true": 9,
+    "n_winner_false": 2
+   }
+  },
+  "per_case_type_neutral": {
+   "P5": {
+    "n_cases": 6,
+    "n_resolved": 6,
+    "n_unresolved": 0,
+    "abstention_rate": 0.0,
+    "coverage": 1.0,
+    "strict_accuracy": 0.8333,
+    "selective_accuracy": 0.8333,
+    "selective_risk": 0.1667,
+    "false_resolution_rate": 0.1667,
+    "n_winner_true": 6,
+    "n_winner_false": 0
+   },
+   "P4": {
+    "n_cases": 20,
+    "n_resolved": 20,
+    "n_unresolved": 0,
+    "abstention_rate": 0.0,
+    "coverage": 1.0,
+    "strict_accuracy": 0.6,
+    "selective_accuracy": 0.6,
+    "selective_risk": 0.4,
+    "false_resolution_rate": 0.4,
+    "n_winner_true": 16,
+    "n_winner_false": 4
+   },
+   "P1": {
+    "n_cases": 14,
+    "n_resolved": 14,
+    "n_unresolved": 0,
+    "abstention_rate": 0.0,
+    "coverage": 1.0,
+    "strict_accuracy": 0.6429,
+    "selective_accuracy": 0.6429,
+    "selective_risk": 0.3571,
+    "false_resolution_rate": 0.3571,
+    "n_winner_true": 14,
+    "n_winner_false": 0
+   },
+   "P2": {
+    "n_cases": 20,
+    "n_resolved": 20,
+    "n_unresolved": 0,
+    "abstention_rate": 0.0,
+    "coverage": 1.0,
+    "strict_accuracy": 0.6,
+    "selective_accuracy": 0.6,
+    "selective_risk": 0.4,
+    "false_resolution_rate": 0.4,
+    "n_winner_true": 15,
+    "n_winner_false": 5
+   },
+   "P3": {
+    "n_cases": 20,
+    "n_resolved": 20,
+    "n_unresolved": 0,
+    "abstention_rate": 0.0,
+    "coverage": 1.0,
+    "strict_accuracy": 0.2,
+    "selective_accuracy": 0.2,
+    "selective_risk": 0.8,
+    "false_resolution_rate": 0.8,
+    "n_winner_true": 16,
+    "n_winner_false": 4
+   }
+  },
+  "decision_changes": {
+   "n_cases": 80,
+   "n_winner_changed": 24,
+   "overwrite_rate": 0.3,
+   "resolved_in_both": 62,
+   "flips_among_resolved_both": 6,
+   "flips_among_resolved_both_rate": 0.0968,
+   "changes_due_to_abstention": 18,
+   "changes_due_to_abstention_rate": 0.225,
+   "equal": 56,
+   "improved_by_aware": 3,
+   "worsened_by_aware": 3,
+   "lost_to_abstention_was_right": 8,
+   "lost_to_abstention_was_wrong": 10,
+   "per_case_type": {
+    "P5": {
+     "equal": 6,
+     "improved_by_aware": 0,
+     "worsened_by_aware": 0,
+     "lost_to_abstention_was_right": 0,
+     "lost_to_abstention_was_wrong": 0
+    },
+    "P4": {
+     "equal": 16,
+     "improved_by_aware": 1,
+     "worsened_by_aware": 2,
+     "lost_to_abstention_was_right": 1,
+     "lost_to_abstention_was_wrong": 0
+    },
+    "P1": {
+     "equal": 14,
+     "improved_by_aware": 0,
+     "worsened_by_aware": 0,
+     "lost_to_abstention_was_right": 0,
+     "lost_to_abstention_was_wrong": 0
+    },
+    "P2": {
+     "equal": 11,
+     "improved_by_aware": 0,
+     "worsened_by_aware": 1,
+     "lost_to_abstention_was_right": 4,
+     "lost_to_abstention_was_wrong": 4
+    },
+    "P3": {
+     "equal": 9,
+     "improved_by_aware": 2,
+     "worsened_by_aware": 0,
+     "lost_to_abstention_was_right": 3,
+     "lost_to_abstention_was_wrong": 6
+    }
+   },
+   "detail": [
+    {
+     "case_id": "P5-001",
+     "case_type": "P5",
+     "neutral_winner": "true",
+     "aware_winner": "true",
+     "winner_change": false,
+     "neutral_correct": false,
+     "aware_correct": false,
+     "neutral_delta": 18.681101,
+     "aware_delta": 1.426316
+    },
+    {
+     "case_id": "P5-002",
+     "case_type": "P5",
+     "neutral_winner": "true",
+     "aware_winner": "true",
+     "winner_change": false,
+     "neutral_correct": true,
+     "aware_correct": true,
+     "neutral_delta": 18.830201,
+     "aware_delta": 3.880588
+    },
+    {
+     "case_id": "P5-003",
+     "case_type": "P5",
+     "neutral_winner": "true",
+     "aware_winner": "true",
+     "winner_change": false,
+     "neutral_correct": true,
+     "aware_correct": true,
+     "neutral_delta": 15.540142,
+     "aware_delta": 4.78056
+    },
+    {
+     "case_id": "P5-004",
+     "case_type": "P5",
+     "neutral_winner": "true",
+     "aware_winner": "true",
+     "winner_change": false,
+     "neutral_correct": true,
+     "aware_correct": true,
+     "neutral_delta": 8.498213,
+     "aware_delta": 0.651733
+    },
+    {
+     "case_id": "P5-005",
+     "case_type": "P5",
+     "neutral_winner": "true",
+     "aware_winner": "true",
+     "winner_change": false,
+     "neutral_correct": true,
+     "aware_correct": true,
+     "neutral_delta": 8.972011,
+     "aware_delta": 2.848681
+    },
+    {
+     "case_id": "P5-006",
+     "case_type": "P5",
+     "neutral_winner": "true",
+     "aware_winner": "true",
+     "winner_change": false,
+     "neutral_correct": true,
+     "aware_correct": true,
+     "neutral_delta": 5.443731,
+     "aware_delta": 2.31421
+    },
+    {
+     "case_id": "P4-001",
+     "case_type": "P4",
+     "neutral_winner": "true",
+     "aware_winner": "true",
+     "winner_change": false,
+     "neutral_correct": true,
+     "aware_correct": true,
+     "neutral_delta": 2.56933,
+     "aware_delta": 2.56933
+    },
+    {
+     "case_id": "P4-002",
+     "case_type": "P4",
+     "neutral_winner": "true",
+     "aware_winner": "true",
+     "winner_change": false,
+     "neutral_correct": true,
+     "aware_correct": true,
+     "neutral_delta": 3.950478,
+     "aware_delta": 2.526526
+    },
+    {
+     "case_id": "P4-003",
+     "case_type": "P4",
+     "neutral_winner": "true",
+     "aware_winner": "true",
+     "winner_change": false,
+     "neutral_correct": true,
+     "aware_correct": true,
+     "neutral_delta": 8.321639,
+     "aware_delta": 2.050293
+    },
+    {
+     "case_id": "P4-004",
+     "case_type": "P4",
+     "neutral_winner": "true",
+     "aware_winner": "true",
+     "winner_change": false,
+     "neutral_correct": true,
+     "aware_correct": true,
+     "neutral_delta": 5.883278,
+     "aware_delta": 1.506594
+    },
+    {
+     "case_id": "P4-005",
+     "case_type": "P4",
+     "neutral_winner": "true",
+     "aware_winner": "true",
+     "winner_change": false,
+     "neutral_correct": true,
+     "aware_correct": true,
+     "neutral_delta": 4.88387,
+     "aware_delta": 2.294002
+    },
+    {
+     "case_id": "P4-006",
+     "case_type": "P4",
+     "neutral_winner": "true",
+     "aware_winner": "true",
+     "winner_change": false,
+     "neutral_correct": true,
+     "aware_correct": true,
+     "neutral_delta": 1.639973,
+     "aware_delta": 0.77756
+    },
+    {
+     "case_id": "P4-007",
+     "case_type": "P4",
+     "neutral_winner": "true",
+     "aware_winner": "true",
+     "winner_change": false,
+     "neutral_correct": false,
+     "aware_correct": false,
+     "neutral_delta": 7.203457,
+     "aware_delta": 0.688455
+    },
+    {
+     "case_id": "P4-008",
+     "case_type": "P4",
+     "neutral_winner": "true",
+     "aware_winner": "true",
+     "winner_change": false,
+     "neutral_correct": false,
+     "aware_correct": false,
+     "neutral_delta": 6.633028,
+     "aware_delta": 0.996826
+    },
+    {
+     "case_id": "P4-009",
+     "case_type": "P4",
+     "neutral_winner": "true",
+     "aware_winner": "true",
+     "winner_change": false,
+     "neutral_correct": false,
+     "aware_correct": false,
+     "neutral_delta": 7.497382,
+     "aware_delta": 1.745466
+    },
+    {
+     "case_id": "P4-010",
+     "case_type": "P4",
+     "neutral_winner": "true",
+     "aware_winner": "true",
+     "winner_change": false,
+     "neutral_correct": false,
+     "aware_correct": false,
+     "neutral_delta": 6.795944,
+     "aware_delta": 1.394852
+    },
+    {
+     "case_id": "P4-011",
+     "case_type": "P4",
+     "neutral_winner": "false",
+     "aware_winner": "true",
+     "winner_change": true,
+     "neutral_correct": true,
+     "aware_correct": false,
+     "neutral_delta": 1.357271,
+     "aware_delta": 0.300779
+    },
+    {
+     "case_id": "P4-012",
+     "case_type": "P4",
+     "neutral_winner": "true",
+     "aware_winner": "true",
+     "winner_change": false,
+     "neutral_correct": true,
+     "aware_correct": true,
+     "neutral_delta": 1.375338,
+     "aware_delta": 0.696533
+    },
+    {
+     "case_id": "P4-013",
+     "case_type": "P4",
+     "neutral_winner": "false",
+     "aware_winner": null,
+     "winner_change": true,
+     "neutral_correct": true,
+     "aware_correct": null,
+     "neutral_delta": 1.877171,
+     "aware_delta": 0.019223
+    },
+    {
+     "case_id": "P4-014",
+     "case_type": "P4",
+     "neutral_winner": "false",
+     "aware_winner": "true",
+     "winner_change": true,
+     "neutral_correct": true,
+     "aware_correct": false,
+     "neutral_delta": 0.099623,
+     "aware_delta": 0.498126
+    },
+    {
+     "case_id": "P4-015",
+     "case_type": "P4",
+     "neutral_winner": "true",
+     "aware_winner": "true",
+     "winner_change": false,
+     "neutral_correct": true,
+     "aware_correct": true,
+     "neutral_delta": 17.388859,
+     "aware_delta": 1.171005
+    },
+    {
+     "case_id": "P4-016",
+     "case_type": "P4",
+     "neutral_winner": "true",
+     "aware_winner": "true",
+     "winner_change": false,
+     "neutral_correct": false,
+     "aware_correct": false,
+     "neutral_delta": 6.957517,
+     "aware_delta": 0.938857
+    },
+    {
+     "case_id": "P4-017",
+     "case_type": "P4",
+     "neutral_winner": "true",
+     "aware_winner": "true",
+     "winner_change": false,
+     "neutral_correct": false,
+     "aware_correct": false,
+     "neutral_delta": 1.096952,
+     "aware_delta": 0.051887
+    },
+    {
+     "case_id": "P4-018",
+     "case_type": "P4",
+     "neutral_winner": "true",
+     "aware_winner": "true",
+     "winner_change": false,
+     "neutral_correct": false,
+     "aware_correct": false,
+     "neutral_delta": 4.994,
+     "aware_delta": 1.287509
+    },
+    {
+     "case_id": "P4-019",
+     "case_type": "P4",
+     "neutral_winner": "false",
+     "aware_winner": "true",
+     "winner_change": true,
+     "neutral_correct": false,
+     "aware_correct": true,
+     "neutral_delta": 0.942314,
+     "aware_delta": 0.781127
+    },
+    {
+     "case_id": "P4-020",
+     "case_type": "P4",
+     "neutral_winner": "true",
+     "aware_winner": "true",
+     "winner_change": false,
+     "neutral_correct": true,
+     "aware_correct": true,
+     "neutral_delta": 2.399902,
+     "aware_delta": 1.245718
+    },
+    {
+     "case_id": "P1-001",
+     "case_type": "P1",
+     "neutral_winner": "true",
+     "aware_winner": "true",
+     "winner_change": false,
+     "neutral_correct": false,
+     "aware_correct": false,
+     "neutral_delta": 12.131139,
+     "aware_delta": 4.646672
+    },
+    {
+     "case_id": "P1-002",
+     "case_type": "P1",
+     "neutral_winner": "true",
+     "aware_winner": "true",
+     "winner_change": false,
+     "neutral_correct": false,
+     "aware_correct": false,
+     "neutral_delta": 7.941174,
+     "aware_delta": 4.082769
+    },
+    {
+     "case_id": "P1-003",
+     "case_type": "P1",
+     "neutral_winner": "true",
+     "aware_winner": "true",
+     "winner_change": false,
+     "neutral_correct": true,
+     "aware_correct": true,
+     "neutral_delta": 8.964719,
+     "aware_delta": 2.79938
+    },
+    {
+     "case_id": "P1-004",
+     "case_type": "P1",
+     "neutral_winner": "true",
+     "aware_winner": "true",
+     "winner_change": false,
+     "neutral_correct": false,
+     "aware_correct": false,
+     "neutral_delta": 6.313888,
+     "aware_delta": 2.561834
+    },
+    {
+     "case_id": "P1-005",
+     "case_type": "P1",
+     "neutral_winner": "true",
+     "aware_winner": "true",
+     "winner_change": false,
+     "neutral_correct": true,
+     "aware_correct": true,
+     "neutral_delta": 4.381819,
+     "aware_delta": 2.072965
+    },
+    {
+     "case_id": "P1-006",
+     "case_type": "P1",
+     "neutral_winner": "true",
+     "aware_winner": "true",
+     "winner_change": false,
+     "neutral_correct": false,
+     "aware_correct": false,
+     "neutral_delta": 2.026515,
+     "aware_delta": 2.026515
+    },
+    {
+     "case_id": "P1-007",
+     "case_type": "P1",
+     "neutral_winner": "true",
+     "aware_winner": "true",
+     "winner_change": false,
+     "neutral_correct": true,
+     "aware_correct": true,
+     "neutral_delta": 1.258072,
+     "aware_delta": 1.258072
+    },
+    {
+     "case_id": "P1-008",
+     "case_type": "P1",
+     "neutral_winner": "true",
+     "aware_winner": "true",
+     "winner_change": false,
+     "neutral_correct": true,
+     "aware_correct": true,
+     "neutral_delta": 3.905778,
+     "aware_delta": 1.445169
+    },
+    {
+     "case_id": "P1-009",
+     "case_type": "P1",
+     "neutral_winner": "true",
+     "aware_winner": "true",
+     "winner_change": false,
+     "neutral_correct": true,
+     "aware_correct": true,
+     "neutral_delta": 2.287449,
+     "aware_delta": 1.073419
+    },
+    {
+     "case_id": "P1-010",
+     "case_type": "P1",
+     "neutral_winner": "true",
+     "aware_winner": "true",
+     "winner_change": false,
+     "neutral_correct": true,
+     "aware_correct": true,
+     "neutral_delta": 2.553804,
+     "aware_delta": 1.3529
+    },
+    {
+     "case_id": "P1-011",
+     "case_type": "P1",
+     "neutral_winner": "true",
+     "aware_winner": "true",
+     "winner_change": false,
+     "neutral_correct": true,
+     "aware_correct": true,
+     "neutral_delta": 4.228584,
+     "aware_delta": 1.607492
+    },
+    {
+     "case_id": "P1-012",
+     "case_type": "P1",
+     "neutral_winner": "true",
+     "aware_winner": "true",
+     "winner_change": false,
+     "neutral_correct": false,
+     "aware_correct": false,
+     "neutral_delta": 4.883046,
+     "aware_delta": 1.326432
+    },
+    {
+     "case_id": "P1-013",
+     "case_type": "P1",
+     "neutral_winner": "true",
+     "aware_winner": "true",
+     "winner_change": false,
+     "neutral_correct": true,
+     "aware_correct": true,
+     "neutral_delta": 3.9196,
+     "aware_delta": 1.429959
+    },
+    {
+     "case_id": "P1-014",
+     "case_type": "P1",
+     "neutral_winner": "true",
+     "aware_winner": "true",
+     "winner_change": false,
+     "neutral_correct": true,
+     "aware_correct": true,
+     "neutral_delta": 3.22532,
+     "aware_delta": 1.316746
+    },
+    {
+     "case_id": "P2-001",
+     "case_type": "P2",
+     "neutral_winner": "true",
+     "aware_winner": null,
+     "winner_change": true,
+     "neutral_correct": true,
+     "aware_correct": null,
+     "neutral_delta": 9.433645,
+     "aware_delta": 0.016152
+    },
+    {
+     "case_id": "P2-002",
+     "case_type": "P2",
+     "neutral_winner": "false",
+     "aware_winner": "false",
+     "winner_change": false,
+     "neutral_correct": true,
+     "aware_correct": true,
+     "neutral_delta": 2.225193,
+     "aware_delta": 0.171396
+    },
+    {
+     "case_id": "P2-003",
+     "case_type": "P2",
+     "neutral_winner": "true",
+     "aware_winner": "true",
+     "winner_change": false,
+     "neutral_correct": false,
+     "aware_correct": false,
+     "neutral_delta": 3.56045,
+     "aware_delta": 0.167817
+    },
+    {
+     "case_id": "P2-004",
+     "case_type": "P2",
+     "neutral_winner": "true",
+     "aware_winner": null,
+     "winner_change": true,
+     "neutral_correct": true,
+     "aware_correct": null,
+     "neutral_delta": 4.741077,
+     "aware_delta": 0.001678
+    },
+    {
+     "case_id": "P2-005",
+     "case_type": "P2",
+     "neutral_winner": "true",
+     "aware_winner": null,
+     "winner_change": true,
+     "neutral_correct": false,
+     "aware_correct": null,
+     "neutral_delta": 0.258188,
+     "aware_delta": 0.040996
+    },
+    {
+     "case_id": "P2-006",
+     "case_type": "P2",
+     "neutral_winner": "true",
+     "aware_winner": null,
+     "winner_change": true,
+     "neutral_correct": false,
+     "aware_correct": null,
+     "neutral_delta": 4.986507,
+     "aware_delta": 0.039262
+    },
+    {
+     "case_id": "P2-007",
+     "case_type": "P2",
+     "neutral_winner": "false",
+     "aware_winner": "false",
+     "winner_change": false,
+     "neutral_correct": true,
+     "aware_correct": true,
+     "neutral_delta": 1.476399,
+     "aware_delta": 0.128308
+    },
+    {
+     "case_id": "P2-008",
+     "case_type": "P2",
+     "neutral_winner": "false",
+     "aware_winner": "false",
+     "winner_change": false,
+     "neutral_correct": true,
+     "aware_correct": true,
+     "neutral_delta": 5.970851,
+     "aware_delta": 0.087524
+    },
+    {
+     "case_id": "P2-009",
+     "case_type": "P2",
+     "neutral_winner": "true",
+     "aware_winner": "true",
+     "winner_change": false,
+     "neutral_correct": false,
+     "aware_correct": false,
+     "neutral_delta": 0.255465,
+     "aware_delta": 0.237365
+    },
+    {
+     "case_id": "P2-010",
+     "case_type": "P2",
+     "neutral_winner": "true",
+     "aware_winner": "true",
+     "winner_change": false,
+     "neutral_correct": true,
+     "aware_correct": true,
+     "neutral_delta": 1.936792,
+     "aware_delta": 0.056167
+    },
+    {
+     "case_id": "P2-011",
+     "case_type": "P2",
+     "neutral_winner": "true",
+     "aware_winner": "true",
+     "winner_change": false,
+     "neutral_correct": true,
+     "aware_correct": true,
+     "neutral_delta": 4.58477,
+     "aware_delta": 0.204368
+    },
+    {
+     "case_id": "P2-012",
+     "case_type": "P2",
+     "neutral_winner": "true",
+     "aware_winner": "true",
+     "winner_change": false,
+     "neutral_correct": false,
+     "aware_correct": false,
+     "neutral_delta": 2.818462,
+     "aware_delta": 0.082093
+    },
+    {
+     "case_id": "P2-013",
+     "case_type": "P2",
+     "neutral_winner": "true",
+     "aware_winner": null,
+     "winner_change": true,
+     "neutral_correct": false,
+     "aware_correct": null,
+     "neutral_delta": 1.174944,
+     "aware_delta": 0.004224
+    },
+    {
+     "case_id": "P2-014",
+     "case_type": "P2",
+     "neutral_winner": "false",
+     "aware_winner": "false",
+     "winner_change": false,
+     "neutral_correct": true,
+     "aware_correct": true,
+     "neutral_delta": 0.1027,
+     "aware_delta": 0.101203
+    },
+    {
+     "case_id": "P2-015",
+     "case_type": "P2",
+     "neutral_winner": "true",
+     "aware_winner": null,
+     "winner_change": true,
+     "neutral_correct": false,
+     "aware_correct": null,
+     "neutral_delta": 1.037725,
+     "aware_delta": 0.019491
+    },
+    {
+     "case_id": "P2-016",
+     "case_type": "P2",
+     "neutral_winner": "false",
+     "aware_winner": null,
+     "winner_change": true,
+     "neutral_correct": true,
+     "aware_correct": null,
+     "neutral_delta": 1.186079,
+     "aware_delta": 0.019066
+    },
+    {
+     "case_id": "P2-017",
+     "case_type": "P2",
+     "neutral_winner": "true",
+     "aware_winner": null,
+     "winner_change": true,
+     "neutral_correct": true,
+     "aware_correct": null,
+     "neutral_delta": 1.903837,
+     "aware_delta": 0.040421
+    },
+    {
+     "case_id": "P2-018",
+     "case_type": "P2",
+     "neutral_winner": "true",
+     "aware_winner": "true",
+     "winner_change": false,
+     "neutral_correct": false,
+     "aware_correct": false,
+     "neutral_delta": 1.900894,
+     "aware_delta": 0.050967
+    },
+    {
+     "case_id": "P2-019",
+     "case_type": "P2",
+     "neutral_winner": "true",
+     "aware_winner": "true",
+     "winner_change": false,
+     "neutral_correct": true,
+     "aware_correct": true,
+     "neutral_delta": 3.146231,
+     "aware_delta": 0.254098
+    },
+    {
+     "case_id": "P2-020",
+     "case_type": "P2",
+     "neutral_winner": "true",
+     "aware_winner": "false",
+     "winner_change": true,
+     "neutral_correct": true,
+     "aware_correct": false,
+     "neutral_delta": 2.892931,
+     "aware_delta": 0.148683
+    },
+    {
+     "case_id": "P3-001",
+     "case_type": "P3",
+     "neutral_winner": "true",
+     "aware_winner": "true",
+     "winner_change": false,
+     "neutral_correct": false,
+     "aware_correct": false,
+     "neutral_delta": 7.297154,
+     "aware_delta": 0.631203
+    },
+    {
+     "case_id": "P3-002",
+     "case_type": "P3",
+     "neutral_winner": "true",
+     "aware_winner": null,
+     "winner_change": true,
+     "neutral_correct": false,
+     "aware_correct": null,
+     "neutral_delta": 2.840194,
+     "aware_delta": 0.02085
+    },
+    {
+     "case_id": "P3-003",
+     "case_type": "P3",
+     "neutral_winner": "true",
+     "aware_winner": "true",
+     "winner_change": false,
+     "neutral_correct": false,
+     "aware_correct": false,
+     "neutral_delta": 4.792784,
+     "aware_delta": 0.612389
+    },
+    {
+     "case_id": "P3-004",
+     "case_type": "P3",
+     "neutral_winner": "true",
+     "aware_winner": "false",
+     "winner_change": true,
+     "neutral_correct": false,
+     "aware_correct": true,
+     "neutral_delta": 2.171514,
+     "aware_delta": 0.119569
+    },
+    {
+     "case_id": "P3-005",
+     "case_type": "P3",
+     "neutral_winner": "true",
+     "aware_winner": null,
+     "winner_change": true,
+     "neutral_correct": false,
+     "aware_correct": null,
+     "neutral_delta": 1.866822,
+     "aware_delta": 0.021691
+    },
+    {
+     "case_id": "P3-006",
+     "case_type": "P3",
+     "neutral_winner": "false",
+     "aware_winner": null,
+     "winner_change": true,
+     "neutral_correct": true,
+     "aware_correct": null,
+     "neutral_delta": 0.618936,
+     "aware_delta": 0.010535
+    },
+    {
+     "case_id": "P3-007",
+     "case_type": "P3",
+     "neutral_winner": "false",
+     "aware_winner": null,
+     "winner_change": true,
+     "neutral_correct": true,
+     "aware_correct": null,
+     "neutral_delta": 2.995559,
+     "aware_delta": 0.005547
+    },
+    {
+     "case_id": "P3-008",
+     "case_type": "P3",
+     "neutral_winner": "true",
+     "aware_winner": "true",
+     "winner_change": false,
+     "neutral_correct": true,
+     "aware_correct": true,
+     "neutral_delta": 1.964238,
+     "aware_delta": 0.055354
+    },
+    {
+     "case_id": "P3-009",
+     "case_type": "P3",
+     "neutral_winner": "false",
+     "aware_winner": null,
+     "winner_change": true,
+     "neutral_correct": false,
+     "aware_correct": null,
+     "neutral_delta": 1.848438,
+     "aware_delta": 0.025186
+    },
+    {
+     "case_id": "P3-010",
+     "case_type": "P3",
+     "neutral_winner": "true",
+     "aware_winner": null,
+     "winner_change": true,
+     "neutral_correct": false,
+     "aware_correct": null,
+     "neutral_delta": 2.456294,
+     "aware_delta": 0.00821
+    },
+    {
+     "case_id": "P3-011",
+     "case_type": "P3",
+     "neutral_winner": "true",
+     "aware_winner": "true",
+     "winner_change": false,
+     "neutral_correct": false,
+     "aware_correct": false,
+     "neutral_delta": 3.514333,
+     "aware_delta": 0.693568
+    },
+    {
+     "case_id": "P3-012",
+     "case_type": "P3",
+     "neutral_winner": "true",
+     "aware_winner": "true",
+     "winner_change": false,
+     "neutral_correct": false,
+     "aware_correct": false,
+     "neutral_delta": 2.593196,
+     "aware_delta": 0.062914
+    },
+    {
+     "case_id": "P3-013",
+     "case_type": "P3",
+     "neutral_winner": "true",
+     "aware_winner": "true",
+     "winner_change": false,
+     "neutral_correct": false,
+     "aware_correct": false,
+     "neutral_delta": 2.618957,
+     "aware_delta": 0.060892
+    },
+    {
+     "case_id": "P3-014",
+     "case_type": "P3",
+     "neutral_winner": "true",
+     "aware_winner": "true",
+     "winner_change": false,
+     "neutral_correct": false,
+     "aware_correct": false,
+     "neutral_delta": 2.495022,
+     "aware_delta": 0.058808
+    },
+    {
+     "case_id": "P3-015",
+     "case_type": "P3",
+     "neutral_winner": "true",
+     "aware_winner": "false",
+     "winner_change": true,
+     "neutral_correct": false,
+     "aware_correct": true,
+     "neutral_delta": 1.094095,
+     "aware_delta": 0.110215
+    },
+    {
+     "case_id": "P3-016",
+     "case_type": "P3",
+     "neutral_winner": "false",
+     "aware_winner": null,
+     "winner_change": true,
+     "neutral_correct": true,
+     "aware_correct": null,
+     "neutral_delta": 1.019152,
+     "aware_delta": 0.033167
+    },
+    {
+     "case_id": "P3-017",
+     "case_type": "P3",
+     "neutral_winner": "true",
+     "aware_winner": "true",
+     "winner_change": false,
+     "neutral_correct": false,
+     "aware_correct": false,
+     "neutral_delta": 2.59139,
+     "aware_delta": 0.088077
+    },
+    {
+     "case_id": "P3-018",
+     "case_type": "P3",
+     "neutral_winner": "true",
+     "aware_winner": null,
+     "winner_change": true,
+     "neutral_correct": false,
+     "aware_correct": null,
+     "neutral_delta": 1.252117,
+     "aware_delta": 0.020809
+    },
+    {
+     "case_id": "P3-019",
+     "case_type": "P3",
+     "neutral_winner": "true",
+     "aware_winner": "true",
+     "winner_change": false,
+     "neutral_correct": false,
+     "aware_correct": false,
+     "neutral_delta": 3.602853,
+     "aware_delta": 0.6502
+    },
+    {
+     "case_id": "P3-020",
+     "case_type": "P3",
+     "neutral_winner": "true",
+     "aware_winner": null,
+     "winner_change": true,
+     "neutral_correct": false,
+     "aware_correct": null,
+     "neutral_delta": 2.44935,
+     "aware_delta": 0.009997
+    }
+   ]
+  },
+  "delta_move": {
+   "margin_increased": 1,
+   "margin_decreased": 76,
+   "margin_unchanged": 3
+  }
+ },
+ "reconstruction_audit": {
+  "reaction_parent_consistent_with_in_reply_to": 95073,
+  "reaction_parent_mismatch_in_reply_to": 0,
+  "reaction_parent_only_in_structure": 0,
+  "reactions_total": 95073,
+  "in_reply_to_agreement_rate": 1.0,
+  "case_unit_label_recovered": 1045,
+  "case_unit_label_missing": 0,
+  "case_unit_file_exists": 1045,
+  "case_unit_file_missing": 0,
+  "case_edges_unresolvable": 0,
+  "methodology": "all parent edges from structure.json; in_reply_to_status_id_str cross-check; label re-read from recorded label_source file."
+ },
+ "build_timestamp": "2026-08-19T21:44:33Z"
+}

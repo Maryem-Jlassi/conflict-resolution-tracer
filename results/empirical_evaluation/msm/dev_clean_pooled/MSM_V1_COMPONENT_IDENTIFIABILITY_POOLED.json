@@ -1,0 +1,28 @@
+{
+  "experiment_id": "MSM_V1_COMPONENT_IDENTIFIABILITY_POOLED",
+  "seeds": [
+    "s20260321",
+    "s20260322",
+    "s20260323",
+    "s20260324"
+  ],
+  "split": "dev",
+  "method": "for each claim-bearing episode, argmax of the component selects the claim; component_identifiability = share of selections equal to gold",
+  "components": {
+    "R": {
+      "n_episodes_with_claims": 3337,
+      "component_identifiability": 0.5883,
+      "fraction": "1963/3337"
+    },
+    "C": {
+      "n_episodes_with_claims": 3337,
+      "component_identifiability": 0.5775,
+      "fraction": "1927/3337"
+    },
+    "T": {
+      "n_episodes_with_claims": 3337,
+      "component_identifiability": 0.662,
+      "fraction": "2209/3337"
+    }
+  }
+}

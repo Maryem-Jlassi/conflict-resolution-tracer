@@ -1,0 +1,38 @@
+{
+ "report_id": "10",
+ "title": "Provenance Integration Audit - per-item verdicts",
+ "status": "PASS",
+ "overall_verdict": "PASS (10 items PASS, 1 item PASS WITH LIMITATIONS, 0 FAIL)",
+ "scientific_question": "Does explicitly accounting for provenance/dependence between pieces of evidence change conflict resolution decisions compared with treating the evidence as provenance-neutral?",
+ "answer": "YES - on PHEME+RumourEval real data, provenance-aware aggregation changes the decision in 24/80 (30%): 6 genuine flips (9.7% of 62 both-resolved) and 18 resolution-to-abstention changes (22.5%); margins compressed in 76/80. MSM V1 remains the primary evaluation of the overall mechanism.",
+ "items": [
+  {"item": 1, "title": "Separate empirical evaluation of the provenance contribution", "verdict": "PASS",
+   "evidence": "Self-contained provenance/evaluation tree; all tool writes confined to evaluation/_data; sibling to qacc/results/processed_results/msm/pheme_test."},
+  {"item": 2, "title": "No contamination of QACC TEST / MSM V1 ablations / frozen params / validated results", "verdict": "PASS",
+   "evidence": "Frozen + primary-output paths have mtimes predating the provenance build; tools reference no such write paths; frozen protocol/SIGNAL hashes verified."},
+  {"item": 3, "title": "Aware and neutral arms share identical cases/observations/candidates/gold", "verdict": "PASS",
+   "evidence": "Same 80 case-ids/multiset; identical gold/n_units/n_origins/category; both arms reproduced from the shared manifest units - only the aware flag differs."},
+  {"item": 4, "title": "24/80 interpretation: 6 flips + 18 resolution->abstention, not 24 reversals", "verdict": "PASS",
+   "evidence": "Exact decomposition verified; every flip is correct<->wrong; report 07 never uses 'reversal'."},
+  {"item": 5, "title": "Denominators correct (strict/selective/coverage/abstention/FPR/flip rate)", "verdict": "PASS",
+   "evidence": "Re-derived 34/80, 34/62, 62/80, 18/80, 28/62, 6/62 - all match artifacts 05/06/08."},
+  {"item": 6, "title": "Aware strict drop is a policy consequence, not an error", "verdict": "PASS",
+   "evidence": "strict = selective*coverage exactly; drop = 42->34 fully explained by 8 right-abstentions; flips net to zero; selective aware >= neutral."},
+  {"item": 7, "title": "76/80 margin compression from same candidate sets", "verdict": "PASS",
+   "evidence": "Recomputed 76/1/3; aware per-origin support never exceeds neutral in all 80; delta = |support diff| verified in both arms."},
+  {"item": 8, "title": "P1/P5 target-vs-built consistent everywhere", "verdict": "PASS",
+   "evidence": "election_targets vs elected_counts identical in 02/08 and equal to built cases (P1=14, P5=6); documented as coverage limitation in 01/07/09/README."},
+  {"item": 9, "title": "Claims grounded in observed/reconstructed structure; no author/text inference", "verdict": "PASS",
+   "evidence": "classify/_gold_pair use only root/depth/branch/ancestor; user_id confined to trust timeline; artifact 04 explicitly excludes authorship/text; 03 audit 100% in_reply_to agreement."},
+  {"item": 10, "title": "Reproducibility chain: input/tool/output hashes + deterministic rerun", "verdict": "PASS WITH LIMITATIONS",
+   "evidence": "All recorded hashes re-verified (60/60); two runs byte-identical modulo build_timestamp; order-deterministic construction. Limitation: index.pkl byte-rebuild from archive not re-executed (pinned by hash instead)."},
+  {"item": 11, "title": "Final audit produced (this artifact)", "verdict": "PASS",
+   "evidence": "10_PROVENANCE_INTEGRATION_AUDIT.md; machine JSON; 27+24+60 verification checks green."}
+ ],
+ "guardrails": [
+  {"item": 13, "statement": "No experimental results changed to improve performance", "complied": true},
+  {"item": 14, "statement": "No parameters optimized using PHEME TEST outcomes", "complied": true},
+  {"item": 15, "statement": "No new cases created during the audit", "complied": true},
+  {"note": "Sole write during audit: documentation note appended to 09 (election targets vs built). No numeric artifact changed."}
+ ]
+}

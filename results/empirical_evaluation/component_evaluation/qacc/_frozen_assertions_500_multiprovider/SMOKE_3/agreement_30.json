@@ -1,0 +1,774 @@
+{
+  "seed": 20260822,
+  "n_sources": 27,
+  "metrics": {
+    "total_sources": 27,
+    "three_supported_agree": 4,
+    "three_value_agree": 4,
+    "three_value_agree_rate": 0.1481,
+    "all_three_abstain": 5,
+    "pairwise_value_agree_rate": {
+      "ollama|openai": 0.1852,
+      "ollama|groq": 0.1481,
+      "openai|groq": 0.2222
+    }
+  },
+  "rows": [
+    {
+      "case_id": 8,
+      "source_id": 7,
+      "source": "quizlet.com",
+      "results": {
+        "ollama": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": "unparseable",
+          "error": "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+        },
+        "openai": {
+          "success": true,
+          "status": "unsupported",
+          "answer": null,
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": "unparseable",
+          "error": "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+        }
+      }
+    },
+    {
+      "case_id": 1,
+      "source_id": 3,
+      "source": "collider.com",
+      "results": {
+        "ollama": {
+          "success": true,
+          "status": "supported",
+          "answer": "Rachel Bilson",
+          "parse": "ok",
+          "error": null
+        },
+        "openai": {
+          "success": true,
+          "status": "supported",
+          "answer": "Rachel Bilson",
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": true,
+          "status": "supported",
+          "answer": "Rachel Bilson",
+          "parse": "ok",
+          "error": null
+        }
+      }
+    },
+    {
+      "case_id": 1,
+      "source_id": 4,
+      "source": "www.imdb.com",
+      "results": {
+        "ollama": {
+          "success": true,
+          "status": "supported",
+          "answer": "Kate Velis",
+          "parse": "ok",
+          "error": null
+        },
+        "openai": {
+          "success": true,
+          "status": "unsupported",
+          "answer": null,
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": "unparseable",
+          "error": "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+        }
+      }
+    },
+    {
+      "case_id": 10,
+      "source_id": 0,
+      "source": "en.wikipedia.org",
+      "results": {
+        "ollama": {
+          "success": true,
+          "status": "supported",
+          "answer": "Keyshia Cole",
+          "parse": "ok",
+          "error": null
+        },
+        "openai": {
+          "success": true,
+          "status": "unsupported",
+          "answer": null,
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": "unparseable",
+          "error": "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+        }
+      }
+    },
+    {
+      "case_id": 10,
+      "source_id": 4,
+      "source": "tunebat.com",
+      "results": {
+        "ollama": {
+          "success": true,
+          "status": "supported",
+          "answer": "Keyshia Cole",
+          "parse": "ok",
+          "error": null
+        },
+        "openai": {
+          "success": true,
+          "status": "unsupported",
+          "answer": null,
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": true,
+          "status": "unsupported",
+          "answer": null,
+          "parse": "ok",
+          "error": null
+        }
+      }
+    },
+    {
+      "case_id": 10,
+      "source_id": 6,
+      "source": "www.lyrics.com",
+      "results": {
+        "ollama": {
+          "success": true,
+          "status": "supported",
+          "answer": "Keyshia Cole",
+          "parse": "ok",
+          "error": null
+        },
+        "openai": {
+          "success": true,
+          "status": "unsupported",
+          "answer": null,
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": "unparseable",
+          "error": "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+        }
+      }
+    },
+    {
+      "case_id": 10,
+      "source_id": 3,
+      "source": "genius.com",
+      "results": {
+        "ollama": {
+          "success": true,
+          "status": "supported",
+          "answer": "Keyshia Cole, DJ Camper, Guordan Banks & Jessy Wilson",
+          "parse": "ok",
+          "error": null
+        },
+        "openai": {
+          "success": true,
+          "status": "supported",
+          "answer": "Keyshia Cole, DJ Camper, Guordan Banks & Jessy Wilson",
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": "unparseable",
+          "error": "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+        }
+      }
+    },
+    {
+      "case_id": 1,
+      "source_id": 0,
+      "source": "hartofdixie.fandom.com",
+      "results": {
+        "ollama": {
+          "success": true,
+          "status": "supported",
+          "answer": "Rachel Bilson",
+          "parse": "ok",
+          "error": null
+        },
+        "openai": {
+          "success": true,
+          "status": "unsupported",
+          "answer": null,
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": true,
+          "status": "unsupported",
+          "answer": null,
+          "parse": "ok",
+          "error": null
+        }
+      }
+    },
+    {
+      "case_id": 1,
+      "source_id": 8,
+      "source": "www.hollywoodreporter.com",
+      "results": {
+        "ollama": {
+          "success": true,
+          "status": "unsupported",
+          "answer": null,
+          "parse": "ok",
+          "error": null
+        },
+        "openai": {
+          "success": true,
+          "status": "unsupported",
+          "answer": null,
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": true,
+          "status": "unsupported",
+          "answer": null,
+          "parse": "ok",
+          "error": null
+        }
+      }
+    },
+    {
+      "case_id": 8,
+      "source_id": 1,
+      "source": "brainly.in",
+      "results": {
+        "ollama": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": "unparseable",
+          "error": "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+        },
+        "openai": {
+          "success": true,
+          "status": "supported",
+          "answer": "373 degree Kelvin",
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": true,
+          "status": "supported",
+          "answer": "373 Kelvin",
+          "parse": "ok",
+          "error": null
+        }
+      }
+    },
+    {
+      "case_id": 1,
+      "source_id": 7,
+      "source": "people.com",
+      "results": {
+        "ollama": {
+          "success": true,
+          "status": "supported",
+          "answer": "Rachel Bilson",
+          "parse": "ok",
+          "error": null
+        },
+        "openai": {
+          "success": true,
+          "status": "unsupported",
+          "answer": null,
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": "unparseable",
+          "error": "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+        }
+      }
+    },
+    {
+      "case_id": 1,
+      "source_id": 2,
+      "source": "en.wikipedia.org",
+      "results": {
+        "ollama": {
+          "success": true,
+          "status": "supported",
+          "answer": "Rachel Bilson",
+          "parse": "ok",
+          "error": null
+        },
+        "openai": {
+          "success": true,
+          "status": "supported",
+          "answer": "Rachel Bilson",
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": true,
+          "status": "supported",
+          "answer": "Rachel Bilson",
+          "parse": "ok",
+          "error": null
+        }
+      }
+    },
+    {
+      "case_id": 10,
+      "source_id": 8,
+      "source": "www.billboard.com",
+      "results": {
+        "ollama": {
+          "success": true,
+          "status": "supported",
+          "answer": "Dapo Torimiro",
+          "parse": "ok",
+          "error": null
+        },
+        "openai": {
+          "success": true,
+          "status": "supported",
+          "answer": "unknown",
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": "unparseable",
+          "error": "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+        }
+      }
+    },
+    {
+      "case_id": 10,
+      "source_id": 5,
+      "source": "www.azlyrics.com",
+      "results": {
+        "ollama": {
+          "success": true,
+          "status": "supported",
+          "answer": "Keyshia Cole",
+          "parse": "ok",
+          "error": null
+        },
+        "openai": {
+          "success": true,
+          "status": "unsupported",
+          "answer": null,
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": true,
+          "status": "unsupported",
+          "answer": null,
+          "parse": "ok",
+          "error": null
+        }
+      }
+    },
+    {
+      "case_id": 8,
+      "source_id": 8,
+      "source": "www.nist.gov",
+      "results": {
+        "ollama": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": "unparseable",
+          "error": "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+        },
+        "openai": {
+          "success": true,
+          "status": "supported",
+          "answer": "373.15 K",
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": "unparseable",
+          "error": "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+        }
+      }
+    },
+    {
+      "case_id": 8,
+      "source_id": 3,
+      "source": "www.tutorix.com",
+      "results": {
+        "ollama": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": "unparseable",
+          "error": "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+        },
+        "openai": {
+          "success": true,
+          "status": "supported",
+          "answer": "373 K",
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": "unparseable",
+          "error": "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+        }
+      }
+    },
+    {
+      "case_id": 8,
+      "source_id": 0,
+      "source": "byjus.com",
+      "results": {
+        "ollama": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": "unparseable",
+          "error": "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+        },
+        "openai": {
+          "success": true,
+          "status": "supported",
+          "answer": "373 K",
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": "unparseable",
+          "error": "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+        }
+      }
+    },
+    {
+      "case_id": 10,
+      "source_id": 1,
+      "source": "genius.com",
+      "results": {
+        "ollama": {
+          "success": true,
+          "status": "supported",
+          "answer": null,
+          "parse": "ok",
+          "error": null
+        },
+        "openai": {
+          "success": true,
+          "status": "supported",
+          "answer": "Jessy Wilson and Guordan Banks",
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": "unparseable",
+          "error": "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+        }
+      }
+    },
+    {
+      "case_id": 1,
+      "source_id": 5,
+      "source": "www.eonline.com",
+      "results": {
+        "ollama": {
+          "success": true,
+          "status": "unsupported",
+          "answer": null,
+          "parse": "ok",
+          "error": null
+        },
+        "openai": {
+          "success": true,
+          "status": "unsupported",
+          "answer": null,
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": true,
+          "status": "unsupported",
+          "answer": null,
+          "parse": "ok",
+          "error": null
+        }
+      }
+    },
+    {
+      "case_id": 1,
+      "source_id": 6,
+      "source": "movieweb.com",
+      "results": {
+        "ollama": {
+          "success": true,
+          "status": "supported",
+          "answer": "Rachel Bilson",
+          "parse": "ok",
+          "error": null
+        },
+        "openai": {
+          "success": true,
+          "status": "supported",
+          "answer": "Rachel Bilson",
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": true,
+          "status": "supported",
+          "answer": "Rachel Bilson",
+          "parse": "ok",
+          "error": null
+        }
+      }
+    },
+    {
+      "case_id": 8,
+      "source_id": 4,
+      "source": "www.vedantu.com",
+      "results": {
+        "ollama": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": "unparseable",
+          "error": "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+        },
+        "openai": {
+          "success": true,
+          "status": "unsupported",
+          "answer": null,
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": true,
+          "status": "unsupported",
+          "answer": null,
+          "parse": "ok",
+          "error": null
+        }
+      }
+    },
+    {
+      "case_id": 8,
+      "source_id": 2,
+      "source": "en.wikipedia.org",
+      "results": {
+        "ollama": {
+          "success": true,
+          "status": "unsupported",
+          "answer": null,
+          "parse": "ok",
+          "error": null
+        },
+        "openai": {
+          "success": true,
+          "status": "unsupported",
+          "answer": null,
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": "unparseable",
+          "error": "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+        }
+      }
+    },
+    {
+      "case_id": 10,
+      "source_id": 2,
+      "source": "www.songfacts.com",
+      "results": {
+        "ollama": {
+          "success": true,
+          "status": "unsupported",
+          "answer": null,
+          "parse": "ok",
+          "error": null
+        },
+        "openai": {
+          "success": true,
+          "status": "supported",
+          "answer": "The Righterz",
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": "unparseable",
+          "error": "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+        }
+      }
+    },
+    {
+      "case_id": 1,
+      "source_id": 1,
+      "source": "www.usmagazine.com",
+      "results": {
+        "ollama": {
+          "success": true,
+          "status": "supported",
+          "answer": "Rachel Bilson",
+          "parse": "ok",
+          "error": null
+        },
+        "openai": {
+          "success": true,
+          "status": "supported",
+          "answer": "Rachel Bilson",
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": true,
+          "status": "supported",
+          "answer": "Rachel Bilson",
+          "parse": "ok",
+          "error": null
+        }
+      }
+    },
+    {
+      "case_id": 8,
+      "source_id": 6,
+      "source": "www.toppr.com",
+      "results": {
+        "ollama": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": "unparseable",
+          "error": "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+        },
+        "openai": {
+          "success": true,
+          "status": "supported",
+          "answer": "373.15 K",
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": true,
+          "status": "supported",
+          "answer": "373.15 K",
+          "parse": "ok",
+          "error": null
+        }
+      }
+    },
+    {
+      "case_id": 10,
+      "source_id": 7,
+      "source": "www.discogs.com",
+      "results": {
+        "ollama": {
+          "success": true,
+          "status": "supported",
+          "answer": "Jose Cardoza",
+          "parse": "ok",
+          "error": null
+        },
+        "openai": {
+          "success": true,
+          "status": "unsupported",
+          "answer": null,
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": true,
+          "status": "unsupported",
+          "answer": null,
+          "parse": "ok",
+          "error": null
+        }
+      }
+    },
+    {
+      "case_id": 8,
+      "source_id": 5,
+      "source": "www.shaalaa.com",
+      "results": {
+        "ollama": {
+          "success": false,
+          "status": null,
+          "answer": null,
+          "parse": "unparseable",
+          "error": "FAILED_JSON_PARSE (schema-mismatch or unparseable)"
+        },
+        "openai": {
+          "success": true,
+          "status": "supported",
+          "answer": "373 K",
+          "parse": "ok",
+          "error": null
+        },
+        "groq": {
+          "success": true,
+          "status": "supported",
+          "answer": "373 K",
+          "parse": "ok",
+          "error": null
+        }
+      }
+    }
+  ]
+}

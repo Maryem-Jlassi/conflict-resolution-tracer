@@ -1,0 +1,193 @@
+{
+  "manifest": {
+    "aggregation_method": "round_robin_stratified",
+    "seed_cases": 20260820,
+    "seed_assign": 20260821,
+    "provider_counts": {
+      "openai": 117,
+      "groq": 117,
+      "ollama": 118
+    },
+    "total_sources": 352,
+    "n_cases": 40
+  },
+  "4_1_extraction_behavior": {
+    "ollama": {
+      "n_calls": 118,
+      "n_success": 97,
+      "parse_success_rate": 0.822,
+      "n_parse_fail": 21,
+      "n_identity_fail": 0,
+      "n_transport_fail": 0,
+      "n_unsupported": 12,
+      "abstain_rate": 0.1237,
+      "n_supported": 85,
+      "self_reported_confidence_used": false,
+      "claim_length": {
+        "n": 85,
+        "mean_len": 12.52,
+        "max_len": 94
+      }
+    },
+    "openai": {
+      "n_calls": 117,
+      "n_success": 117,
+      "parse_success_rate": 1.0,
+      "n_parse_fail": 0,
+      "n_identity_fail": 0,
+      "n_transport_fail": 0,
+      "n_unsupported": 68,
+      "abstain_rate": 0.5812,
+      "n_supported": 49,
+      "self_reported_confidence_used": false,
+      "claim_length": {
+        "n": 49,
+        "mean_len": 26.16,
+        "max_len": 102
+      }
+    },
+    "groq": {
+      "n_calls": 117,
+      "n_success": 2,
+      "parse_success_rate": 0.0171,
+      "n_parse_fail": 1,
+      "n_identity_fail": 0,
+      "n_transport_fail": 114,
+      "n_unsupported": 0,
+      "abstain_rate": 0.0,
+      "n_supported": 2,
+      "self_reported_confidence_used": false,
+      "claim_length": {
+        "n": 2,
+        "mean_len": 20.0,
+        "max_len": 27
+      }
+    }
+  },
+  "4_2_resolution_outcomes": {
+    "policy_table": {
+      "full_lcm": {
+        "total": 40,
+        "resolved": 6,
+        "resolution_coverage": 0.15,
+        "strict_accuracy": 0.0,
+        "selective_accuracy": 0.0,
+        "overwrite": 0,
+        "winners_by_provider": {
+          "ollama": 2,
+          "openai": 4
+        }
+      },
+      "c_only": {
+        "total": 40,
+        "resolved": 6,
+        "resolution_coverage": 0.15,
+        "strict_accuracy": 0.0,
+        "selective_accuracy": 0.0,
+        "overwrite": 0,
+        "winners_by_provider": {
+          "ollama": 2,
+          "openai": 4
+        }
+      },
+      "r_only": {
+        "total": 40,
+        "resolved": 6,
+        "resolution_coverage": 0.15,
+        "strict_accuracy": 0.0,
+        "selective_accuracy": 0.0,
+        "overwrite": 0,
+        "winners_by_provider": {
+          "ollama": 2,
+          "openai": 4
+        }
+      },
+      "t_only": {
+        "total": 40,
+        "resolved": 6,
+        "resolution_coverage": 0.15,
+        "strict_accuracy": 0.0,
+        "selective_accuracy": 0.0,
+        "overwrite": 0,
+        "winners_by_provider": {
+          "ollama": 2,
+          "openai": 4
+        }
+      },
+      "fixed_neutral_trust": {
+        "total": 40,
+        "resolved": 6,
+        "resolution_coverage": 0.15,
+        "strict_accuracy": 0.0,
+        "selective_accuracy": 0.0,
+        "overwrite": 0,
+        "winners_by_provider": {
+          "ollama": 2,
+          "openai": 4
+        }
+      },
+      "last_write_wins": {
+        "total": 40,
+        "resolved": 36,
+        "resolution_coverage": 0.9,
+        "strict_accuracy": 0.025,
+        "selective_accuracy": 0.0278,
+        "overwrite": 0,
+        "winners_by_provider": {
+          "groq": 2,
+          "ollama": 19,
+          "openai": 15
+        }
+      }
+    },
+    "supported_shares": {
+      "openai": 49,
+      "ollama": 85,
+      "groq": 2
+    },
+    "source_share": {
+      "ollama": 0.625,
+      "openai": 0.3603,
+      "groq": 0.0147
+    },
+    "resolved_cases": 6,
+    "win_share_full_lcm": {
+      "ollama": 0.3333,
+      "openai": 0.6667,
+      "groq": 0.0
+    },
+    "win_vs_share_ratio_full_lcm": {
+      "ollama": 0.5333,
+      "openai": 1.8503,
+      "groq": 0.0
+    },
+    "mean_authority_supported": {
+      "ollama": 0.7394,
+      "openai": 0.7316,
+      "groq": 0.75
+    }
+  },
+  "4_3_provider_blindness": {
+    "n_assertions_checked": 352,
+    "n_authority_mismatches": 0,
+    "one_authority_per_source": true,
+    "provider_blind_verification": "PASS",
+    "authority_per_provider": {
+      "ollama": {
+        "0.3": 9,
+        "0.75": 108,
+        "0.85": 1
+      },
+      "openai": {
+        "0.3": 3,
+        "0.75": 112,
+        "0.85": 2
+      },
+      "groq": {
+        "0.3": 2,
+        "0.75": 115
+      }
+    },
+    "note": "authority_score re-derived strictly from source_type(source); provider identity is never an input. mismatches=0 and every source maps to exactly one authority value."
+  }
+}

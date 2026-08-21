@@ -1,0 +1,23 @@
+{
+  "experiment_id": "MSM_V1_COMPONENT_IDENTIFIABILITY",
+  "config": "s20260321",
+  "split": "dev",
+  "method": "for each claim-bearing episode, argmax of the component selects the claim; component_identifiability = share of selections equal to gold",
+  "components": {
+    "R": {
+      "n_episodes_with_claims": 833,
+      "component_identifiability": 0.5894,
+      "fraction": "491/833"
+    },
+    "C": {
+      "n_episodes_with_claims": 833,
+      "component_identifiability": 0.5702,
+      "fraction": "475/833"
+    },
+    "T": {
+      "n_episodes_with_claims": 833,
+      "component_identifiability": 0.6519,
+      "fraction": "543/833"
+    }
+  }
+}

@@ -1,1 +1,1 @@
-"""Test suite for LCM."""
+"""Test suite for CRT."""

@@ -1,0 +1,107 @@
+{
+ "report_id": "09",
+ "title": "Reproducibility Metadata - Provenance Evaluation (PHEME + RumourEval / SemEval-2017 Task 8)",
+ "generated": "2026-08-19T21:52:00Z",
+ "environment": {
+  "python_version": "3.10.0",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "shell": "cmd.exe"
+ },
+ "inputs": [
+  {
+   "name": "PHEME_veracity.tar.bz2 (in-repo archive)",
+   "path": "results/empirical_evaluation/mechanism/data/pheme_6392078/PHEME_veracity.tar.bz2",
+   "sha256": "079f6ffdbc0b367399262f101774372e5d19dd8278c33d6c97a84461a9bc58dd",
+   "source": "PHEME dataset (GATE, Univ. of Sheffield); original download URL as recorded in provenance/data_discovery/PROVENANCE_DATASET_AUDIT.md (https://s3-eu-west-1.amazonaws.com/downloads.gate.ac.uk/pheme/...)"
+  },
+  {
+   "name": "semeval2017-task8-dataset.tar.bz2 (RumourEval train+dev)",
+   "path": "results/empirical_evaluation/provenance/evaluation/_data/external/semeval2017-task8-dataset.tar.bz2",
+   "sha256": "7e2390ef05264262ccdccbd5c315450b8b9c0bcdeb96456bb04570ada5927643",
+   "source": "SemEval-2017 Task 8 (RumourEval) - https://alt.qcri.org/semeval2017/task8/ ; mirrors recorded in provenance/data_discovery/PROVENANCE_DATASET_AUDIT.md"
+  },
+  {
+   "name": "rumoureval2017-test.tar.bz2 (RumourEval test threads)",
+   "path": "results/empirical_evaluation/provenance/evaluation/_data/external/rumoureval2017-test.tar.bz2",
+   "sha256": "e4b12b29ab295c8bf9343b94a7cc9833616d47ce2bbe76dd6dbf03fa8d325cea",
+   "source": "SemEval-2017 Task 8 (RumourEval) test threads; see above"
+  },
+  {
+   "name": "subtaska.json (QCRI test labels)",
+   "path": "results/empirical_evaluation/provenance/evaluation/_data/external/subtaska.json",
+   "sha256": "a336f092ce2f8cad889f87326c992d2d003ba511f05ac3bd073097bce11facf5",
+   "source": "QCRI SemEval-2017 Task 8 subtask-A test labels; provenance recorded in provenance/data_discovery/PROVENANCE_DATASET_AUDIT.md"
+  },
+  {
+   "name": "PHEME_FROZEN_PROTOCOL.json (frozen mechanism protocol)",
+   "path": "results/empirical_evaluation/mechanism/PHEME_FROZEN_PROTOCOL.json",
+   "sha256": "b35e9dc29337117de6f4f39a53aeca90e4f087782921df09640e7a032b5c0438"
+  },
+  {
+   "name": "PHEME_SIGNAL_DEFINITION.json (frozen signal definition)",
+   "path": "results/empirical_evaluation/mechanism/PHEME_SIGNAL_DEFINITION.json",
+   "sha256": "ceb57bab659b838101cd73efb94a9a98ed8a4547b126239f9c74fe3fbc81cbf1"
+  }
+ ],
+ "tools": [
+  {
+   "name": "pheme_provenance_common.py",
+   "path": "results/empirical_evaluation/provenance/evaluation/_tools/pheme_provenance_common.py",
+   "sha256": "af1c573f45049cec19f095b1345815867bc97b3ccd408e0289d57d1c9022688f"
+  },
+  {
+   "name": "parse_index.py",
+   "path": "results/empirical_evaluation/provenance/evaluation/_tools/parse_index.py",
+   "sha256": "274728f2b305f268eda884733a26e1ab32e78547730c8de0f5823d3671bad914"
+  },
+  {
+   "name": "pheme_provenance_pipeline.py (final; truthful elected_counts + corrected metrics)",
+   "path": "results/empirical_evaluation/provenance/evaluation/_tools/pheme_provenance_pipeline.py",
+   "sha256": "ba8906723f192de02850ab154883996a1a49878c6189d4f110f2406197488cad"
+  }
+ ],
+ "procedure": [
+  "python _tools/parse_index.py  (one-time; caches _data/index.pkl; 6,425 threads / 104,582 parsed tweets)",
+  "python _tools/pheme_provenance_pipeline.py  (run twice; emits 02/03/04/05/06/08 and _data/_combined.json)",
+  "Artifacts 01/07/09 are documentation derived from the machine outputs above."
+ ],
+ "determinism_check": {
+  "method": "two consecutive runs of pheme_provenance_pipeline.py; snapshot of emitted artifacts diffed",
+  "result": "IDENTICAL for 02, 03(.json/.md), 04, 05, 06, 08. build_timestamp inside 08 (and in _data/_combined.json) differs by design and is excluded from comparison; all other bytes identical",
+  "n_cases": 80,
+  "dup_units": 0,
+  "skipped_no_truth": 64
+ },
+ "frozen_formulas_used": {
+  "psi": "(R+C+T)/3",
+  "weights": {"wR": "1/3", "wC": "1/3", "wT": "1/3"},
+  "theta": 0.05,
+  "C": "0.5*evidence+0.25 (5 evidence features)",
+  "R": "exp(-lambda*(ref-t)), lambda=ln(2)/(7*86400s), ref=max created among case units",
+  "T": "prior-outcome trust / user snapshot before each tweet over global chronological labelled asserting timeline; cold-start 0.5",
+  "L2_aware": "per-origin max-Psi per value, then sum across origins; resolve if delta>=theta",
+  "L2_neutral": "sum of all unit Psi per value; resolve if delta>=theta"
+ },
+ "outputs": [
+  {"file": "01_PROVENANCE_DATA_ELIGIBILITY.md", "sha256": "b60dae9d21718e43c5b7f18a0feea6721b769fc123da56b4c3aa07b69f45ba1f"},
+  {"file": "01_PROVENANCE_DATA_ELIGIBILITY.json", "sha256": "f70fd0c39c71b471b54acd0d5fc66beabc7aea0f4e0e000d376edfc24d2edb2f"},
+  {"file": "02_PROVENANCE_CASE_MANIFEST.json", "sha256": "a0f2c163d6e04143a131d4d5eee6900b76538fcb3b21c2c8ee6af00c3ced33a6"},
+  {"file": "03_PROVENANCE_GRAPH_RECONSTRUCTION_AUDIT.json", "sha256": "4ac61b38da0d32b023e2bb2d7fb27c9a1400991e8ac5977c51ec3df3e5ef6642"},
+  {"file": "03_PROVENANCE_GRAPH_RECONSTRUCTION_AUDIT.md", "sha256": "01833a21bd4383127a9e13d327cd0e7fb7c0e48878c2e1856887824da557654c"},
+  {"file": "04_PROVENANCE_CLASSIFICATION_RESULTS.json", "sha256": "759d8cb5f2ff34dfd42075d3ba84d1e317556f3ec802a1783a1b45722c52afc3"},
+  {"file": "05_LCM_PROVENANCE_ENABLED_RESULTS.json", "sha256": "25d9b24361aba82beac2be8ad899247ac6c02dd158e1e9fb3f9b26f06158ccc4"},
+  {"file": "06_LCM_PROVENANCE_NEUTRAL_COMPARISON.json", "sha256": "552339818402500759ad515e55e447bc7c2f17d871d1eeb4f905486b849b43a0"},
+  {"file": "07_FINAL_PROVENANCE_EVALUATION_REPORT.md", "sha256": "e08192bfbb98556249135d70f55e303a66b2ade01025ade30f01f07c0f69b3ba"},
+  {"file": "08_PROVENANCE_EVALUATION_RESULTS.json", "sha256": "89d4324f9a0d6776876474845ff9fad8228d9a69d219188ea97a922d7d09853f"},
+  {"file": "_data/index.pkl", "sha256": "aa66e01da2726c833832d40019ab63b932699f4662b9ffe26469a0f839ac711d"},
+  {"file": "_data/_combined.json", "sha256": "743de1387c266df5f7b4d1c7d5cc953b13f3e36b4a64635f0b6402ff5e4a8568"}
+ ],
+ "notes": [
+  "All outputs are machine-generated from the two scripts above; no LLM used anywhere in computation.",
+  "No writes were made to PHEME TEST, QACC, CALIBRATION or processed_results (frozen sub-corpus untouched).",
+  "SubtasksA test labels are stock QCRI outputs consumed as-is; no tuning or calibration was performed.",
+  "09's own SHA-256 cannot be self-referenced and is excluded from its outputs list.",
+  "ELECTION TARGETS vs ACTUAL BUILT: targets were P1=20, P2=20, P3=20, P4=20, P5=6; the dataset supplied eligible candidates for P2=20, P3=20, P4=20, but only P1=14 and P5=6 qualifying categories existed, so those slots stayed unfilled. This is a documented dataset-coverage limitation; it is reported as-is (election_targets vs elected_counts in 02 and 08), never silently inflated and never filled with fabricated cases.",
+  "Deterministic reruns: two consecutive runs produced byte-identical machine outputs (02/03.md+json/04/05/06/08), differing only by the build_timestamp field, and the analysis in report 07 was accepted as-is without re-tuning any parameter on PHEME TEST outcomes."
+ ]
+}

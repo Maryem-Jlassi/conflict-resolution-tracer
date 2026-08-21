@@ -1,0 +1,132 @@
+[
+  {
+    "n_units": 3456,
+    "n_resolved": 2005,
+    "resolution_coverage": 0.5801504629629629,
+    "strict_accuracy": 0.6435185185185185,
+    "selective_accuracy": 0.6917705735660847,
+    "incorrect_overwrite": 255,
+    "abstention_rate": 0.41984953703703703,
+    "half_life_days": 1
+  },
+  {
+    "n_units": 3456,
+    "n_resolved": 2005,
+    "resolution_coverage": 0.5801504629629629,
+    "strict_accuracy": 0.6435185185185185,
+    "selective_accuracy": 0.6917705735660847,
+    "incorrect_overwrite": 255,
+    "abstention_rate": 0.41984953703703703,
+    "half_life_days": 2
+  },
+  {
+    "n_units": 3456,
+    "n_resolved": 2005,
+    "resolution_coverage": 0.5801504629629629,
+    "strict_accuracy": 0.6435185185185185,
+    "selective_accuracy": 0.6917705735660847,
+    "incorrect_overwrite": 255,
+    "abstention_rate": 0.41984953703703703,
+    "half_life_days": 3
+  },
+  {
+    "n_units": 3456,
+    "n_resolved": 2005,
+    "resolution_coverage": 0.5801504629629629,
+    "strict_accuracy": 0.6435185185185185,
+    "selective_accuracy": 0.6917705735660847,
+    "incorrect_overwrite": 255,
+    "abstention_rate": 0.41984953703703703,
+    "half_life_days": 5
+  },
+  {
+    "n_units": 3456,
+    "n_resolved": 2005,
+    "resolution_coverage": 0.5801504629629629,
+    "strict_accuracy": 0.6435185185185185,
+    "selective_accuracy": 0.6917705735660847,
+    "incorrect_overwrite": 255,
+    "abstention_rate": 0.41984953703703703,
+    "half_life_days": 7
+  },
+  {
+    "n_units": 3456,
+    "n_resolved": 2003,
+    "resolution_coverage": 0.5795717592592593,
+    "strict_accuracy": 0.6435185185185185,
+    "selective_accuracy": 0.692461308037943,
+    "incorrect_overwrite": 254,
+    "abstention_rate": 0.42042824074074076,
+    "half_life_days": 14
+  },
+  {
+    "n_units": 3456,
+    "n_resolved": 1987,
+    "resolution_coverage": 0.5749421296296297,
+    "strict_accuracy": 0.6438078703703703,
+    "selective_accuracy": 0.6914947156517363,
+    "incorrect_overwrite": 252,
+    "abstention_rate": 0.42505787037037035,
+    "half_life_days": 21
+  },
+  {
+    "n_units": 3456,
+    "n_resolved": 1995,
+    "resolution_coverage": 0.5772569444444444,
+    "strict_accuracy": 0.6440972222222222,
+    "selective_accuracy": 0.6917293233082706,
+    "incorrect_overwrite": 254,
+    "abstention_rate": 0.4227430555555556,
+    "half_life_days": 30
+  },
+  {
+    "n_units": 3456,
+    "n_resolved": 2110,
+    "resolution_coverage": 0.6105324074074074,
+    "strict_accuracy": 0.6403356481481481,
+    "selective_accuracy": 0.6867298578199053,
+    "incorrect_overwrite": 312,
+    "abstention_rate": 0.3894675925925926,
+    "half_life_days": 60
+  },
+  {
+    "n_units": 3456,
+    "n_resolved": 2072,
+    "resolution_coverage": 0.5995370370370371,
+    "strict_accuracy": 0.6368634259259259,
+    "selective_accuracy": 0.6872586872586872,
+    "incorrect_overwrite": 304,
+    "abstention_rate": 0.40046296296296297,
+    "half_life_days": 90
+  },
+  {
+    "n_units": 3456,
+    "n_resolved": 2027,
+    "resolution_coverage": 0.5865162037037037,
+    "strict_accuracy": 0.6339699074074074,
+    "selective_accuracy": 0.6882091761223483,
+    "incorrect_overwrite": 291,
+    "abstention_rate": 0.4134837962962963,
+    "half_life_days": 120
+  },
+  {
+    "n_units": 3456,
+    "n_resolved": 2021,
+    "resolution_coverage": 0.5847800925925926,
+    "strict_accuracy": 0.6313657407407407,
+    "selective_accuracy": 0.6867887184562098,
+    "incorrect_overwrite": 289,
+    "abstention_rate": 0.4152199074074074,
+    "half_life_days": 180
+  },
+  {
+    "n_units": 3456,
+    "n_resolved": 2040,
+    "resolution_coverage": 0.5902777777777778,
+    "strict_accuracy": 0.6215277777777778,
+    "selective_accuracy": 0.6833333333333333,
+    "incorrect_overwrite": 290,
+    "abstention_rate": 0.4097222222222222,
+    "half_life_days": 365
+  }
+]

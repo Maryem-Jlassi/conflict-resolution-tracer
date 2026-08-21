@@ -1,7 +1,7 @@
 """
-Tests for the LCM HTTP client SDK (lcm_client.client).
+Tests for the CRT HTTP client SDK (crt_client.client).
 
-These tests verify that LCMClient.write() forwards the evidence-binding
+These tests verify that CRTClient.write() forwards the evidence-binding
 and multi-agent-coherence fields to the HTTP /write endpoint, mirroring the
 server-side WriteRequest model and the direct-core pipeline benchmarks.
 
@@ -14,8 +14,8 @@ import inspect
 
 import pytest
 
-from lcm_client import LCMClient
-import lcm_client.client as client_module
+from crt_client import CRTClient
+import crt_client.client as client_module
 
 
 # ---------------------------------------------------------------------------
@@ -63,7 +63,7 @@ class _FakeClient:
 
     def get(self, url, params=None):
         self.calls.append({"method": "GET", "url": str(url), "params": params})
-        return _FakeResponse({"service": "lcm", "status": "operational"})
+        return _FakeResponse({"service": "crt", "status": "operational"})
 
 
 # ---------------------------------------------------------------------------
@@ -72,10 +72,10 @@ class _FakeClient:
 
 @pytest.fixture
 def client(monkeypatch):
-    """Patch httpx.Client inside the lcm_client module and return an LCMClient."""
+    """Patch httpx.Client inside the crt_client module and return an CRTClient."""
     _FakeClient.instances = []
     monkeypatch.setattr(client_module.httpx, "Client", _FakeClient)
-    return LCMClient(base_url="http://testserver")
+    return CRTClient(base_url="http://testserver")
 
 
 def _last_payload() -> dict:
@@ -167,7 +167,7 @@ def test_write_returns_server_response(client):
 def test_write_defaults_match_server_model():
     """The client signature defaults must match the server WriteRequest defaults
     so direct-core and HTTP experiments exercise the same feature set."""
-    sig = inspect.signature(LCMClient.write)
+    sig = inspect.signature(CRTClient.write)
     assert sig.parameters["evidence_signature"].default is None
     assert sig.parameters["agreeing_agents"].default == 0
     assert sig.parameters["total_independent_agents"].default == 0

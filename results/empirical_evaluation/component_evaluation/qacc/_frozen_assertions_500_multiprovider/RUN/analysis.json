@@ -1,0 +1,523 @@
+{
+  "manifest": {
+    "aggregation_method": "round_robin_stratified",
+    "seed_cases": 20260820,
+    "seed_assign": 20260821,
+    "provider_counts": {
+      "openai": 1612,
+      "ollama": 1603,
+      "groq": 1608
+    },
+    "total_sources": 4824,
+    "n_cases": 495,
+    "note": "Provider counts are assignment-layer balanced; extraction success rates differ (see \u00a74.1 and \u00a76)."
+  },
+  "4_1_extraction_behavior": {
+    "primary_openai_ollama": {
+      "ollama": {
+        "n_calls": 1603,
+        "n_success": 1246,
+        "parse_success_rate": 0.7773,
+        "n_parse_fail": 357,
+        "n_identity_fail": 0,
+        "n_transport_fail": 0,
+        "n_unsupported": 312,
+        "abstain_rate": 0.2504,
+        "n_supported": 934,
+        "self_reported_confidence_used": false,
+        "claim_length": {
+          "n": 934,
+          "mean_len": 14.72,
+          "max_len": 197
+        }
+      },
+      "openai": {
+        "n_calls": 1612,
+        "n_success": 1612,
+        "parse_success_rate": 1.0,
+        "n_parse_fail": 0,
+        "n_identity_fail": 0,
+        "n_transport_fail": 0,
+        "n_unsupported": 939,
+        "abstain_rate": 0.5825,
+        "n_supported": 673,
+        "self_reported_confidence_used": false,
+        "claim_length": {
+          "n": 673,
+          "mean_len": 16.88,
+          "max_len": 162
+        }
+      }
+    },
+    "appendix_groq": {
+      "groq": {
+        "n_calls": 1608,
+        "n_success": 171,
+        "parse_success_rate": 0.1063,
+        "n_parse_fail": 80,
+        "n_identity_fail": 0,
+        "n_transport_fail": 1357,
+        "n_unsupported": 92,
+        "abstain_rate": 0.538,
+        "n_supported": 79,
+        "self_reported_confidence_used": false,
+        "claim_length": {
+          "n": 79,
+          "mean_len": 17.27,
+          "max_len": 157
+        }
+      }
+    },
+    "note": "Primary tables cover openai + ollama only. groq is in appendix due to 84.4% transport-failure rate."
+  },
+  "4_2_resolution_outcomes": {
+    "clean_subset_definition": {
+      "n_cases_total": 495,
+      "n_cases_clean": 395,
+      "n_cases_contaminated": 48,
+      "n_cases_no_claims": 52,
+      "filter_logic": "A case is 'clean' if no groq-sourced assertion exists among its competing claims (even if groq did not win). Excludes any case where groq was a competing source."
+    },
+    "clean_subset_openai_ollama": {
+      "resolved_cases_full_lcm": 102,
+      "winners_by_provider": {
+        "openai": 53,
+        "ollama": 49
+      },
+      "win_share_full_lcm": {
+        "ollama": 0.4804,
+        "openai": 0.5196
+      },
+      "win_vs_share_ratio_full_lcm": {
+        "ollama": 0.8405,
+        "openai": 1.2127
+      },
+      "mean_authority_supported": {
+        "ollama": 0.7136,
+        "openai": 0.7102
+      },
+      "claim_length_clean": {
+        "ollama": {
+          "n": 799,
+          "mean_len": 15.58,
+          "max_len": 197
+        },
+        "openai": {
+          "n": 599,
+          "mean_len": 16.53,
+          "max_len": 162
+        }
+      },
+      "supported_calls_in_clean": {
+        "openai": 599,
+        "ollama": 799
+      },
+      "total_calls_in_clean": {
+        "ollama": 1314,
+        "openai": 1327
+      },
+      "abstain_rate_in_clean": {
+        "ollama": 0.3919,
+        "openai": 0.5486
+      },
+      "source_share_clean": {
+        "ollama": 0.5715,
+        "openai": 0.4285
+      },
+      "confidence": {
+        "openai_wins": 53,
+        "openai_n": 102,
+        "openai_wilson_95ci": [
+          0.4237,
+          0.6141
+        ],
+        "ollama_wins": 49,
+        "ollama_n": 102,
+        "ollama_wilson_95ci": [
+          0.3859,
+          0.5763
+        ]
+      }
+    },
+    "contaminated_subset_with_groq": {
+      "resolved_cases_full_lcm": 0,
+      "winners_by_provider": {},
+      "note": "Groq-contaminated cases; not used for primary cross-model conclusions."
+    },
+    "raw_unclassified": {
+      "policy_table_all_providers": {
+        "full_lcm": {
+          "total": 495,
+          "resolved": 102,
+          "resolution_coverage": 0.2061,
+          "strict_accuracy": 0.0869,
+          "selective_accuracy": 0.4216,
+          "overwrite": 4,
+          "winners_by_provider": {
+            "ollama": 49,
+            "openai": 53
+          }
+        },
+        "c_only": {
+          "total": 495,
+          "resolved": 103,
+          "resolution_coverage": 0.2081,
+          "strict_accuracy": 0.0869,
+          "selective_accuracy": 0.4175,
+          "overwrite": 4,
+          "winners_by_provider": {
+            "ollama": 50,
+            "openai": 53
+          }
+        },
+        "r_only": {
+          "total": 495,
+          "resolved": 85,
+          "resolution_coverage": 0.1717,
+          "strict_accuracy": 0.0727,
+          "selective_accuracy": 0.4235,
+          "overwrite": 0,
+          "winners_by_provider": {
+            "ollama": 43,
+            "openai": 42
+          }
+        },
+        "t_only": {
+          "total": 495,
+          "resolved": 85,
+          "resolution_coverage": 0.1717,
+          "strict_accuracy": 0.0727,
+          "selective_accuracy": 0.4235,
+          "overwrite": 0,
+          "winners_by_provider": {
+            "ollama": 43,
+            "openai": 42
+          }
+        },
+        "fixed_neutral_trust": {
+          "total": 495,
+          "resolved": 102,
+          "resolution_coverage": 0.2061,
+          "strict_accuracy": 0.0869,
+          "selective_accuracy": 0.4216,
+          "overwrite": 4,
+          "winners_by_provider": {
+            "ollama": 49,
+            "openai": 53
+          }
+        },
+        "last_write_wins": {
+          "total": 495,
+          "resolved": 443,
+          "resolution_coverage": 0.8949,
+          "strict_accuracy": 0.3434,
+          "selective_accuracy": 0.3837,
+          "overwrite": 54,
+          "winners_by_provider": {
+            "groq": 20,
+            "ollama": 206,
+            "openai": 217
+          }
+        }
+      },
+      "supported_shares_all_providers": {
+        "ollama": 934,
+        "groq": 79,
+        "openai": 673
+      },
+      "source_share_all_providers": {
+        "ollama": 0.554,
+        "openai": 0.3992,
+        "groq": 0.0469
+      },
+      "win_share_full_lcm_all_providers": {
+        "ollama": 0.4804,
+        "openai": 0.5196,
+        "groq": 0.0
+      },
+      "mean_authority_all_providers": {
+        "ollama": 0.7155,
+        "openai": 0.7119,
+        "groq": 0.7215
+      },
+      "warning": "DO NOT CITE directly. These are pre-filter, groq-included numbers kept for reproducibility only. Primary conclusions use clean_subset_openai_ollama above."
+    }
+  },
+  "4_3_provider_blindness": {
+    "n_assertions_checked": 4823,
+    "n_authority_mismatches": 0,
+    "one_authority_per_source": true,
+    "provider_blind_verification": "PASS",
+    "authority_per_provider": {
+      "ollama": {
+        "0.3": 187,
+        "0.75": 1411,
+        "0.85": 5
+      },
+      "openai": {
+        "0.3": 152,
+        "0.75": 1459,
+        "0.85": 1
+      },
+      "groq": {
+        "0.3": 166,
+        "0.75": 1438,
+        "0.85": 4
+      }
+    },
+    "note": "authority_score re-derived strictly from source_type(source); provider identity is never an input. mismatches=0 and every source maps to exactly one authority value."
+  },
+  "4_4_agreement_reclassified": {
+    "total_triples": 30,
+    "genuine_agreement": 3,
+    "genuine_disagreement": 4,
+    "partial_data": 0,
+    "no_data": 23,
+    "measurable_total": 7,
+    "agreement_rate_b": 0.4286,
+    "agreement_rate_b_wilson_95ci": [
+      0.1582,
+      0.7495
+    ],
+    "original_rate_a_misleading": 0.0,
+    "pairwise_ollama_openai_measurable": 0.4286,
+    "note": "Original 0/30 and 13.3% figures counted missing/disagreement. Correct measurable rate is 3/7 = 42.86%.",
+    "classifications": [
+      {
+        "case_id": 3290,
+        "source_id": 6,
+        "source": "www.mlb.com",
+        "category": "NO_DATA",
+        "usable_providers": []
+      },
+      {
+        "case_id": 208,
+        "source_id": 5,
+        "source": "spotalike.com",
+        "category": "NO_DATA",
+        "usable_providers": []
+      },
+      {
+        "case_id": 246,
+        "source_id": 3,
+        "source": "pulse.seattlechildrens.org",
+        "category": "NO_DATA",
+        "usable_providers": []
+      },
+      {
+        "case_id": 3523,
+        "source_id": 3,
+        "source": "www.quora.com",
+        "category": "NO_DATA",
+        "usable_providers": []
+      },
+      {
+        "case_id": 279,
+        "source_id": 4,
+        "source": "www.metroleague.org",
+        "category": "NO_DATA",
+        "usable_providers": []
+      },
+      {
+        "case_id": 276,
+        "source_id": 6,
+        "source": "en.wikipedia.org",
+        "category": "GENUINE_AGREEMENT",
+        "usable_providers": [
+          "ollama",
+          "openai"
+        ]
+      },
+      {
+        "case_id": 8,
+        "source_id": 6,
+        "source": "www.toppr.com",
+        "category": "NO_DATA",
+        "usable_providers": []
+      },
+      {
+        "case_id": 1884,
+        "source_id": 1,
+        "source": "www.imdb.com",
+        "category": "NO_DATA",
+        "usable_providers": []
+      },
+      {
+        "case_id": 2287,
+        "source_id": 4,
+        "source": "www.express.co.uk",
+        "category": "GENUINE_DISAGREEMENT",
+        "usable_providers": [
+          "ollama",
+          "openai"
+        ]
+      },
+      {
+        "case_id": 1681,
+        "source_id": 5,
+        "source": "www.bcsd.org",
+        "category": "NO_DATA",
+        "usable_providers": []
+      },
+      {
+        "case_id": 135,
+        "source_id": 6,
+        "source": "www.ushistory.org",
+        "category": "NO_DATA",
+        "usable_providers": []
+      },
+      {
+        "case_id": 3140,
+        "source_id": 2,
+        "source": "en.wikipedia.org",
+        "category": "NO_DATA",
+        "usable_providers": []
+      },
+      {
+        "case_id": 3173,
+        "source_id": 7,
+        "source": "recipes.howstuffworks.com",
+        "category": "GENUINE_DISAGREEMENT",
+        "usable_providers": [
+          "ollama",
+          "openai"
+        ]
+      },
+      {
+        "case_id": 39,
+        "source_id": 4,
+        "source": "americansongwriter.com",
+        "category": "NO_DATA",
+        "usable_providers": []
+      },
+      {
+        "case_id": 2379,
+        "source_id": 0,
+        "source": "www.britannica.com",
+        "category": "NO_DATA",
+        "usable_providers": []
+      },
+      {
+        "case_id": 2478,
+        "source_id": 1,
+        "source": "www.coolhandmovers.com",
+        "category": "NO_DATA",
+        "usable_providers": []
+      },
+      {
+        "case_id": 90,
+        "source_id": 1,
+        "source": "screenrant.com",
+        "category": "NO_DATA",
+        "usable_providers": []
+      },
+      {
+        "case_id": 3523,
+        "source_id": 5,
+        "source": "www.quora.com",
+        "category": "NO_DATA",
+        "usable_providers": []
+      },
+      {
+        "case_id": 243,
+        "source_id": 0,
+        "source": "en.wikipedia.org",
+        "category": "GENUINE_AGREEMENT",
+        "usable_providers": [
+          "ollama",
+          "openai"
+        ]
+      },
+      {
+        "case_id": 2306,
+        "source_id": 0,
+        "source": "www.pewresearch.org",
+        "category": "NO_DATA",
+        "usable_providers": []
+      },
+      {
+        "case_id": 197,
+        "source_id": 9,
+        "source": "www.senate.gov",
+        "category": "NO_DATA",
+        "usable_providers": []
+      },
+      {
+        "case_id": 1801,
+        "source_id": 8,
+        "source": "www.primevideo.com",
+        "category": "NO_DATA",
+        "usable_providers": []
+      },
+      {
+        "case_id": 3207,
+        "source_id": 7,
+        "source": "mapsplatform.google.com",
+        "category": "GENUINE_DISAGREEMENT",
+        "usable_providers": [
+          "ollama",
+          "openai"
+        ]
+      },
+      {
+        "case_id": 37,
+        "source_id": 5,
+        "source": "www.nps.gov",
+        "category": "NO_DATA",
+        "usable_providers": []
+      },
+      {
+        "case_id": 2513,
+        "source_id": 0,
+        "source": "quizlet.com",
+        "category": "NO_DATA",
+        "usable_providers": []
+      },
+      {
+        "case_id": 59,
+        "source_id": 0,
+        "source": "apnews.com",
+        "category": "GENUINE_AGREEMENT",
+        "usable_providers": [
+          "ollama",
+          "openai"
+        ]
+      },
+      {
+        "case_id": 2212,
+        "source_id": 3,
+        "source": "www.census.gov",
+        "category": "NO_DATA",
+        "usable_providers": []
+      },
+      {
+        "case_id": 95,
+        "source_id": 1,
+        "source": "byjus.com",
+        "category": "GENUINE_DISAGREEMENT",
+        "usable_providers": [
+          "ollama",
+          "openai"
+        ]
+      },
+      {
+        "case_id": 325,
+        "source_id": 2,
+        "source": "en.wikipedia.org",
+        "category": "NO_DATA",
+        "usable_providers": []
+      },
+      {
+        "case_id": 752,
+        "source_id": 5,
+        "source": "www.fsis.usda.gov",
+        "category": "NO_DATA",
+        "usable_providers": []
+      }
+    ]
+  },
+  "_meta": {
+    "reconciliation_note": "analysis.json regenerated to match QACC_500_MULTIPROVIDER_RESULTS.md. Primary tables exclude groq. Raw pre-filter data preserved under raw_unclassified with warning.",
+    "report_timestamp": "2026-08-21T05:00:00Z"
+  }
+}

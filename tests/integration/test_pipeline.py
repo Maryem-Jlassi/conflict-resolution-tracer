@@ -9,14 +9,14 @@ import pytest
 from datetime import datetime, timedelta
 from typing import Dict, Optional
 
-from lcm_core.conflict import ConflictResolutionEngine, ResolutionConfig
-from lcm_core.confidence_engine import EvidenceRecord, EvidenceType
-from lcm_core.crypto import sign_evidence_message
-from lcm_core.locking import AsyncLockManager
-from lcm_core.loop_detection import LoopDetector
-from lcm_core.pipeline import WritePipeline
-from lcm_core.schema import StampedUMF
-from lcm_core.trust_manager import TrustManager
+from crt_core.conflict import ConflictResolutionEngine, ResolutionConfig
+from crt_core.confidence_engine import EvidenceRecord, EvidenceType
+from crt_core.crypto import sign_evidence_message
+from crt_core.locking import AsyncLockManager
+from crt_core.loop_detection import LoopDetector
+from crt_core.pipeline import WritePipeline
+from crt_core.schema import StampedUMF
+from crt_core.trust_manager import TrustManager
 from tests.conftest import make_memory, make_evidence
 
 # ---------------------------------------------------------------------------
@@ -101,13 +101,18 @@ async def test_database_evidence_beats_cold_start():
     # A signed DATABASE record gives the second write deterministic
     # verified_confidence + authority, so it must win regardless of the
     # recency coin-flip between two near-identical utcnow() timestamps.
+    incoming = _raw("agent_b", "fact", "new_value", confidence=0.8)
+    from crt_core.crypto import sign_assertion_evidence
     result = await p.process(
-        _raw("agent_b", "fact", "new_value", confidence=0.8),
+        incoming,
         evidence_records=[
             EvidenceRecord(evidence_type=EvidenceType.DATABASE, relevance_score=1.0,
                            source_id="db://verified", verified=True)
         ],
-        evidence_signature=sign_evidence_message(EvidenceType.DATABASE, "db://verified"),
+        evidence_signature=sign_assertion_evidence(
+            EvidenceType.DATABASE, "db://verified", agent_id=incoming["agent_id"],
+            timestamp=incoming["timestamp"], assertion_payload=incoming["assertion_payload"],
+        ),
     )
     # With higher verified_confidence and authority, agent_b should win
     assert result.status in ("conflict_resolved", "committed")
@@ -174,7 +179,7 @@ async def test_domain_trust_respected(domain):
 async def test_high_uncertainty_threshold_marks_unresolved():
     engine = ConflictResolutionEngine(
         config=ResolutionConfig(
-            w_recency=0.25, w_confidence=0.25, w_trust=0.25, w_provenance=0.25,
+            w_recency=1/3, w_confidence=1/3, w_trust=1/3,
             uncertainty_threshold=0.99,
         )
     )
