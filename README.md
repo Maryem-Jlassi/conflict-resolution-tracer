@@ -1,8 +1,7 @@
 # Conflict Resolution Tracer (CRT)
 
-<p align="center">
-  <img src="docs/crt_logo_logo" alt="CRT CRT banner" width="60%">
-</p>
+
+![CRT](docs/crt_logo_logo.png)
 
 **Conflict Resolution Tracer (CRT)** is deterministic multi-agent memory coherence middleware. It resolves conflicting writes to the same memory key using a fixed algebraic formula Ψ = (R + C + T) / 3, where R is recency decay, C is provenance-derived confidence, and T is dynamic agent trust. Provenance is a mandatory Stage-1 audit layer; it does not contribute a scalar term to Ψ.
 
