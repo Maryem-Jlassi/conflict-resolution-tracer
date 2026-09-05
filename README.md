@@ -299,9 +299,7 @@ If you use the MSM data specifically, please also cite (currently anonymous — 
 ```bibtex
 @misc{anonymous_2026_selective_qa_memory,
   title         = {Selective QA over Conflicting Multi-Source Personal Memory: A Diagnostic Testbed and Method Comparison},
-  author        = {Anonymous Authors},
-  year          = {2026},
-  note          = {Anonymous submission, NeurIPS 2026 Evaluations \& Datasets Track. De-anonymised version will be released upon acceptance.}
+  year          = {2026}
 }
 ```
 
