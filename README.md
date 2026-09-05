@@ -27,7 +27,7 @@ CRT significantly reduces incorrect-overwrite rates on QACC (−67.8%) and MSM (
 - **RQ3 (Manipulation Resistance):** Can legitimacy-by-repetition and spoofed authority be prevented?
 - **RQ4 (Auditability):** Can provenance and trust be modeled so decisions remain auditable over time and across domains?
 
-## 🧠 Proposed Method / Architecture
+## 🧠 Proposed Solution (Architecture)
 
 <p align="center">
   <img src="docs/overall_architecture.svg" alt="CRT four-stage write pipeline architecture" width="95%">
