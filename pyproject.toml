@@ -24,3 +24,8 @@ dev = [
 
 [tool.setuptools.packages.find]
 include = ["crt_core*", "crt_service*", "crt_client*", "research_evaluation*", "tests*"]
+
+[tool.pytest.ini_options]
+markers = [
+    "external_dataset: tests requiring external benchmark datasets",
+]
