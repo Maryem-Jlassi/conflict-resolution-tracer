@@ -6,6 +6,8 @@ from pathlib import Path
 
 import pytest
 
+pytestmark = pytest.mark.external_dataset
+
 REV = "5b428c8d6826a7dc73ac05f5239b089a6c631ac1"
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "research_data" / "multisource_memory" / "raw" / REV / "data" / "benchmark"

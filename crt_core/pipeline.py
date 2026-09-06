@@ -35,7 +35,7 @@ from typing import Any, Callable, Dict, List, Optional, Protocol, runtime_checka
 from .confidence_engine import EvidenceRecord
 from .config import DEFAULT_CONFIG
 from .conflict import ConflictResolutionEngine, ConflictResult, ResolutionConfig
-from .events import LCMEvent, EventType
+from .events import LCMEvent, EventType, LCMEvent as CRTEvent
 from .event_bus import get_event_bus
 from .loop_detection import LoopDetector, LoopDetectionResult
 from .locking import AsyncLockManager, LockConfig
