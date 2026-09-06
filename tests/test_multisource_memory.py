@@ -1,4 +1,5 @@
 """Tests for Multi-Source Memory Benchmark adapter v1."""
+import pytest
 from __future__ import annotations
 pytestmark = pytest.mark.external_dataset
 import json
